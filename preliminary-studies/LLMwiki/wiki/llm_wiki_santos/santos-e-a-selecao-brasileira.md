@@ -1,0 +1,72 @@
+# Santos e a Seleção Brasileira
+
+- Santos fornecia jogadores a Seleção Brasileira.
+- Pelé participou da Copa de 1958.
+- Pelé participou da Copa de 1962.
+- Pelé participou da Copa de 1970.
+- Zito participou da Copa de 1958.
+- Pepe participou da Copa de 1958.
+- Pepe participou da Copa de 1962.
+- Zito participou da Copa de 1962.
+- Gilmar participou da Copa de 1962.
+- Mauro participou da Copa de 1962.
+- Mengálvio participou da Copa de 1962.
+- Coutinho participou da Copa de 1962.
+- Carlos Alberto Torres participou da Copa de 1970.
+- Clodoaldo participou da Copa de
+- Santos foi vice da Copa do Brasil em 2015.
+- Santos foi vice do Campeonato Brasileiro em 2016.
+- Santos foi campeão paulista em 2015.
+- Santos foi campeão paulista em 2016.
+- O clube passou por períodos de instabilidade após 2016.
+- O clube continuou revelando jogadores após 2016.
+- O Santos deve repassar à NR Sports, empresa do pai de Neymar, no mínimo US$ 15 milhões (~R$ 85 milhões), independentemente das receitas.
+- Patrocínios novos na camisa: 75% NR Sports, 25% Santos.
+- Em propriedades já existentes, a NR Sports fica com 75% do aumento de valor após a chegada do jogador.
+- Projetos de conteúdo com Neymar preveem receita acima de R$ 10 milhões.
+- O Santos trocou a Blaze pela Bet7k.
+- A Bet7k paga R$ 51 milhões/ano.
+- A Blaze pagava R$ 22,5 milhões/ano.
+- R$ 21 milhões (75% da diferença) pertencem à NR Sports.
+- A receita de patrocínio subiu R$ 66 milhões desde a chegada de Neymar.
+- R$ 49,5 milhões foram destinados à NR Sports.
+- O contrato de patrocínio envolveu Neymar.
+- O patrocínio máster do Santos é da Blaze.
+- O patrocínio máster do Santos é da Bet7k.
+- O futebol feminino do Santos é conhecido como Sereias da Vila.
+- Marta jogou no futebol feminino do Santos.
+- Cristiane jogou no futebol feminino do Santos.
+- O time feminino do Santos foi campeão do Brasileiro Feminino em 2017.
+- A equipe de futsal do Santos teve Falcão em 2011.
+- O time de futsal do Santos conquistou títulos importantes.
+- O clube tem história no vôlei que remonta a décadas anteriores.
+- O futebol feminino do Santos é conhecido como Sereias da Vila.
+- Marta jogou no futebol feminino do Santos.
+- Cristiane jogou
+- O Santos foi campeão da Copa CONMEBOL em 1998.
+- O Santos foi campeão da Recopa Sul-Americana em 2012.
+- O Santos foi campeão da Série B em 2024.
+- O Santos foi campeão de 22 Paulistas.
+- O Santos foi campeão de 5 Torneios Rio-São Paulo.
+- O Santos foi campeão de 8 Brasileiros (1961-65, 1968, 2002, 2004).
+- O Santos foi campeão de 1 Copa do Brasil (2010).
+- EXA Capital é uma consultoria contratada pelo Santos.
+- A EXA Capital foi contratada em abril.
+- Alexandre Cobra é da EXA Capital.
+- A dívida do Santos é de cerca de R$ 940 milhões.
+- A parte fiscal da dívida do Santos é de R$ 200 milhões.
+- As dívidas do Santos com outros clubes podem gerar transfer bans.
+- Alexandre Cobra, da EXA Capital, informou aos conselheiros sobre a dívida do clube.
+- A dívida do clube está em cerca de R$ 940 milhões.
+- A dívida do clube tem R$ 200 milhões de origem fiscal.
+- Os juros da dívida aumentam em 15% ao ano com a nova Selic.
+- A reunião ocorreu numa terça-feira.
+- A reunião foi do Conselho Deliberativo do Santos.
+- As dívidas do Santos com outros clubes foram detalhadas.
+- O Santos deve repassar à NR Sports, empresa de Neymar pai, no mínimo US$ 15 milhões (R$ 85 milhões) até 30/07/2025, independentemente das receitas.
+- Se a meta não for atingida, o clube paga do próprio bolso.
+- Em espaços já vendidos, a NR Sports fica com 75% do aumento de valor.
+- Copa 1958 (campeã, Suécia): Pelé (17 anos), Zito e Pepe.
+- Copa 1962: Pelé, Pepe, Zito, Gilmar, Mauro, Mengálvio e Coutinho.
+- Copa 1970 (campeã): Pelé, Carlos Alberto Torres, Clodoaldo e Joel Camargo.
+- O Santos não só vencia com seu time, como fornecia jogadores a uma das maiores seleções da história.

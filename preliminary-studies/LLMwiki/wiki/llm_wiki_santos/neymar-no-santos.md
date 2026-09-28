@@ -1,0 +1,41 @@
+# Neymar no Santos
+
+Neymar no Santos
+- Neymar estreou pelo Santos em 2009, aos 17 anos.
+- Neymar conquistou seis títulos pelo Santos.
+- Neymar conquistou três títulos Paulistas pelo Santos.
+- Neymar conquistou a Copa do Brasil pelo Santos.
+- Neymar conquistou a Libertadores em 2011 pelo Santos.
+- Neymar conquistou a Recopa Sul-Americana pelo Santos.
+- A Libertadores de 2011 foi a final contra o Peñarol.
+- A Libertadores de 2011 foi o terceiro título do clube.
+- Neymar jogou 230 jogos pelo Santos.
+- Neymar marcou 138 gols pelo Santos.
+- Neymar saiu do Santos em 2013.
+- Neymar formou com Ganso a nova geração de Meninos da Vila.
+- Neymar nasceu em Mogi das Cruzes em 05/02/1992.
+- Neymar mudou-se para a Baixada Santista na infância.
+- Neymar viveu em Praia Grande e depois em São Vicente na infância.
+- Neymar deu os primeiros toques nos salões do litoral santista.
+- Neymar foi recrutado pelo Santos aos 11 anos.
+- Neymar foi recrutado pelo Santos para ser mais um Menino da Vila.
+- O Pacaembu foi o palco da estreia profissional de Neymar, em 2009.
+- O Pacaembu se tornou a segunda casa de Neymar.
+- Neymar conquistou a Libertadores pelo Santos no Pacaembu.
+- O Pacaembu foi o palco da estreia profissional de Neymar, em 2009.
+- O Pacaembu se tornou a segunda casa de Neymar.
+- Neymar conquistou a Libertadores pelo Santos no Pacaembu.
+- O Pacaembu foi o palco da estreia profissional de Neymar, em 2009.
+- O Pacaembu se tornou a segunda casa de
+- O Santos FC foi fundado em 1912, mas só se tornou profissional em 1935
+- O Santos ampliou suas receitas de patrocínio em R$ 66 milhões desde a chegada de Neymar.
+- R$ 49,5 milhões do aumento das receitas de patrocínio iriam para a NR Sports.
+- Há projetos de conteúdo com Neymar em negociação, com receita potencial acima de R$ 10 milhões.
+- Neymar saiu do Santos em 2013 para o Barcelona.
+- A passagem de Neymar pelo Santos foi entre 2009 e 2013.
+- A informacao foi publicada em 15/05/2025.
+- A fonte da informacao e UOL.
+- Neymar saiu do Santos em 2013 para o Barcelona.
+- A passagem de Neymar pelo Santos foi entre 2009 e 2013.
+- A informacao foi publicada em 15/05/2025.
+- A fonte da informacao e UOL.

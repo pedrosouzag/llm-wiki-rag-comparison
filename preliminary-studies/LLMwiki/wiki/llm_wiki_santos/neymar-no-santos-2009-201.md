@@ -1,0 +1,3 @@
+# Neymar no Santos (2009-201
+
+Neymar chegou à base do Santos ainda criança. Neymar estreou como profissional em 2009. Neymar tinha 17 anos quando estreou como profissional. Neymar era um atacante habilidoso. Neymar era um atacante veloz. Neymar era um atacante driblador. Neymar era um atacante finalizador. Neymar era um atacante criativo. Neymar liderou a geração ofensiva do clube, ao lado de Ganso. Neymar saiu do Santos em 2013. Neymar jogou 230 jogos pelo Santos. Neymar marcou 138 gols pelo Santos. Neymar conquistou seis títulos pelo Santos. Neymar conquistou o Paulistão em 2010. Neymar conquistou o Paulistão em 2011. Neymar conquistou o Paulistão em 2012. Neymar conquistou a Copa do Brasil em 2010. Neymar conquistou a Libertadores em 2011.

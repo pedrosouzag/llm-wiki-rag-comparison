@@ -1,0 +1,3 @@
+# Títulos do Santos FC
+
+O Santos conquistou 8 títulos brasileiros entre 1961 e 1965, e também em 1968, 2002 e 2004. O Santos também conquistou 1 Copa do Brasil em 2010. O Santos foi campeão da Série B em 2024. O Santos conquistou 3 títulos da Libertadores em 1962, 1963 e 2011. O Santos conquistou 2 Copas Intercontinentais em 1962 e 1963. O Santos venceu a Recopa Intercontinental em 1968. O Santos conquistou a Copa CONMEBOL em 1998. O Santos conquistou a Recopa Sul-Americana em 2012. O Santos conquistou 22 títulos paulistas. O Santos conquistou 5 Torneios Rio-São Paulo

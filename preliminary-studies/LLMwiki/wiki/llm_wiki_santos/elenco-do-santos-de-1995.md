@@ -1,0 +1,3 @@
+# Elenco do Santos de 1995
+
+O elenco de 1995 contava com o técnico Cabralzinho. O goleiro Edinho fazia parte do elenco. Narciso jogava como zagueiro no Santos de 1995. Marquinhos Capixaba também atuava na zaga. Ronaldo Marconato era jogador do Santos em 1995. Marcos Adriano era jogador do Santos em 1995. Gallo era jogador do Santos em 1995 e chegou a ser capitão. Carlinhos era jogador do Santos em 1995. Marcelo Passos era jogador do Santos em 1995. Robert era jogador do Santos em 1995. Jamelli dividiu a artilharia com Giovanni. Macedo era jogador do Santos em 1995. Vágner era jogador do Santos em 1995. Camanducaia era jogador do Santos em 1995. Giovanni era a principal referência técnica
