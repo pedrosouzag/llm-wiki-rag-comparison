@@ -162,8 +162,13 @@ def search_chunks_BM25(pergunta, chunks, bm25):
   # ordena as 5 maiores notas
   notas = sorted(doc_scores, reverse=True)[:5]
 
-  # junta os 5 maiores chuks (nome e nota)
-  return list(zip(maiores, notas))
+  # junta os 5 maiores chunks com a nota, mas so os que tem nota maior que 0
+  # nota 0 quer dizer que o chunk nao tem nenhuma palavra da busca
+  resultado = []
+  for chunk, nota in zip(maiores, notas):
+    if nota > 0:
+      resultado.append((chunk, nota))
+  return resultado
 
 def print_BM25(achados):
   for chunk, nota in achados:
@@ -300,6 +305,8 @@ def o_que_falta(pergunta, contexto):
 def busca_profundidade(pergunta, flag):
    # pega o primeiro contexto
    contexto, achados = montar_contexto(pergunta, flag)
+   # guarda as buscas ja feitas pra nao repetir
+   buscas_feitas = []
    # roda a profundidade
    for i in range(2):
       falta = o_que_falta(pergunta, contexto)
@@ -307,6 +314,11 @@ def busca_profundidade(pergunta, flag):
       if falta == "":
         print("sem nova busca")
         break
+      # se pediu uma busca que ja foi feita para de buscar
+      if falta.lower() in buscas_feitas:
+        print("busca repetida, para")
+        break
+      buscas_feitas.append(falta.lower())
       # mostra o que o gemma pediu pra buscar
       print("nova busca", i + 1, ":", falta)
       # pega o novo contexto
