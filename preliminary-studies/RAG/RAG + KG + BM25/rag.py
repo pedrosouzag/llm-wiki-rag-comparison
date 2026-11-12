@@ -8,7 +8,6 @@ Original file is located at
 """
 
 
-import os
 import re
 import torch
 import unicodedata
@@ -77,9 +76,6 @@ def gerar_gemma_12b(prompt, max_tokens=350):
 # BASE DE DADOS MUSIQUE
 PASTA_BASE = "data/musique_ans_v1.0_dev.jsonl"
 
-# quantas perguntas usar, escolhe na hora de rodar (ex: export N_PERGUNTAS=100), 0 = todas
-N_PERGUNTAS = int(os.environ.get("N_PERGUNTAS", "0"))
-
 
 """## Construção dos Chunks
 
@@ -94,10 +90,7 @@ def montar_chunks(PASTA_WIKI):
     chunks = []
     with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
-        linhas = texto.splitlines()
-        if N_PERGUNTAS > 0:
-            linhas = linhas[:N_PERGUNTAS]
-        for linha in linhas:
+        for linha in texto.splitlines()[:100]:
            temp = json.loads(linha)
            for paragrafo in temp["paragraphs"]:
               titulo = paragrafo["title"]
@@ -434,10 +427,7 @@ def get_Perguntas(PASTA_WIKI):
 
   with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
      texto = arquivo.read()
-     linhas = texto.splitlines()
-     if N_PERGUNTAS > 0:
-        linhas = linhas[:N_PERGUNTAS]
-     for linha in linhas:
+     for linha in texto.splitlines()[:100]:
         temp = json.loads(linha) # transformar a linha em dicionario python
 
         # pega a questao e a resposta
