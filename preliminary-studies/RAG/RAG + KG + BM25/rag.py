@@ -43,7 +43,8 @@ tokenizer2 = AutoTokenizer.from_pretrained(model2)
 
 # carrega o modelo de verdade
 
-model2 = AutoModelForCausalLM.from_pretrained( model2, device_map="auto",quantization_config=config_4bit,)
+# torch_dtype bfloat16: sem isso o 4 bits carrega o resto em float16 e o gemma 3 gera resposta vazia
+model2 = AutoModelForCausalLM.from_pretrained( model2, device_map="auto",quantization_config=config_4bit, torch_dtype=torch.bfloat16)
 
 """Modelo de embedding https://huggingface.co/intfloat/multilingual-e5-base
 
