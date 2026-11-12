@@ -311,20 +311,35 @@ def montar_contexto(pergunta, flag):
   return contexto, achados
 
 def perguntar_rag(pergunta, contexto):
-    max_tokens = 40
+    # mais tokens porque agora o gemma escreve o raciocinio antes da resposta
+    max_tokens = 150
 
     prompt = f"""You are an assistant that answers questions.
-        Use only the passages below. Answer in English with only the answer itself:
-        a name, a place, a date or a number. No full sentence, no explanation.
-        If the answer is not in the passages, write: not found. Do not make anything up.
+        Use only the passages below. Do not make anything up.
+        The question may need more than one step, for example: first find a person or company, then find a fact about it.
+        Think step by step in a few short lines, following the chain until you reach what the question asks.
+        Then write the last line exactly like this:
+        Final answer: <only the answer, a name, a place, a date or a number>
+        If the answer is not in the passages, write: Final answer: not found
 
         Passages:
         {contexto}
 
-        Question: {pergunta}
-        Answer:"""
+        Question: {pergunta}"""
 
-    return gerar_gemma_12b(prompt, max_tokens=max_tokens)
+    texto = gerar_gemma_12b(prompt, max_tokens=max_tokens)
+
+    # mostra o raciocinio pra ver o erro
+    print("RACIOCINIO:", texto)
+
+    # pega so o que vem depois de "final answer:"
+    resposta = texto
+    for linha in texto.split("\n"):
+      if "final answer:" in linha.lower():
+        posicao = linha.lower().find("final answer:")
+        resposta = linha[posicao + len("final answer:"):].strip()
+
+    return resposta
 
 
 def verificar_Resposta(resposta, resposta_certa):
