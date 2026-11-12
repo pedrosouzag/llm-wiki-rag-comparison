@@ -271,10 +271,61 @@ def print_KG(achados):
     primeira_linha = chunk["texto"].split("\n")[0]  # pega so a primeira linha do chunk
     print(vezes, primeira_linha)                     # quantas arestas levaram ao chunk e a primeira linha
 
+def o_que_falta(pergunta, contexto):
+    # pergunta pro gemma se os trechos ja bastam ou o que ainda falta buscar
+    prompt = f"""You are helping to answer a question that may need more than one step.
+        Read the question and the passages below.
+        If the passages already have all the information needed to answer the question, write only: DONE
+        If something is missing, write only the next search to find it.
+        The search must be short and use the names you already found in the passages.
+        Example: if you found that the film Blue River was directed by John Carter but nothing about where he was born, write: John Carter birthplace
+
+        Passages:
+        {contexto}
+
+        Question: {pergunta}"""
+
+    # resposta curta, so uma busca ou DONE
+    texto = gerar_gemma_12b(prompt, max_tokens=30)
+
+    # se o gemma disse que ja tem tudo devolve vazio
+    if "done" in texto.lower():
+        return ""
+
+    # senao devolve a proxima busca, so a primeira linha, sem espaco e sem aspas sobrando
+    proxima_busca = texto.split("\n")[0].strip().strip('"')
+    return proxima_busca
 
 
-"""## Função de Pergunta"""
-
+def busca_profundidade(pergunta, flag):
+   # pega o primeiro contexto
+   contexto, achados = montar_contexto(pergunta, flag)
+   # roda a profundidade
+   for i in range(2):
+      falta = o_que_falta(pergunta, contexto)
+      # se o gemma disse que ja tem tudo para de buscar
+      if falta == "":
+        print("sem nova busca")
+        break
+      # mostra o que o gemma pediu pra buscar
+      print("nova busca", i + 1, ":", falta)
+      # pega o novo contexto
+      novo_contexto, novos_achados = montar_contexto(falta, flag)
+      # verifica se tem chunks repetidos
+      for chunk, nota in novos_achados:
+         repetido = False
+         for chunk_existente, nota_existente in achados:
+            if chunk["texto"] == chunk_existente["texto"]:
+               repetido = True
+               break
+         if not repetido:
+            achados.append((chunk, nota))
+            contexto += chunk["texto"] + "\n\n"
+   # mostra quantos chunks juntou no total
+   print("TOTAL DE CHUNKS:", len(achados))
+   return contexto, achados
+      
+      
 def montar_contexto(pergunta, flag):
   # se for vetor
   if flag == 1:
@@ -316,8 +367,9 @@ def perguntar_rag(pergunta, contexto):
 
     prompt = f"""You are an assistant that answers questions.
         Use only the passages below. Do not make anything up.
+        Some passages are not related to the question, ignore them.
         The question may need more than one step, for example: first find a person or company, then find a fact about it.
-        Think step by step in a few short lines, following the chain until you reach what the question asks.
+        Think step by step in at most 3 short lines, following the chain until you reach what the question asks.
         Then write the last line exactly like this:
         Final answer: <only the answer, a name, a place, a date or a number>
         If the answer is not in the passages, write: Final answer: not found
@@ -402,7 +454,7 @@ def rodar_pergunta(pergunta, resposta_certa):
 
     # VETORIAL
     print("\n--- RESPOSTA VETORIAL ---")
-    contexto1, achados = montar_contexto(pergunta, flag=1)
+    contexto1, achados = busca_profundidade(pergunta, flag=1)
     resposta = perguntar_rag(pergunta, contexto1)
     acertou_vetor, f1_vetor = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
@@ -412,7 +464,7 @@ def rodar_pergunta(pergunta, resposta_certa):
 
     # BM25
     print("\n--- RESPOSTA BM25 ---")
-    contexto2, achados1 = montar_contexto(pergunta, flag=2)
+    contexto2, achados1 = busca_profundidade(pergunta, flag=2)
     resposta = perguntar_rag(pergunta, contexto2)
     acertou_bm25, f1_bm25 = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
@@ -422,7 +474,7 @@ def rodar_pergunta(pergunta, resposta_certa):
 
     # KNOWLEDGE GRAPH
     print("\n--- RESPOSTA KG ---")
-    contexto3, achados2 = montar_contexto(pergunta, flag=3)
+    contexto3, achados2 = busca_profundidade(pergunta, flag=3)
     resposta = perguntar_rag(pergunta, contexto3)
     acertou_kg, f1_kg = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
@@ -432,7 +484,7 @@ def rodar_pergunta(pergunta, resposta_certa):
 
     # HIBRIDA
     print("\n--- RESPOSTA HÍBRIDA ---")
-    contexto4, achados3 = montar_contexto(pergunta, flag=4)
+    contexto4, achados3 = busca_profundidade(pergunta, flag=4)
     resposta = perguntar_rag(pergunta, contexto4)
     acertou_hibrida, f1_hibrida = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
@@ -461,9 +513,16 @@ def rodar_pergunta(pergunta, resposta_certa):
 """# Construir texto, vetor embedding, BM25 e KG"""
 
 chunks = montar_chunks(PASTA_BASE)
+print("CHUNKS CONSTRUIDOS:", len(chunks), "chunks")
+
 vetores = get_embedding(chunks)
+print("VETORES CONSTRUIDOS:", len(vetores), "embeddings")
+
 bm25 = build_BM25(chunks)
+print("BM25 CONSTRUIDO")
+
 KG = build_KG(chunks)
+print("GRAFO CONSTRUIDO:", KG.number_of_nodes(), "nos e", KG.number_of_edges(), "arestas")
 
 
 
