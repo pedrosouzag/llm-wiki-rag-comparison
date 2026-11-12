@@ -91,7 +91,7 @@ def montar_chunks(PASTA_WIKI):
     chunks = []
     with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
-        for linha in texto.splitlines()[:100]:
+        for linha in texto.splitlines()[:70]:
            temp = json.loads(linha)
            for paragrafo in temp["paragraphs"]:
               titulo = paragrafo["title"]
@@ -195,7 +195,7 @@ def extrair_Triplas(texto):
 
     Text: {texto}"""
 
-  temp = gerar_gemma_12b(prompt, max_tokens=300)
+  temp = gerar_gemma_12b(prompt, max_tokens=150)
 
   if temp.strip().lower() == "none":
     return []
@@ -475,7 +475,7 @@ def get_Perguntas(PASTA_WIKI):
 
   with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
      texto = arquivo.read()
-     for linha in texto.splitlines()[:100]:
+     for linha in texto.splitlines()[:70]:
         temp = json.loads(linha) # transformar a linha em dicionario python
 
         # pega a questao e a resposta
