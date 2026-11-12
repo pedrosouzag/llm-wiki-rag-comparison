@@ -91,7 +91,7 @@ def montar_chunks(PASTA_WIKI):
     chunks = []
     with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
-        for linha in texto.splitlines()[:70]:
+        for linha in texto.splitlines()[:60]:
            temp = json.loads(linha)
            for paragrafo in temp["paragraphs"]:
               titulo = paragrafo["title"]
@@ -396,7 +396,7 @@ def perguntar_rag(pergunta, contexto):
     # mostra o raciocinio pra ver o erro
     print("RACIOCINIO:", texto)
 
-    # pega so o que vem depois de "final answer:"
+    # pega so o que vem depois de final answer:
     resposta = texto
     for linha in texto.split("\n"):
       if "final answer:" in linha.lower():
@@ -521,7 +521,7 @@ def get_Perguntas(PASTA_WIKI):
 
   with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
      texto = arquivo.read()
-     for linha in texto.splitlines()[:70]:
+     for linha in texto.splitlines()[:60]:
         temp = json.loads(linha) # transformar a linha em dicionario python
 
         # pega a questao e a resposta
