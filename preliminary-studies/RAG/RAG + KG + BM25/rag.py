@@ -419,8 +419,6 @@ def verificar_Resposta(resposta, resposta_certa):
 
     # acertou fica true se a resposta for igual a alguma resposta certa
     acertou = False
-    # melhor_f1 guarda a maior nota parcial, vai de 0 a 1
-    melhor_f1 = 0
 
     # em cada variacao da resposta certa, tokeniza, tira o artigo e compara com a resposta do modelo
     for certa in resposta_certa:
@@ -434,26 +432,7 @@ def verificar_Resposta(resposta, resposta_certa):
        if resposta_sem_artigo == certa_sem_artigo:
           acertou = True
 
-       # conta quantas palavras as duas respostas tem em comum
-       comum = Counter(resposta_sem_artigo) & Counter(certa_sem_artigo)
-       n_comum = sum(comum.values())
-
-       # se nao tem nenhuma palavra em comum a nota fica 0 e pula pra proxima
-       if n_comum == 0:
-          continue
-
-       # precisao: das palavras do modelo quantas estao certas
-       precisao = n_comum / len(resposta_sem_artigo)
-       # cobertura: das palavras certas quantas o modelo falou
-       cobertura = n_comum / len(certa_sem_artigo)
-       # f1 junta precisao e cobertura numa nota so
-       f1 = 2 * precisao * cobertura / (precisao + cobertura)
-
-       # guarda a maior nota entre as variacoes
-       if f1 > melhor_f1:
-          melhor_f1 = f1
-
-    return acertou, melhor_f1
+    return acertou
        
 
     
@@ -468,41 +447,37 @@ def rodar_pergunta(pergunta, resposta_certa):
     print("\n--- RESPOSTA VETORIAL ---")
     contexto1, achados = busca_profundidade(pergunta, flag=1)
     resposta = perguntar_rag(pergunta, contexto1)
-    acertou_vetor, f1_vetor = verificar_Resposta(resposta, resposta_certa)
+    acertou_vetor = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
     print("CERTA:", resposta_certa)
     print("ACERTOU:", acertou_vetor)
-    print("F1:", round(f1_vetor, 2))
 
     # BM25
     print("\n--- RESPOSTA BM25 ---")
     contexto2, achados1 = busca_profundidade(pergunta, flag=2)
     resposta = perguntar_rag(pergunta, contexto2)
-    acertou_bm25, f1_bm25 = verificar_Resposta(resposta, resposta_certa)
+    acertou_bm25 = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
     print("CERTA:", resposta_certa)
     print("ACERTOU:", acertou_bm25)
-    print("F1:", round(f1_bm25, 2))
 
     # KNOWLEDGE GRAPH
     print("\n--- RESPOSTA KG ---")
     contexto3, achados2 = busca_profundidade(pergunta, flag=3)
     resposta = perguntar_rag(pergunta, contexto3)
-    acertou_kg, f1_kg = verificar_Resposta(resposta, resposta_certa)
+    acertou_kg = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
     print("CERTA:", resposta_certa)
     print("ACERTOU:", acertou_kg)
-    print("F1:", round(f1_kg, 2))
 
     # HIBRIDA
     print("\n--- RESPOSTA HÍBRIDA ---")
     contexto4, achados3 = busca_profundidade(pergunta, flag=4)
     resposta = perguntar_rag(pergunta, contexto4)
-    acertou_hibrida, f1_hibrida = verificar_Resposta(resposta, resposta_certa)
+    acertou_hibrida = verificar_Resposta(resposta, resposta_certa)
     print("RESPOSTA:", resposta)
     print("CERTA:", resposta_certa)
     print("ACERTOU:", acertou_hibrida)
-    print("F1:", round(f1_hibrida, 2))
 
     # RESULTADOS RECUPERADOS
     print("\n--- VETORIAL ---")
@@ -517,8 +492,8 @@ def rodar_pergunta(pergunta, resposta_certa):
     print("\n--- HÍBRIDA ---")
     print_BM25(achados3)
 
-    # devolve se cada estrategia acertou e a nota f1 pra contar depois
-    return acertou_vetor, acertou_bm25, acertou_kg, acertou_hibrida, f1_vetor, f1_bm25, f1_kg, f1_hibrida
+    # devolve se cada estrategia acertou pra contar depois
+    return acertou_vetor, acertou_bm25, acertou_kg, acertou_hibrida
 
 
 
@@ -571,17 +546,11 @@ total_bm25 = 0
 total_kg = 0
 total_hibrida = 0
 
-# soma das notas f1, no final divide pelo numero de perguntas pra dar a media
-total_f1_vetor = 0
-total_f1_bm25 = 0
-total_f1_kg = 0
-total_f1_hibrida = 0
-
 n = len(perguntas)
 
 for i in range(n):
     # rodando pergunta
-    vetor, bm25_ok, kg, hibrida, f1_v, f1_b, f1_k, f1_h = rodar_pergunta(perguntas[i], respostas[i])
+    vetor, bm25_ok, kg, hibrida = rodar_pergunta(perguntas[i], respostas[i])
 
     # faz a soma para marcar estatisticas
     total_vetor += vetor
@@ -589,14 +558,9 @@ for i in range(n):
     total_kg += kg
     total_hibrida += hibrida
 
-    total_f1_vetor += f1_v
-    total_f1_bm25 += f1_b
-    total_f1_kg += f1_k
-    total_f1_hibrida += f1_h
-
 print("\nRESULTADO FINAL ")
-print("VETORIAL: EM", total_vetor, "de", n, "| F1", round(total_f1_vetor / n, 2))
-print("BM25: EM", total_bm25, "de", n, "| F1", round(total_f1_bm25 / n, 2))
-print("KG: EM", total_kg, "de", n, "| F1", round(total_f1_kg / n, 2))
-print("HÍBRIDA: EM", total_hibrida, "de", n, "| F1", round(total_f1_hibrida / n, 2))
+print("VETORIAL:", total_vetor, "de", n)
+print("BM25:", total_bm25, "de", n)
+print("KG:", total_kg, "de", n)
+print("HÍBRIDA:", total_hibrida, "de", n)
      
