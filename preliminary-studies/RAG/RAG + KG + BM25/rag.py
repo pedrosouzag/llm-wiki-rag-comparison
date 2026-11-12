@@ -88,9 +88,11 @@ inspiração: https://github.com/kottoization/RAG-LLM/blob/new-main/tools/embedd
 """Montar chunks para ler  wiki"""
 
 def montar_chunks(PASTA_WIKI):
+    # le o arquivo json
     chunks = []
     with open(PASTA_WIKI, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
+        # a cada linha (que tem uma pergunta), puxa os paragrafos dela e cada paragrafo vira um chunk
         for linha in texto.splitlines()[:60]:
            temp = json.loads(linha)
            for paragrafo in temp["paragraphs"]:
@@ -182,7 +184,7 @@ inspiracao: https://youtu.be/kKYjDOENjaY
 """
 
 def extrair_Triplas(texto):
-  # prompt pedindo pro gemma tirar as triplas do texto, com um exemplo do formato
+  # prompt pedindo pro gemma tirar as triplas do texto (traduzido para ingles)
   prompt = f""" Extract the facts from the text as triples, one per line, in the format:
     source | relation | target
 
@@ -297,8 +299,16 @@ def o_que_falta(pergunta, contexto):
     if "done" in texto.lower():
         return ""
 
-    # senao devolve a proxima busca, so a primeira linha, sem espaco e sem aspas sobrando
-    proxima_busca = texto.split("\n")[0].strip().strip('"')
+    # quebra o texto em linhas e pega so a primeira
+    linhas = texto.split("\n")
+    primeira_linha = linhas[0]
+
+    # tira os espacos do comeco e do fim
+    sem_espaco = primeira_linha.strip()
+
+    # tira as aspas do comeco e do fim
+    proxima_busca = sem_espaco.strip('"') # as veze ele devolve respostas com aspas
+
     return proxima_busca
 
 
