@@ -36,7 +36,8 @@ config_4bit = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16,  # na hora de calcular, descomprime pra 16 bits
 )
 
-model2 = "google/gemma-3-12b-it"
+# gemma 3 12b ja comprimido em 4 bits (unsloth/gemma-3-12b-it-bnb-4bit), baixado na pasta do lab
+model2 = "/media/work/pedrogoularte/models/gemma-3-12b-it-bnb-4bit"
 
 tokenizer2 = AutoTokenizer.from_pretrained(model2)
 
@@ -51,7 +52,8 @@ intfloat/multilingual-e5-base (Wang et al., 2024)
 Artigo: https://arxiv.org/abs/2402.05672
 """
 
-model_embedding = SentenceTransformer("intfloat/multilingual-e5-base")
+# intfloat/multilingual-e5-base, baixado na pasta do lab
+model_embedding = SentenceTransformer("/media/work/pedrogoularte/models/multilingual-e5-base")
 
 """## Geração de Texto dos Modelos"""
 
