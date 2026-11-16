@@ -1,0 +1,4288 @@
+
+PERGUNTA: Who is the spouse of the Green performer?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: The passages mention Steve Hillage as a British progressive rock musician and Grant Green as an American jazz guitarist. Neither passage mentions a spouse for either of them.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the Green performer. The passage about ancient Egyptians mentions Osiris, who was portrayed with a green face.
+Then, I need to find who is the spouse of Osiris. The passage does not mention a spouse for Osiris.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passages do not mention the spouse of the Green performer.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Phylicia Rashād is the former spouse of Victor Willis, former lead singer of the group Village People.
+Final answer: Victor Willis
+RESPOSTA: Victor Willis
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- VETORIAL ---
+0.793 Little Green (song)
+0.788 Green (Steve Hillage album)
+0.786 Grant's First Stand
+0.786 Grant's First Stand
+0.783 The Main Attraction (album)
+
+--- BM25 ---
+23.347 List of show business families
+23.347 List of show business families
+19.842 Green Party of Tennessee
+17.157 Green
+16.746 Scott Aukerman
+
+--- GRAFO KG ---
+10 Green (Steve Hillage album)
+6 Green
+1 Hyderabad
+1 Hyderabad
+1 Hyderabad
+
+--- HÍBRIDA ---
+0.793 Little Green (song)
+0.788 Green (Steve Hillage album)
+0.786 Grant's First Stand
+0.783 The Main Attraction (album)
+23.347 List of show business families
+19.842 Green Party of Tennessee
+17.157 Green
+16.746 Scott Aukerman
+1 Hyderabad
+PERGUNTA: Who founded the company that distributed the film UHF?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the film UHF.
+The passage states that Orion Pictures supported the film UHF.
+Then, I need to find information about Orion Pictures.
+The passages do not contain information about Orion Pictures.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Mike Medavoy']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the film UHF.
+Then, I need to find which company distributed it.
+The passage states that Orion Pictures supported the film.
+
+Final answer: Orion Pictures
+RESPOSTA: Orion Pictures
+CERTA: ['Mike Medavoy']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the film UHF.
+Then, I need to find out which company distributed it.
+The passage states that Orion Pictures supported the film.
+The question asks who founded the company.
+The passage does not state who founded Orion Pictures.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Mike Medavoy']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find information about the film UHF. The passage states that Orion Pictures supported the film.
+Final answer: Orion Pictures
+RESPOSTA: Orion Pictures
+CERTA: ['Mike Medavoy']
+ACERTOU: False
+
+--- VETORIAL ---
+0.812 SModcast Pictures
+0.811 Amblin Entertainment
+0.795 UHF (film)
+0.795 Ben & Jerry's
+0.794 Spry Fox
+
+--- BM25 ---
+20.008 SModcast Pictures
+19.136 UHF (film)
+18.656 Amblin Entertainment
+16.67 Upi Avianto
+16.488 Rabbit Hole (film)
+
+--- GRAFO KG ---
+6 The Learning Company
+2 French Connection II
+2 SModcast Pictures
+2 UHF (film)
+2 Prison Break
+
+--- HÍBRIDA ---
+0.812 SModcast Pictures
+0.811 Amblin Entertainment
+0.795 UHF (film)
+0.795 Ben & Jerry's
+0.794 Spry Fox
+16.67 Upi Avianto
+16.488 Rabbit Hole (film)
+6 The Learning Company
+2 French Connection II
+2 Prison Break
+PERGUNTA: What administrative territorial entity is the owner of Ciudad Deportiva located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find where Ciudad Deportiva is located.
+The passage states that Ciudad Deportiva is in Nuevo Laredo, Mexico.
+Then I need to find what administrative entity contains Nuevo Laredo.
+The passage states that Nuevo Laredo is located in the Mexican state of Tamaulipas.
+
+Final answer: Tamaulipas
+RESPOSTA: Tamaulipas
+CERTA: ['Tamaulipas']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The passage states that Ciudad Deportiva is located in Nuevo Laredo, Mexico.
+The passage does not mention who owns Ciudad Deportiva.
+The passage does not mention the administrative territorial entity of Nuevo Laredo, Mexico.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Tamaulipas']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage mentions Minsk Region is a separate administrative territorial entity of Belarus.
+The passage does not mention Ciudad Deportiva.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Tamaulipas']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find where Ciudad Deportiva is located.
+The passage states that Ciudad Deportiva is in Nuevo Laredo, Mexico.
+Then I need to find what municipality Nuevo Laredo is in.
+The passage states that Nuevo Laredo is located in the Mexican state of Tamaulipas.
+Final answer: Tamaulipas
+RESPOSTA: Tamaulipas
+CERTA: ['Tamaulipas']
+ACERTOU: True
+
+--- VETORIAL ---
+0.849 Ciudad Deportiva (Nuevo Laredo)
+0.84 Sportivo Italiano
+0.81 Fox Sports West and Prime Ticket
+0.801 Nuevo Laredo Municipality
+0.8 Ciudad del Niño metro station
+
+--- BM25 ---
+23.125 Ciudad Deportiva (Nuevo Laredo)
+20.132 Minsk Region
+20.132 Minsk Region
+20.132 Minsk Region
+20.132 Minsk Region
+
+--- GRAFO KG ---
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.849 Ciudad Deportiva (Nuevo Laredo)
+0.84 Sportivo Italiano
+0.81 Fox Sports West and Prime Ticket
+0.801 Nuevo Laredo Municipality
+0.8 Ciudad del Niño metro station
+20.132 Minsk Region
+PERGUNTA: Where is Ulrich Walter's employer headquartered?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Ulrich Walter.
+The passage states he held post-doc positions at Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California.
+Then I need to find where Argonne National Laboratory is located.
+Argonne National Laboratory is located in Chicago, Illinois.
+
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Ulrich Walter.
+Then, I need to find where his employer is headquartered.
+The passage states Ulrich Walter held post-doc positions at Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California.
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find Ulrich Walter.
+Then, I need to find where his employer is headquartered.
+The passage states he had post-doc positions at the Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California. Argonne National Laboratory is headquartered in Chicago, Illinois.
+
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find Ulrich Walter.
+The passage states he was selected to join the German astronaut team after post-doc positions at Argonne National Laboratory and the University of California at Berkeley.
+Then, we need to find the location of Argonne National Laboratory.
+The passage states Argonne National Laboratory is in Chicago, Illinois.
+
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- VETORIAL ---
+0.806 Ulrich Walter
+0.803 Ulrich Walser House
+0.795 John Deere World Headquarters
+0.795 Schlage
+0.786 Plansee SE
+
+--- BM25 ---
+12.52 Schlage
+12.378 Ulrich Walser House
+11.62 Southampton
+11.026 Ulrich Walter
+10.065 Ulrich Franzen
+
+--- GRAFO KG ---
+6 Ulrich Walter
+2 Kevin Sussman
+2 Heart sounds
+
+--- HÍBRIDA ---
+0.806 Ulrich Walter
+0.803 Ulrich Walser House
+0.795 John Deere World Headquarters
+0.795 Schlage
+0.786 Plansee SE
+11.62 Southampton
+10.065 Ulrich Franzen
+2 Kevin Sussman
+2 Heart sounds
+PERGUNTA: Which company owns the manufacturer of Learjet 60?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find the manufacturer of the Learjet 60.
+The Learjet 60 is manufactured by Bombardier Aerospace.
+Then, find who owns Bombardier Aerospace.
+The passages do not state who owns Bombardier Aerospace.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the manufacturer of the Learjet 60.
+The passage states that Bombardier Aerospace manufactured the Learjet 60.
+Then, I need to find which company owns Bombardier Aerospace.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the manufacturer of the Learjet 60.
+The passage states that Bombardier Aerospace manufactured the Learjet 60.
+Next, I need to find out which company owns Bombardier Aerospace.
+The passage does not state who owns Bombardier Aerospace.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find the manufacturer of the Learjet 60. The passage states that Bombardier Aerospace manufactures the Learjet 60.
+Then, we need to find who owns Bombardier Aerospace. The passage does not state who owns Bombardier Aerospace.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: False
+
+--- VETORIAL ---
+0.892 Learjet 60
+0.841 Aerojet
+0.827 GeminiJets
+0.827 GeminiJets
+0.827 GeminiJets
+
+--- BM25 ---
+22.783 Learjet 60
+15.099 Iron Grip Barbell Company
+14.546 Waltham Manufacturing Company
+14.546 Waltham Manufacturing Company
+14.463 Emerson USA
+
+--- GRAFO KG ---
+6 Learjet 60
+6 The Learning Company
+2 Prison Break
+1 Commer
+1 Wagner Manufacturing Company
+
+--- HÍBRIDA ---
+0.892 Learjet 60
+0.841 Aerojet
+0.827 GeminiJets
+15.099 Iron Grip Barbell Company
+14.546 Waltham Manufacturing Company
+14.463 Emerson USA
+6 The Learning Company
+2 Prison Break
+1 Commer
+1 Wagner Manufacturing Company
+PERGUNTA: Who is the child of Caroline LeRoy's spouse?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Caroline LeRoy's spouse.
+Caroline LeRoy's spouse was Daniel Webster.
+Then, I need to find information about Daniel Webster's children.
+The passage does not mention Daniel Webster's children.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Fletcher Webster']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find Caroline LeRoy's spouse.
+Caroline LeRoy's spouse was Daniel Webster.
+Then, find the children of Daniel Webster.
+The passage mentions Phoebe and Paul, who are the children of David Henry and Norah, but they are not directly related to Caroline LeRoy. The passage mentions June, who was David Henry's younger sister and died at the age of twelve.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Fletcher Webster']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Caroline LeRoy's spouse.
+Caroline LeRoy's spouse was Daniel Webster.
+Then, find a fact about Daniel Webster's child.
+The passage does not mention any children of Daniel Webster.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Fletcher Webster']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: Caroline LeRoy's spouse was Daniel Webster. Caroline was the wife of Daniel Webster, and Caroline's father was Herman LeRoy. The passages do not mention any children of Daniel Webster and Caroline LeRoy.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Fletcher Webster']
+ACERTOU: False
+
+--- VETORIAL ---
+0.858 Caroline LeRoy
+0.803 Leroy (name)
+0.783 Lee Evans (producer)
+0.782 Constance of Burgundy
+0.779 Princess Stéphanie of Monaco
+
+--- BM25 ---
+25.976 Caroline LeRoy
+17.593 Leroy Township, Ingham County, Michigan
+17.548 Leroy (name)
+17.497 The Memory Keeper's Daughter
+16.92 Sweet Caroline
+
+--- GRAFO KG ---
+6 Leroy (name)
+5 Caroline LeRoy
+5 The Miracle Child
+3 Sweet Caroline
+2 Heart sounds
+
+--- HÍBRIDA ---
+0.858 Caroline LeRoy
+0.803 Leroy (name)
+0.783 Lee Evans (producer)
+0.782 Constance of Burgundy
+0.779 Princess Stéphanie of Monaco
+17.593 Leroy Township, Ingham County, Michigan
+17.497 The Memory Keeper's Daughter
+16.92 Sweet Caroline
+5 The Miracle Child
+2 Heart sounds
+PERGUNTA: Who is the grandmother of Philippe, Duke of Orléans?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find the father of Philippe, Duke of Orléans.
+The passage states that Louis Philippe II, Duke of Orléans was the father of Louis Philippe I.
+Then, find the mother of Louis Philippe II, Duke of Orléans.
+The passage states that Louis Philippe I's father, Louis Philippe II, Duke of Orléans, had a wife.
+The passage does not mention the name of Louis Philippe II's wife.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find the passage that mentions Philippe, Duke of Orléans.
+Then, find the information about his mother.
+Finally, find the information about his mother's mother.
+
+Final answer: Madame de Montespan
+RESPOSTA: Madame de Montespan
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Philippe, Duke of Orléans.
+Then, find who his mother was.
+Then, find who his mother's mother was.
+The passage states that Louise Élisabeth d'Orléans was the daughter of Philippe II, Duke of Orléans, and Françoise Marie de Bourbon. Françoise Marie de Bourbon was a legitimised daughter of Louis XIV of France and his mistress, Madame de Montespan.
+
+Final answer: Anne of Austria
+RESPOSTA: Anne of Austria
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, find Philippe, Duke of Orléans.
+Then find his mother.
+Then find the mother of his mother.
+Anne of Austria was the wife of Louis XIII of France and the mother of Philippe, Duke of Orléans.
+Françoise Marie de Bourbon was the mother of Louise Élisabeth d'Orléans, who was the mother of Philippe II, Duke of Orléans.
+Louis XIV was the father of Françoise Marie de Bourbon.
+Final answer: Madame de Montespan
+RESPOSTA: Madame de Montespan
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- VETORIAL ---
+0.881 Philippe I, Duke of Orléans
+0.849 François d'Orléans, Prince of Joinville
+0.848 Louise Élisabeth d'Orléans
+0.824 Louis Philippe I
+0.823 Mercedes of Orléans
+
+--- BM25 ---
+32.29 Philippe I, Duke of Orléans
+30.177 François d'Orléans, Prince of Joinville
+26.978 Louise Élisabeth d'Orléans
+24.077 Louis Philippe I
+23.171 Infante Henrique, Duke of Coimbra
+
+--- GRAFO KG ---
+10 Philippe I, Duke of Orléans
+4 Louise Élisabeth d'Orléans
+3 Mercedes of Orléans
+3 Louis Philippe I
+2 Emmanuelle Boidron
+
+--- HÍBRIDA ---
+0.881 Philippe I, Duke of Orléans
+0.849 François d'Orléans, Prince of Joinville
+0.848 Louise Élisabeth d'Orléans
+0.824 Louis Philippe I
+0.823 Mercedes of Orléans
+23.171 Infante Henrique, Duke of Coimbra
+2 Emmanuelle Boidron
+PERGUNTA: What is the goal of the group that European Movement Germany is a member of?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find European Movement Germany.
+Then, I need to find what group it is a member of and what the goal of that group is.
+The passage states that European Movement Germany is part of the European Movement International, which promotes European integration and disseminates information about it.
+
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find who Bernd Hüttemann is.
+Bernd Hüttemann is Vice President of the European Movement International and Secretary General of the European Movement Germany.
+Then I need to find what the European Movement International does.
+The European Movement International is a lobbying association that coordinates the efforts of associations and national councils with the goal of promoting European integration, and disseminating information about it.
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find European Movement Germany.
+Then, find what group it is a member of.
+The passage states that European Movement Germany is a member of the European Movement International.
+The passage states that the goal of the European Movement International is promoting European integration and disseminating information about it.
+
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The European Movement International coordinates the efforts of associations and national councils with the goal of promoting European integration, and disseminating information about it. Bernd Hüttemann is Secretary General of the European Movement Germany.
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- VETORIAL ---
+0.879 European Movement International
+0.826 Bernd Hüttemann
+0.799 Jean-Marie Cavada
+0.795 Constitutional Movement
+0.789 Congress of the New Right
+
+--- BM25 ---
+42.503 European Movement International
+36.452 Daniel Marsin
+36.148 Bernd Hüttemann
+36.105 Franck Proust
+34.102 Antonia Parvanova
+
+--- GRAFO KG ---
+5 European Movement International
+3 John "Hannibal" Smith
+2 Ottoman Empire
+2 Bernd Hüttemann
+2 Jean-Marie Cavada
+
+--- HÍBRIDA ---
+0.879 European Movement International
+0.826 Bernd Hüttemann
+0.799 Jean-Marie Cavada
+0.795 Constitutional Movement
+0.789 Congress of the New Right
+36.452 Daniel Marsin
+36.105 Franck Proust
+34.102 Antonia Parvanova
+3 John "Hannibal" Smith
+2 Ottoman Empire
+PERGUNTA: What company succeeded the owner of Empire Sports Network?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: The passage states that Empire Sports Network was owned by the Adelphia Communications Corporation.
+The passage does not mention what company succeeded Adelphia Communications Corporation.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, we need to find the owner of Empire Sports Network.
+The passage states that Empire Sports Network was owned by the Adelphia Communications Corporation.
+Next, we need to find what company succeeded Adelphia Communications Corporation.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, we need to find who owned the Empire Sports Network.
+The passage states that the Empire Sports Network was owned by the Adelphia Communications Corporation.
+Next, we need to find what company succeeded the Adelphia Communications Corporation.
+This information is not in the passage.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Empire Sports Network was owned by the Adelphia Communications Corporation. It does not mention what company succeeded Adelphia.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 Empire Sports Network
+0.816 Fox Sports West and Prime Ticket
+0.815 EA Sports
+0.811 Nova Sports
+0.803 Comcast Sports Southwest
+
+--- BM25 ---
+26.558 Empire Sports Network
+16.136 Highway 1 (Afghanistan)
+16.131 Tennis on CBS
+16.125 Comcast Sports Southwest
+15.946 Andrea Kremer
+
+--- GRAFO KG ---
+8 Empire Sports Network
+6 EA Sports
+6 The Learning Company
+2 Ottoman Empire
+2 Prison Break
+
+--- HÍBRIDA ---
+0.874 Empire Sports Network
+0.816 Fox Sports West and Prime Ticket
+0.815 EA Sports
+0.811 Nova Sports
+0.803 Comcast Sports Southwest
+16.136 Highway 1 (Afghanistan)
+16.131 Tennis on CBS
+15.946 Andrea Kremer
+6 The Learning Company
+2 Ottoman Empire
+2 Prison Break
+PERGUNTA: What province shares a border with the province where Lago District is located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the province where Lago District is located.
+The passage states that Lago District is in Niassa Province.
+Next, I need to find what borders Niassa Province.
+The passage states Lago District is bordered on the south by Lichinga.
+Lichinga is in Cabo Delgado Province.
+Final answer: Cabo Delgado
+RESPOSTA: Cabo Delgado
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the province where Lago District is located.
+The passage states Lago District is in Niassa Province in Mozambique.
+Next, I need to find what province borders Niassa Province.
+The passage does not state what province borders Niassa Province.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the province where Lago District is located.
+The passage states that Lago District is in Niassa Province.
+Then, I need to find what borders Niassa Province.
+The passage states that Lago District is bordered on the west by Lake Nyasa, on the south by Lichinga, on the east by Sanga District, and shares its northern boundary with Tanzania.
+Final answer: Tanzania
+RESPOSTA: Tanzania
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the province where Lago District is located. The passage states that Lago District is in Niassa Province.
+Next, I need to find what borders Niassa Province. The passage states that Lago District shares its northern boundary with Tanzania.
+
+Final answer: Tanzania
+RESPOSTA: Tanzania
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- VETORIAL ---
+0.896 Lago District
+0.816 Lago Verde (Queyras)
+0.816 Adaba (woreda)
+0.816 Adaba (woreda)
+0.816 Pangi Territory
+
+--- BM25 ---
+39.464 Lago District
+28.577 Swan Miara
+28.577 Swan Miara
+28.577 Swan Miara
+28.577 Swan Miara
+
+--- GRAFO KG ---
+7 Lago District
+3 John "Hannibal" Smith
+1 Michurinsky District
+1 Tuymazinsky District
+1 Menteng, Menteng
+
+--- HÍBRIDA ---
+0.896 Lago District
+0.816 Lago Verde (Queyras)
+0.816 Adaba (woreda)
+0.816 Pangi Territory
+28.577 Swan Miara
+3 John "Hannibal" Smith
+1 Michurinsky District
+1 Tuymazinsky District
+1 Menteng, Menteng
+PERGUNTA: What league does the team that plays in Stadio Ciro Vigorito play for?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find what team plays in Stadio Ciro Vigorito.
+The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio.
+Then, I need to find what league Benevento Calcio plays for.
+The passage does not mention the league that Benevento Calcio plays for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the team that plays in Stadio Ciro Vigorito.
+The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio.
+Then, I need to find what league Benevento Calcio plays for.
+The passage does not state what league Benevento Calcio plays for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find out what team plays in Stadio Ciro Vigorito.
+The passage states that Benevento Calcio is the home stadium of Stadio Ciro Vigorito.
+Next, I need to find out what league Benevento Calcio plays for.
+The passages do not mention what league Benevento Calcio plays for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio. It also states that the stadium is used mostly for football matches.
+Final answer: football
+RESPOSTA: football
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 Stadio Ciro Vigorito
+0.834 Sportivo Italiano
+0.82 Ciudad Deportiva (Nuevo Laredo)
+0.82 Conte Arduino Mangoni
+0.819 Qui studio a voi stadio
+
+--- BM25 ---
+35.326 Stadio Ciro Vigorito
+24.77 Vermont Lady Voltage
+21.068 Sportivo Italiano
+19.82 Arena Football League
+19.239 Arena Football League
+
+--- GRAFO KG ---
+10 Arena Football League
+7 Stadio Ciro Vigorito
+5 The Imaginary Cuckold
+4 History of the New Orleans Saints
+3 The Miracle Child
+
+--- HÍBRIDA ---
+0.874 Stadio Ciro Vigorito
+0.834 Sportivo Italiano
+0.82 Ciudad Deportiva (Nuevo Laredo)
+0.82 Conte Arduino Mangoni
+0.819 Qui studio a voi stadio
+24.77 Vermont Lady Voltage
+19.82 Arena Football League
+19.239 Arena Football League
+5 The Imaginary Cuckold
+4 History of the New Orleans Saints
+3 The Miracle Child
+PERGUNTA: What is a notable work written by the author of The Timothy files?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the author of The Timothy Files.
+The passage states that Lawrence Sanders wrote The Timothy Files.
+Then, I need to find a notable work by Lawrence Sanders.
+The passage does not mention any other works by Lawrence Sanders.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of "The Timothy Files."
+The passage states that "The Timothy Files" is a work by Lawrence Sanders.
+Then, I need to find a notable work written by Lawrence Sanders.
+The passage states that "The Timothy Files" is a 1987 best selling work of fiction by Lawrence Sanders.
+
+Final answer: The Timothy Files
+RESPOSTA: The Timothy Files
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of "The Timothy Files."
+The passage states that "The Timothy Files" is a work by Lawrence Sanders.
+Then, I need to find a notable work written by Lawrence Sanders.
+The passage states that "The Timothy Files" is a 1987 best selling work of fiction by Lawrence Sanders.
+
+Final answer: The Timothy Files
+RESPOSTA: The Timothy Files
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that The Timothy Files is a 1987 best selling work of fiction by Lawrence Sanders.
+Final answer: The Timothy Files
+RESPOSTA: The Timothy Files
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- VETORIAL ---
+0.87 The Timothy Files
+0.802 Martine Blanc
+0.801 The Boys on the Bus
+0.796 Timothy P. Williams
+0.795 James Redfield
+
+--- BM25 ---
+30.879 The Timothy Files
+24.884 Timothy P. Williams
+24.531 Quran
+24.531 Quran
+24.16 Jan Hendrik van den Berg
+
+--- GRAFO KG ---
+4 The Timothy Files
+4 Daylight saving time
+3 John "Hannibal" Smith
+2 Martine Blanc
+2 Ellen Steiber
+
+--- HÍBRIDA ---
+0.87 The Timothy Files
+0.802 Martine Blanc
+0.801 The Boys on the Bus
+0.796 Timothy P. Williams
+0.795 James Redfield
+24.531 Quran
+24.16 Jan Hendrik van den Berg
+4 Daylight saving time
+3 John "Hannibal" Smith
+2 Ellen Steiber
+PERGUNTA: In which borough was Callum McManaman born?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find information about Callum McManaman.
+The passage states he was born in Whiston, Merseyside.
+Final answer: Whiston, Merseyside
+RESPOSTA: Whiston, Merseyside
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, the passage states Callum McManaman was born in Whiston, Merseyside.
+Then, the passage states Whiston is within the Metropolitan Borough of Knowsley in Merseyside.
+Final answer: Knowsley
+RESPOSTA: Knowsley
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find where Callum McManaman was born.
+The passage states he was born in Whiston, Merseyside.
+Final answer: Whiston, Merseyside
+RESPOSTA: Whiston, Merseyside
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Callum McManaman was born in Whiston, Merseyside.
+The passage also states that Whiston is within the Metropolitan Borough of Knowsley in Merseyside.
+Therefore, Callum McManaman was born in the Metropolitan Borough of Knowsley.
+
+Final answer: Knowsley
+RESPOSTA: Knowsley
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: True
+
+--- VETORIAL ---
+0.881 Callum McManaman
+0.806 Callum Kane
+0.772 Corfe Mullen
+0.771 Shiromaniam Madhavan
+0.77 Jolene Chin
+
+--- BM25 ---
+22.31 Callum McManaman
+13.664 Ammerud
+13.375 Callum Kane
+10.033 Love and War in the Apennines
+9.894 Whiston, Merseyside
+
+--- GRAFO KG ---
+10 Callum McManaman
+
+--- HÍBRIDA ---
+0.881 Callum McManaman
+0.806 Callum Kane
+0.772 Corfe Mullen
+0.771 Shiromaniam Madhavan
+0.77 Jolene Chin
+13.664 Ammerud
+10.033 Love and War in the Apennines
+9.894 Whiston, Merseyside
+PERGUNTA: What other county does the county where Imperial is located share a border with?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the county where Imperial is located.
+The passage states that Imperial is in Pecos County, Texas.
+Now I need to find what other county Pecos County shares a border with.
+The passage does not mention what counties Pecos County shares a border with.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Crockett County']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find the state where Imperial is located.
+Imperial is located in Texas.
+Then, find the county where Imperial is located.
+Imperial is located in Pecos County, Texas.
+Now, find what other county Pecos County shares a border with.
+The passage does not mention what county Pecos County shares a border with.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Crockett County']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find the county where Imperial is located.
+The passage states that Imperial is in Pecos County, Texas.
+Then, find a county that shares a border with Pecos County.
+The passage does not mention any counties that share a border with Pecos County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Crockett County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, find the location of Imperial.
+Imperial is in Pecos County, Texas.
+Then, find a fact about Pecos County.
+The passage does not mention what counties Pecos County shares a border with.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Crockett County']
+ACERTOU: False
+
+--- VETORIAL ---
+0.877 Imperial, Texas
+0.802 Indian Heights, Dane County, Wisconsin
+0.789 Beckwith, Ontario
+0.786 Canyon, Texas
+0.783 Utah State Route 264
+
+--- BM25 ---
+25.103 Choptank River
+24.12 Imperial, Texas
+21.07 Sjernarøy
+20.86 Gmina Włodawa
+20.86 Gmina Włodawa
+
+--- GRAFO KG ---
+4 Imperial, Texas
+3 John "Hannibal" Smith
+1 Macduff (Macbeth)
+1 Kis-Küküllő County
+1 Kis-Küküllő County
+
+--- HÍBRIDA ---
+0.877 Imperial, Texas
+0.802 Indian Heights, Dane County, Wisconsin
+0.789 Beckwith, Ontario
+0.786 Canyon, Texas
+0.783 Utah State Route 264
+25.103 Choptank River
+21.07 Sjernarøy
+20.86 Gmina Włodawa
+3 John "Hannibal" Smith
+1 Macduff (Macbeth)
+1 Kis-Küküllő County
+PERGUNTA: In what county is William W. Blair's birthplace located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, the passage states that William W. Blair was born in Holley, New York.
+Then, the passage states that Holley is in New York.
+Final answer: New York
+RESPOSTA: New York
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find where William W. Blair was born.
+The passage states he was born in Holley, New York.
+Then I need to find what county Holley is in.
+The passage does not state what county Holley is in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find where William W. Blair was born.
+The passage states he was born in Holley, New York.
+Then I need to find what state Holley is in.
+The passage states Holley is in New York.
+Final answer: New York
+RESPOSTA: New York
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, the passage states that William W. Blair was born in Holley, New York.
+Then, the passage states that Holley is in New York.
+Final answer: New York
+RESPOSTA: New York
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: False
+
+--- VETORIAL ---
+0.848 William W. Blair
+0.819 Blair Athol, New South Wales
+0.818 Port Blair
+0.818 Port Blair
+0.818 Port Blair
+
+--- BM25 ---
+26.656 William W. Blair
+15.714 Blair Athol, New South Wales
+15.057 James W. Clise House
+13.782 Beckwith, Ontario
+13.386 Mountrail County Courthouse
+
+--- GRAFO KG ---
+4 William W. Blair
+3 Snow White and the Huntsman
+2 Thomas Nabbes
+2 Heart sounds
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.848 William W. Blair
+0.819 Blair Athol, New South Wales
+0.818 Port Blair
+15.057 James W. Clise House
+13.782 Beckwith, Ontario
+13.386 Mountrail County Courthouse
+3 Snow White and the Huntsman
+2 Thomas Nabbes
+2 Heart sounds
+1 Norwegian County Road 13
+PERGUNTA: What award did the author of The Red Tree receive?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the author of The Red Tree.
+The passage states that Shaun Tan wrote and illustrated The Red Tree.
+Next, I need to find what award Shaun Tan received.
+The passages do not mention Shaun Tan receiving an award.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of The Red Tree.
+The passage states that The Red Tree was written and illustrated by Shaun Tan.
+Then, I need to find what award Shaun Tan received.
+The passages do not mention Shaun Tan receiving any awards.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of The Red Tree.
+The passage states that Shaun Tan wrote and illustrated The Red Tree.
+Then, I need to find what award Shaun Tan received.
+The passage does not mention Shaun Tan receiving any awards.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the author of The Red Tree.
+The passage states that Shaun Tan wrote and illustrated The Red Tree.
+Then, I need to find what award Shaun Tan received.
+The passages do not mention Shaun Tan receiving an award.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- VETORIAL ---
+0.865 The Red Tree (Shaun Tan)
+0.822 Red Ochre Award
+0.807 James Redfield
+0.807 James Redfield
+0.801 Halfway Tree
+
+--- BM25 ---
+22.653 The Red Tree (Shaun Tan)
+22.306 Penelope Tree
+21.18 Halfway Tree
+20.428 The Wandering Fire
+20.27 PEN/Diamonstein-Spielvogel Award for the Art of the Essay
+
+--- GRAFO KG ---
+5 Red Ochre Award
+4 The Red Tree (Shaun Tan)
+1 Green (Steve Hillage album)
+1 Klaus Mehnert
+1 Martine Blanc
+
+--- HÍBRIDA ---
+0.865 The Red Tree (Shaun Tan)
+0.822 Red Ochre Award
+0.807 James Redfield
+0.801 Halfway Tree
+22.306 Penelope Tree
+20.428 The Wandering Fire
+20.27 PEN/Diamonstein-Spielvogel Award for the Art of the Essay
+1 Green (Steve Hillage album)
+1 Klaus Mehnert
+1 Martine Blanc
+PERGUNTA: Where was Tyler MacDuff's child educated?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Tyler MacDuff.
+The passage states that Dana MacDuff was born to Tyler MacDuff.
+Then I need to find where Dana MacDuff was educated.
+The passage states that he graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+
+Final answer: Blair International Baccalaureate School in Pasadena
+RESPOSTA: Blair International Baccalaureate School in Pasadena
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find information about Tyler MacDuff.
+The passage states that Dana MacDuff was born to Tyler MacDuff.
+Then, I need to find where Dana MacDuff was educated.
+The passage states that Dana MacDuff graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+
+Final answer: Blair International Baccalaureate School in Pasadena
+RESPOSTA: Blair International Baccalaureate School in Pasadena
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Tyler MacDuff.
+Tyler MacDuff is the father of Dana MacDuff.
+Then find where Dana MacDuff was educated.
+Dana MacDuff graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+
+Final answer: Blair International Baccalaureate School in Pasadena
+RESPOSTA: Blair International Baccalaureate School in Pasadena
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: Tyler MacDuff's child, Dana MacDuff, graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+Final answer: Blair International Baccalaureate School
+RESPOSTA: Blair International Baccalaureate School
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- VETORIAL ---
+0.852 Dana MacDuff
+0.821 Dana MacDuff
+0.777 David Gardiner Tyler
+0.769 Ralph W. Tyler
+0.767 North Hastings High School
+
+--- BM25 ---
+14.137 David Gardiner Tyler
+12.851 Dana MacDuff
+11.521 Macduff (Macbeth)
+10.677 Fletcher Webster
+10.033 Macbeth
+
+--- GRAFO KG ---
+7 Albert Tyler (biologist)
+6 Macbeth
+6 Macduff (Macbeth)
+5 Macbeth, King of Scotland
+2 Dana MacDuff
+
+--- HÍBRIDA ---
+0.852 Dana MacDuff
+0.821 Dana MacDuff
+0.777 David Gardiner Tyler
+0.769 Ralph W. Tyler
+0.767 North Hastings High School
+11.521 Macduff (Macbeth)
+10.677 Fletcher Webster
+10.033 Macbeth
+7 Albert Tyler (biologist)
+5 Macbeth, King of Scotland
+PERGUNTA: Who is the spouse of the Rabbit Hole's producer?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find the producer of Rabbit Hole.
+The passage states that Nicole Kidman produced the project via her company, Blossom Films.
+Then, find a fact about Nicole Kidman.
+The passage does not mention the spouse of Nicole Kidman.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the producer of the Rabbit Hole.
+The passage "Down the Rabbit Hole (novel)" mentions Peter Abrahams as the author of the book "Down The Rabbit Hole". It does not mention a producer.
+The passage "Rabbit, Run (film)" mentions Howard B. Kreitsek as the screenplay writer and producer.
+Now I need to find the spouse of Howard B. Kreitsek.
+The passages do not mention the spouse of Howard B. Kreitsek.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the producer of the film "Rabbit Hole". The passage states that Nicole Kidman produced the project via her company, Blossom Films.
+Next, I need to find information about Nicole Kidman's spouse. The passage does not mention Nicole Kidman's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find the producer of Rabbit Hole. The passage states that Nicole Kidman produced the project via her company, Blossom Films.
+Then, we need to find the spouse of Nicole Kidman. The passage does not mention the spouse of Nicole Kidman.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- VETORIAL ---
+0.85 Rabbit Hole (film)
+0.811 Down the Rabbit Hole (novel)
+0.809 Rabbit, Run (film)
+0.804 Holes (film)
+0.793 Rabbit Ears Productions
+
+--- BM25 ---
+23.262 White Rabbit
+22.782 Down the Rabbit Hole (novel)
+22.456 Rabbit, Run (film)
+21.232 Baby Buggy Bunny
+20.602 Beauty and the Beast (1991 film)
+
+--- GRAFO KG ---
+10 White Rabbit
+9 Rabbit Hole (film)
+4 The Velveteen Rabbit
+2 Down the Rabbit Hole (novel)
+2 Heart sounds
+
+--- HÍBRIDA ---
+0.85 Rabbit Hole (film)
+0.811 Down the Rabbit Hole (novel)
+0.809 Rabbit, Run (film)
+0.804 Holes (film)
+0.793 Rabbit Ears Productions
+23.262 White Rabbit
+21.232 Baby Buggy Bunny
+20.602 Beauty and the Beast (1991 film)
+4 The Velveteen Rabbit
+2 Heart sounds
+PERGUNTA: Who is the child of Sigrid Eskilsdotter's child?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, we need to find out who Sigrid Eskilsdotter's child was.
+The passage states that Sigrid Eskilsdotter was the mother of Christina Gyllenstierna.
+Then, we need to find out who the child of Christina Gyllenstierna was.
+The passage states that Christina Gyllenstierna was the maternal grandmother of King Gustav Vasa of Sweden.
+Therefore, King Gustav Vasa is the child of Sigrid Eskilsdotter's child.
+
+Final answer: King Gustav Vasa
+RESPOSTA: King Gustav Vasa
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find Sigrid Eskilsdotter's child.
+Sigrid Eskilsdotter's child is Christina Gyllenstierna.
+Then, find who is the child of Christina Gyllenstierna.
+Christina Gyllenstierna is the maternal grandmother of King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find out who Sigrid Eskilsdotter's child is.
+The passage states that Sigrid Eskilsdotter was the mother of Christina Gyllenstierna.
+Then, I need to find out who the child of Christina Gyllenstierna is.
+The passage states that Christina Gyllenstierna is the maternal grandmother of King Gustav Vasa of Sweden.
+Therefore, the child of Sigrid Eskilsdotter's child is King Gustav Vasa of Sweden.
+
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: Sigrid Eskilsdotter's child is Christina Gyllenstierna, and Christina Gyllenstierna is the maternal grandmother of King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- VETORIAL ---
+0.885 Sigrid Eskilsdotter (Banér)
+0.822 Sigrid Sture
+0.795 Childebrand I
+0.783 Roxy Recordings
+0.782 August Philipp, Duke of Schleswig-Holstein-Sonderburg-Beck
+
+--- BM25 ---
+29.456 Sigrid Eskilsdotter (Banér)
+20.127 International Children's Peace Prize
+19.739 Child labour
+19.49 The Miracle Child
+19.049 Child labour
+
+--- GRAFO KG ---
+5 The Miracle Child
+4 Sigrid Eskilsdotter (Banér)
+2 Heart sounds
+1 Girl
+1 Child labour
+
+--- HÍBRIDA ---
+0.885 Sigrid Eskilsdotter (Banér)
+0.822 Sigrid Sture
+0.795 Childebrand I
+0.783 Roxy Recordings
+0.782 August Philipp, Duke of Schleswig-Holstein-Sonderburg-Beck
+20.127 International Children's Peace Prize
+19.739 Child labour
+19.49 The Miracle Child
+19.049 Child labour
+2 Heart sounds
+1 Girl
+PERGUNTA: In which county is Kimbrough Memorial Stadium located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the location of Kimbrough Memorial Stadium.
+The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+Then I need to find the county that Canyon is in.
+The passage does not state the county.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+The passage does not mention the county.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the location of Kimbrough Memorial Stadium.
+The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+Then, I need to find the county that Canyon, Texas is in.
+The passage does not state the county.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+The passage also states that Canyon is in Texas.
+Final answer: Texas
+RESPOSTA: Texas
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- VETORIAL ---
+0.878 Kimbrough Memorial Stadium
+0.804 Kynoch Park
+0.794 Essex County Park Commission Administration Building
+0.794 Essex County Park Commission Administration Building
+0.794 Essex County Park Commission Administration Building
+
+--- BM25 ---
+34.019 Kimbrough Memorial Stadium
+19.093 Broken Bow Memorial Stadium
+16.151 Marin County Civic Center
+13.633 Stadio San Nicola
+13.42 Stadio Ciro Vigorito
+
+--- GRAFO KG ---
+11 Kimbrough Memorial Stadium
+1 Estadio Unión Tarma
+1 Stadio Is Arenas
+1 Stadio Erasmo Iacovone
+1 Stadio Antonio Bianco
+
+--- HÍBRIDA ---
+0.878 Kimbrough Memorial Stadium
+0.804 Kynoch Park
+0.794 Essex County Park Commission Administration Building
+19.093 Broken Bow Memorial Stadium
+16.151 Marin County Civic Center
+13.633 Stadio San Nicola
+13.42 Stadio Ciro Vigorito
+1 Estadio Unión Tarma
+1 Stadio Is Arenas
+1 Stadio Erasmo Iacovone
+1 Stadio Antonio Bianco
+PERGUNTA: What record label is the performer of Almost Made Ya signed to?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the album "Almost Made Ya" is on.
+The passage states "Almost Made Ya" is on the album "Kinfolk".
+Then, I need to find what record label released "Kinfolk".
+The passage states "Kinfolk" was released through Derrty Entertainment and Universal Records.
+Final answer: Universal Records
+RESPOSTA: Universal Records
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the name of the performer of "Almost Made Ya".
+The passage states that "Almost Made Ya" is an R&B song by American duo Ali & Gipp.
+Then, I need to find what record label Ali & Gipp were signed to.
+The passage states that "Almost Made Ya" is for the debut album, "Kinfolk" (2007). It does not mention what record label they were signed to.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the performers of the song "Almost Made Ya".
+The passage states that "Almost Made Ya" is an R&B song by American duo Ali & Gipp, for the debut album, "Kinfolk" (2007).
+The passage does not mention what record label Ali & Gipp are signed to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that "Almost Made Ya" is by Ali & Gipp, and their album "Kinfolk" was released through Derrty Entertainment and Universal Records.
+Final answer: Universal Records
+RESPOSTA: Universal Records
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- VETORIAL ---
+0.852 Almost Made Ya
+0.81 Roxy Recordings
+0.807 Look What I Almost Stepped In...
+0.807 Kinfolk (album)
+0.806 Crystal Kay
+
+--- BM25 ---
+24.735 Almost Made Ya
+23.95 Look What I Almost Stepped In...
+23.379 It's What's Happenin'
+23.379 It's What's Happenin'
+22.214 Roxy Recordings
+
+--- GRAFO KG ---
+10 Almost Made Ya
+2 Asian Man Records
+1 Three Gut Records
+1 Sleaszy Rider Records
+1 Equity Music Group
+
+--- HÍBRIDA ---
+0.852 Almost Made Ya
+0.81 Roxy Recordings
+0.807 Look What I Almost Stepped In...
+0.807 Kinfolk (album)
+0.806 Crystal Kay
+23.379 It's What's Happenin'
+2 Asian Man Records
+1 Three Gut Records
+1 Sleaszy Rider Records
+1 Equity Music Group
+PERGUNTA: Where was the author of Hannibal and Scipio educated at?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: The passage mentions Thomas Nabbes as the writer of Hannibal and Scipio. However, it does not mention where he was educated.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of Hannibal and Scipio.
+The passage states that Thomas Nabbes wrote Hannibal and Scipio.
+Then, I need to find where Thomas Nabbes was educated.
+The passage does not mention where Thomas Nabbes was educated.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find who the author of "Hannibal and Scipio" is.
+The passage states that Thomas Nabbes wrote "Hannibal and Scipio".
+Now I need to find information about Thomas Nabbes' education.
+The passages do not mention where Thomas Nabbes was educated.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Harrisville was educated at Luther Theological Seminary, Princeton University, and the University of Tübingen in Germany.
+Final answer: Luther Theological Seminary
+RESPOSTA: Luther Theological Seminary
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- VETORIAL ---
+0.863 Hannibal and Scipio
+0.837 Hannibal (Leckie novel)
+0.82 Punica (poem)
+0.8 Hannibal (disambiguation)
+0.798 Hannibal (TV series)
+
+--- BM25 ---
+24.138 Scipio Africanus
+23.582 Hannibal and Scipio
+17.446 Ann Grifalconi
+17.179 Haig Bosmajian
+16.24 Roy Harrisville
+
+--- GRAFO KG ---
+10 Hannibal (TV series)
+7 Hannibal and Scipio
+6 Hannibal (disambiguation)
+6 Scipio Africanus
+2 Clarice Starling
+
+--- HÍBRIDA ---
+0.863 Hannibal and Scipio
+0.837 Hannibal (Leckie novel)
+0.82 Punica (poem)
+0.8 Hannibal (disambiguation)
+0.798 Hannibal (TV series)
+24.138 Scipio Africanus
+17.446 Ann Grifalconi
+17.179 Haig Bosmajian
+16.24 Roy Harrisville
+2 Clarice Starling
+PERGUNTA: In which county is Southern Maryland Electric Cooperative headquartered?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the name of the company, which is Southern Maryland Electric Cooperative.
+Then, I need to find the location of its headquarters.
+The passage states that SMECO is headquartered in Hughesville, Maryland.
+Hughesville is in Charles County, Maryland.
+
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the name of the company, which is Southern Maryland Electric Cooperative.
+Then, I need to find the location of its headquarters.
+The passage states that SMECO is headquartered in Hughesville, Maryland.
+Hughesville is in Charles County, Maryland.
+
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage states that Southern Maryland Electric Cooperative (SMECO) is headquartered in Hughesville, Maryland.
+The passage also states that Hughesville is in Charles County, Maryland.
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the location of Southern Maryland Electric Cooperative.
+The passage states that Southern Maryland Electric Cooperative is headquartered in Hughesville, Maryland.
+Then, I need to find which county Hughesville is in.
+The passage states that Hughesville is in Charles County, Maryland.
+
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- VETORIAL ---
+0.885 Southern Maryland Electric Cooperative
+0.818 Hughesville, Maryland
+0.805 Southwest City, Missouri
+0.796 Elk Ridge (Maryland)
+0.795 Homewood, South Carolina
+
+--- BM25 ---
+49.773 Southern Maryland Electric Cooperative
+19.37 Elk Ridge (Maryland)
+17.217 Hughesville, Maryland
+16.617 Choptank River
+15.894 Southern California Edison
+
+--- GRAFO KG ---
+11 Southern Maryland Electric Cooperative
+2 Choptank River
+1 Dinner at the Homesick Restaurant
+1 Hughesville, Maryland
+1 Elk Ridge (Maryland)
+
+--- HÍBRIDA ---
+0.885 Southern Maryland Electric Cooperative
+0.818 Hughesville, Maryland
+0.805 Southwest City, Missouri
+0.796 Elk Ridge (Maryland)
+0.795 Homewood, South Carolina
+16.617 Choptank River
+15.894 Southern California Edison
+1 Dinner at the Homesick Restaurant
+PERGUNTA: Who is the child of the Victim of Romance performer?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the performer of the Victim of Romance album.
+The passage states that Michelle Phillips is the singer and songwriter of Victim of Romance.
+Next, I need to find who Michelle Phillips' child is.
+The passage does not mention Michelle Phillips having any children.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the performer of Victim of Romance.
+The passage states that Victim of Romance is Michelle Phillips' first and only solo album.
+Then, I need to find information about Michelle Phillips' child.
+The passage does not mention Michelle Phillips' child.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the performer of Victim of Romance. The passage states that Victim of Romance is Michelle Phillips' first and only solo album.
+Then, I need to find if the passage mentions any children of Michelle Phillips. The passage does not mention any children of Michelle Phillips.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passages state that Michelle Phillips, the performer of Victim of Romance, is the parent of Condola Rashād.
+Final answer: Condola Rashād
+RESPOSTA: Condola Rashād
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- VETORIAL ---
+0.869 Victim of Romance
+0.78 Elisabeth Luther
+0.779 Vincent Voiture
+0.778 Angelica Page
+0.778 James III of Cyprus
+
+--- BM25 ---
+30.122 Victim of Romance
+24.633 Age of consent reform
+24.459 The Official Story
+22.263 Catalan language
+22.216 List of show business families
+
+--- GRAFO KG ---
+5 The Miracle Child
+5 Victim of Romance
+2 The Official Story
+1 Girl
+1 Child labour
+
+--- HÍBRIDA ---
+0.869 Victim of Romance
+0.78 Elisabeth Luther
+0.779 Vincent Voiture
+0.778 Angelica Page
+0.778 James III of Cyprus
+24.633 Age of consent reform
+24.459 The Official Story
+22.263 Catalan language
+22.216 List of show business families
+5 The Miracle Child
+1 Girl
+1 Child labour
+PERGUNTA: What county was Tim Dubois born in?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find information about Tim DuBois.
+The passage states that Tim DuBois was born in Southwest City, Missouri.
+Southwest City is in a county.
+
+Final answer: Missouri
+RESPOSTA: Missouri
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find information about Tim DuBois.
+The passage states that Tim DuBois was born in Southwest City, Missouri.
+Final answer: Southwest City, Missouri
+RESPOSTA: Southwest City, Missouri
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find information about Tim DuBois.
+The passage states that Tim DuBois was born in Southwest City, Missouri.
+Final answer: Missouri
+RESPOSTA: Missouri
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Tim DuBois was born in Southwest City, Missouri.
+
+Final answer: Southwest City, Missouri
+RESPOSTA: Southwest City, Missouri
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: False
+
+--- VETORIAL ---
+0.868 Tim DuBois
+0.821 Dubois (surname)
+0.814 Allison DuBois
+0.784 Culberson County-Allamoore Independent School District
+0.783 Vermont, Wisconsin
+
+--- BM25 ---
+21.108 Tim DuBois
+14.795 Allison DuBois
+13.79 Mountrail County Courthouse
+10.811 When I Call Your Name (Vince Gill song)
+10.736 Dubois (surname)
+
+--- GRAFO KG ---
+11 Tim DuBois
+1 When I Call Your Name (Vince Gill song)
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.868 Tim DuBois
+0.821 Dubois (surname)
+0.814 Allison DuBois
+0.784 Culberson County-Allamoore Independent School District
+0.783 Vermont, Wisconsin
+13.79 Mountrail County Courthouse
+10.811 When I Call Your Name (Vince Gill song)
+1 Norwegian County Road 13
+PERGUNTA: What record label did the person who is part of The Bruce Lee Band start?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find who is part of The Bruce Lee Band.
+The passage states that The Bruce Lee Band is Mike Park and his backing band.
+Then, I need to find what record label Mike Park started.
+The passage states that Mike Park started a record label called Dill Records, and later established Asian Man Records.
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find out who is part of The Bruce Lee Band.
+The passage states that The Bruce Lee Band includes Mike Park and his backing band, which has included Less Than Jake and the Rx Bandits.
+Then, I need to find out what record label Mike Park started.
+The passage does not mention what record label Mike Park started.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Asian Man Records']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find who is part of The Bruce Lee Band.
+The passage states that The Bruce Lee Band is Mike Park and his backing band, which has included Less Than Jake and the Rx Bandits.
+Next, I need to find what record label Mike Park started.
+The passage does not mention what record label Mike Park started.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Asian Man Records']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find who is part of The Bruce Lee Band.
+The passage states that The Bruce Lee Band is the name given to the releases of Mike Park and his backing band.
+Next, I need to find what record label Mike Park started.
+The passage states that Mike Park started a record label called Dill Records in 1989, and later established Asian Man Records in May 1996.
+
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- VETORIAL ---
+0.864 The Bruce Lee Band
+0.819 Asian Man Records
+0.817 Levitate (Bruce Hornsby album)
+0.815 Lee Evans (producer)
+0.814 Bruce Lee, My Brother
+
+--- BM25 ---
+32.889 The Bruce Lee Band
+27.743 Bruce Lee, My Brother
+26.301 It's What's Happenin'
+26.301 It's What's Happenin'
+26.07 Look What I Almost Stepped In...
+
+--- GRAFO KG ---
+6 The Bruce Lee Band
+4 DeSoto Records
+3 Hints Allegations and Things Left Unsaid
+3 Birth of the Dragon
+2 Go Down Records
+
+--- HÍBRIDA ---
+0.864 The Bruce Lee Band
+0.819 Asian Man Records
+0.817 Levitate (Bruce Hornsby album)
+0.815 Lee Evans (producer)
+0.814 Bruce Lee, My Brother
+26.301 It's What's Happenin'
+26.07 Look What I Almost Stepped In...
+4 DeSoto Records
+3 Hints Allegations and Things Left Unsaid
+3 Birth of the Dragon
+2 Go Down Records
+PERGUNTA: What is another notable work made by the author of Miss Sara Sampson?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to identify the author of Miss Sara Sampson.
+The passage states that Gotthold Ephraim Lessing wrote Miss Sara Sampson.
+Then, I need to find another work by Gotthold Ephraim Lessing.
+The passage does not mention any other works by Gotthold Ephraim Lessing.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Emilia Galotti']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of Miss Sara Sampson.
+The passage states that Miss Sara Sampson is a play by Gotthold Ephraim Lessing.
+Then, I need to find another work by Gotthold Ephraim Lessing.
+The passage does not mention any other works by Gotthold Ephraim Lessing.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Emilia Galotti']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of Miss Sara Sampson.
+The passage states that Gotthold Ephraim Lessing wrote Miss Sara Sampson.
+Then, I need to find a notable work by Gotthold Ephraim Lessing.
+The passage does not mention any other works by Gotthold Ephraim Lessing.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Emilia Galotti']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Miss Sara Sampson is a play by Gotthold Ephraim Lessing. It does not mention any other works by him.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Emilia Galotti']
+ACERTOU: False
+
+--- VETORIAL ---
+0.86 Miss Sara Sampson
+0.838 Mary Ann Sampson
+0.795 Miss Mousie's Blind Date
+0.79 The Emperor's Children
+0.788 Jason Sampson
+
+--- BM25 ---
+31.569 Miss Sara Sampson
+20.553 Little Miss Marker (1980 film)
+20.036 Glenda Goss
+20.036 Glenda Goss
+19.255 Jan Hendrik van den Berg
+
+--- GRAFO KG ---
+7 Miss Sara Sampson
+2 Prison Break
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+
+--- HÍBRIDA ---
+0.86 Miss Sara Sampson
+0.838 Mary Ann Sampson
+0.795 Miss Mousie's Blind Date
+0.79 The Emperor's Children
+0.788 Jason Sampson
+20.553 Little Miss Marker (1980 film)
+20.036 Glenda Goss
+19.255 Jan Hendrik van den Berg
+2 Prison Break
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+PERGUNTA: What instrument is played by the person from The Blackout All-Stars?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to identify who is part of The Blackout All-Stars.
+The Blackout All-Stars consists of Ray Barretto, Sheila E., Tito Puente, Tito Nieves, Paquito D'Rivera, Dave Valentin, Grover Washington, Jr., and Tony Pabon.
+Next, I need to find what instrument is played by someone in that group.
+The passage does not mention what instruments are played by any of the members of The Blackout All-Stars.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['conga', 'Conga']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the members of The Blackout All-Stars.
+The Blackout All-Stars consisted of Ray Barretto, Sheila E., Tito Puente, Tito Nieves, Paquito D'Rivera, Dave Valentin, Grover Washington, Jr., and Tony Pabon.
+Then, I need to find out what instrument each person plays. The passage does not mention what instruments they play.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['conga', 'Conga']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find a person from The Blackout All-Stars.
+The Blackout All-Stars consisted of Ray Barretto, Sheila E., Tito Puente, Tito Nieves, Paquito D'Rivera, Dave Valentin, Grover Washington, Jr., and Tony Pabon.
+Next, I need to find a fact about one of them that mentions an instrument.
+The passage does not mention what instrument any of them play.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['conga', 'Conga']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Dave Valentin is a member of The Blackout All-Stars. It also states that Feist is a guitarist. However, it does not state what instrument is played by any member of The Blackout All-Stars.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['conga', 'Conga']
+ACERTOU: False
+
+--- VETORIAL ---
+0.844 The Blackout All-Stars
+0.808 Chapman Stick
+0.795 All the Years
+0.791 Radar (song)
+0.788 Feist (singer)
+
+--- BM25 ---
+26.242 The Blackout All-Stars
+21.027 Kamryn Belle
+20.281 Wes Schulmerich
+16.609 Look What I Almost Stepped In...
+16.134 Cult of Chucky
+
+--- GRAFO KG ---
+10 The Blackout All-Stars
+4 All the Years
+3 The Blitz
+2 Transformers (film)
+1 Radar (song)
+
+--- HÍBRIDA ---
+0.844 The Blackout All-Stars
+0.808 Chapman Stick
+0.795 All the Years
+0.791 Radar (song)
+0.788 Feist (singer)
+21.027 Kamryn Belle
+20.281 Wes Schulmerich
+16.609 Look What I Almost Stepped In...
+16.134 Cult of Chucky
+3 The Blitz
+2 Transformers (film)
+PERGUNTA: What is the seat of the county where Van Hook Township is located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find where Van Hook Township is located.
+The passage states that Van Hook Township is in Mountrail County, North Dakota.
+Then I need to find the seat of Mountrail County.
+The passage states that Greenfield is the county seat of Hancock County, Indiana. It does not mention the county seat of Mountrail County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Stanley']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the location of Van Hook Township.
+The passage states that Van Hook Township is in Mountrail County, North Dakota.
+Next, I need to find the county seat of Mountrail County.
+The passage does not mention the county seat of Mountrail County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Stanley']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find where Van Hook Township is located.
+The passage states that Van Hook Township is in Mountrail County, North Dakota.
+Then, I need to find the seat of Mountrail County.
+The passage does not mention the seat of Mountrail County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Stanley']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find Van Hook Township.
+The passage states that Van Hook Township is in Mountrail County, North Dakota.
+Then I need to find the county seat of Mountrail County.
+The passage does not mention the county seat of Mountrail County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Stanley']
+ACERTOU: False
+
+--- VETORIAL ---
+0.872 Van Hook Township, Mountrail County, North Dakota
+0.828 Van Buren Township, Brown County, Indiana
+0.825 Greenfield, Indiana
+0.814 McCormack, Minnesota
+0.805 Ivanhoe, North Carolina
+
+--- BM25 ---
+45.454 Van Hook Township, Mountrail County, North Dakota
+35.746 Liberty Township, Van Wert County, Ohio
+34.429 Van Buren Township, Brown County, Indiana
+27.723 Choptank River
+27.683 Leroy Township, Ingham County, Michigan
+
+--- GRAFO KG ---
+5 Van Buren Township, Brown County, Indiana
+5 Van Hook Township, Mountrail County, North Dakota
+5 Liberty Township, Van Wert County, Ohio
+1 Kis-Küküllő County
+1 Kis-Küküllő County
+
+--- HÍBRIDA ---
+0.872 Van Hook Township, Mountrail County, North Dakota
+0.828 Van Buren Township, Brown County, Indiana
+0.825 Greenfield, Indiana
+0.814 McCormack, Minnesota
+0.805 Ivanhoe, North Carolina
+35.746 Liberty Township, Van Wert County, Ohio
+27.723 Choptank River
+27.683 Leroy Township, Ingham County, Michigan
+1 Kis-Küküllő County
+PERGUNTA: Who is the father of Edward Baring, 1st Baron Revelstoke's father?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's father.
+The passage states that Edward Baring, 1st Baron Revelstoke's father was Henry Baring of Cromer Hall.
+Then, find the father of Henry Baring of Cromer Hall.
+The passage does not mention the father of Henry Baring of Cromer Hall.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's father.
+The passage states that Edward Baring, 1st Baron Revelstoke's father was Henry Baring of Cromer Hall.
+Then, find the father of Henry Baring of Cromer Hall.
+The passage does not mention the father of Henry Baring of Cromer Hall.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's father.
+The passage states that Edward Baring, 1st Baron Revelstoke's father was Henry Baring of Cromer Hall.
+Then, find the father of Henry Baring of Cromer Hall.
+The passage does not mention the father of Henry Baring of Cromer Hall.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find the father of Edward Baring, 1st Baron Revelstoke. The passage states that Edward Baring, 1st Baron Revelstoke's father was Henry Baring of Cromer Hall.
+Then, we need to find the father of Henry Baring of Cromer Hall. The passage does not mention the father of Henry Baring of Cromer Hall.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- VETORIAL ---
+0.859 Tom Baring
+0.808 Peter Baden-Powell, 2nd Baron Baden-Powell
+0.806 Edward Stafford, 3rd Baron Stafford
+0.805 Edmund of Woodstock, 1st Earl of Kent
+0.801 Edward Pellew, 3rd Viscount Exmouth
+
+--- BM25 ---
+34.998 Tom Baring
+29.768 Edward Pellew, 3rd Viscount Exmouth
+27.506 Trevor Stamp, 3rd Baron Stamp
+27.157 Edward Stafford, 3rd Baron Stafford
+25.19 Edmund of Woodstock, 1st Earl of Kent
+
+--- GRAFO KG ---
+3 Tom Baring
+3 Father of the Nation
+3 Edward Dannreuther
+2 Heart sounds
+1 Martha Creek Provincial Park
+
+--- HÍBRIDA ---
+0.859 Tom Baring
+0.808 Peter Baden-Powell, 2nd Baron Baden-Powell
+0.806 Edward Stafford, 3rd Baron Stafford
+0.805 Edmund of Woodstock, 1st Earl of Kent
+0.801 Edward Pellew, 3rd Viscount Exmouth
+27.506 Trevor Stamp, 3rd Baron Stamp
+3 Father of the Nation
+3 Edward Dannreuther
+2 Heart sounds
+1 Martha Creek Provincial Park
+PERGUNTA: What group was the performer of Be the One a member of?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find information about the album "Be the One."
+The passage states that the musicians included Paul Jackson, Jr., Jeff Lorber, Robert Brookins and Gerald Albright.
+The question asks what group the performer of Be the One was a member of, but the passage does not mention what group Jackie Jackson was a member of.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The provided passages do not mention the performer of "Be the One" or any group they were a member of.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the performer of the album "Be the One."
+The passage states that "Be the One" is Jackie Jackson's second studio album.
+Now I need to find what group Jackie Jackson was a member of.
+The passages do not mention what group Jackie Jackson was a member of.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The musicians included Paul Jackson, Jr., Jeff Lorber, Robert Brookins and Gerald Albright.
+Final answer: Jackie Jackson
+RESPOSTA: Jackie Jackson
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- VETORIAL ---
+0.851 Be the One (album)
+0.807 Unexploded
+0.79 Feist (singer)
+0.786 Old Guard Fife and Drum Corps
+0.779 Song Beneath the Song
+
+--- BM25 ---
+23.478 Daniel Marsin
+21.64 List of Rock and Roll Hall of Fame inductees
+21.631 European Central Bank
+21.222 Yosyf Zisels
+21.054 Charlotte 49ers
+
+--- GRAFO KG ---
+8 Be the One (album)
+3 John "Hannibal" Smith
+2 Israel
+1 Jean-Marie Cavada
+1 Antonia Parvanova
+
+--- HÍBRIDA ---
+0.851 Be the One (album)
+0.807 Unexploded
+0.79 Feist (singer)
+0.786 Old Guard Fife and Drum Corps
+0.779 Song Beneath the Song
+23.478 Daniel Marsin
+21.64 List of Rock and Roll Hall of Fame inductees
+21.631 European Central Bank
+21.222 Yosyf Zisels
+21.054 Charlotte 49ers
+3 John "Hannibal" Smith
+2 Israel
+1 Jean-Marie Cavada
+1 Antonia Parvanova
+PERGUNTA: Who is the lead singer of the band performing Bang Bang Rock & Roll?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the band that performed Bang Bang Rock & Roll.
+The passage states that Bang Bang Rock & Roll is by British rock band Art Brut.
+The question asks for the lead singer, but the passage does not mention who the lead singer is.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eddie Argos']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the band that performed Bang Bang Rock & Roll.
+The passage states that Bang Bang Rock & Roll is performed by British rock band Art Brut.
+Then, I need to find who the lead singer of Art Brut is.
+The passage states that Eddie Argos is the lead singer of Art Brut.
+
+Final answer: Eddie Argos
+RESPOSTA: Eddie Argos
+CERTA: ['Eddie Argos']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage mentions "Bang Bang Rock & Roll" is the debut studio album by British rock band Art Brut.
+The question asks for the lead singer of this band.
+The passage does not mention who the lead singer of Art Brut is.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eddie Argos']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the band that performed Bang Bang Rock & Roll.
+The passage states that Bang Bang Rock & Roll is the debut studio album by British rock band Art Brut.
+Then, I need to find who the lead singer of Art Brut is.
+The passage states that Eddie Argos is the lead singer of English rock band Art Brut.
+Final answer: Eddie Argos
+RESPOSTA: Eddie Argos
+CERTA: ['Eddie Argos']
+ACERTOU: True
+
+--- VETORIAL ---
+0.851 Bang Bang Rock & Roll
+0.822 Bang Bang!
+0.799 Bang Bang Kid
+0.798 Bang Bang You're Dead (film)
+0.797 The Bruce Lee Band
+
+--- BM25 ---
+46.467 Bang Bang Rock & Roll
+32.003 Eddie Argos
+29.609 Bang Bang!
+27.017 Cheatty Cheatty Bang Bang
+26.78 Brown Eyed Girl
+
+--- GRAFO KG ---
+10 Bang Bang!
+4 DeSoto Records
+4 Bang Bang Rock & Roll
+3 Casablanca (film)
+2 Jeremy Oxley
+
+--- HÍBRIDA ---
+0.851 Bang Bang Rock & Roll
+0.822 Bang Bang!
+0.799 Bang Bang Kid
+0.798 Bang Bang You're Dead (film)
+0.797 The Bruce Lee Band
+32.003 Eddie Argos
+27.017 Cheatty Cheatty Bang Bang
+26.78 Brown Eyed Girl
+4 DeSoto Records
+3 Casablanca (film)
+2 Jeremy Oxley
+PERGUNTA: What is the network which National Cycle Route 57 is part of an example of?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find what National Cycle Route 57 is part of.
+The passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+Then, I need to find what the National Cycle Network is.
+The passage states that the National Cycle Network (NCN) is the national cycling route network of the United Kingdom.
+
+Final answer: national cycling route network
+RESPOSTA: national cycling route network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, the passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+Then, the passage describes the National Cycle Network as the national cycling route network of the United Kingdom.
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, the passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+Then, the passage states that the National Cycle Network is the national cycling route network of the United Kingdom.
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, the passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+Then, the passage describes the National Cycle Network as the national cycling route network of the United Kingdom.
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- VETORIAL ---
+0.887 National Cycle Route 57
+0.858 National Cycle Network
+0.801 N25 road (Ireland)
+0.793 Japan National Route 28
+0.791 Circus Time
+
+--- BM25 ---
+49.084 National Cycle Route 57
+37.934 National Cycle Network
+29.416 N25 road (Ireland)
+27.197 Highway 1 (Afghanistan)
+25.732 Julien Dubuque Bridge
+
+--- GRAFO KG ---
+13 National Route A012 (Argentina)
+6 Japan National Route 28
+6 National Cycle Network
+3 National Cycle Route 57
+3 Cape Fourcroy Light
+
+--- HÍBRIDA ---
+0.887 National Cycle Route 57
+0.858 National Cycle Network
+0.801 N25 road (Ireland)
+0.793 Japan National Route 28
+0.791 Circus Time
+27.197 Highway 1 (Afghanistan)
+25.732 Julien Dubuque Bridge
+13 National Route A012 (Argentina)
+3 Cape Fourcroy Light
+PERGUNTA: Who is the spouse of the child of Peter Andreas Heiberg?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find Peter Andreas Heiberg's child. The passage states that Johan Ludvig Heiberg was the son of Peter Andreas Heiberg.
+Then, find the spouse of Johan Ludvig Heiberg. The passage states that Johanne Luise Heiberg was the wife of Johan Ludvig Heiberg.
+
+Final answer: Johanne Luise Heiberg
+RESPOSTA: Johanne Luise Heiberg
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find Peter Andreas Heiberg's child.
+The passage states that Johan Ludvig Heiberg was the son of Peter Andreas Heiberg.
+Then, find the spouse of Johan Ludvig Heiberg.
+The passage states that Johan Ludvig Heiberg's spouse was the novelist, afterwards the Baroness Gyllembourg-Ehrensvärd.
+Final answer: Gyllembourg-Ehrensvärd
+RESPOSTA: Gyllembourg-Ehrensvärd
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Peter Andreas Heiberg.
+The passage states that Johan Ludvig Heiberg's father was Peter Andreas Heiberg (1758–1841).
+Then, find the spouse of Peter Andreas Heiberg.
+The passage states that Peter Andreas Heiberg's spouse was the novelist, afterwards the Baroness Gyllembourg-Ehrensvärd.
+Final answer: the Baroness Gyllembourg-Ehrensvärd
+RESPOSTA: the Baroness Gyllembourg-Ehrensvärd
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find Peter Andreas Heiberg. The passage states that Johan Ludvig Heiberg was the son of Peter Andreas Heiberg. Then, we need to find the spouse of Johan Ludvig Heiberg. The passage states that Johanne Luise Heiberg was the wife of Johan Ludvig Heiberg.
+
+Final answer: Johanne Luise Heiberg
+RESPOSTA: Johanne Luise Heiberg
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: True
+
+--- VETORIAL ---
+0.857 Johan Ludvig Heiberg (poet)
+0.817 The Crisis and a Crisis in the Life of an Actress
+0.786 Peter Antonovich of Brunswick
+0.784 List of Happily Divorced episodes
+0.782 Elisabeth Luther
+
+--- BM25 ---
+31.707 Johan Ludvig Heiberg (poet)
+27.928 Peter Morén
+25.37 Hansen's problem
+24.288 A Little Bit of Love (Andreas Johnson song)
+23.079 Amundsen Icefall
+
+--- GRAFO KG ---
+5 The Miracle Child
+3 Hansen's problem
+3 Johan Ludvig Heiberg (poet)
+1 Girl
+1 Child labour
+
+--- HÍBRIDA ---
+0.857 Johan Ludvig Heiberg (poet)
+0.817 The Crisis and a Crisis in the Life of an Actress
+0.786 Peter Antonovich of Brunswick
+0.784 List of Happily Divorced episodes
+0.782 Elisabeth Luther
+27.928 Peter Morén
+25.37 Hansen's problem
+24.288 A Little Bit of Love (Andreas Johnson song)
+23.079 Amundsen Icefall
+5 The Miracle Child
+1 Girl
+1 Child labour
+PERGUNTA: The Unwinding author volunteered for which organisation?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the author of "The Unwinding".
+The passage states that "The Unwinding" is by the American journalist George Packer.
+Next, I need to find if George Packer volunteered for an organisation.
+The passage does not mention any organisation George Packer volunteered for.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Peace Corps']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of "The Unwinding."
+The passage states that "The Unwinding" is by the American journalist George Packer.
+Now I need to find if George Packer volunteered for an organisation.
+The passage does not mention George Packer volunteering for any organisation.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Peace Corps']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of "The Unwinding".
+The passage states that "The Unwinding" is by the American journalist George Packer.
+The passage does not mention any organisation George Packer volunteered for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Peace Corps']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that George Packer is an American journalist and the author of "The Unwinding." It does not mention him volunteering for any organization.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Peace Corps']
+ACERTOU: False
+
+--- VETORIAL ---
+0.861 The Unwinding
+0.805 Unexploded
+0.778 Claude Aveline
+0.777 A Sinless Season
+0.77 Pendennis
+
+--- BM25 ---
+12.787 The Unwinding
+9.641 The Emperor's Children
+9.379 Socialist Resistance of Kazakhstan
+9.298 Agni-V
+9.298 Agni-V
+
+--- GRAFO KG ---
+10 The Unwinding
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+1 James Redfield
+
+--- HÍBRIDA ---
+0.861 The Unwinding
+0.805 Unexploded
+0.778 Claude Aveline
+0.777 A Sinless Season
+0.77 Pendennis
+9.641 The Emperor's Children
+9.379 Socialist Resistance of Kazakhstan
+9.298 Agni-V
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+PERGUNTA: What is the capital of the county that Pine Springs is located in?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the location of Pine Springs.
+Pine Springs is located in Culberson County, Texas.
+Next, I need to find the capital of Culberson County.
+The passage does not mention the capital of Culberson County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, we need to find where Pine Springs is located.
+The passage states that Pine Springs is in Culberson County, Texas.
+Then we need to find the capital of Culberson County.
+The passage does not mention the capital of Culberson County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the county that Pine Springs is located in.
+The passage states that Pine Springs is in Culberson County, Texas.
+Now I need to find the capital of Culberson County.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the location of Pine Springs.
+Pine Springs is located in Culberson County, Texas.
+Next, I need to find the county seat of Culberson County.
+The passage does not mention the county seat of Culberson County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- VETORIAL ---
+0.865 Pine Springs, Texas
+0.822 Pine Mountain State Resort Park
+0.807 Greenfield, Indiana
+0.803 Kis-Küküllő County
+0.803 Kis-Küküllő County
+
+--- BM25 ---
+43.043 Pine Springs, Texas
+28.577 Pine Mountain State Resort Park
+28.548 Amamoor Forest Reserve
+25.292 Kis-Küküllő County
+25.292 Kis-Küküllő County
+
+--- GRAFO KG ---
+6 Pine Springs, Texas
+3 In the Shadow of Greatness
+2 Campora
+2 Union territory
+2 Union territory
+
+--- HÍBRIDA ---
+0.865 Pine Springs, Texas
+0.822 Pine Mountain State Resort Park
+0.807 Greenfield, Indiana
+0.803 Kis-Küküllő County
+28.548 Amamoor Forest Reserve
+3 In the Shadow of Greatness
+2 Campora
+2 Union territory
+PERGUNTA: What district is the headquarter of Julia's House located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the location of Julia's House.
+The passage states that Julia's House is located in Corfe Mullen, Dorset, England.
+Then I need to find what district Corfe Mullen is in.
+The passage states that Julia's House is a hospice in Dorset.
+Final answer: Dorset
+RESPOSTA: Dorset
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the location of Julia's House.
+The passage states that Julia's House is located in Corfe Mullen, Dorset, England.
+Then I need to find what district Corfe Mullen is in.
+The passage does not mention what district Corfe Mullen is in.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find the name of the hospice. It is Julia's House.
+Then, find the location of Julia's House. It is located in Corfe Mullen, Dorset, England.
+Final answer: Corfe Mullen
+RESPOSTA: Corfe Mullen
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Julia's House is located in Corfe Mullen, Dorset, England. It is a hospice in Dorset.
+Final answer: Dorset
+RESPOSTA: Dorset
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- VETORIAL ---
+0.848 Julia's House
+0.814 United States Bankruptcy Court for the Southern District of New York
+0.802 Julia Irwin
+0.796 Phulrraa
+0.794 Buckingham Palace
+
+--- BM25 ---
+26.388 Julia's House
+17.5 Julia Irwin
+17.414 Walter V. Davidson House
+17.072 Nyuksensky District
+17.036 Cherdynsky District
+
+--- GRAFO KG ---
+9 Julia's House
+5 The Watch House
+2 Australia
+2 Australia
+2 Australia
+
+--- HÍBRIDA ---
+0.848 Julia's House
+0.814 United States Bankruptcy Court for the Southern District of New York
+0.802 Julia Irwin
+0.796 Phulrraa
+0.794 Buckingham Palace
+17.414 Walter V. Davidson House
+17.072 Nyuksensky District
+17.036 Cherdynsky District
+5 The Watch House
+2 Australia
+PERGUNTA: Who is the spouse of Young Man Luther's author?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the author of Young Man Luther.
+The passage states that the author is Erik Erikson.
+Next, I need to find information about Erik Erikson's spouse.
+The passages do not mention Erik Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of Young Man Luther.
+The passage states that the author is Erik Erikson.
+Then, I need to find information about Erik Erikson's spouse.
+The passages do not mention Erik Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of Young Man Luther.
+The passage states that the author is Erik Erikson.
+The passage does not mention Erik Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to identify the author of Young Man Luther. The passage states that the author is Erikson.
+Then, we need to find information about Erikson's spouse. The passages do not mention Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- VETORIAL ---
+0.85 Young Man Luther
+0.832 Elisabeth Luther
+0.8 Susan Evans McCloud
+0.8 Margaret Blair Young
+0.787 Dexter King
+
+--- BM25 ---
+27.738 Young Man Luther
+22.311 Young Man Lake
+21.838 Sonnet 110
+21.243 The Dream Life of Balso Snell
+18.474 Portrait of a Young Englishman
+
+--- GRAFO KG ---
+5 Young Man Luther
+4 Young Man Lake
+2 The Open Boat
+2 Biblical apocrypha
+2 Heart sounds
+
+--- HÍBRIDA ---
+0.85 Young Man Luther
+0.832 Elisabeth Luther
+0.8 Susan Evans McCloud
+0.8 Margaret Blair Young
+0.787 Dexter King
+22.311 Young Man Lake
+21.838 Sonnet 110
+21.243 The Dream Life of Balso Snell
+18.474 Portrait of a Young Englishman
+2 The Open Boat
+2 Biblical apocrypha
+2 Heart sounds
+PERGUNTA: What record label did the performer of The Place and the Time belong to?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find out who performed The Place and the Time.
+The passage states that The Place and the Time is a compilation album of songs by Moby Grape.
+Then, I need to find out which record label Moby Grape belonged to.
+The passage does not mention which record label Moby Grape belonged to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the album "The Place and the Time".
+Then, I need to find the record label associated with that album.
+The passage states that "The Place and the Time" was released by Sundazed Records.
+
+Final answer: Sundazed Records
+RESPOSTA: Sundazed Records
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the name of the performer of The Place and the Time.
+The passage states that The Place and the Time is a compilation album of songs by Moby Grape.
+Then, I need to find which record label Moby Grape belonged to.
+The passage states that The Place and the Time was released by Sundazed Records.
+Final answer: Sundazed Records
+RESPOSTA: Sundazed Records
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that The Place and the Time is released by Sundazed Records.
+Final answer: Sundazed Records
+RESPOSTA: Sundazed Records
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 The Place and the Time
+0.809 Roxy Recordings
+0.804 Gregory and the Hawk
+0.796 Asian Man Records
+0.796 Equity Music Group
+
+--- BM25 ---
+27.873 It's What's Happenin'
+27.873 It's What's Happenin'
+25.35 The Place and the Time
+24.153 Phonograph record
+24.009 Radar (song)
+
+--- GRAFO KG ---
+9 The Place and the Time
+2 Asian Man Records
+2 IPod
+1 Three Gut Records
+1 Sleaszy Rider Records
+
+--- HÍBRIDA ---
+0.874 The Place and the Time
+0.809 Roxy Recordings
+0.804 Gregory and the Hawk
+0.796 Asian Man Records
+0.796 Equity Music Group
+27.873 It's What's Happenin'
+24.153 Phonograph record
+24.009 Radar (song)
+2 IPod
+1 Three Gut Records
+1 Sleaszy Rider Records
+PERGUNTA: Who is the child of the person who followed Tihomir of Serbia?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: The passage does not mention Tihomir of Serbia.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, the passage states that Tihomir's brothers were Stracimir and Miroslav.
+Then, the passage states that Stracimir continued to rule his lands.
+Therefore, Stracimir is the child of the person who followed Tihomir of Serbia.
+Final answer: Stracimir
+RESPOSTA: Stracimir
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find who followed Tihomir. The passage states that Stefan Nemanja overthrew Tihomir.
+Then, I need to find who the child of Stefan Nemanja is. The passage mentions Blanche Montel who endeavours to find a man with whom to produce a child so that she can pretend that the child was her late husband's.
+The question asks who is the child of the person who followed Tihomir. The person who followed Tihomir was Stefan Nemanja. The passage does not mention a child of Stefan Nemanja.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find who Tihomir of Serbia was. The passage states that in 1166, Stefan Nemanja overthrew Tihomir and had him and his brothers expelled to Byzantium. Then, the passage states that Tihomir's brothers were Stracimir and Miroslav.
+
+Final answer: Stracimir
+RESPOSTA: Stracimir
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- VETORIAL ---
+0.818 Nikola Radonja
+0.801 James III of Cyprus
+0.797 Pietro de' Medici
+0.796 Constance of Burgundy
+0.792 Milena Reljin
+
+--- BM25 ---
+24.465 Stracimir Zavidović
+24.256 Boris Tadić
+22.977 Andrićev Venac
+22.539 Music of the Old Serbia
+22.032 Donje Crniljevo
+
+--- GRAFO KG ---
+5 The Miracle Child
+5 Music of the Old Serbia
+3 Stracimir Zavidović
+2 Andrićev Venac
+2 Jabukovac, Negotin
+
+--- HÍBRIDA ---
+0.818 Nikola Radonja
+0.801 James III of Cyprus
+0.797 Pietro de' Medici
+0.796 Constance of Burgundy
+0.792 Milena Reljin
+24.465 Stracimir Zavidović
+24.256 Boris Tadić
+22.977 Andrićev Venac
+22.539 Music of the Old Serbia
+22.032 Donje Crniljevo
+5 The Miracle Child
+2 Jabukovac, Negotin
+PERGUNTA: What team was Anna Benson's husband on?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, find Anna Benson.
+Anna Benson is the ex-wife of Kris Benson.
+Then, find Kris Benson.
+Kris Benson played for the Pittsburgh Pirates, the New York Mets, and the Baltimore Orioles.
+Final answer: Pittsburgh Pirates
+RESPOSTA: Pittsburgh Pirates
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Anna Benson.
+The passage states Anna Benson is the ex-wife of former Major League Baseball pitcher Kris Benson.
+Then, I need to find what team Kris Benson played on.
+The passage states he was a former Major League Baseball pitcher.
+Final answer: Major League Baseball
+RESPOSTA: Major League Baseball
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, find Anna Benson's husband.
+Anna Benson's husband was Kris Benson.
+Then, find what team Kris Benson was on.
+Kris Benson was a former Major League Baseball pitcher.
+Final answer: Major League Baseball
+RESPOSTA: Major League Baseball
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find information about Kris Benson. The passage states he played for the Pittsburgh Pirates, New York Mets, and Baltimore Orioles.
+Final answer: Pittsburgh Pirates
+RESPOSTA: Pittsburgh Pirates
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: True
+
+--- VETORIAL ---
+0.867 Anna Benson
+0.823 Jenny Benson
+0.789 Robert Guillaume
+0.785 Gale Benson
+0.781 Kris Benson
+
+--- BM25 ---
+19.472 Anna Benson
+14.989 Jenny Benson
+12.114 History of the New Orleans Saints
+12.035 Arena Football League
+10.302 Benson Junction, Florida
+
+--- GRAFO KG ---
+4 Anna Benson
+2 Robert Guillaume
+2 Heart sounds
+1 The Miracle Child
+1 Arena Football League
+
+--- HÍBRIDA ---
+0.867 Anna Benson
+0.823 Jenny Benson
+0.789 Robert Guillaume
+0.785 Gale Benson
+0.781 Kris Benson
+12.114 History of the New Orleans Saints
+12.035 Arena Football League
+10.302 Benson Junction, Florida
+2 Heart sounds
+1 The Miracle Child
+PERGUNTA: What place does the administrative territorial entity that Juba is located in share a border with?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the place Juba is located.
+The passage states that Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+Then I need to find what Central Equatoria shares a border with.
+The passage does not mention what Central Equatoria shares a border with.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find what Juba is located in.
+The passage states that Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+Next, I need to find what Gmina Włodawa shares a border with.
+The passage states that Gmina Włodawa shares a border with Belarus and Ukraine.
+The question asks what place Juba is located in shares a border with. Juba is located in Central Equatoria. The passage does not mention what Central Equatoria shares a border with.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the place Juba is located.
+The passage states that Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+Then I need to find what place shares a border with South Sudan.
+The passages do not mention what place shares a border with South Sudan.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, find the place Juba is located.
+The passage states that Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+Then, find what Central Equatoria shares a border with.
+The passage does not mention what Central Equatoria shares a border with.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- VETORIAL ---
+0.824 Adaba (woreda)
+0.824 Adaba (woreda)
+0.81 The Citizen (South Sudan)
+0.808 Berhale (woreda)
+0.808 Berhale (woreda)
+
+--- BM25 ---
+19.801 The Citizen (South Sudan)
+19.078 Cellius
+18.998 Gmina Włodawa
+18.998 Gmina Włodawa
+18.998 Gmina Włodawa
+
+--- GRAFO KG ---
+3 John "Hannibal" Smith
+3 The Citizen (South Sudan)
+1 Arena Football League
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.824 Adaba (woreda)
+0.81 The Citizen (South Sudan)
+0.808 Berhale (woreda)
+19.078 Cellius
+18.998 Gmina Włodawa
+3 John "Hannibal" Smith
+1 Arena Football League
+1 Minsk Region
+PERGUNTA: Where was the spouse of Frances Tupper born?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Frances Tupper.
+The passage states Frances Amélia Tupper, Lady Tupper (née Morse; March 14, 1826 – May 11, 1912) was the wife of Sir Charles Tupper.
+Then I need to find where Sir Charles Tupper was born.
+The passage does not mention where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Frances Tupper.
+The passage states Frances Tupper was the wife of Sir Charles Tupper.
+Then I need to find where Sir Charles Tupper was born.
+The passage does not state where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage states that Frances Amélia Tupper was married to Sir Charles Tupper, who was the sixth Prime Minister of Canada. It does not mention where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Arthur Rupert Dickey was born in Amherst, Nova Scotia. Charles Tupper was named High Commissioner for Canada in the United Kingdom, and Arthur Rupert Dickey was the son of Robert Barry Dickey. Therefore, Charles Tupper was the spouse of Frances Tupper.
+Final answer: Amherst, Nova Scotia
+RESPOSTA: Amherst, Nova Scotia
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- VETORIAL ---
+0.899 Frances Tupper
+0.793 Dupland
+0.789 François d'Orléans, Prince of Joinville
+0.786 Fischerspooner
+0.784 Philippe I, Duke of Orléans
+
+--- BM25 ---
+26.953 Frances Tupper
+16.786 Anselm Tupper
+14.572 Frances Ingram
+14.001 Arthur Rupert Dickey
+13.705 F. A. Forbes
+
+--- GRAFO KG ---
+6 Frances Tupper
+1 Macbeth
+1 Hyderabad
+1 Hyderabad
+1 Hyderabad
+
+--- HÍBRIDA ---
+0.899 Frances Tupper
+0.793 Dupland
+0.789 François d'Orléans, Prince of Joinville
+0.786 Fischerspooner
+0.784 Philippe I, Duke of Orléans
+16.786 Anselm Tupper
+14.572 Frances Ingram
+14.001 Arthur Rupert Dickey
+13.705 F. A. Forbes
+1 Macbeth
+1 Hyderabad
+PERGUNTA: Who founded the political party of Dimuthu Bandara Abayakoon?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Dimuthu Bandara Abayakoon.
+Then, I need to find the political party he belongs to.
+Finally, I need to find who founded that party.
+Dimuthu Bandara Abayakoon belongs to the Janatha Vimukthi Peramuna, and Rohana Wijeweera was the founding leader of the Janatha Vimukthi Peramuna.
+
+Final answer: Rohana Wijeweera
+RESPOSTA: Rohana Wijeweera
+CERTA: ['Rohana Wijeweera']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Dimuthu Bandara Abayakoon.
+The passage states that he belongs to the Janatha Vimukthi Peramuna.
+Therefore, the political party he belongs to is Janatha Vimukthi Peramuna.
+
+Final answer: Janatha Vimukthi Peramuna
+RESPOSTA: Janatha Vimukthi Peramuna
+CERTA: ['Rohana Wijeweera']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find Dimuthu Bandara Abayakoon.
+The passage states that Dimuthu Bandara Abayakoon belongs to the Janatha Vimukthi Peramuna.
+Therefore, the political party of Dimuthu Bandara Abayakoon is the Janatha Vimukthi Peramuna.
+
+Final answer: Janatha Vimukthi Peramuna
+RESPOSTA: Janatha Vimukthi Peramuna
+CERTA: ['Rohana Wijeweera']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find Dimuthu Bandara Abayakoon.
+The passage states that Dimuthu Bandara Abayakoon belongs to the Janatha Vimukthi Peramuna.
+Then I need to find who founded the Janatha Vimukthi Peramuna.
+The passage states that Rohana Wijeweera was the founding leader of the Janatha Vimukthi Peramuna.
+
+Final answer: Rohana Wijeweera
+RESPOSTA: Rohana Wijeweera
+CERTA: ['Rohana Wijeweera']
+ACERTOU: True
+
+--- VETORIAL ---
+0.897 Dimuthu Bandara Abayakoon
+0.812 Rohana Wijeweera
+0.812 People's Congress Party
+0.802 Basotho National Party
+0.802 Basotho National Party
+
+--- BM25 ---
+37.653 Dimuthu Bandara Abayakoon
+20.132 Confederation of Regions Party of Canada
+19.449 Party for the Netherlands
+18.914 Basotho National Party
+18.914 Basotho National Party
+
+--- GRAFO KG ---
+7 Dimuthu Bandara Abayakoon
+3 Liberal Party of Australia
+2 Trevor Stamp, 3rd Baron Stamp
+2 Confederation of Regions Party of Canada
+1 Prime Minister of Canada
+
+--- HÍBRIDA ---
+0.897 Dimuthu Bandara Abayakoon
+0.812 Rohana Wijeweera
+0.812 People's Congress Party
+0.802 Basotho National Party
+20.132 Confederation of Regions Party of Canada
+19.449 Party for the Netherlands
+3 Liberal Party of Australia
+2 Trevor Stamp, 3rd Baron Stamp
+1 Prime Minister of Canada
+PERGUNTA: Bancroft's county borders what county?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find where Bancroft is located.
+The passage states North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+Therefore, Bancroft is in Hastings County.
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the location of Bancroft.
+The passage states North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+Therefore, Bancroft is in Hastings County.
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find where Bancroft is located.
+The passage states North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+Therefore, Bancroft is in Hastings County.
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find where Bancroft is located.
+The passage states that North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+Therefore, Bancroft is in Hastings County.
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- VETORIAL ---
+0.799 Lancaster Crossing
+0.794 North Hastings High School
+0.792 Mount Bosworth
+0.792 Mount Bosworth
+0.78 Beckwith, Ontario
+
+--- BM25 ---
+15.183 Mountrail County Courthouse
+13.254 North Hastings High School
+11.864 Choptank River
+11.581 Culberson County-Allamoore Independent School District
+11.27 Norwegian County Road 13
+
+--- GRAFO KG ---
+2 North Hastings High School
+2 Heart sounds
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.799 Lancaster Crossing
+0.794 North Hastings High School
+0.792 Mount Bosworth
+0.78 Beckwith, Ontario
+15.183 Mountrail County Courthouse
+11.864 Choptank River
+11.581 Culberson County-Allamoore Independent School District
+11.27 Norwegian County Road 13
+2 Heart sounds
+PERGUNTA: In which county is Mark Dismore's birthplace located?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Mark Dismore's birthplace.
+The passage states Mark Dismore was born in Greenfield, Indiana.
+Then I need to find the county that Greenfield is located in.
+The passage does not mention the county.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, find Mark Dismore's birthplace.
+Mark Dismore was born in Greenfield, Indiana.
+Then, find the county that Greenfield is located in.
+The passage does not state the county that Greenfield is located in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage states that Mark Dismore was born in Greenfield, Indiana.
+The passage does not mention the county in which Greenfield is located.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Mark Dismore was born in Greenfield, Indiana. It does not mention the county.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- VETORIAL ---
+0.807 Mark Dismore
+0.8 Vermont, Wisconsin
+0.797 James W. Clise House
+0.797 McCormack, Minnesota
+0.795 Hughesville, Maryland
+
+--- BM25 ---
+16.148 Mark Dismore
+15.726 Natural Alternatives International
+13.782 Beckwith, Ontario
+13.382 Motru Coal Mine
+13.382 Motru Coal Mine
+
+--- GRAFO KG ---
+11 Mark Dismore
+2 Heart sounds
+1 Norwegian County Road 13
+1 KFRU
+
+--- HÍBRIDA ---
+0.807 Mark Dismore
+0.8 Vermont, Wisconsin
+0.797 James W. Clise House
+0.797 McCormack, Minnesota
+0.795 Hughesville, Maryland
+15.726 Natural Alternatives International
+13.782 Beckwith, Ontario
+13.382 Motru Coal Mine
+2 Heart sounds
+1 Norwegian County Road 13
+1 KFRU
+PERGUNTA: Who was the sibling of Nannina de' Medici?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Nannina de' Medici.
+The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Nannina de' Medici.
+The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find Nannina de' Medici.
+The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find Nannina de' Medici.
+The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- VETORIAL ---
+0.909 Nannina de' Medici
+0.86 Maria Maddalena de' Medici
+0.845 Pietro de' Medici
+0.842 Garzia de' Medici
+0.838 Giuliano de' Medici
+
+--- BM25 ---
+30.485 Nannina de' Medici
+20.25 Portrait of Ippolito de' Medici
+19.37 Pietro de' Medici
+19.009 Giuliano de' Medici
+18.899 The Age of the Medici
+
+--- GRAFO KG ---
+10 Nannina de' Medici
+10 The Age of the Medici
+9 Giuliano de' Medici
+9 Margherita de' Medici
+8 Garzia de' Medici
+
+--- HÍBRIDA ---
+0.909 Nannina de' Medici
+0.86 Maria Maddalena de' Medici
+0.845 Pietro de' Medici
+0.842 Garzia de' Medici
+0.838 Giuliano de' Medici
+20.25 Portrait of Ippolito de' Medici
+18.899 The Age of the Medici
+9 Margherita de' Medici
+PERGUNTA: What county is the NRHEG High School located in?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the location of NRHEG High School.
+The passage states that NRHEG High School is located in New Richland, Minnesota.
+Then, I need to find what county New Richland is in.
+The passage states that New Richland is in Waseca County, Minnesota.
+
+Final answer: Waseca
+RESPOSTA: Waseca
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the location of NRHEG High School.
+The passage states that NRHEG High School is located in New Richland, Minnesota.
+Then, I need to find what county New Richland is in.
+The passage states that New Richland is in Waseca County, Minnesota.
+
+Final answer: Waseca
+RESPOSTA: Waseca
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the location of NRHEG High School.
+The passage states that NRHEG High School is located in New Richland, Minnesota.
+New Richland is a town within the school district, which covers New Richland, Hartland, Ellendale, and Geneva.
+I need to find the county that New Richland is in. The passage does not mention the county.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the location of NRHEG High School.
+The passage states that NRHEG High School is located in New Richland, Minnesota.
+Then, I need to find what county New Richland is in.
+The passage states that New Richland is a city in Waseca County, Minnesota.
+
+Final answer: Waseca
+RESPOSTA: Waseca
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- VETORIAL ---
+0.894 NRHEG High School
+0.833 North Hastings High School
+0.832 New Richland, Minnesota
+0.808 Essex County Park Commission Administration Building
+0.808 Essex County Park Commission Administration Building
+
+--- BM25 ---
+35.144 NRHEG High School
+28.195 New Richland, Minnesota
+25.788 McFarland School District
+24.128 North Hastings High School
+22.476 Mount View High School (Maine)
+
+--- GRAFO KG ---
+5 NRHEG High School
+2 Kimbrough Memorial Stadium
+2 Holy of Holies
+1 1979–80 Coupe de France
+1 Comcast Sports Southwest
+
+--- HÍBRIDA ---
+0.894 NRHEG High School
+0.833 North Hastings High School
+0.832 New Richland, Minnesota
+0.808 Essex County Park Commission Administration Building
+25.788 McFarland School District
+22.476 Mount View High School (Maine)
+2 Kimbrough Memorial Stadium
+2 Holy of Holies
+1 1979–80 Coupe de France
+1 Comcast Sports Southwest
+PERGUNTA: What league does the team that occupies the Rabat Ajax Football Ground belong to?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the team that uses the Rabat Ajax Football Ground.
+The passage states that the Rabat Ajax Football Ground is the training ground of Maltese football team Rabat Ajax F.C.
+Now I need to find what league Rabat Ajax F.C. plays in.
+The passage does not mention what league Rabat Ajax F.C. plays in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the team that uses the Rabat Ajax Football Ground.
+The passage states that the Rabat Ajax Football Ground is the training ground of Rabat Ajax F.C.
+Then, I need to find what league Rabat Ajax F.C. belongs to.
+The passage does not mention the league Rabat Ajax F.C. belongs to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The provided passages do not mention the Rabat Ajax Football Ground or the team that occupies it.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The Rabat Ajax Football Ground is the training ground of Maltese football team Rabat Ajax F.C.
+Final answer: Maltese
+RESPOSTA: Maltese
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- VETORIAL ---
+0.872 Rabat Ajax Football Ground
+0.829 Silvio Vella
+0.816 Railways Ground
+0.813 Llanberis F.C.
+0.808 Melbourne Football Club
+
+--- BM25 ---
+47.317 Rabat Ajax Football Ground
+24.53 Dudley Road
+24.182 Whitefield Park
+23.888 Railways Ground
+23.54 Arena Football League
+
+--- GRAFO KG ---
+11 Arena Football League
+4 History of the New Orleans Saints
+3 John "Hannibal" Smith
+3 2015 AFL Grand Final
+2 Common nightingale
+
+--- HÍBRIDA ---
+0.872 Rabat Ajax Football Ground
+0.829 Silvio Vella
+0.816 Railways Ground
+0.813 Llanberis F.C.
+0.808 Melbourne Football Club
+24.53 Dudley Road
+24.182 Whitefield Park
+23.54 Arena Football League
+11 Arena Football League
+4 History of the New Orleans Saints
+3 John "Hannibal" Smith
+3 2015 AFL Grand Final
+2 Common nightingale
+PERGUNTA: Who was married to the star of No Escape?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the star of the film "No Escape".
+The passage states that Valerie Hobson starred in "No Escape".
+Then, I need to find who was married to Valerie Hobson.
+The passages do not mention who Valerie Hobson was married to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the star of the film "No Escape."
+The passage states that Valerie Hobson, Leslie Perrins and Robert Cochran starred in "No Escape."
+Then, I need to find who was married to Valerie Hobson.
+The passage about Marie Anne de Bourbon does not mention Valerie Hobson.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage mentions Valerie Hobson as a star of No Escape, but does not mention anything about her marital status.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, we need to find the star of the film "No Escape". The passage states that the film stars Valerie Hobson, Leslie Perrins and Robert Cochran.
+Then, we need to find who Valerie Hobson was married to. This information is not in the passages.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- VETORIAL ---
+0.856 No Escape (1936 film)
+0.799 Escape from L.A.
+0.795 Anna Benson
+0.791 Unexploded
+0.789 Mok Kwai-lan
+
+--- BM25 ---
+21.099 No Escape (1936 film)
+14.807 Star Trek: Birth of the Federation
+14.584 Hamaar Sautan Hamaar Saheli
+14.012 Marie Anne de Bourbon
+13.916 Star Trek: Discovery
+
+--- GRAFO KG ---
+7 No Escape (1936 film)
+1 Hyderabad
+1 Hyderabad
+1 Hyderabad
+
+--- HÍBRIDA ---
+0.856 No Escape (1936 film)
+0.799 Escape from L.A.
+0.795 Anna Benson
+0.791 Unexploded
+0.789 Mok Kwai-lan
+14.807 Star Trek: Birth of the Federation
+14.584 Hamaar Sautan Hamaar Saheli
+14.012 Marie Anne de Bourbon
+13.916 Star Trek: Discovery
+1 Hyderabad
+PERGUNTA: What administrative territorial entity contains the place where KPRM is licensed to broadcast to?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find where KPRM is licensed to broadcast.
+The passage states that KPRM is in Park Rapids, Minnesota.
+Then I need to find what administrative territorial entity contains Park Rapids.
+Park Rapids is in Minnesota.
+Final answer: Minnesota
+RESPOSTA: Minnesota
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The passage mentions KFGY is licensed to Healdsburg, California, broadcasting to the Santa Rosa, California area.
+The passage mentions Minsk Region is one of the regions of Belarus.
+The question asks about the administrative territorial entity containing Santa Rosa, California.
+The passages do not mention Minsk Region containing Santa Rosa, California.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find where KPRM broadcasts.
+The passage states KPRM is in Park Rapids, Minnesota.
+Then I need to find what administrative territorial entity contains Park Rapids, Minnesota.
+The passages do not mention Minnesota or Park Rapids.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find where KPRM is licensed to broadcast to.
+KPRM is licensed to Park Rapids, Minnesota.
+Next, I need to find what administrative territorial entity contains Park Rapids, Minnesota.
+The passage mentions Minsk Region, Minsk Voblasć or Minsk Oblast in Belarus. This is not in Minnesota.
+The passage does not mention the administrative territorial entity that contains Park Rapids, Minnesota.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- VETORIAL ---
+0.84 KPRM
+0.836 KPBD
+0.829 WKDM
+0.825 KFRU
+0.824 WKHK
+
+--- BM25 ---
+17.702 WNDE
+17.131 KFGY
+17.041 Minsk Region
+17.041 Minsk Region
+17.041 Minsk Region
+
+--- GRAFO KG ---
+7 KPRM
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.84 KPRM
+0.836 KPBD
+0.829 WKDM
+0.825 KFRU
+0.824 WKHK
+17.702 WNDE
+17.131 KFGY
+17.041 Minsk Region
+PERGUNTA: Where are the headquarters for the publisher of In the Shadow of Greatness?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the publisher of "In the Shadow of Greatness."
+The passage states that it was published by the United States Naval Institute.
+Then, I need to find where the United States Naval Institute is located.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the publisher of "In the Shadow of Greatness."
+The passage states the book was published by the United States Naval Institute.
+Then, I need to find where the United States Naval Institute is located.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the publisher of "In the Shadow of Greatness."
+The passage states that "In the Shadow of Greatness" was published by the United States Naval Institute.
+Then, I need to find the location of the United States Naval Institute.
+The passage does not mention the location of the United States Naval Institute.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the publisher of "In the Shadow of Greatness."
+The passage states that "In the Shadow of Greatness" was published by the United States Naval Institute.
+Then, I need to find where the United States Naval Institute is located.
+The passage does not mention the location of the United States Naval Institute.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: False
+
+--- VETORIAL ---
+0.858 In the Shadow of Greatness
+0.805 Buckingham Palace
+0.802 The Revenge of the Shadow King
+0.796 The Shadow of Saganami
+0.793 Buckingham Palace
+
+--- BM25 ---
+35.889 In the Shadow of Greatness
+26.925 Cork (city)
+26.229 Alamnagar
+26.229 Alamnagar
+26.229 Alamnagar
+
+--- GRAFO KG ---
+6 The Revenge of the Shadow King
+6 The Shadow of Saganami
+5 Inju: The Beast in the Shadow
+3 In the Shadow of Greatness
+2 IPod
+
+--- HÍBRIDA ---
+0.858 In the Shadow of Greatness
+0.805 Buckingham Palace
+0.802 The Revenge of the Shadow King
+0.796 The Shadow of Saganami
+0.793 Buckingham Palace
+26.925 Cork (city)
+26.229 Alamnagar
+5 Inju: The Beast in the Shadow
+2 IPod
+PERGUNTA: Who is part of the band that performed Full Cooperation?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+Therefore, members of Def Squad performed the song.
+
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+The question asks who is part of the band that performed Full Cooperation.
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+Therefore, the band that performed "Full Cooperation" is Def Squad.
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- VETORIAL ---
+0.875 Full Cooperation
+0.814 The Philadelphia Brass
+0.802 Unexploded
+0.796 Take It All Back
+0.795 All Funked Up
+
+--- BM25 ---
+21.647 Full Cooperation
+17.432 RCBC Plaza
+17.155 You Were There for Me
+16.318 Look What I Almost Stepped In...
+16.313 School for Secrets
+
+--- GRAFO KG ---
+5 Full Cooperation
+4 DeSoto Records
+2 Halfway Tree
+2 Hints Allegations and Things Left Unsaid
+1 Pak Tam Chung
+
+--- HÍBRIDA ---
+0.875 Full Cooperation
+0.814 The Philadelphia Brass
+0.802 Unexploded
+0.796 Take It All Back
+0.795 All Funked Up
+17.432 RCBC Plaza
+17.155 You Were There for Me
+16.318 Look What I Almost Stepped In...
+16.313 School for Secrets
+4 DeSoto Records
+2 Halfway Tree
+2 Hints Allegations and Things Left Unsaid
+1 Pak Tam Chung
+PERGUNTA: The territory containing Bansaan Island is located at which island?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find where Bansaan Island is located.
+The passage states that Bansaan is located off the mid-northern coast of Bohol Island.
+Therefore, the territory containing Bansaan Island is located at Bohol Island.
+
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the island containing Bansaan.
+The passage states that Bansaan is located off the mid-northern coast of Bohol Island.
+Therefore, the territory containing Bansaan Island is located at Bohol Island.
+
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the location of Bansaan Island.
+The passage states that Bansaan is located off the mid-northern coast of Bohol Island.
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the location of Bansaan Island.
+The passage states that Bansaan is located off the mid-northern coast of Bohol Island.
+Therefore, the territory containing Bansaan Island is located at Bohol Island.
+
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- VETORIAL ---
+0.913 Bansaan
+0.814 Port Blair
+0.814 Port Blair
+0.814 Port Blair
+0.814 Port Blair
+
+--- BM25 ---
+31.236 Bansaan
+19.567 Steinshamn
+19.043 Geography of Hong Kong
+18.942 Khong Island
+18.942 Khong Island
+
+--- GRAFO KG ---
+4 Bansaan
+1 States of Nigeria
+1 States of Nigeria
+1 States of Nigeria
+1 States of Nigeria
+
+--- HÍBRIDA ---
+0.913 Bansaan
+0.814 Port Blair
+19.567 Steinshamn
+19.043 Geography of Hong Kong
+18.942 Khong Island
+1 States of Nigeria
+PERGUNTA: In which county did Snappy Tomato Pizza form?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find information about Snappy Tomato Pizza.
+The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+Fort Mitchell is in Kentucky.
+I need to find the county in Kentucky where Fort Mitchell is located. The passage does not state this.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find information about Snappy Tomato Pizza.
+The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+Fort Mitchell is in Kenton County.
+
+Final answer: Kenton
+RESPOSTA: Kenton
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find information about Snappy Tomato Pizza.
+The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+Fort Mitchell is in Kentucky.
+
+Final answer: Kentucky
+RESPOSTA: Kentucky
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+Final answer: Kentucky
+RESPOSTA: Kentucky
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- VETORIAL ---
+0.894 Snappy Tomato Pizza
+0.793 Pizza Hut
+0.786 2010 United States tomato shortage
+0.785 Timothy Township, Crow Wing County, Minnesota
+0.784 Naples, Florida
+
+--- BM25 ---
+35.176 Snappy Tomato Pizza
+18.06 Sicilian pizza
+14.885 New Haven, Connecticut
+14.349 2010 United States tomato shortage
+12.272 Pizza Hut
+
+--- GRAFO KG ---
+13 Snappy Tomato Pizza
+3 New Haven, Connecticut
+1 Norwegian County Road 13
+1 Pizza Hut
+
+--- HÍBRIDA ---
+0.894 Snappy Tomato Pizza
+0.793 Pizza Hut
+0.786 2010 United States tomato shortage
+0.785 Timothy Township, Crow Wing County, Minnesota
+0.784 Naples, Florida
+18.06 Sicilian pizza
+14.885 New Haven, Connecticut
+1 Norwegian County Road 13
+PERGUNTA: What's the place of birth of the former member of The Sunnyboys?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the name of a former member of The Sunnyboys.
+Then, I need to find the place of birth of that person.
+Jeremy Oxley was a member of The Sunnyboys.
+Jeremy Oxley was born in Kingscliff, New South Wales.
+
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The passage does not mention the place of birth of any member of The Sunnyboys.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find information about The Sunnyboys.
+Then, I need to find information about Jeremy Oxley.
+Jeremy Oxley was born in Kingscliff, New South Wales.
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, find the person who is a former member of The Sunnyboys. The passage "Jeremy Oxley" states that Jeremy Oxley fronted the 1980s pop-rock band Sunnyboys.
+Then, find the place of birth of Jeremy Oxley. The passage "Jeremy Oxley" states that Jeremy Saxon Oxley (born 1961 in Kingscliff, New South Wales).
+
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- VETORIAL ---
+0.835 Sunnyboys
+0.83 Jeremy Oxley
+0.793 Wilson Phillips
+0.792 Couzin Ed
+0.791 Roxy Recordings
+
+--- BM25 ---
+29.231 Sunnyboys
+27.398 A Prisoner of Birth
+27.398 A Prisoner of Birth
+27.227 Birth certificate
+27.227 Birth certificate
+
+--- GRAFO KG ---
+6 Sunnyboys
+3 Streams of Expression
+3 Jeremy Oxley
+2 List of Bombardier CRJ operators
+2 Hughesville, Maryland
+
+--- HÍBRIDA ---
+0.835 Sunnyboys
+0.83 Jeremy Oxley
+0.793 Wilson Phillips
+0.792 Couzin Ed
+0.791 Roxy Recordings
+27.398 A Prisoner of Birth
+27.227 Birth certificate
+3 Streams of Expression
+2 List of Bombardier CRJ operators
+2 Hughesville, Maryland
+PERGUNTA: In which district was Ernie Watts born?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find information about Ernie Watts.
+The passage states Ernie Watts was born in Woolhampton in Berkshire.
+Final answer: Woolhampton
+RESPOSTA: Woolhampton
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find where Ernie Watts was born.
+The passage states Ernie Watts was born in Woolhampton in Berkshire.
+Now I need to find which district Woolhampton is in.
+The passage does not mention which district Woolhampton is in.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find information about Ernie Watts.
+The passage states Ernie Watts was born in Woolhampton in Berkshire.
+Final answer: Berkshire
+RESPOSTA: Berkshire
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, find Ernie Watts. Then find the district he was born in.
+Ernie Watts was born in Woolhampton in Berkshire.
+Woolhampton is in Berkshire.
+The passages do not state which district Berkshire is in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- VETORIAL ---
+0.86 Ernie Watts (footballer, born 1872)
+0.782 Dnovsky District
+0.779 Gentle Thoughts
+0.774 Marin County Civic Center
+0.773 Salem County Vocational Technical Schools
+
+--- BM25 ---
+16.451 Ernie Watts (footballer, born 1872)
+15.591 Gentle Thoughts
+10.39 Michurinsky District
+10.38 Tuymazinsky District
+10.323 Shmidtovsky District
+
+--- GRAFO KG ---
+11 Ernie Watts (footballer, born 1872)
+1 Gentle Thoughts
+
+--- HÍBRIDA ---
+0.86 Ernie Watts (footballer, born 1872)
+0.782 Dnovsky District
+0.779 Gentle Thoughts
+0.774 Marin County Civic Center
+0.773 Salem County Vocational Technical Schools
+10.39 Michurinsky District
+10.38 Tuymazinsky District
+10.323 Shmidtovsky District
+PERGUNTA: Which county does Lloyd Dane's birthplace belong to?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find Lloyd Dane's birthplace.
+The passage states Lloyd Dane was from Eldon, Missouri.
+Then, I need to find which county Eldon is in.
+The passage does not mention which county Eldon is in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find Lloyd Dane's birthplace.
+The passage states he was from Eldon, Missouri.
+Missouri is not mentioned in the passages.
+The passages mention Dane County, Wisconsin multiple times.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the birthplace of Lloyd Dane.
+The passage states Lloyd Dane was from Eldon, Missouri.
+Now I need to find which county Eldon is in.
+The passage does not mention the county of Eldon.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find information about Lloyd Dane.
+The passage states that Lloyd Dane was from Eldon, Missouri.
+Next, I need to find the county that Eldon is in.
+The passage does not mention the county that Eldon is in.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: False
+
+--- VETORIAL ---
+0.867 Dane (town), Wisconsin
+0.866 Lloyd Dane
+0.819 Vermont, Wisconsin
+0.806 McFarland School District
+0.805 Gmina Brzeziny, Łódź Voivodeship
+
+--- BM25 ---
+18.368 Lloyd Dane
+14.319 Indian Heights, Dane County, Wisconsin
+14.215 Dane (town), Wisconsin
+11.741 Door Creek, Wisconsin
+11.447 McFarland School District
+
+--- GRAFO KG ---
+11 Lloyd Dane
+2 Door Creek, Wisconsin
+2 Indian Heights, Dane County, Wisconsin
+2 Dane (town), Wisconsin
+2 Heart sounds
+
+--- HÍBRIDA ---
+0.867 Dane (town), Wisconsin
+0.866 Lloyd Dane
+0.819 Vermont, Wisconsin
+0.806 McFarland School District
+0.805 Gmina Brzeziny, Łódź Voivodeship
+14.319 Indian Heights, Dane County, Wisconsin
+11.741 Door Creek, Wisconsin
+2 Heart sounds
+PERGUNTA: Who is the spouse of the screenwriter of The Actress?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the screenwriter of The Actress.
+The passage states that Ruth Gordon wrote the screenplay for The Actress.
+Then, I need to find information about Ruth Gordon's spouse.
+The passage does not mention Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: The question asks for the spouse of the screenwriter of "The Actress."
+The passage about Nina Companeez states that she was the daughter of screenwriter Jacques Companéez.
+The passage states that Nina Companeez was married to someone, but does not mention their name.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the screenwriter of The Actress.
+The passage states that Ruth Gordon wrote the screenplay for The Actress.
+Next, I need to find information about Ruth Gordon's spouse.
+The passage does not mention anything about Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: First, I need to find the screenwriter of The Actress.
+The passage states that Ruth Gordon wrote the screenplay for The Actress.
+Then, I need to find a fact about Ruth Gordon.
+The passage does not mention anything about Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- VETORIAL ---
+0.849 The Actress
+0.791 Nina Companeez
+0.789 James Dearden
+0.787 Angelica Page
+0.786 Eva Ionesco
+
+--- BM25 ---
+29.385 List of show business families
+29.385 List of show business families
+27.427 Upi Avianto
+24.867 Nina Companeez
+24.534 Anthony Veiller
+
+--- GRAFO KG ---
+7 The Actress
+3 Nina Companeez
+2 Nathalie Boutefeu
+2 Jennifer Saunders
+2 Djenar Maesa Ayu
+
+--- HÍBRIDA ---
+0.849 The Actress
+0.791 Nina Companeez
+0.789 James Dearden
+0.787 Angelica Page
+0.786 Eva Ionesco
+29.385 List of show business families
+27.427 Upi Avianto
+24.534 Anthony Veiller
+2 Nathalie Boutefeu
+2 Jennifer Saunders
+2 Djenar Maesa Ayu
+PERGUNTA: What award was received by the person who authored Missing Person?
+
+--- RESPOSTA VETORIAL ---
+RACIOCINIO: First, I need to find the author of "Missing Person." The passage states that "Missing Person" was written by Patrick Modiano.
+Then, I need to find what award Patrick Modiano received. The passage states that "Missing Person" was awarded the Prix Goncourt in 1978.
+
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+RACIOCINIO: First, I need to find the author of "Missing Person."
+The passage states that Patrick Modiano authored "Missing Person."
+Then, I need to find what award Patrick Modiano received.
+The passage states that "Missing Person" was awarded the Prix Goncourt.
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+RACIOCINIO: First, I need to find the author of "Missing Person." The passage states that "Missing Person" was written by Patrick Modiano.
+Next, I need to find what award Patrick Modiano received. The passage states that "Missing Person" was awarded the Prix Goncourt.
+
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+RACIOCINIO: The passage states that Missing Person was awarded the Prix Goncourt in 1978.
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- VETORIAL ---
+0.856 Missing Person (novel)
+0.792 Theresa Schwegel
+0.792 Theresa Schwegel
+0.791 Haig Bosmajian
+0.784 Nobel Prize in Literature
+
+--- BM25 ---
+26.245 Missing Person (novel)
+19.276 Yogendra Singh Yadav
+18.733 List of Nobel laureates
+18.733 List of Nobel laureates
+18.083 List of awards and nominations received by Jennifer Lawrence
+
+--- GRAFO KG ---
+5 Missing Person (novel)
+1 Taktin Oey
+1 Bùi Bích Phương
+1 62nd Academy Awards
+1 Hyderabad
+
+--- HÍBRIDA ---
+0.856 Missing Person (novel)
+0.792 Theresa Schwegel
+0.791 Haig Bosmajian
+0.784 Nobel Prize in Literature
+19.276 Yogendra Singh Yadav
+18.733 List of Nobel laureates
+18.083 List of awards and nominations received by Jennifer Lawrence
+1 Taktin Oey
+1 Bùi Bích Phương
+1 62nd Academy Awards
+1 Hyderabad
+RESULTADO FINAL (60 primeiras perguntas da rodada de 70, sem profundidade)
+
+VETORIAL: 8 de 60
+BM25: 3 de 60
+KG: 2 de 60
+HÍBRIDA: 9 de 60

@@ -1,0 +1,64 @@
+
+BM25 exemplos:
+
+  Pergunta 9: What company succeeded the owner of Empire Sports Network?
+  Certa: Time Warner Cable
+  Busca nova dos dois: Adelphia Communications Corporation successor
+  Vetorial: not found
+  BM25: Time Warner Cable
+
+  Pergunta 16: What award did the author of The Red Tree receive?
+  Certa: Academy Award for Best Animated Short Film
+  Busca nova dos dois: Shaun Tan awards
+  Vetorial: not found
+  BM25: Academy Award for Best Animated Short Film
+
+
+EXEMPLO QUE A PROFUNDIDADE RESOLVEU
+
+  Which company owns the manufacturer of Learjet 60?
+  Certa: Bombardier
+  Sem profundidade: as 4 responderam not found
+  Com profundidade: as 4 acertaram, buscando o dono da Bombardier Aerospace
+
+
+
+
+Alguns Erros de meio de caminho ainda acontecem:
+
+  (vetorial): Who founded the political party of Dimuthu Bandara Abayakoon?
+  Certa: Rohana Wijeweera
+  Respondeu o partido: Janatha Vimukthi Peramuna
+
+  (BM25 e KG): Bancroft's county borders what county?
+  Certa: Haliburton County
+  Respondeu o condado do próprio Bancroft: Hastings County
+
+  (BM25): Who is part of the band that performed Full Cooperation?
+  Certa: Erick Sermon
+  Respondeu o nome da banda: Def Squad
+
+
+
+  delírios:
+
+  Pergunta 43 (vetorial): Where was the spouse of Frances Tupper born?
+  Certa: Amherst
+  Respondeu uma data em vez de um lugar: March 14, 1826
+
+
+acertos mas a função não pegou
+
+  What is the goal of the group that European Movement Germany is a member of?
+  Certa: European integration
+  As 4 responderam: promoting European integration
+
+  Where was the author of Hannibal and Scipio educated at?
+  Certa: Exeter College
+  As 4 responderam: Exeter College, Oxford
+
+  What award was received by the person who authored Missing Person?
+  Certa: Prix Goncourt
+  BM25 e KG responderam: 1978 Prix Goncourt
+
+

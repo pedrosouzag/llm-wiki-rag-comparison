@@ -356,19 +356,19 @@ def montar_contexto(pergunta, flag):
   elif flag == 2:
     achados = search_chunks_BM25(pergunta, chunks, bm25)
   # se for KG
-  elif flag == 3:
-    achados = search_chunks_KG(pergunta, chunks, KG)
+  # elif flag == 3:
+  #   achados = search_chunks_KG(pergunta, chunks, KG)
 
   # se for vetor, kg e bm25 juntos
   elif flag == 4:
     # pega os chunks das 3 funcoes de busca
     chunks_Vetor = search_chunks(pergunta, chunks, vetores, k = 5)
     chunks_BM25 = search_chunks_BM25(pergunta, chunks, bm25)
-    chunks_KG = search_chunks_KG(pergunta, chunks, KG)
+    # chunks_KG = search_chunks_KG(pergunta, chunks, KG)
 
     # junta as 3 listas, mas tirando os chunks que se repetem
     achados = []
-    for chunk, nota in chunks_Vetor + chunks_BM25 + chunks_KG:
+    for chunk, nota in chunks_Vetor + chunks_BM25:
       repetido = False
       for chunk_existente, nota_existente in achados:
         if chunk["texto"] == chunk_existente["texto"]:
@@ -471,14 +471,14 @@ def rodar_pergunta(pergunta, resposta_certa):
     print("CERTA:", resposta_certa)
     print("ACERTOU:", acertou_bm25)
 
-    # KNOWLEDGE GRAPH
-    print("\n--- RESPOSTA KG ---")
-    contexto3, achados2 = busca_profundidade(pergunta, flag=3)
-    resposta = perguntar_rag(pergunta, contexto3)
-    acertou_kg = verificar_Resposta(resposta, resposta_certa)
-    print("RESPOSTA:", resposta)
-    print("CERTA:", resposta_certa)
-    print("ACERTOU:", acertou_kg)
+    # # KNOWLEDGE GRAPH
+    # print("\n--- RESPOSTA KG ---")
+    # contexto3, achados2 = busca_profundidade(pergunta, flag=3)
+    # resposta = perguntar_rag(pergunta, contexto3)
+    # acertou_kg = verificar_Resposta(resposta, resposta_certa)
+    # print("RESPOSTA:", resposta)
+    # print("CERTA:", resposta_certa)
+    # print("ACERTOU:", acertou_kg)
 
     # HIBRIDA
     print("\n--- RESPOSTA HÍBRIDA ---")
@@ -496,14 +496,15 @@ def rodar_pergunta(pergunta, resposta_certa):
     print("\n--- BM25 ---")
     print_BM25(achados1)
 
-    print("\n--- GRAFO KG ---")
-    print_KG(achados2)
+    # print("\n--- GRAFO KG ---")
+    #print_KG(achados2)
 
     print("\n--- HÍBRIDA ---")
     print_BM25(achados3)
 
     # devolve se cada estrategia acertou pra contar depois
-    return acertou_vetor, acertou_bm25, acertou_kg, acertou_hibrida
+    # return acertou_vetor, acertou_bm25, acertou_kg, acertou_hibrida
+    return acertou_vetor, acertou_bm25, acertou_hibrida
 
 
 
@@ -518,8 +519,8 @@ print("VETORES CONSTRUIDOS:", len(vetores), "embeddings")
 bm25 = build_BM25(chunks)
 print("BM25 CONSTRUIDO")
 
-KG = build_KG(chunks)
-print("GRAFO CONSTRUIDO:", KG.number_of_nodes(), "nos e", KG.number_of_edges(), "arestas")
+# KG = build_KG(chunks)
+# print("GRAFO CONSTRUIDO:", KG.number_of_nodes(), "nos e", KG.number_of_edges(), "arestas")
 
 
 
@@ -553,24 +554,24 @@ perguntas, respostas = get_Perguntas(PASTA_BASE)
 # contadores 
 total_vetor = 0
 total_bm25 = 0
-total_kg = 0
+# total_kg = 0
 total_hibrida = 0
 
 n = len(perguntas)
 
 for i in range(n):
     # rodando pergunta
-    vetor, bm25_ok, kg, hibrida = rodar_pergunta(perguntas[i], respostas[i])
-
+    # vetor, bm25_ok, kg, hibrida = rodar_pergunta(perguntas[i], respostas[i])
+    vetor, bm25_ok, hibrida = rodar_pergunta(perguntas[i], respostas[i])
     # faz a soma para marcar estatisticas
     total_vetor += vetor
     total_bm25 += bm25_ok
-    total_kg += kg
+    # total_kg += kg
     total_hibrida += hibrida
 
 print("\nRESULTADO FINAL ")
 print("VETORIAL:", total_vetor, "de", n)
 print("BM25:", total_bm25, "de", n)
-print("KG:", total_kg, "de", n)
+# print("KG:", total_kg, "de", n)
 print("HÍBRIDA:", total_hibrida, "de", n)
      

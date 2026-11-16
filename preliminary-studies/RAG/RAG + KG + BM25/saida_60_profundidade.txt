@@ -1,0 +1,5653 @@
+CHUNKS CONSTRUIDOS: 1200 chunks
+VETORES CONSTRUIDOS: 1200 embeddings
+BM25 CONSTRUIDO
+GRAFO CONSTRUIDO: 8808 nos e 10789 arestas
+PERGUNTA: Who is the spouse of the Green performer?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passages mention Steve Hillage as a British progressive rock musician and Grant Green as an American jazz guitarist.
+Neither passage mentions a spouse for either of them.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Norm Nixon
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the performer who is part of a show business family.
+The performer is Debbie Allen.
+Then, find who Debbie Allen is married to.
+Debbie Allen is married to Norm Nixon.
+Final answer: Norm Nixon
+RESPOSTA: Norm Nixon
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Steve Hillage spouse
+nova busca 2 : Miquette Giraudy details
+TOTAL DE CHUNKS: 3
+RACIOCINIO: First, find the Green performer.
+The Green performer is Steve Hillage.
+Then, find the spouse of Steve Hillage.
+Miquette Giraudy is the partner of Steve Hillage.
+Final answer: Miquette Giraudy
+RESPOSTA: Miquette Giraudy
+CERTA: ['Miquette Giraudy']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Steve Hillage spouse
+nova busca 2 : Debbie Allen spouse
+TOTAL DE CHUNKS: 17
+RACIOCINIO: The passage states that Phylicia Rashād is the former spouse of Victor Willis, former lead singer of the group Village People. The song "Little Green" is performed by Joni Mitchell. Therefore, the spouse of the Green performer is Victor Willis.
+Final answer: Victor Willis
+RESPOSTA: Victor Willis
+CERTA: ['Miquette Giraudy']
+ACERTOU: False
+
+--- VETORIAL ---
+0.793 Little Green (song)
+0.788 Green (Steve Hillage album)
+0.786 Grant's First Stand
+0.786 Grant's First Stand
+0.783 The Main Attraction (album)
+
+--- BM25 ---
+23.003 List of show business families
+23.003 List of show business families
+19.402 Green Party of Tennessee
+16.769 Green
+16.532 Scott Aukerman
+4.793 2015 AFL Grand Final
+4.723 Occupational Safety and Health Act (United States)
+
+--- GRAFO KG ---
+10 Green (Steve Hillage album)
+6 Green
+1 Miquette Giraudy
+
+--- HÍBRIDA ---
+0.793 Little Green (song)
+0.788 Green (Steve Hillage album)
+0.786 Grant's First Stand
+0.783 The Main Attraction (album)
+23.003 List of show business families
+19.402 Green Party of Tennessee
+16.769 Green
+16.532 Scott Aukerman
+0.822 Miquette Giraudy
+0.789 Shiranthi Rajapaksa
+6.389 Jazz Contemporary
+6.288 Gentle Thoughts
+0.781 Anna Benson
+0.774 Allison DuBois
+0.772 Melissa Reeves
+7.535 Dr. Quinn, Medicine Woman
+5.566 Mok Kwai-lan
+PERGUNTA: Who founded the company that distributed the film UHF?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Orion Pictures founders
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the film UHF.
+Then, find the company that supported the film UHF.
+Finally, find who founded that company.
+
+Final answer: Mike Medavoy
+RESPOSTA: Mike Medavoy
+CERTA: ['Mike Medavoy']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Orion Pictures founders
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the film UHF.
+Then, find the company that supported the film UHF.
+Finally, find who founded that company.
+Final answer: Mike Medavoy
+RESPOSTA: Mike Medavoy
+CERTA: ['Mike Medavoy']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Orion Pictures founders
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, the passage mentions that Yankovic and Levey wrote the film UHF.
+Then, the passage states that they got Orion Pictures' support for financing the film.
+Finally, Mike Medavoy co-founded Orion Pictures in 1978.
+Final answer: Mike Medavoy
+RESPOSTA: Mike Medavoy
+CERTA: ['Mike Medavoy']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Orion Pictures founders
+busca repetida, para
+TOTAL DE CHUNKS: 15
+RACIOCINIO: First, we need to find the film UHF. Then, we need to find the company that distributed it.
+The passage states that Orion Pictures supported the film UHF.
+Final answer: Orion Pictures
+RESPOSTA: Orion Pictures
+CERTA: ['Mike Medavoy']
+ACERTOU: False
+
+--- VETORIAL ---
+0.812 SModcast Pictures
+0.811 Amblin Entertainment
+0.795 UHF (film)
+0.794 Spry Fox
+0.793 Pizza Hut
+0.83 Mike Medavoy
+0.77 Kill Rock Stars
+0.766 You Can't Have Everything
+0.766 Dana MacDuff
+
+--- BM25 ---
+21.353 SModcast Pictures
+19.878 Amblin Entertainment
+19.261 UHF (film)
+17.198 Upi Avianto
+16.56 Rabbit Hole (film)
+16.403 Mike Medavoy
+6.868 Dana MacDuff
+5.571 Rochester Community Schools (Michigan)
+
+--- GRAFO KG ---
+6 The Learning Company
+2 French Connection II
+2 SModcast Pictures
+2 UHF (film)
+2 Prison Break
+2 Mike Medavoy
+
+--- HÍBRIDA ---
+0.812 SModcast Pictures
+0.811 Amblin Entertainment
+0.795 UHF (film)
+0.794 Spry Fox
+0.793 Pizza Hut
+17.198 Upi Avianto
+16.56 Rabbit Hole (film)
+6 The Learning Company
+2 French Connection II
+2 Prison Break
+0.83 Mike Medavoy
+0.77 Kill Rock Stars
+0.766 You Can't Have Everything
+0.766 Dana MacDuff
+5.571 Rochester Community Schools (Michigan)
+PERGUNTA: What administrative territorial entity is the owner of Ciudad Deportiva located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Nuevo Laredo Municipality
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The Ciudad Deportiva is located in Nuevo Laredo.
+The Municipality of Nuevo Laredo is located in the Mexican state of Tamaulipas.
+Therefore, the administrative territorial entity that owns Ciudad Deportiva is the Municipality of Nuevo Laredo, Tamaulipas.
+Final answer: Municipality of Nuevo Laredo
+RESPOSTA: Municipality of Nuevo Laredo
+CERTA: ['Tamaulipas']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Belarus
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The Ciudad Deportiva is located in Nuevo Laredo, Mexico.
+Nuevo Laredo is in Mexico.
+The passages do not mention who owns Ciudad Deportiva.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Tamaulipas']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage mentions Minsk Region is a separate administrative territorial entity of Belarus.
+The passage does not mention Ciudad Deportiva.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Tamaulipas']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Belarus
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The Ciudad Deportiva is located in Nuevo Laredo, Mexico.
+The Municipality of Nuevo Laredo is located in the Mexican state of Tamaulipas.
+Final answer: Tamaulipas
+RESPOSTA: Tamaulipas
+CERTA: ['Tamaulipas']
+ACERTOU: True
+
+--- VETORIAL ---
+0.849 Ciudad Deportiva (Nuevo Laredo)
+0.84 Sportivo Italiano
+0.81 Fox Sports West and Prime Ticket
+0.801 Nuevo Laredo Municipality
+0.8 Ciudad del Niño metro station
+0.783 Lago District
+0.778 New Richland, Minnesota
+
+--- BM25 ---
+22.451 Ciudad Deportiva (Nuevo Laredo)
+19.529 Minsk Region
+19.529 Minsk Region
+19.529 Minsk Region
+19.529 Minsk Region
+
+--- GRAFO KG ---
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.849 Ciudad Deportiva (Nuevo Laredo)
+0.84 Sportivo Italiano
+0.81 Fox Sports West and Prime Ticket
+0.801 Nuevo Laredo Municipality
+0.8 Ciudad del Niño metro station
+19.529 Minsk Region
+PERGUNTA: Where is Ulrich Walter's employer headquartered?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Argonne National Laboratory location
+nova busca 2 : NORC at the University of Chicago headquarters
+TOTAL DE CHUNKS: 11
+RACIOCINIO: Ulrich Walter completed post-doc positions at the Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California.
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Argonne National Laboratory location
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find Ulrich Walter's employer.
+Ulrich Walter was selected to join the German astronaut team, and completed training at the German Aerospace Center.
+The German Aerospace Center is headquartered in Cologne, Germany.
+Final answer: Cologne
+RESPOSTA: Cologne
+CERTA: ['Cologne']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Argonne National Laboratory location
+busca repetida, para
+TOTAL DE CHUNKS: 2
+RACIOCINIO: First, find Ulrich Walter's employers.
+He worked at Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California.
+The question asks where his employer is headquartered, so we need to find the location of Argonne National Laboratory and the University of California at Berkeley. Argonne National Laboratory is in Chicago, Illinois, and the University of California at Berkeley is in Berkeley, California.
+
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Argonne National Laboratory headquarters
+busca repetida, para
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find Ulrich Walter.
+He was selected to join the German astronaut team after post-doc positions at Argonne National Laboratory, Chicago, Illinois, and the University of California at Berkeley, California.
+Argonne National Laboratory is headquartered in Chicago, Illinois.
+Final answer: Chicago, Illinois
+RESPOSTA: Chicago, Illinois
+CERTA: ['Cologne']
+ACERTOU: False
+
+--- VETORIAL ---
+0.806 Ulrich Walter
+0.803 Ulrich Walser House
+0.795 John Deere World Headquarters
+0.795 Schlage
+0.786 Plansee SE
+0.79 Aerojet
+0.782 NORC at the University of Chicago
+0.782 HM Prison Tarrengower
+0.781 Northwest Territories
+0.784 General Electric
+0.773 Medical Center of the Rockies
+
+--- BM25 ---
+12.378 Schlage
+12.024 Ulrich Walser House
+11.434 Southampton
+10.729 Ulrich Walter
+9.866 Walter V. Davidson House
+6.694 Benson Junction, Florida
+6.174 Scariest Places on Earth
+6.032 Great Wolf Resorts
+6.022 Billy Goat Tavern
+
+--- GRAFO KG ---
+6 Ulrich Walter
+2 Kevin Sussman
+
+--- HÍBRIDA ---
+0.806 Ulrich Walter
+0.803 Ulrich Walser House
+0.795 John Deere World Headquarters
+0.795 Schlage
+0.786 Plansee SE
+11.434 Southampton
+9.866 Walter V. Davidson House
+2 Kevin Sussman
+0.792 NORC at the University of Chicago
+0.781 Aerojet
+6.595 Dunbar Hospital
+PERGUNTA: Which company owns the manufacturer of Learjet 60?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Bombardier Aerospace ownership
+nova busca 2 : Bombardier Aerospace owner
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The Learjet 60 is manufactured by Bombardier Aerospace.
+The CRJ series is produced by Bombardier Aerospace, which is an aerospace division of Bombardier Inc.
+Therefore, Bombardier Inc. owns the manufacturer of Learjet 60.
+Final answer: Bombardier Inc.
+RESPOSTA: Bombardier Inc.
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Bombardier Aerospace history
+nova busca 2 : Bombardier Aerospace parent company
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The Learjet 60 is manufactured by Bombardier Aerospace.
+The aerospace division of Bombardier Aerospace is Bombardier Inc.
+Final answer: Bombardier Inc
+RESPOSTA: Bombardier Inc
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Bombardier Aerospace parent company
+nova busca 2 : Bombardier Aerospace owner
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the manufacturer of Learjet 60.
+The Learjet 60 is manufactured by Bombardier Aerospace.
+Then, find which company owns Bombardier Aerospace.
+Bombardier Aerospace is an aerospace division of Bombardier Inc.
+Final answer: Bombardier Inc
+RESPOSTA: Bombardier Inc
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Bombardier Aerospace
+busca repetida, para
+TOTAL DE CHUNKS: 14
+RACIOCINIO: The Learjet 60 is manufactured by Bombardier Aerospace.
+The passage states that Bombardier Aerospace is part of Bombardier Inc.
+Final answer: Bombardier Inc.
+RESPOSTA: Bombardier Inc.
+CERTA: ['Bombardier Inc.', 'Bombardier']
+ACERTOU: True
+
+--- VETORIAL ---
+0.892 Learjet 60
+0.841 Aerojet
+0.827 GeminiJets
+0.802 Lee Evans (producer)
+0.798 Windjammer Communications
+0.825 List of Bombardier CRJ operators
+
+--- BM25 ---
+22.467 Learjet 60
+14.99 Wagner Manufacturing Company
+14.475 Commer
+13.407 Rosenlew
+13.317 GeminiJets
+21.175 List of Bombardier CRJ operators
+6.028 Ulrich Walter
+5.8 Piping Technology and Products
+5.542 André Duchesne
+11.52 The Great Lakes Group
+7.308 British nationality law
+
+--- GRAFO KG ---
+6 Learjet 60
+6 The Learning Company
+2 Prison Break
+1 Commer
+1 Wagner Manufacturing Company
+2 List of Bombardier CRJ operators
+1 Crystal Kay
+
+--- HÍBRIDA ---
+0.892 Learjet 60
+0.841 Aerojet
+0.827 GeminiJets
+0.802 Lee Evans (producer)
+0.798 Windjammer Communications
+14.99 Wagner Manufacturing Company
+14.475 Commer
+13.407 Rosenlew
+6 The Learning Company
+2 Prison Break
+0.838 List of Bombardier CRJ operators
+0.78 Marketwired
+6.028 Ulrich Walter
+5.8 Piping Technology and Products
+PERGUNTA: Who is the child of Caroline LeRoy's spouse?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Daniel Webster children
+nova busca 2 : Daniel Fletcher Webster
+TOTAL DE CHUNKS: 12
+RACIOCINIO: Caroline LeRoy's spouse was Daniel Webster. Fletcher Webster was the son of Daniel Webster.
+Final answer: Fletcher Webster
+RESPOSTA: Fletcher Webster
+CERTA: ['Fletcher Webster']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Daniel Webster children
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find Caroline LeRoy's spouse.
+Caroline LeRoy's spouse was Daniel Webster.
+Then, find the child of Daniel Webster.
+Daniel Webster's son was Fletcher Webster.
+Final answer: Fletcher Webster
+RESPOSTA: Fletcher Webster
+CERTA: ['Fletcher Webster']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Daniel Webster children
+nova busca 2 : Daniel Fletcher Webster
+TOTAL DE CHUNKS: 8
+RACIOCINIO: Caroline LeRoy's spouse was Daniel Webster.
+Daniel Webster's son was Fletcher Webster.
+Final answer: Fletcher Webster
+RESPOSTA: Fletcher Webster
+CERTA: ['Fletcher Webster']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Hannah Cornell
+nova busca 2 : Daniel Webster
+TOTAL DE CHUNKS: 21
+RACIOCINIO: Caroline LeRoy's spouse was Daniel Webster. Fletcher Webster was the son of Daniel Webster.
+Final answer: Fletcher Webster
+RESPOSTA: Fletcher Webster
+CERTA: ['Fletcher Webster']
+ACERTOU: True
+
+--- VETORIAL ---
+0.858 Caroline LeRoy
+0.803 Leroy (name)
+0.783 Lee Evans (producer)
+0.782 Constance of Burgundy
+0.779 Princess Stéphanie of Monaco
+0.806 Fletcher Webster
+0.786 Remember When: The Anthology
+0.776 The Memory Keeper's Daughter
+0.775 Don Draper
+0.762 Konqueror
+0.762 The Shadow of Saganami
+0.76 Dog Star Man
+
+--- BM25 ---
+25.311 Caroline LeRoy
+17.222 Leroy Township, Ingham County, Michigan
+17.053 Leroy (name)
+17.01 The Memory Keeper's Daughter
+16.49 Sweet Caroline
+18.257 Fletcher Webster
+12.762 Daniel Bremer Juell
+7.454 Daniel Marsin
+6.451 International Children's Peace Prize
+
+--- GRAFO KG ---
+6 Leroy (name)
+5 Caroline LeRoy
+5 The Miracle Child
+3 Sweet Caroline
+1 Girl
+4 Fletcher Webster
+1 Julia's House
+1 Birth certificate
+
+--- HÍBRIDA ---
+0.858 Caroline LeRoy
+0.803 Leroy (name)
+0.783 Lee Evans (producer)
+0.782 Constance of Burgundy
+0.779 Princess Stéphanie of Monaco
+17.222 Leroy Township, Ingham County, Michigan
+17.01 The Memory Keeper's Daughter
+16.49 Sweet Caroline
+5 The Miracle Child
+1 Girl
+0.776 Hannibal (disambiguation)
+0.774 John "Hannibal" Smith
+0.771 Christel Khalil
+4.45 Andrea Kremer
+0.807 Fletcher Webster
+0.769 The Shadow of Saganami
+0.76 Stan Tekiela
+0.756 Dog Star Man
+8.788 Daniel Bremer Juell
+7.454 Daniel Marsin
+5.157 Missing Person (novel)
+PERGUNTA: Who is the grandmother of Philippe, Duke of Orléans?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Françoise Marie de Bourbon
+nova busca 2 : Anne of Austria birthplace
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find Philippe, Duke of Orléans.
+Then, find his parents: Louis XIII of France and Anne of Austria.
+Then, find Anne of Austria's parents: Philip III of Spain and Anna of Austria.
+Then, find Anna of Austria's parents: Maria Maddalena de' Medici and Ferdinando I.
+Finally, find the mother of Maria Maddalena de' Medici: Christina of Lorraine.
+
+Final answer: Christina of Lorraine
+RESPOSTA: Christina of Lorraine
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Madame de Montespan
+nova busca 2 : Anne of Austria birthplace
+TOTAL DE CHUNKS: 13
+RACIOCINIO: First, find Philippe, Duke of Orléans.
+Then, find his parents: Louis XIII of France and Anne of Austria.
+Then, find the mother's mother, Anne of Austria's mother, Anna of Austria.
+Final answer: Anna of Austria
+RESPOSTA: Anna of Austria
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Anne of Austria
+nova busca 2 : Anne of Austria mother
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Philippe, Duke of Orléans.
+Then, find his mother's name.
+Finally, find the mother of his mother.
+
+Final answer: Anne of Austria
+RESPOSTA: Anne of Austria
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Louis XIV mistress
+nova busca 2 : Anne of Austria birthplace
+TOTAL DE CHUNKS: 15
+RACIOCINIO: First, we need to find information about Philippe, Duke of Orléans.
+Then, we need to find information about his mother, Anne of Austria.
+Finally, we need to find information about Anne of Austria's mother.
+Anne of Austria's mother was Anna of Austria.
+Final answer: Anna of Austria
+RESPOSTA: Anna of Austria
+CERTA: ["Marie de' Medici"]
+ACERTOU: False
+
+--- VETORIAL ---
+0.881 Philippe I, Duke of Orléans
+0.849 François d'Orléans, Prince of Joinville
+0.848 Louise Élisabeth d'Orléans
+0.824 Louis Philippe I
+0.823 Mercedes of Orléans
+0.835 Marie Anne de Bourbon
+0.797 F. A. Forbes
+0.795 Maria Maddalena de' Medici
+0.795 Philip III of Spain
+0.783 Constance of Burgundy
+
+--- BM25 ---
+31.264 Philippe I, Duke of Orléans
+29.225 François d'Orléans, Prince of Joinville
+26.117 Louise Élisabeth d'Orléans
+23.362 Louis Philippe I
+22.46 Infante Henrique, Duke of Coimbra
+5.841 Nannina de' Medici
+5.622 Portrait of Ippolito de' Medici
+5.555 Pietro de' Medici
+5.511 Hôtel de Soissons
+14.89 Philip III of Spain
+11.423 Marie Anne de Bourbon
+9.944 Vasari Corridor
+9.624 Dinner at the Homesick Restaurant
+
+--- GRAFO KG ---
+10 Philippe I, Duke of Orléans
+4 Louise Élisabeth d'Orléans
+3 Mercedes of Orléans
+3 Louis Philippe I
+2 Emmanuelle Boidron
+1 Plansee SE
+1 Vasari Corridor
+
+--- HÍBRIDA ---
+0.881 Philippe I, Duke of Orléans
+0.849 François d'Orléans, Prince of Joinville
+0.848 Louise Élisabeth d'Orléans
+0.824 Louis Philippe I
+0.823 Mercedes of Orléans
+22.46 Infante Henrique, Duke of Coimbra
+2 Emmanuelle Boidron
+0.829 Marie Anne de Bourbon
+0.817 Leonora Dori
+0.813 Medici Fountain
+0.795 Philip III of Spain
+0.783 Constance of Burgundy
+9.944 Vasari Corridor
+9.624 Dinner at the Homesick Restaurant
+1 Plansee SE
+PERGUNTA: What is the goal of the group that European Movement Germany is a member of?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : European Movement International goals
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find European Movement Germany.
+Then, find the group that European Movement Germany is a member of.
+Finally, find the goal of that group.
+
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : European Movement International goals
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Bernd Hüttemann, who is Secretary General of the European Movement Germany.
+Then, find the European Movement International, which Bernd Hüttemann is Vice President of, and it coordinates associations with the goal of promoting European integration.
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : European Movement International goals
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find European Movement Germany.
+Then, find the group that European Movement Germany is a member of.
+Finally, find the goal of that group.
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : European Movement International goals
+nova busca 2 : promoting European integration
+TOTAL DE CHUNKS: 20
+RACIOCINIO: The European Movement International is a lobbying association that coordinates the efforts of associations and national councils with the goal of promoting European integration, and disseminating information about it. Bernd Hüttemann is Vice President of the European Movement International and Secretary General of the European Movement Germany.
+Final answer: promoting European integration
+RESPOSTA: promoting European integration
+CERTA: ['European integration']
+ACERTOU: False
+
+--- VETORIAL ---
+0.879 European Movement International
+0.826 Bernd Hüttemann
+0.799 Jean-Marie Cavada
+0.795 Constitutional Movement
+0.789 Congress of the New Right
+0.777 Programme for International Student Assessment
+0.766 Child labour
+
+--- BM25 ---
+42.381 European Movement International
+35.732 Bernd Hüttemann
+35.707 Daniel Marsin
+35.419 Franck Proust
+33.422 Antonia Parvanova
+12.222 Ivo Visković
+10.829 Jean-Marie Cavada
+10.652 Ignazio Corrao
+
+--- GRAFO KG ---
+5 European Movement International
+3 John "Hannibal" Smith
+2 Ottoman Empire
+2 Bernd Hüttemann
+2 Jean-Marie Cavada
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+
+--- HÍBRIDA ---
+0.879 European Movement International
+0.826 Bernd Hüttemann
+0.799 Jean-Marie Cavada
+0.795 Constitutional Movement
+0.789 Congress of the New Right
+35.707 Daniel Marsin
+35.419 Franck Proust
+33.422 Antonia Parvanova
+3 John "Hannibal" Smith
+2 Ottoman Empire
+0.777 Programme for International Student Assessment
+0.766 Child labour
+12.222 Ivo Visković
+10.652 Ignazio Corrao
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+0.798 Africa Partnership Station
+0.785 Confederation of Finnish Industries
+8.088 Madrasa
+6.814 2003 European Fencing Championships
+PERGUNTA: What company succeeded the owner of Empire Sports Network?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Adelphia Communications Corporation successor
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the owner of Empire Sports Network.
+The owner was Adelphia Communications Corporation.
+Then, find what company succeeded Adelphia Communications Corporation.
+This information is not in the passages.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Adelphia Communications Corporation successor
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The Adelphia Communications Corporation owned the Empire Sports Network. Windjammer Cable was formed by the sale of systems that Time Warner Cable acquired from the bankrupt Adelphia. Therefore, Time Warner Cable succeeded Adelphia Communications Corporation.
+Final answer: Time Warner Cable
+RESPOSTA: Time Warner Cable
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Houghton Mifflin Harcourt
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The passage states that Empire Sports Network was owned by the Adelphia Communications Corporation. It does not mention what company succeeded Adelphia.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : The Walt Disney Company
+busca repetida, para
+TOTAL DE CHUNKS: 18
+RACIOCINIO: The Adelphia Communications Corporation owned the Empire Sports Network. Windjammer Cable was formed by the sale of 25 systems that Adelphia Communications Corporation had.
+Final answer: Windjammer Cable
+RESPOSTA: Windjammer Cable
+CERTA: ['Time Warner Cable', 'Time Warner']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 Empire Sports Network
+0.816 Fox Sports West and Prime Ticket
+0.815 EA Sports
+0.811 Nova Sports
+0.803 Comcast Sports Southwest
+0.808 Windjammer Communications
+0.776 Southern California Edison
+0.775 WHOS
+0.773 WZEI
+
+--- BM25 ---
+25.573 Empire Sports Network
+15.575 Highway 1 (Afghanistan)
+15.542 Tennis on CBS
+15.507 Comcast Sports Southwest
+15.336 Andrea Kremer
+14.862 Windjammer Communications
+8.314 EMD E6
+6.037 Jackie Jackson (album)
+5.764 Mathura
+
+--- GRAFO KG ---
+8 Empire Sports Network
+6 EA Sports
+6 The Learning Company
+2 Ottoman Empire
+2 Prison Break
+1 Life at the Top
+
+--- HÍBRIDA ---
+0.874 Empire Sports Network
+0.816 Fox Sports West and Prime Ticket
+0.815 EA Sports
+0.811 Nova Sports
+0.803 Comcast Sports Southwest
+15.575 Highway 1 (Afghanistan)
+15.542 Tennis on CBS
+15.336 Andrea Kremer
+6 The Learning Company
+2 Ottoman Empire
+2 Prison Break
+0.788 Wagner Manufacturing Company
+0.786 Windjammer Communications
+0.784 Pizza Hut
+14.519 The Odd Life of Timothy Green
+9.643 Beauty and the Beast (1991 film)
+9.198 The Great Lakes Group
+1 Crystal Kay
+PERGUNTA: What province shares a border with the province where Lago District is located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Niassa Province bordering provinces
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the province where Lago District is located.
+The passage states that Lago District is in Niassa Province.
+Then, find what borders Niassa Province.
+The passage states that Lago District is bordered on the south by Lichinga.
+
+Final answer: Lichinga
+RESPOSTA: Lichinga
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Tanzania border
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the province where Lago District is located.
+Lago District is in Niassa Province in Mozambique.
+Then, find what province shares a border with Niassa Province.
+The passage does not mention what province shares a border with Niassa Province.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Lichinga province
+nova busca 2 : Tanzania border
+TOTAL DE CHUNKS: 6
+RACIOCINIO: 1. The passage states that Lago District is in Niassa Province in Mozambique.
+2. The passage states that Lago District shares its northern boundary with Tanzania.
+3. Therefore, Tanzania shares a border with the province where Lago District is located.
+Final answer: Tanzania
+RESPOSTA: Tanzania
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Tanzania border
+busca repetida, para
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find the location of Lago District.
+Lago District is located in Niassa Province in north-western Mozambique.
+Then, find what shares a border with Niassa Province.
+Lago shares its northern boundary with Tanzania.
+Final answer: Tanzania
+RESPOSTA: Tanzania
+CERTA: ['Cabo Delgado Province']
+ACERTOU: False
+
+--- VETORIAL ---
+0.896 Lago District
+0.816 Lago Verde (Queyras)
+0.816 Adaba (woreda)
+0.816 Adaba (woreda)
+0.816 Pangi Territory
+0.837 Niassa Reserve
+0.779 Northwest Territories
+0.771 Nigeria
+
+--- BM25 ---
+38.395 Lago District
+27.717 Swan Miara
+27.717 Swan Miara
+27.717 Swan Miara
+27.717 Swan Miara
+6.234 Canada–United States border
+6.196 Canada–United States border
+
+--- GRAFO KG ---
+7 Lago District
+3 John "Hannibal" Smith
+1 Michurinsky District
+1 Tuymazinsky District
+1 Menteng, Menteng
+1 Bansaan
+
+--- HÍBRIDA ---
+0.896 Lago District
+0.816 Lago Verde (Queyras)
+0.816 Adaba (woreda)
+0.816 Pangi Territory
+27.717 Swan Miara
+3 John "Hannibal" Smith
+1 Michurinsky District
+1 Tuymazinsky District
+1 Menteng, Menteng
+0.807 Canada–United States border
+0.804 Canada–United States border
+PERGUNTA: What league does the team that plays in Stadio Ciro Vigorito play for?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio.
+The passage does not mention what league Benevento Calcio plays for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Benevento Calcio league
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio.
+The passage does not mention what league Benevento Calcio plays for.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Benevento Calcio league
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the stadium Stadio Ciro Vigorito.
+Then, find the team that plays in that stadium, which is Benevento Calcio.
+Finally, find what league Benevento Calcio plays in. The passage does not mention the league.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Stadio Ciro Vigorito is the home stadium of Benevento Calcio. It also states that the stadium is used mostly for football matches.
+Final answer: football
+RESPOSTA: football
+CERTA: ['Lega Pro Prima Divisione']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 Stadio Ciro Vigorito
+0.834 Sportivo Italiano
+0.82 Ciudad Deportiva (Nuevo Laredo)
+0.82 Conte Arduino Mangoni
+0.819 Qui studio a voi stadio
+
+--- BM25 ---
+34.327 Stadio Ciro Vigorito
+23.946 Vermont Lady Voltage
+20.407 Sportivo Italiano
+19.459 Arena Football League
+18.778 Arena Football League
+10.332 Piacenza Calcio 1919
+8.874 Carmelo Imbriani
+6.785 Stadio Antonio Bianco
+6.628 Stadio Is Arenas
+
+--- GRAFO KG ---
+10 Arena Football League
+7 Stadio Ciro Vigorito
+5 The Imaginary Cuckold
+4 History of the New Orleans Saints
+3 The Miracle Child
+2 Carmelo Imbriani
+1 Stadio Is Arenas
+1 Sacramento Kings
+
+--- HÍBRIDA ---
+0.874 Stadio Ciro Vigorito
+0.834 Sportivo Italiano
+0.82 Ciudad Deportiva (Nuevo Laredo)
+0.82 Conte Arduino Mangoni
+0.819 Qui studio a voi stadio
+23.946 Vermont Lady Voltage
+19.459 Arena Football League
+18.778 Arena Football League
+5 The Imaginary Cuckold
+4 History of the New Orleans Saints
+3 The Miracle Child
+PERGUNTA: What is a notable work written by the author of The Timothy files?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Lawrence Sanders notable works
+nova busca 2 : The Anderson Tapes
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The Timothy Files is written by Lawrence Sanders, and a notable work by him is The Anderson Tapes.
+Final answer: The Anderson Tapes
+RESPOSTA: The Anderson Tapes
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that The Timothy Files is a 1987 best selling work of fiction by Lawrence Sanders.
+The question asks for a notable work written by the author of The Timothy Files.
+Lawrence Sanders wrote The Timothy Files.
+Final answer: The Timothy Files
+RESPOSTA: The Timothy Files
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Lawrence Sanders other works
+nova busca 2 : The Anderson Tapes
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The passage states that The Timothy Files is a work by Lawrence Sanders.
+The passage also mentions The Anderson Tapes as a crime fiction novel by Lawrence Sanders.
+Therefore, a notable work written by the author of The Timothy Files is The Anderson Tapes.
+
+Final answer: The Anderson Tapes
+RESPOSTA: The Anderson Tapes
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : The Timothy Files
+sem nova busca
+TOTAL DE CHUNKS: 14
+RACIOCINIO: The Timothy Files is a 1987 best selling work of fiction by Lawrence Sanders.
+Final answer: The Timothy Files
+RESPOSTA: The Timothy Files
+CERTA: ['Anderson Tapes', 'The Anderson Tapes']
+ACERTOU: False
+
+--- VETORIAL ---
+0.87 The Timothy Files
+0.802 Martine Blanc
+0.801 The Boys on the Bus
+0.796 Timothy P. Williams
+0.795 James Redfield
+0.828 The Anderson Tapes (novel)
+0.769 List of awards and nominations received by Jennifer Lawrence
+0.76 Wilber Morris
+0.76 A Shadow on the Glass
+0.786 Look What I Almost Stepped In...
+0.779 The Place and the Time
+0.778 Remember When: The Anthology
+0.776 All Funked Up
+
+--- BM25 ---
+30.057 The Timothy Files
+24.111 Timothy P. Williams
+23.923 Quran
+23.923 Quran
+23.482 Jan Hendrik van den Berg
+
+--- GRAFO KG ---
+4 The Timothy Files
+4 Daylight saving time
+3 John "Hannibal" Smith
+2 Martine Blanc
+2 Ellen Steiber
+3 The Anderson Tapes (novel)
+1 List of awards and nominations received by Jennifer Lawrence
+
+--- HÍBRIDA ---
+0.87 The Timothy Files
+0.802 Martine Blanc
+0.801 The Boys on the Bus
+0.796 Timothy P. Williams
+0.795 James Redfield
+23.923 Quran
+23.482 Jan Hendrik van den Berg
+4 Daylight saving time
+3 John "Hannibal" Smith
+2 Ellen Steiber
+0.807 Timothy Township, Crow Wing County, Minnesota
+0.786 The Haves and the Have Nots (TV series)
+0.786 Snappy Tomato Pizza
+10.982 Konqueror
+PERGUNTA: In which borough was Callum McManaman born?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Whiston, Merseyside
+sem nova busca
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states Callum McManaman was born in Whiston, Merseyside.
+The passage also states Whiston is within the Metropolitan Borough of Knowsley.
+Therefore, Callum McManaman was born in the Metropolitan Borough of Knowsley.
+Final answer: Knowsley
+RESPOSTA: Knowsley
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states Callum McManaman was born in Whiston, Merseyside.
+The passage also states Whiston is within the Metropolitan Borough of Knowsley in Merseyside.
+Therefore, Callum McManaman was born in the Metropolitan Borough of Knowsley.
+Final answer: Knowsley
+RESPOSTA: Knowsley
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 1
+RACIOCINIO: First, find Callum McManaman.
+Then, find the borough he was born in.
+He was born in Whiston, Merseyside.
+Final answer: Whiston, Merseyside
+RESPOSTA: Whiston, Merseyside
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Metropolitan Borough of Knowsley
+nova busca 2 : Whiston, Merseyside population
+TOTAL DE CHUNKS: 19
+RACIOCINIO: The passage states Callum McManaman was born in Whiston, Merseyside.
+The passage also states Whiston is within the Metropolitan Borough of Knowsley in Merseyside, England.
+Final answer: Knowsley
+RESPOSTA: Knowsley
+CERTA: ['Knowsley', 'Metropolitan Borough of Knowsley']
+ACERTOU: True
+
+--- VETORIAL ---
+0.881 Callum McManaman
+0.806 Callum Kane
+0.772 Corfe Mullen
+0.771 Shiromaniam Madhavan
+0.77 Jolene Chin
+0.897 Whiston, Merseyside
+0.781 WZEI
+0.777 Woolhampton
+0.765 Melbourne Football Club
+
+--- BM25 ---
+21.733 Callum McManaman
+13.317 Ammerud
+13.17 Callum Kane
+9.834 Love and War in the Apennines
+9.707 Whiston, Merseyside
+
+--- GRAFO KG ---
+10 Callum McManaman
+
+--- HÍBRIDA ---
+0.881 Callum McManaman
+0.806 Callum Kane
+0.772 Corfe Mullen
+0.771 Shiromaniam Madhavan
+0.77 Jolene Chin
+13.317 Ammerud
+9.834 Love and War in the Apennines
+9.707 Whiston, Merseyside
+0.772 Plansee SE
+0.771 Minsk Region
+9.165 Holley, New York
+8.628 Southwest City, Missouri
+8.617 Greenfield, Indiana
+0.76 WZEI
+0.757 2015 AFL Grand Final
+0.755 Woolhampton
+5.071 Steven Gerrard
+4.084 Beryslav Raion
+4.022 Akshinsky District
+PERGUNTA: What other county does the county where Imperial is located share a border with?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Pecos County bordering counties
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage states that Imperial is in Pecos County, Texas.
+The passage also states that Lancaster Crossing is between Crockett County and Pecos County.
+Therefore, the county where Imperial is located shares a border with Crockett County.
+
+Final answer: Crockett County
+RESPOSTA: Crockett County
+CERTA: ['Crockett County']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Pecos County borders
+nova busca 2 : Pecos County bordering counties
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the county where Imperial is located.
+Imperial is located in Pecos County, Texas.
+Then, find what county Pecos County shares a border with.
+Lancaster Crossing is located between Crockett County and Pecos County.
+
+Final answer: Crockett County
+RESPOSTA: Crockett County
+CERTA: ['Crockett County']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Pecos County borders
+nova busca 2 : Pecos County bordering counties
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the county where Imperial is located.
+The passage states that Imperial is in Pecos County, Texas.
+Then, find the county that Pecos County shares a border with.
+The passage states that Lancaster Crossing is between Crockett County and Pecos County.
+
+Final answer: Crockett
+RESPOSTA: Crockett
+CERTA: ['Crockett County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Pecos County bordering counties
+busca repetida, para
+TOTAL DE CHUNKS: 17
+RACIOCINIO: The passage states that Imperial is in Pecos County, Texas.
+The passage also states that Lancaster Crossing is between Crockett County and Pecos County.
+Therefore, Pecos County shares a border with Crockett County.
+Final answer: Crockett County
+RESPOSTA: Crockett County
+CERTA: ['Crockett County']
+ACERTOU: True
+
+--- VETORIAL ---
+0.877 Imperial, Texas
+0.802 Indian Heights, Dane County, Wisconsin
+0.789 Beckwith, Ontario
+0.786 Canyon, Texas
+0.783 Utah State Route 264
+0.842 Lancaster Crossing
+0.786 Pine Springs, Texas
+0.779 Geography of the United States
+
+--- BM25 ---
+24.301 Choptank River
+23.461 Imperial, Texas
+20.403 Sjernarøy
+20.271 Gmina Włodawa
+20.271 Gmina Włodawa
+16.582 Lancaster Crossing
+5.658 Culberson County-Allamoore Independent School District
+5.504 Norwegian County Road 13
+7.265 Southern Maryland Electric Cooperative
+
+--- GRAFO KG ---
+4 Imperial, Texas
+3 John "Hannibal" Smith
+1 Macduff (Macbeth)
+1 Kis-Küküllő County
+1 Kis-Küküllő County
+1 Lancaster Crossing
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.877 Imperial, Texas
+0.802 Indian Heights, Dane County, Wisconsin
+0.789 Beckwith, Ontario
+0.786 Canyon, Texas
+0.783 Utah State Route 264
+24.301 Choptank River
+20.403 Sjernarøy
+20.271 Gmina Włodawa
+3 John "Hannibal" Smith
+1 Macduff (Macbeth)
+1 Kis-Küküllő County
+0.842 Lancaster Crossing
+0.786 Pine Springs, Texas
+0.779 Geography of the United States
+7.265 Southern Maryland Electric Cooperative
+5.658 Culberson County-Allamoore Independent School District
+1 Norwegian County Road 13
+PERGUNTA: In what county is William W. Blair's birthplace located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Holley county
+nova busca 2 : Orleans County, New York
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that William W. Blair was born in Holley, New York.
+The passage also states that Holley is in the town of Murray in Orleans County, New York.
+Final answer: Orleans County
+RESPOSTA: Orleans County
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Holley county
+nova busca 2 : Orleans County, New York
+TOTAL DE CHUNKS: 12
+RACIOCINIO: William W. Blair was born in Holley, New York. Holley is in Orleans County, New York.
+Final answer: Orleans County
+RESPOSTA: Orleans County
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Holley county
+nova busca 2 : Orleans County, New York
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find William W. Blair.
+Then, find the county where he was born.
+The passage states he was born in Holley, New York, which is in Orleans County.
+Final answer: Orleans County
+RESPOSTA: Orleans County
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Holley, New York county
+nova busca 2 : Orleans County, New York
+TOTAL DE CHUNKS: 21
+RACIOCINIO: The passage states that William W. Blair was born in Holley, New York. Holley is in the town of Murray in Orleans County, New York.
+Final answer: Orleans County
+RESPOSTA: Orleans County
+CERTA: ['Orleans County', 'Orleans County, New York']
+ACERTOU: True
+
+--- VETORIAL ---
+0.848 William W. Blair
+0.819 Blair Athol, New South Wales
+0.818 Port Blair
+0.818 Port Blair
+0.818 Port Blair
+0.862 Holley, New York
+0.777 Rochester Community Schools (Michigan)
+0.772 Utah State Route 264
+0.771 Mount Meigs Campus
+0.793 York River (Ontario)
+0.789 Essex County Park Commission Administration Building
+
+--- BM25 ---
+25.949 William W. Blair
+15.279 Blair Athol, New South Wales
+14.485 James W. Clise House
+13.423 Beckwith, Ontario
+13.017 Mountrail County Courthouse
+13.539 Holley, New York
+5.796 Choptank River
+5.658 Culberson County-Allamoore Independent School District
+5.504 Norwegian County Road 13
+11.821 History of the New Orleans Saints
+10.822 York River (Ontario)
+10.217 United States Bankruptcy Court for the Southern District of New York
+
+--- GRAFO KG ---
+4 William W. Blair
+3 Snow White and the Huntsman
+2 Thomas Nabbes
+1 Norwegian County Road 13
+1 KFRU
+3 Holley, New York
+3 Empire Sports Network
+2 Emmanuelle Boidron
+2 Lionel Medeiros
+2 History of the New Orleans Saints
+
+--- HÍBRIDA ---
+0.848 William W. Blair
+0.819 Blair Athol, New South Wales
+0.818 Port Blair
+14.485 James W. Clise House
+13.423 Beckwith, Ontario
+13.017 Mountrail County Courthouse
+3 Snow White and the Huntsman
+2 Thomas Nabbes
+1 Norwegian County Road 13
+1 KFRU
+0.899 Holley, New York
+0.782 Essex County Park Commission Administration Building
+0.764 Holes (film)
+10.822 York River (Ontario)
+10.217 United States Bankruptcy Court for the Southern District of New York
+8.338 Tom Baring
+3 Empire Sports Network
+1 General Electric
+11.821 History of the New Orleans Saints
+2 Emmanuelle Boidron
+2 Lionel Medeiros
+PERGUNTA: What award did the author of The Red Tree receive?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Shaun Tan awards
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the author of The Red Tree.
+The author of The Red Tree is Shaun Tan.
+Then, find what award Shaun Tan received.
+The passages do not mention any awards for Shaun Tan.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Shaun Tan awards
+nova busca 2 : Academy Award for Shaun Tan
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Passion Australia produced "The Lost Thing", directed by Andrew Ruhemann and Shaun Tan, which won an Academy Award for Best Animated Short Film in 2011. Shaun Tan is the author of The Red Tree.
+Final answer: Academy Award for Best Animated Short Film
+RESPOSTA: Academy Award for Best Animated Short Film
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Red Ochre Award Aboriginal artists
+nova busca 2 : Red Ochre Award criteria
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The passage mentions "The Red Tree (2001), written and illustrated by Shaun Tan".
+The passage also states "The Red Ochre Award was established in 1993 by the Australia Council for the Arts. It is awarded annually to an outstanding Aboriginal and Torres Strait Islander artist for lifetime achievement."
+The passage does not mention Shaun Tan receiving the Red Ochre Award.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Red Ochre Award
+busca repetida, para
+TOTAL DE CHUNKS: 17
+RACIOCINIO: The passage states that The Red Tree (2001), written and illustrated by Shaun Tan, is a picture book. It does not mention any awards Shaun Tan received.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Academy Award for Best Animated Short Film']
+ACERTOU: False
+
+--- VETORIAL ---
+0.865 The Red Tree (Shaun Tan)
+0.822 Red Ochre Award
+0.807 James Redfield
+0.807 James Redfield
+0.801 Halfway Tree
+0.777 Passion Pictures
+0.769 PEN/Diamonstein-Spielvogel Award for the Art of the Essay
+
+--- BM25 ---
+22.237 The Red Tree (Shaun Tan)
+21.926 Penelope Tree
+20.852 Halfway Tree
+20.004 The Wandering Fire
+19.518 PEN/Diamonstein-Spielvogel Award for the Art of the Essay
+13.507 Passion Pictures
+6.293 62nd Academy Awards
+6.04 List of awards and honours received by Audrey Hepburn
+5.992 Rabbit Ears Productions
+10.568 French Connection II
+8.564 List of awards and nominations received by Jennifer Lawrence
+
+--- GRAFO KG ---
+5 Red Ochre Award
+4 The Red Tree (Shaun Tan)
+1 Green (Steve Hillage album)
+1 Klaus Mehnert
+1 Martine Blanc
+1 Taktin Oey
+1 We Are Never Ever Getting Back Together
+
+--- HÍBRIDA ---
+0.865 The Red Tree (Shaun Tan)
+0.822 Red Ochre Award
+0.807 James Redfield
+0.801 Halfway Tree
+21.926 Penelope Tree
+20.004 The Wandering Fire
+19.518 PEN/Diamonstein-Spielvogel Award for the Art of the Essay
+1 Green (Steve Hillage album)
+1 Klaus Mehnert
+1 Martine Blanc
+0.785 Nobel Prize in Literature
+0.781 Iditarod Trail Sled Dog Race
+0.771 International Children's Peace Prize
+9.738 Dustin Pedroia
+8.72 Kate Mulgrew
+7.19 We Are Never Ever Getting Back Together
+1 Taktin Oey
+PERGUNTA: Where was Tyler MacDuff's child educated?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Blair International Baccalaureate School
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find Tyler MacDuff's child, which is Dana MacDuff.
+Then, find where Dana MacDuff was educated. He graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+Final answer: Blair International Baccalaureate School in Pasadena
+RESPOSTA: Blair International Baccalaureate School in Pasadena
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Blair International Baccalaureate School
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find Tyler MacDuff's child, which is Dana MacDuff.
+Then, find where Dana MacDuff was educated.
+Dana MacDuff graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+Final answer: Blair International Baccalaureate School
+RESPOSTA: Blair International Baccalaureate School
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Blair International Baccalaureate School
+nova busca 2 : Blair High School graduation year
+TOTAL DE CHUNKS: 12
+RACIOCINIO: Tyler MacDuff's child, Dana MacDuff, graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+Final answer: Blair International Baccalaureate School
+RESPOSTA: Blair International Baccalaureate School
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Blair International Baccalaureate School
+busca repetida, para
+TOTAL DE CHUNKS: 16
+RACIOCINIO: Tyler MacDuff's child, Dana MacDuff, graduated in 1974 from Blair International Baccalaureate School in Pasadena.
+Final answer: Blair International Baccalaureate School
+RESPOSTA: Blair International Baccalaureate School
+CERTA: ['Blair High School']
+ACERTOU: False
+
+--- VETORIAL ---
+0.852 Dana MacDuff
+0.821 Dana MacDuff
+0.777 David Gardiner Tyler
+0.769 Ralph W. Tyler
+0.767 North Hastings High School
+0.806 Port Blair
+
+--- BM25 ---
+13.772 David Gardiner Tyler
+12.548 Dana MacDuff
+11.36 Macduff (Macbeth)
+10.535 Fletcher Webster
+9.884 Macbeth
+11.137 Dana MacDuff
+8.769 William W. Blair
+8.269 Margaret Blair Young
+8.234 Blair Athol, New South Wales
+
+--- GRAFO KG ---
+7 Albert Tyler (biologist)
+6 Macbeth
+6 Macduff (Macbeth)
+5 Macbeth, King of Scotland
+2 Dana MacDuff
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+1 Dana MacDuff
+2 Kimbrough Memorial Stadium
+1 Comcast Sports Southwest
+1 Meg Griffin
+1 North Hastings High School
+
+--- HÍBRIDA ---
+0.852 Dana MacDuff
+0.821 Dana MacDuff
+0.777 David Gardiner Tyler
+0.769 Ralph W. Tyler
+0.767 North Hastings High School
+11.36 Macduff (Macbeth)
+10.535 Fletcher Webster
+9.884 Macbeth
+7 Albert Tyler (biologist)
+5 Macbeth, King of Scotland
+0.806 Port Blair
+8.769 William W. Blair
+8.269 Margaret Blair Young
+8.234 Blair Athol, New South Wales
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+PERGUNTA: Who is the spouse of the Rabbit Hole's producer?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Aaron Eckhart
+nova busca 2 : Janice
+TOTAL DE CHUNKS: 12
+RACIOCINIO: First, find the producer of Rabbit Hole.
+Then, find the spouse of the producer.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Howard B. Kreitsek spouse
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the book "Down the Rabbit Hole" and its producer.
+Then, find the spouse of the producer.
+Final answer: Howard B. Kreitsek
+RESPOSTA: Howard B. Kreitsek
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Nicole Kidman spouse
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the producer of Rabbit Hole.
+The producer of Rabbit Hole is Nicole Kidman via her company, Blossom Films.
+Then, find a fact about Nicole Kidman.
+Planet Cake created cakes for Nicole Kidman.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find the producer of Rabbit Hole.
+Then, find the spouse of the producer.
+Aaron Eckhart is the spouse of the producer.
+Final answer: Aaron Eckhart
+RESPOSTA: Aaron Eckhart
+CERTA: ['Keith Urban']
+ACERTOU: False
+
+--- VETORIAL ---
+0.85 Rabbit Hole (film)
+0.811 Down the Rabbit Hole (novel)
+0.809 Rabbit, Run (film)
+0.804 Holes (film)
+0.793 Rabbit Ears Productions
+0.763 Eddie Argos
+0.761 Scott Aukerman
+0.764 Female reproductive system
+0.763 Villa Foscari
+0.761 John Deere World Headquarters
+0.758 Angelica Page
+0.758 Jackie Jackson (album)
+
+--- BM25 ---
+22.764 White Rabbit
+22.327 Down the Rabbit Hole (novel)
+22.086 Rabbit, Run (film)
+20.834 Baby Buggy Bunny
+20.131 Beauty and the Beast (1991 film)
+9.346 Melissa Reeves
+7.143 Portrait of a Young Englishman
+6.535 The Horse
+6.024 KPBD
+
+--- GRAFO KG ---
+10 White Rabbit
+9 Rabbit Hole (film)
+4 The Velveteen Rabbit
+2 Down the Rabbit Hole (novel)
+1 Amblin Entertainment
+1 Planet Cake
+
+--- HÍBRIDA ---
+0.85 Rabbit Hole (film)
+0.811 Down the Rabbit Hole (novel)
+0.809 Rabbit, Run (film)
+0.804 Holes (film)
+0.793 Rabbit Ears Productions
+22.764 White Rabbit
+20.834 Baby Buggy Bunny
+20.131 Beauty and the Beast (1991 film)
+4 The Velveteen Rabbit
+1 Amblin Entertainment
+PERGUNTA: Who is the child of Sigrid Eskilsdotter's child?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Christina Gyllenstierna children
+nova busca 2 : King Gustav Vasa
+TOTAL DE CHUNKS: 11
+RACIOCINIO: Sigrid Eskilsdotter (Banér) was the mother of Christina Gyllenstierna, and Christina Gyllenstierna was the maternal grandmother of King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : King Gustav Vasa of Sweden
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find Sigrid Eskilsdotter's child.
+Sigrid Eskilsdotter's child is Christina Gyllenstierna.
+Then find the child of Christina Gyllenstierna.
+Christina Gyllenstierna is the maternal grandmother of King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : King Gustav Vasa of Sweden
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: Sigrid Eskilsdotter's child was Christina Gyllenstierna, and Christina Gyllenstierna's child was King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa of Sweden
+RESPOSTA: King Gustav Vasa of Sweden
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : King Gustav Vasa of Sweden
+busca repetida, para
+TOTAL DE CHUNKS: 18
+RACIOCINIO: Sigrid Eskilsdotter (Banér) was the mother of Christina Gyllenstierna, and Christina Gyllenstierna was the maternal grandmother of King Gustav Vasa of Sweden.
+Final answer: King Gustav Vasa
+RESPOSTA: King Gustav Vasa
+CERTA: ['Svante Stensson Sture']
+ACERTOU: False
+
+--- VETORIAL ---
+0.885 Sigrid Eskilsdotter (Banér)
+0.822 Sigrid Sture
+0.795 Childebrand I
+0.783 Roxy Recordings
+0.782 August Philipp, Duke of Schleswig-Holstein-Sonderburg-Beck
+0.791 Wilson Phillips
+0.778 Daniel Bremer Juell
+0.776 The Haves and the Have Nots (TV series)
+0.784 George II of Great Britain
+0.78 The Great King
+0.775 Buckingham Palace
+
+--- BM25 ---
+28.738 Sigrid Eskilsdotter (Banér)
+19.549 International Children's Peace Prize
+18.904 Child labour
+18.818 The Miracle Child
+18.318 Children's Act, 2005
+16.91 Catherine Jagiellon
+10.326 Dexter King
+10.114 Sigrid Sture
+8.886 Infruset
+
+--- GRAFO KG ---
+5 The Miracle Child
+4 Sigrid Eskilsdotter (Banér)
+1 Girl
+1 Child labour
+1 Toddler
+2 Szlachta
+1 Roxy Recordings
+1 Infruset
+1 Peter Morén
+
+--- HÍBRIDA ---
+0.885 Sigrid Eskilsdotter (Banér)
+0.822 Sigrid Sture
+0.795 Childebrand I
+0.783 Roxy Recordings
+0.782 August Philipp, Duke of Schleswig-Holstein-Sonderburg-Beck
+19.549 International Children's Peace Prize
+18.904 Child labour
+18.818 The Miracle Child
+18.318 Children's Act, 2005
+1 Girl
+1 Toddler
+0.789 George II of Great Britain
+0.78 Nobel Prize in Literature
+0.774 Catherine Jagiellon
+10.326 Dexter King
+8.886 Infruset
+2 Szlachta
+1 Peter Morén
+PERGUNTA: In which county is Kimbrough Memorial Stadium located?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+Canyon is in Texas.
+The passage does not mention the county.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Canyon Texas county
+nova busca 2 : Randall County, Texas
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+The passage also states that Canyon is in Randall County, Texas.
+Final answer: Randall County
+RESPOSTA: Randall County
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Canyon county
+nova busca 2 : Randall County, Texas
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+The passage also states that Canyon is in Randall County, Texas.
+Final answer: Randall County, Texas
+RESPOSTA: Randall County, Texas
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Kimbrough Memorial Stadium is in Canyon, Texas.
+Canyon is in Texas.
+Final answer: Texas
+RESPOSTA: Texas
+CERTA: ['Randall County', 'Randall County, Texas']
+ACERTOU: False
+
+--- VETORIAL ---
+0.878 Kimbrough Memorial Stadium
+0.804 Kynoch Park
+0.794 Essex County Park Commission Administration Building
+0.794 Essex County Park Commission Administration Building
+0.794 Essex County Park Commission Administration Building
+
+--- BM25 ---
+33.022 Kimbrough Memorial Stadium
+18.482 Broken Bow Memorial Stadium
+15.629 Marin County Civic Center
+13.258 Stadio San Nicola
+13.038 Motru Coal Mine
+22.575 Canyon, Texas
+15.313 Utah State Route 264
+13.559 Lancaster Crossing
+12.132 Imperial, Texas
+10.858 Pine Springs, Texas
+10.747 Culberson County-Allamoore Independent School District
+
+--- GRAFO KG ---
+11 Kimbrough Memorial Stadium
+1 Estadio Unión Tarma
+1 Stadio Is Arenas
+1 Stadio Erasmo Iacovone
+1 Stadio Antonio Bianco
+9 Canyon, Texas
+1 Norwegian County Road 13
+2 Piping Technology and Products
+2 Pine Springs, Texas
+1 Comcast Sports Southwest
+1 Imperial, Texas
+
+--- HÍBRIDA ---
+0.878 Kimbrough Memorial Stadium
+0.804 Kynoch Park
+0.794 Essex County Park Commission Administration Building
+18.482 Broken Bow Memorial Stadium
+15.629 Marin County Civic Center
+13.258 Stadio San Nicola
+13.038 Motru Coal Mine
+1 Estadio Unión Tarma
+1 Stadio Is Arenas
+1 Stadio Erasmo Iacovone
+1 Stadio Antonio Bianco
+PERGUNTA: What record label is the performer of Almost Made Ya signed to?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Derrty Entertainment
+nova busca 2 : Roxy Recordings
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that "Almost Made Ya" is by Ali & Gipp, and their debut album "Kinfolk" was released through Derrty Entertainment and Universal Records.
+Final answer: Universal Records
+RESPOSTA: Universal Records
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Kinfolk record label
+nova busca 2 : Derrty Entertainment
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The passage states that "Almost Made Ya" is by Ali & Gipp, and their album "Kinfolk" was released through Derrty Entertainment and Universal Records.
+Final answer: Derrty Entertainment
+RESPOSTA: Derrty Entertainment
+CERTA: ['Derrty Entertainment']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Ali & Gipp record label
+nova busca 2 : Derrty Entertainment
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the song "Almost Made Ya".
+Then, find the record label associated with the album "Kinfolk".
+Finally, find the record label of the album "Kinfolk".
+
+Final answer: Derrty Entertainment
+RESPOSTA: Derrty Entertainment
+CERTA: ['Derrty Entertainment']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Derrty Entertainment
+busca repetida, para
+TOTAL DE CHUNKS: 15
+RACIOCINIO: The passage states that "Almost Made Ya" is by Ali & Gipp, and the album "Kinfolk" was released through Derrty Entertainment and Universal Records.
+Final answer: Universal Records
+RESPOSTA: Universal Records
+CERTA: ['Derrty Entertainment']
+ACERTOU: False
+
+--- VETORIAL ---
+0.852 Almost Made Ya
+0.81 Roxy Recordings
+0.807 Look What I Almost Stepped In...
+0.807 Kinfolk (album)
+0.806 Crystal Kay
+0.781 Rabbit Ears Productions
+0.779 Equity Music Group
+0.767 Spry Fox
+0.766 Amblin Entertainment
+0.783 2 Horns / 2 Rhythm
+0.781 Musty Rusty
+
+--- BM25 ---
+24.708 Almost Made Ya
+23.462 Look What I Almost Stepped In...
+22.737 It's What's Happenin'
+22.737 It's What's Happenin'
+21.677 Roxy Recordings
+11.394 Asian Man Records
+10.07 Equity Music Group
+9.511 Sleaszy Rider Records
+8.863 Kinfolk (album)
+8.71 Go Down Records
+8.517 Amblin Entertainment
+6.049 Lee Evans (producer)
+5.506 Jennifer Saunders
+
+--- GRAFO KG ---
+10 Almost Made Ya
+2 Asian Man Records
+1 Three Gut Records
+1 Sleaszy Rider Records
+1 Equity Music Group
+2 Kinfolk (album)
+
+--- HÍBRIDA ---
+0.852 Almost Made Ya
+0.81 Roxy Recordings
+0.807 Look What I Almost Stepped In...
+0.807 Kinfolk (album)
+0.806 Crystal Kay
+22.737 It's What's Happenin'
+2 Asian Man Records
+1 Three Gut Records
+1 Sleaszy Rider Records
+1 Equity Music Group
+0.781 Rabbit Ears Productions
+0.767 Spry Fox
+0.766 Amblin Entertainment
+6.049 Lee Evans (producer)
+5.506 Jennifer Saunders
+PERGUNTA: Where was the author of Hannibal and Scipio educated at?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Thomas Nabbes education
+nova busca 2 : Exeter College, Oxford
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The passage states that Thomas Nabbes was educated at Exeter College, Oxford in 1621.
+Final answer: Exeter College, Oxford
+RESPOSTA: Exeter College, Oxford
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Thomas Nabbes education
+nova busca 2 : Exeter College, Oxford
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The passage states that Thomas Nabbes was educated at Exeter College, Oxford in 1621.
+Final answer: Exeter College, Oxford
+RESPOSTA: Exeter College, Oxford
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Thomas Nabbes education
+nova busca 2 : Exeter College, Oxford
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The author of Hannibal and Scipio, Thomas Nabbes, was educated at Exeter College, Oxford in 1621.
+Final answer: Exeter College, Oxford
+RESPOSTA: Exeter College, Oxford
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Thomas Nabbes education
+nova busca 2 : Exeter College, Oxford
+TOTAL DE CHUNKS: 26
+RACIOCINIO: The author of Hannibal and Scipio, Thomas Nabbes, was educated at Exeter College, Oxford in 1621.
+Final answer: Exeter College, Oxford
+RESPOSTA: Exeter College, Oxford
+CERTA: ['Exeter College']
+ACERTOU: False
+
+--- VETORIAL ---
+0.863 Hannibal and Scipio
+0.837 Hannibal (Leckie novel)
+0.82 Punica (poem)
+0.8 Hannibal (disambiguation)
+0.798 Hannibal (TV series)
+0.859 Thomas Nabbes
+0.793 Tim DuBois
+0.782 Taktin Oey
+0.773 Barry Onouye
+0.764 Edward Pellew, 3rd Viscount Exmouth
+0.76 Edward Malet
+0.755 Fletcher Webster
+
+--- BM25 ---
+23.495 Scipio Africanus
+22.975 Hannibal and Scipio
+16.858 Ann Grifalconi
+16.708 Haig Bosmajian
+15.864 Roy Harrisville
+9.598 Thomas Nabbes
+8.708 Madrasa
+7.428 Pangasinan School of Arts and Trades
+6.762 No Child Left Behind Act
+5.521 Edward Malet
+5.44 A Shadow on the Glass
+5.395 Ann Arbor, Michigan
+5.209 René Wenzel
+
+--- GRAFO KG ---
+10 Hannibal (TV series)
+7 Hannibal and Scipio
+6 Hannibal (disambiguation)
+6 Scipio Africanus
+2 Clarice Starling
+10 Thomas Nabbes
+1 New Haven, Connecticut
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+
+--- HÍBRIDA ---
+0.863 Hannibal and Scipio
+0.837 Hannibal (Leckie novel)
+0.82 Punica (poem)
+0.8 Hannibal (disambiguation)
+0.798 Hannibal (TV series)
+23.495 Scipio Africanus
+16.858 Ann Grifalconi
+16.708 Haig Bosmajian
+15.864 Roy Harrisville
+2 Clarice Starling
+0.859 Thomas Nabbes
+0.793 Tim DuBois
+0.782 Taktin Oey
+0.773 Barry Onouye
+8.708 Madrasa
+7.428 Pangasinan School of Arts and Trades
+6.762 No Child Left Behind Act
+1 New Haven, Connecticut
+1 International Day of the Girl Child
+1 International Day of the Girl Child
+0.764 Edward Pellew, 3rd Viscount Exmouth
+0.76 Edward Malet
+0.755 Fletcher Webster
+5.44 A Shadow on the Glass
+5.395 Ann Arbor, Michigan
+5.209 René Wenzel
+PERGUNTA: In which county is Southern Maryland Electric Cooperative headquartered?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Hughesville Maryland county
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The passage states that Southern Maryland Electric Cooperative (SMECO) is headquartered in Hughesville, Maryland.
+Hughesville is located in Charles County, Maryland.
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Hughesville, Maryland county
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The passage states that Southern Maryland Electric Cooperative (SMECO) is headquartered in Hughesville, Maryland.
+Hughesville is a census-designated place in Charles County, Maryland.
+Final answer: Charles
+RESPOSTA: Charles
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Hughesville Maryland county
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that Southern Maryland Electric Cooperative (SMECO) is headquartered in Hughesville, Maryland.
+The passage also states that Hughesville is in Charles County, Maryland.
+Final answer: Charles County
+RESPOSTA: Charles County
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Hughesville Maryland county
+nova busca 2 : Hughesville, Maryland county
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Southern Maryland Electric Cooperative (SMECO) is headquartered in Hughesville, Maryland.
+Hughesville is located in Charles County, Maryland.
+Final answer: Charles County
+RESPOSTA: Charles County
+CERTA: ['Charles County', 'Charles County, Maryland']
+ACERTOU: True
+
+--- VETORIAL ---
+0.885 Southern Maryland Electric Cooperative
+0.818 Hughesville, Maryland
+0.805 Southwest City, Missouri
+0.796 Elk Ridge (Maryland)
+0.795 Homewood, South Carolina
+0.782 Emmaville, Minnesota
+0.776 James W. Clise House
+
+--- BM25 ---
+49.605 Southern Maryland Electric Cooperative
+18.898 Elk Ridge (Maryland)
+16.739 Hughesville, Maryland
+16.158 Choptank River
+15.454 Southern California Edison
+5.899 United States Naval Institute
+
+--- GRAFO KG ---
+11 Southern Maryland Electric Cooperative
+2 Choptank River
+1 Dinner at the Homesick Restaurant
+1 Hughesville, Maryland
+1 Elk Ridge (Maryland)
+
+--- HÍBRIDA ---
+0.885 Southern Maryland Electric Cooperative
+0.818 Hughesville, Maryland
+0.805 Southwest City, Missouri
+0.796 Elk Ridge (Maryland)
+0.795 Homewood, South Carolina
+16.158 Choptank River
+15.454 Southern California Edison
+1 Dinner at the Homesick Restaurant
+0.782 Emmaville, Minnesota
+0.776 James W. Clise House
+5.899 United States Naval Institute
+PERGUNTA: Who is the child of the Victim of Romance performer?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Michelle Phillips children
+nova busca 2 : Michelle Phillips spouse
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that Michelle Phillips performed Victim of Romance.
+The passage also states that Wilson Phillips are the daughters of Michelle Phillips.
+Therefore, Wilson Phillips are the child of the Victim of Romance performer.
+Final answer: Wilson Phillips
+RESPOSTA: Wilson Phillips
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Michelle Phillips children
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the performer of Victim of Romance.
+The performer of Victim of Romance is Michelle Phillips.
+Then, find who is the child of Michelle Phillips.
+Michelle Phillips is the mother of Chynna Phillips.
+Final answer: Chynna Phillips
+RESPOSTA: Chynna Phillips
+CERTA: ['Chynna Phillips']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Michelle Phillips children
+nova busca 2 : Michelle Phillips family
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the performer of Victim of Romance.
+The performer is Michelle Phillips.
+Then, find who Michelle Phillips' daughters are.
+Michelle Phillips' daughters are Carnie Wilson, Wendy Wilson, and Chynna Phillips.
+Final answer: Carnie Wilson
+RESPOSTA: Carnie Wilson
+CERTA: ['Chynna Phillips']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Michelle Phillips children
+nova busca 2 : Michelle Phillips's children
+TOTAL DE CHUNKS: 19
+RACIOCINIO: The Victim of Romance performer is Michelle Phillips, who is the mother of Chynna Phillips, who is part of the vocal group Wilson Phillips.
+Final answer: Chynna Phillips
+RESPOSTA: Chynna Phillips
+CERTA: ['Chynna Phillips']
+ACERTOU: True
+
+--- VETORIAL ---
+0.869 Victim of Romance
+0.78 Elisabeth Luther
+0.779 Vincent Voiture
+0.778 Angelica Page
+0.778 James III of Cyprus
+0.84 Wilson Phillips
+0.788 Remember When: The Anthology
+0.777 List of show business families
+0.798 Shiranthi Rajapaksa
+
+--- BM25 ---
+29.297 Victim of Romance
+23.892 Age of consent reform
+23.748 The Official Story
+21.944 List of show business families
+21.944 List of show business families
+19.089 Wilson Phillips
+6.451 International Children's Peace Prize
+6.071 Children's Act, 2005
+5.912 Love's Long Journey
+
+--- GRAFO KG ---
+5 The Miracle Child
+5 Victim of Romance
+2 The Official Story
+1 Girl
+1 Child labour
+2 Wilson Phillips
+1 Julia's House
+1 Birth certificate
+
+--- HÍBRIDA ---
+0.869 Victim of Romance
+0.78 Elisabeth Luther
+0.779 Vincent Voiture
+0.778 Angelica Page
+0.778 James III of Cyprus
+23.892 Age of consent reform
+23.748 The Official Story
+21.944 List of show business families
+5 The Miracle Child
+1 Girl
+1 Child labour
+0.84 Wilson Phillips
+0.788 Remember When: The Anthology
+6.451 International Children's Peace Prize
+6.071 Children's Act, 2005
+5.912 Love's Long Journey
+1 Julia's House
+1 Birth certificate
+6.866 The Emperor's Children
+PERGUNTA: What county was Tim Dubois born in?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Southwest City Missouri county
+nova busca 2 : McDonald County, Missouri
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The passage states that Tim DuBois was born in Southwest City, Missouri.
+Southwest City is located in McDonald County, Missouri.
+Final answer: McDonald County
+RESPOSTA: McDonald County
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Southwest City location
+nova busca 2 : McDonald County, Missouri
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The passage states Tim DuBois was born in Southwest City, Missouri.
+Southwest City is located in McDonald County, Missouri.
+Final answer: McDonald County
+RESPOSTA: McDonald County
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 3
+RACIOCINIO: First, find Tim DuBois's birth information.
+Tim DuBois was born in Southwest City, Missouri.
+Final answer: Missouri
+RESPOSTA: Missouri
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Southwest City county
+nova busca 2 : McDonald County, Missouri
+TOTAL DE CHUNKS: 25
+RACIOCINIO: The passage states Tim DuBois was born in Southwest City, Missouri. Southwest City is located in McDonald County, Missouri.
+Final answer: McDonald County
+RESPOSTA: McDonald County
+CERTA: ['McDonald County', 'McDonald County, Missouri']
+ACERTOU: True
+
+--- VETORIAL ---
+0.868 Tim DuBois
+0.821 Dubois (surname)
+0.814 Allison DuBois
+0.784 Culberson County-Allamoore Independent School District
+0.783 Vermont, Wisconsin
+0.919 Southwest City, Missouri
+0.813 Eldon, Missouri
+0.78 Southern Maryland Electric Cooperative
+0.774 Comcast Sports Southwest
+0.824 McCormack, Minnesota
+0.778 Hughesville, Maryland
+0.775 New Richland, Minnesota
+
+--- BM25 ---
+20.71 Tim DuBois
+14.303 Allison DuBois
+13.531 Mountrail County Courthouse
+10.681 When I Call Your Name (Vince Gill song)
+10.416 Dubois (surname)
+14.248 Benson Junction, Florida
+11.325 Southwest City, Missouri
+10.532 Eldon, Missouri
+10.317 Oak Lawn, Illinois
+8.459 KAPE
+6.65 KFRU
+5.796 Choptank River
+
+--- GRAFO KG ---
+11 Tim DuBois
+1 When I Call Your Name (Vince Gill song)
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.868 Tim DuBois
+0.821 Dubois (surname)
+0.814 Allison DuBois
+0.784 Culberson County-Allamoore Independent School District
+0.783 Vermont, Wisconsin
+13.531 Mountrail County Courthouse
+10.681 When I Call Your Name (Vince Gill song)
+1 Norwegian County Road 13
+0.876 Southwest City, Missouri
+0.79 Pesanggrahan, South Jakarta
+0.79 Southern Maryland Electric Cooperative
+0.789 Marin County Civic Center
+14.408 Eldon, Missouri
+10.669 Benson Junction, Florida
+10.317 Oak Lawn, Illinois
+1 Hockey Night in Canada
+1 Beryslav Raion
+1 Arkansas Highway 242
+1 Fort Mitchell, Kentucky
+0.824 McCormack, Minnesota
+0.778 Hughesville, Maryland
+0.775 New Richland, Minnesota
+8.459 KAPE
+6.65 KFRU
+5.796 Choptank River
+PERGUNTA: What record label did the person who is part of The Bruce Lee Band start?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Mike Park record label
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find who is part of The Bruce Lee Band.
+The Bruce Lee Band is associated with Mike Park.
+Then, find what record label Mike Park started.
+Mike Park started Asian Man Records.
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Mike Park record label
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find who is part of The Bruce Lee Band.
+The Bruce Lee Band is the name given to the releases of Mike Park and his backing band.
+Then, find what record label Mike Park started.
+Mike Park started a record label in 1989 under the name Dill Records, with the Asian Man label established May 1996.
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Mike Park record label
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find who is part of The Bruce Lee Band.
+Then, find what record label Mike Park started.
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Mike Park record label
+nova busca 2 : Mike Park Asian Man Records
+TOTAL DE CHUNKS: 22
+RACIOCINIO: The person who is part of The Bruce Lee Band, Mike Park, started Asian Man Records.
+Final answer: Asian Man Records
+RESPOSTA: Asian Man Records
+CERTA: ['Asian Man Records']
+ACERTOU: True
+
+--- VETORIAL ---
+0.864 The Bruce Lee Band
+0.819 Asian Man Records
+0.817 Levitate (Bruce Hornsby album)
+0.815 Lee Evans (producer)
+0.814 Bruce Lee, My Brother
+0.8 Roxy Recordings
+0.797 Couzin Ed
+0.787 Kill Rock Stars
+
+--- BM25 ---
+31.921 The Bruce Lee Band
+26.807 Bruce Lee, My Brother
+25.562 It's What's Happenin'
+25.562 It's What's Happenin'
+25.333 Look What I Almost Stepped In...
+23.512 Asian Man Records
+10.07 Equity Music Group
+9.511 Sleaszy Rider Records
+8.71 Go Down Records
+
+--- GRAFO KG ---
+6 The Bruce Lee Band
+4 DeSoto Records
+3 Hints Allegations and Things Left Unsaid
+3 Birth of the Dragon
+2 Go Down Records
+6 Asian Man Records
+1 Three Gut Records
+1 Sleaszy Rider Records
+1 Equity Music Group
+
+--- HÍBRIDA ---
+0.864 The Bruce Lee Band
+0.819 Asian Man Records
+0.817 Levitate (Bruce Hornsby album)
+0.815 Lee Evans (producer)
+0.814 Bruce Lee, My Brother
+25.562 It's What's Happenin'
+25.333 Look What I Almost Stepped In...
+4 DeSoto Records
+3 Hints Allegations and Things Left Unsaid
+3 Birth of the Dragon
+2 Go Down Records
+0.8 Roxy Recordings
+0.797 Couzin Ed
+0.787 Kill Rock Stars
+10.07 Equity Music Group
+9.511 Sleaszy Rider Records
+1 Three Gut Records
+0.758 Pink Cadillac (song)
+0.758 Planet Cake
+11.114 Young Man Lake
+10.549 Soul Fixin' Man
+8.374 Mike Medavoy
+PERGUNTA: What is another notable work made by the author of Miss Sara Sampson?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Gotthold Ephraim Lessing other works
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The author of Miss Sara Sampson is Gotthold Ephraim Lessing, and another notable work by him is Emilia Galotti.
+Final answer: Emilia Galotti
+RESPOSTA: Emilia Galotti
+CERTA: ['Emilia Galotti']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Gotthold Ephraim Lessing other works
+nova busca 2 : Emilia Galotti
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The author of Miss Sara Sampson is Gotthold Ephraim Lessing.
+Gotthold Ephraim Lessing also wrote Emilia Galotti.
+Final answer: Emilia Galotti
+RESPOSTA: Emilia Galotti
+CERTA: ['Emilia Galotti']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Gotthold Ephraim Lessing other works
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The passage states that Miss Sara Sampson was written by Gotthold Ephraim Lessing.
+The passage also mentions Emilia Galotti as another work by Gotthold Ephraim Lessing.
+Final answer: Emilia Galotti
+RESPOSTA: Emilia Galotti
+CERTA: ['Emilia Galotti']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Lessing other works
+nova busca 2 : Emilia Galotti
+TOTAL DE CHUNKS: 23
+RACIOCINIO: The passage states that Miss Sara Sampson was written by Gotthold Ephraim Lessing. It also mentions Emilia Galotti as a play by Gotthold Ephraim Lessing.
+Final answer: Emilia Galotti
+RESPOSTA: Emilia Galotti
+CERTA: ['Emilia Galotti']
+ACERTOU: True
+
+--- VETORIAL ---
+0.86 Miss Sara Sampson
+0.838 Mary Ann Sampson
+0.795 Miss Mousie's Blind Date
+0.79 The Emperor's Children
+0.788 Jason Sampson
+0.794 Emilia Galotti
+0.771 The Village of Waiting
+0.763 Down the Rabbit Hole (novel)
+0.753 Sexual orientation
+
+--- BM25 ---
+30.594 Miss Sara Sampson
+20.014 Little Miss Marker (1980 film)
+19.451 Glenda Goss
+19.451 Glenda Goss
+18.689 Jan Hendrik van den Berg
+26.528 Emilia Galotti
+5.988 Quran
+5.814 Streams of Expression
+
+--- GRAFO KG ---
+7 Miss Sara Sampson
+2 Prison Break
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+3 Emilia Galotti
+
+--- HÍBRIDA ---
+0.86 Miss Sara Sampson
+0.838 Mary Ann Sampson
+0.795 Miss Mousie's Blind Date
+0.79 The Emperor's Children
+0.788 Jason Sampson
+20.014 Little Miss Marker (1980 film)
+19.451 Glenda Goss
+18.689 Jan Hendrik van den Berg
+2 Prison Break
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+0.793 Child labour
+0.772 The Unwinding
+0.772 Full-time
+0.765 Child labour
+13.371 Emilia Galotti
+5.988 Quran
+5.814 Streams of Expression
+0.774 Miquette Giraudy
+0.772 Gallaratese
+0.771 A Sinless Season
+0.759 List of The Young and the Restless cast members
+PERGUNTA: What instrument is played by the person from The Blackout All-Stars?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Ray Barretto instrument
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the members of The Blackout All-Stars.
+Then, find the instrument played by Ray Barretto.
+Finally, find the instrument Ray Barretto plays.
+
+Final answer: conga
+RESPOSTA: conga
+CERTA: ['conga', 'Conga']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Ray Barretto instrument
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the members of The Blackout All-Stars.
+Then, find the instrument played by Ray Barretto.
+Final answer: conga
+RESPOSTA: conga
+CERTA: ['conga', 'Conga']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Ray Barretto instrument
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the people in The Blackout All-Stars.
+Then, find the instrument played by Ray Barretto.
+Final answer: conga
+RESPOSTA: conga
+CERTA: ['conga', 'Conga']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states that Dave Valentin is a member of The Blackout All-Stars. It also states that Feist is a guitarist.
+Final answer: guitar
+RESPOSTA: guitar
+CERTA: ['conga', 'Conga']
+ACERTOU: False
+
+--- VETORIAL ---
+0.844 The Blackout All-Stars
+0.808 Chapman Stick
+0.795 All the Years
+0.791 Radar (song)
+0.788 Feist (singer)
+0.804 Midnight Blue (Kenny Burrell album)
+0.78 Musty Rusty
+0.78 It's What's Happenin'
+
+--- BM25 ---
+26.028 The Blackout All-Stars
+20.659 Kamryn Belle
+19.939 Wes Schulmerich
+16.249 Look What I Almost Stepped In...
+16.192 Cult of Chucky
+9.767 Midnight Blue (Kenny Burrell album)
+8.195 Chapman Stick
+7.78 Fizeau–Foucault apparatus
+
+--- GRAFO KG ---
+10 The Blackout All-Stars
+4 All the Years
+3 The Blitz
+2 Transformers (film)
+1 Radar (song)
+2 Midnight Blue (Kenny Burrell album)
+
+--- HÍBRIDA ---
+0.844 The Blackout All-Stars
+0.808 Chapman Stick
+0.795 All the Years
+0.791 Radar (song)
+0.788 Feist (singer)
+20.659 Kamryn Belle
+19.939 Wes Schulmerich
+16.249 Look What I Almost Stepped In...
+16.192 Cult of Chucky
+3 The Blitz
+2 Transformers (film)
+PERGUNTA: What is the seat of the county where Van Hook Township is located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Mountrail County seat
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Van Hook Township.
+Then, find the county where Van Hook Township is located.
+Finally, find the seat of that county.
+
+Final answer: Stanley
+RESPOSTA: Stanley
+CERTA: ['Stanley']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Mountrail County seat
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Van Hook Township.
+Then, find the county where Van Hook Township is located.
+Finally, find the seat of that county.
+
+Final answer: Stanley
+RESPOSTA: Stanley
+CERTA: ['Stanley']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Mountrail County seat
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the location of Van Hook Township.
+Van Hook Township is in Mountrail County, North Dakota.
+Then, find the seat of Mountrail County.
+The Mountrail County Courthouse is in Stanley, North Dakota.
+
+Final answer: Stanley
+RESPOSTA: Stanley
+CERTA: ['Stanley']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Mountrail County seat
+busca repetida, para
+TOTAL DE CHUNKS: 14
+RACIOCINIO: First, find Van Hook Township.
+Then, find the county where Van Hook Township is located.
+Finally, find the seat of that county.
+Final answer: Stanley
+RESPOSTA: Stanley
+CERTA: ['Stanley']
+ACERTOU: True
+
+--- VETORIAL ---
+0.872 Van Hook Township, Mountrail County, North Dakota
+0.828 Van Buren Township, Brown County, Indiana
+0.825 Greenfield, Indiana
+0.814 McCormack, Minnesota
+0.805 Ivanhoe, North Carolina
+0.831 Mountrail County Courthouse
+0.804 Mount View High School (Maine)
+0.787 Sant Martí d'Empúries
+
+--- BM25 ---
+44.335 Van Hook Township, Mountrail County, North Dakota
+34.873 Liberty Township, Van Wert County, Ohio
+33.583 Van Buren Township, Brown County, Indiana
+27.042 Choptank River
+26.955 Leroy Township, Ingham County, Michigan
+15.255 Mountrail County Courthouse
+8.787 Greenfield, Indiana
+8.19 Canyon, Texas
+
+--- GRAFO KG ---
+5 Van Buren Township, Brown County, Indiana
+5 Van Hook Township, Mountrail County, North Dakota
+5 Liberty Township, Van Wert County, Ohio
+1 Kis-Küküllő County
+1 Kis-Küküllő County
+10 Mountrail County Courthouse
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.872 Van Hook Township, Mountrail County, North Dakota
+0.828 Van Buren Township, Brown County, Indiana
+0.825 Greenfield, Indiana
+0.814 McCormack, Minnesota
+0.805 Ivanhoe, North Carolina
+34.873 Liberty Township, Van Wert County, Ohio
+27.042 Choptank River
+26.955 Leroy Township, Ingham County, Michigan
+1 Kis-Küküllő County
+0.831 Mountrail County Courthouse
+0.804 Mount View High School (Maine)
+0.787 Sant Martí d'Empúries
+8.19 Canyon, Texas
+1 Norwegian County Road 13
+PERGUNTA: Who is the father of Edward Baring, 1st Baron Revelstoke's father?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Henry Baring
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's father.
+Then, find the father of Edward Baring, 1st Baron Revelstoke's father.
+Henry Baring of Cromer Hall was the father of Edward Baring, 1st Baron Revelstoke. Henry Baring was the son of Sir Francis Baring, 1st Baronet.
+Final answer: Sir Francis Baring, 1st Baronet
+RESPOSTA: Sir Francis Baring, 1st Baronet
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Henry Baring
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's father.
+Edward Baring, 1st Baron Revelstoke's father is Henry Baring of Cromer Hall.
+Then find the father of Henry Baring of Cromer Hall.
+The father of Henry Baring of Cromer Hall is Henry Baring.
+Final answer: Henry Baring
+RESPOSTA: Henry Baring
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Henry Baring
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Edward Baring, 1st Baron Revelstoke's brother, Tom Baring.
+Then, find Tom Baring's father.
+Finally, find the father of Henry Baring of Cromer Hall.
+
+Final answer: Henry Baring
+RESPOSTA: Henry Baring
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Henry Baring
+busca repetida, para
+TOTAL DE CHUNKS: 14
+RACIOCINIO: First, we need to find Edward Baring, 1st Baron Revelstoke's father.
+Then, we need to find the father of that person.
+Henry Baring of Cromer Hall was the father of Edward Baring, 1st Baron Revelstoke.
+Henry Baring was the son of Sir Francis Baring, 1st Baronet.
+Final answer: Sir Francis Baring, 1st Baronet
+RESPOSTA: Sir Francis Baring, 1st Baronet
+CERTA: ['Sir Francis Baring, 1st Baronet']
+ACERTOU: True
+
+--- VETORIAL ---
+0.859 Tom Baring
+0.808 Peter Baden-Powell, 2nd Baron Baden-Powell
+0.806 Edward Stafford, 3rd Baron Stafford
+0.805 Edmund of Woodstock, 1st Earl of Kent
+0.801 Edward Pellew, 3rd Viscount Exmouth
+0.795 Godfrey Baring
+0.765 Jan Hendrik van den Berg
+
+--- BM25 ---
+34.068 Tom Baring
+29.28 Edward Pellew, 3rd Viscount Exmouth
+27.019 Trevor Stamp, 3rd Baron Stamp
+26.447 Edward Stafford, 3rd Baron Stafford
+24.794 Edmund of Woodstock, 1st Earl of Kent
+15.865 Godfrey Baring
+7.328 Henry IV Receiving the Spanish Ambassador
+6.867 2 Horns / 2 Rhythm
+
+--- GRAFO KG ---
+3 Tom Baring
+3 Father of the Nation
+3 Edward Dannreuther
+1 Martha Creek Provincial Park
+1 Trevor Stamp, 3rd Baron Stamp
+4 Godfrey Baring
+1 Sir William Maule
+
+--- HÍBRIDA ---
+0.859 Tom Baring
+0.808 Peter Baden-Powell, 2nd Baron Baden-Powell
+0.806 Edward Stafford, 3rd Baron Stafford
+0.805 Edmund of Woodstock, 1st Earl of Kent
+0.801 Edward Pellew, 3rd Viscount Exmouth
+27.019 Trevor Stamp, 3rd Baron Stamp
+3 Father of the Nation
+3 Edward Dannreuther
+1 Martha Creek Provincial Park
+0.795 Godfrey Baring
+0.765 Jan Hendrik van den Berg
+7.328 Henry IV Receiving the Spanish Ambassador
+6.867 2 Horns / 2 Rhythm
+1 Sir William Maule
+PERGUNTA: What group was the performer of Be the One a member of?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Jackie Jackson groups
+nova busca 2 : The Jackson 5
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The musicians included Paul Jackson, Jr., Jeff Lorber, Robert Brookins and Gerald Albright.
+Final answer: Jackie Jackson
+RESPOSTA: Jackie Jackson
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The provided passages do not mention the performer of "Be the One" or any group they were a member of.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Jackson 5']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Jackie Jackson group
+nova busca 2 : The Jackson 5
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage mentions Jackie Jackson as the performer of the album "Be the One."
+The passage also states that Jackie Jackson is the eldest member of The Jackson 5.
+Final answer: The Jackson 5
+RESPOSTA: The Jackson 5
+CERTA: ['Jackson 5']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Paul Jackson, Jr., Jeff Lorber, Robert Brookins and Gerald Albright
+nova busca 2 : The Jackson 5
+TOTAL DE CHUNKS: 26
+RACIOCINIO: The musicians included Paul Jackson, Jr., Jeff Lorber, Robert Brookins and Gerald Albright.
+Final answer: The Jackson 5
+RESPOSTA: The Jackson 5
+CERTA: ['Jackson 5']
+ACERTOU: True
+
+--- VETORIAL ---
+0.851 Be the One (album)
+0.807 Unexploded
+0.79 Feist (singer)
+0.786 Old Guard Fife and Drum Corps
+0.778 Miquette Giraudy
+0.864 Jackie Jackson (album)
+0.789 Def Squad
+0.788 The Blackout All-Stars
+0.787 Something Personal
+0.784 The Haves and the Have Nots (TV series)
+0.778 All Funked Up
+0.778 The Unwinding
+
+--- BM25 ---
+22.902 Daniel Marsin
+21.23 List of Rock and Roll Hall of Fame inductees
+21.13 European Central Bank
+20.809 Yosyf Zisels
+20.599 Charlotte 49ers
+
+--- GRAFO KG ---
+8 Be the One (album)
+3 John "Hannibal" Smith
+1 Jean-Marie Cavada
+1 Antonia Parvanova
+1 The Miracle Child
+7 Jackie Jackson (album)
+1 Wilson Phillips
+1 Mount View High School (Maine)
+
+--- HÍBRIDA ---
+0.851 Be the One (album)
+0.807 Unexploded
+0.79 Feist (singer)
+0.786 Old Guard Fife and Drum Corps
+0.778 Miquette Giraudy
+22.902 Daniel Marsin
+21.23 List of Rock and Roll Hall of Fame inductees
+21.13 European Central Bank
+20.809 Yosyf Zisels
+20.599 Charlotte 49ers
+3 John "Hannibal" Smith
+1 Jean-Marie Cavada
+1 Antonia Parvanova
+1 The Miracle Child
+0.782 The Blackout All-Stars
+0.775 Couzin Ed
+0.772 Love's Long Journey
+0.768 The Unwinding
+12.048 Jackie Jackson (album)
+9.395 All Funked Up
+9.356 Paul Phélypeaux de Pontchartrain
+1 The Memory Keeper's Daughter
+1 Mount View High School (Maine)
+0.784 The Haves and the Have Nots (TV series)
+10.045 The Jazz Skyline
+9.158 Plenty, Plenty Soul
+PERGUNTA: Who is the lead singer of the band performing Bang Bang Rock & Roll?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that Bang Bang Rock & Roll is performed by the British rock band Art Brut.
+The question asks for the lead singer of Art Brut.
+The passage does not mention the lead singer.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eddie Argos']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Eddie Argos
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the band that performed Bang Bang Rock & Roll.
+The passage states that Bang Bang Rock & Roll is performed by British rock band Art Brut.
+Then, find who is the lead singer of Art Brut.
+The passage states that Eddie Argos is the lead singer of Art Brut.
+Final answer: Eddie Argos
+RESPOSTA: Eddie Argos
+CERTA: ['Eddie Argos']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage mentions "Bang Bang Rock & Roll" is the debut studio album by British rock band Art Brut.
+The question asks for the lead singer of the band.
+The passage does not mention the lead singer of Art Brut.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eddie Argos']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Eddie Argos
+nova busca 2 : Eddie Argos birthplace
+TOTAL DE CHUNKS: 17
+RACIOCINIO: Eddie Argos is the lead singer of English rock band Art Brut. Bang Bang Rock & Roll is the debut studio album by Art Brut.
+Final answer: Eddie Argos
+RESPOSTA: Eddie Argos
+CERTA: ['Eddie Argos']
+ACERTOU: True
+
+--- VETORIAL ---
+0.851 Bang Bang Rock & Roll
+0.822 Bang Bang!
+0.799 Bang Bang Kid
+0.798 Bang Bang You're Dead (film)
+0.797 The Bruce Lee Band
+
+--- BM25 ---
+45.41 Bang Bang Rock & Roll
+31.871 Eddie Argos
+29.033 Bang Bang!
+26.341 Cheatty Cheatty Bang Bang
+26.26 Brown Eyed Girl
+
+--- GRAFO KG ---
+10 Bang Bang!
+4 DeSoto Records
+4 Bang Bang Rock & Roll
+3 Casablanca (film)
+2 Jeremy Oxley
+
+--- HÍBRIDA ---
+0.851 Bang Bang Rock & Roll
+0.822 Bang Bang!
+0.799 Bang Bang Kid
+0.798 Bang Bang You're Dead (film)
+0.797 The Bruce Lee Band
+31.871 Eddie Argos
+26.341 Cheatty Cheatty Bang Bang
+26.26 Brown Eyed Girl
+4 DeSoto Records
+3 Casablanca (film)
+2 Jeremy Oxley
+0.775 2 Horns / 2 Rhythm
+0.772 Scott Aukerman
+0.771 Couzin Ed
+0.785 Jimma Arjo
+0.778 Roxy Recordings
+0.773 Spry Fox
+PERGUNTA: What is the network which National Cycle Route 57 is part of an example of?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : National Cycle Network details
+nova busca 2 : National Cycle Network
+TOTAL DE CHUNKS: 10
+RACIOCINIO: The passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network. The passage also states that the National Cycle Network is the national cycling route network of the United Kingdom.
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : National Cycle Network
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+The passage also states that the National Cycle Network (NCN) is the national cycling route network of the United Kingdom.
+Therefore, National Cycle Route 57 is part of the National Cycle Network.
+
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : National Cycle Network
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find National Cycle Route 57 and what it is part of.
+National Cycle Route 57 is part of the United Kingdom's National Cycle Network.
+The National Cycle Network is the national cycling route network of the United Kingdom.
+
+Final answer: the United Kingdom
+RESPOSTA: the United Kingdom
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : National Cycle Network
+busca repetida, para
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The passage states that National Cycle Route 57 is part of the United Kingdom's National Cycle Network. The passage also states that the National Cycle Network is the national cycling route network of the United Kingdom.
+Final answer: National Cycle Network
+RESPOSTA: National Cycle Network
+CERTA: ['national cycling route network', 'National cycling route network']
+ACERTOU: False
+
+--- VETORIAL ---
+0.887 National Cycle Route 57
+0.858 National Cycle Network
+0.801 N25 road (Ireland)
+0.793 Japan National Route 28
+0.791 Circus Time
+0.802 NBCSN
+0.783 Highway 1 (Afghanistan)
+0.778 Nova Sports
+0.785 Empire Sports Network
+0.783 René Wenzel
+
+--- BM25 ---
+48.086 National Cycle Route 57
+37.022 National Cycle Network
+28.676 N25 road (Ireland)
+26.416 Highway 1 (Afghanistan)
+25.101 Julien Dubuque Bridge
+8.938 René Wenzel
+7.851 Empire Sports Network
+7.67 Super Bowl LIII
+
+--- GRAFO KG ---
+13 National Route A012 (Argentina)
+6 Japan National Route 28
+6 National Cycle Network
+3 National Cycle Route 57
+3 Cape Fourcroy Light
+
+--- HÍBRIDA ---
+0.887 National Cycle Route 57
+0.858 National Cycle Network
+0.801 N25 road (Ireland)
+0.793 Japan National Route 28
+0.791 Circus Time
+26.416 Highway 1 (Afghanistan)
+25.101 Julien Dubuque Bridge
+13 National Route A012 (Argentina)
+3 Cape Fourcroy Light
+0.802 NBCSN
+0.785 Empire Sports Network
+0.783 René Wenzel
+7.67 Super Bowl LIII
+PERGUNTA: Who is the spouse of the child of Peter Andreas Heiberg?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Johan Ludvig Heiberg spouse
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Peter Andreas Heiberg's child.
+Johan Ludvig Heiberg was the son of Peter Andreas Heiberg.
+Then, find the spouse of Johan Ludvig Heiberg.
+Johanne Luise Heiberg was the wife of Johan Ludvig Heiberg.
+Final answer: Johanne Luise Heiberg
+RESPOSTA: Johanne Luise Heiberg
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Peter Andreas Heiberg spouse
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find Peter Andreas Heiberg.
+Then, find the spouse of the child of Peter Andreas Heiberg.
+The spouse of the child of Peter Andreas Heiberg is the novelist, afterwards the Baroness Gyllembourg-Ehrensvärd.
+Final answer: the Baroness Gyllembourg-Ehrensvärd
+RESPOSTA: the Baroness Gyllembourg-Ehrensvärd
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Peter Andreas Heiberg spouse
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find Peter Andreas Heiberg.
+Then, find the spouse of Peter Andreas Heiberg.
+Final answer: the novelist, afterwards the Baroness Gyllembourg-Ehrensvärd
+RESPOSTA: the novelist, afterwards the Baroness Gyllembourg-Ehrensvärd
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Johanne Luise Heiberg
+busca repetida, para
+TOTAL DE CHUNKS: 15
+RACIOCINIO: Johan Ludvig Heiberg is the child of Peter Andreas Heiberg.
+Johanne Luise Heiberg is the spouse of Johan Ludvig Heiberg.
+Final answer: Johanne Luise Heiberg
+RESPOSTA: Johanne Luise Heiberg
+CERTA: ['Johanne Luise Heiberg']
+ACERTOU: True
+
+--- VETORIAL ---
+0.857 Johan Ludvig Heiberg (poet)
+0.817 The Crisis and a Crisis in the Life of an Actress
+0.786 Peter Antonovich of Brunswick
+0.782 Elisabeth Luther
+0.782 Amundsen Icefall
+0.778 George II of Great Britain
+0.776 Sempronia (sister of the Gracchi)
+0.776 Vasari Corridor
+
+--- BM25 ---
+30.804 Johan Ludvig Heiberg (poet)
+27.166 Peter Morén
+24.733 Hansen's problem
+23.611 A Little Bit of Love (Andreas Johnson song)
+22.529 Amundsen Icefall
+10.415 André Duchesne
+
+--- GRAFO KG ---
+5 The Miracle Child
+3 Hansen's problem
+3 Johan Ludvig Heiberg (poet)
+1 Girl
+1 Child labour
+
+--- HÍBRIDA ---
+0.857 Johan Ludvig Heiberg (poet)
+0.817 The Crisis and a Crisis in the Life of an Actress
+0.786 Peter Antonovich of Brunswick
+0.782 Elisabeth Luther
+0.782 Amundsen Icefall
+27.166 Peter Morén
+24.733 Hansen's problem
+23.611 A Little Bit of Love (Andreas Johnson song)
+5 The Miracle Child
+1 Girl
+1 Child labour
+0.767 Julia's House
+0.766 Glenda Goss
+6.175 Eetookashoo Bay
+5.699 Cooper Glacier
+PERGUNTA: The Unwinding author volunteered for which organisation?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : George Packer volunteer work
+nova busca 2 : George Packer Peace Corps experience
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find the book "The Unwinding".
+Then, find the author of "The Unwinding".
+Finally, find what organisation the author volunteered for.
+Final answer: Peace Corps
+RESPOSTA: Peace Corps
+CERTA: ['Peace Corps']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : George Packer organisations
+nova busca 2 : Peace Corps
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The Village of Waiting was written by George Packer after serving with the Peace Corps in Togo.
+Final answer: Peace Corps
+RESPOSTA: Peace Corps
+CERTA: ['Peace Corps']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the book "The Unwinding".
+Then, find the author of "The Unwinding".
+Finally, find what organisation the author volunteered for.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Peace Corps']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : George Packer organisations
+nova busca 2 : Peace Corps
+TOTAL DE CHUNKS: 26
+RACIOCINIO: The Unwinding author volunteered for the Peace Corps.
+Final answer: Peace Corps
+RESPOSTA: Peace Corps
+CERTA: ['Peace Corps']
+ACERTOU: True
+
+--- VETORIAL ---
+0.861 The Unwinding
+0.805 Unexploded
+0.778 Claude Aveline
+0.777 A Sinless Season
+0.77 Pendennis
+0.8 The Village of Waiting
+0.771 Africa Partnership Station
+0.762 John "Hannibal" Smith
+0.761 Margaret H. George
+0.765 Yogendra Singh Yadav
+0.76 Southern Maryland Electric Cooperative
+
+--- BM25 ---
+12.465 The Unwinding
+10.17 Socialist Resistance of Kazakhstan
+9.53 Daniel Marsin
+9.243 The Emperor's Children
+8.514 Programme for International Student Assessment
+12.643 The Village of Waiting
+7.266 Margaret H. George
+7.156 George II of Great Britain
+5.997 Corfe Mullen
+9.802 Old Guard Fife and Drum Corps
+8.526 International Children's Peace Prize
+7.053 List of Nobel laureates
+
+--- GRAFO KG ---
+10 The Unwinding
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+1 James Redfield
+
+--- HÍBRIDA ---
+0.861 The Unwinding
+0.805 Unexploded
+0.778 Claude Aveline
+0.777 A Sinless Season
+0.77 Pendennis
+10.17 Socialist Resistance of Kazakhstan
+9.53 Daniel Marsin
+9.243 The Emperor's Children
+8.514 Programme for International Student Assessment
+1 Klaus Mehnert
+1 Martine Blanc
+1 James Redfield
+0.788 European Movement International
+0.784 The Village of Waiting
+0.778 Africa Partnership Station
+0.776 Tip Top Bakeries
+7.266 Margaret H. George
+7.156 George II of Great Britain
+5.997 Corfe Mullen
+2 UHF (film)
+0.804 Old Guard Fife and Drum Corps
+0.789 International Children's Peace Prize
+0.786 Southern Maryland Electric Cooperative
+0.779 NORC at the University of Chicago
+0.775 The Learning Company
+7.053 List of Nobel laureates
+PERGUNTA: What is the capital of the county that Pine Springs is located in?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Culberson County government
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the location of Pine Springs.
+Pine Springs is located in Culberson County, Texas.
+Then, find the county seat of Culberson County.
+The passage does not mention the county seat of Culberson County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Culberson County capital
+nova busca 2 : Culberson County government
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find the location of Pine Springs.
+Pine Springs is located in Culberson County, Texas.
+Then, find the capital of Culberson County.
+The passage does not mention the capital of Culberson County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Van Horn']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Culberson County capital
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the county that Pine Springs is located in.
+The passage states that Pine Springs is located in Culberson County, Texas.
+Then, find the capital of Culberson County.
+The passage states that Culberson County-Allamoore Independent School District is based in Van Horn, Texas.
+
+Final answer: Van Horn
+RESPOSTA: Van Horn
+CERTA: ['Van Horn']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Culberson County seat
+nova busca 2 : Culberson County
+TOTAL DE CHUNKS: 15
+RACIOCINIO: First, find Pine Springs. It is located in Culberson County, Texas.
+Then, find the school district that serves Culberson County. It is Culberson County-Allamoore Independent School District, which is based in Van Horn, Texas.
+Van Horn is the county seat of Culberson County.
+Final answer: Van Horn
+RESPOSTA: Van Horn
+CERTA: ['Van Horn']
+ACERTOU: True
+
+--- VETORIAL ---
+0.865 Pine Springs, Texas
+0.822 Pine Mountain State Resort Park
+0.807 Greenfield, Indiana
+0.803 Kis-Küküllő County
+0.803 Kis-Küküllő County
+0.828 Culberson County-Allamoore Independent School District
+0.785 Confederation of Regions Party of Canada
+0.776 Essex County Park Commission Administration Building
+
+--- BM25 ---
+41.846 Pine Springs, Texas
+27.751 Pine Mountain State Resort Park
+27.702 Amamoor Forest Reserve
+24.708 Steinshamn
+24.655 Kis-Küküllő County
+17.612 Culberson County-Allamoore Independent School District
+7.585 Beckwith, Ontario
+5.796 Choptank River
+5.504 Norwegian County Road 13
+5.196 Essex County Park Commission Administration Building
+
+--- GRAFO KG ---
+6 Pine Springs, Texas
+3 In the Shadow of Greatness
+2 Campora
+2 Union territory
+2 Union territory
+1 Norwegian County Road 13
+1 Culberson County-Allamoore Independent School District
+
+--- HÍBRIDA ---
+0.865 Pine Springs, Texas
+0.822 Pine Mountain State Resort Park
+0.807 Greenfield, Indiana
+0.803 Kis-Küküllő County
+27.702 Amamoor Forest Reserve
+24.708 Steinshamn
+3 In the Shadow of Greatness
+2 Campora
+2 Union territory
+0.834 Culberson County-Allamoore Independent School District
+0.782 Confederation of Regions Party of Canada
+0.779 Essex County Park Commission Administration Building
+10.391 Choptank River
+8.19 Canyon, Texas
+1 Norwegian County Road 13
+PERGUNTA: What district is the headquarter of Julia's House located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Corfe Mullen district
+nova busca 2 : Corfe Mullen location
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find the location of Julia's House.
+Julia's House is located in Corfe Mullen, Dorset, England.
+Then find the district of Corfe Mullen.
+Corfe Mullen is a village in Dorset, England.
+
+Final answer: Dorset
+RESPOSTA: Dorset
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Corfe Mullen district
+nova busca 2 : Corfe Mullen population
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find the location of Julia's House.
+Julia's House is located in Corfe Mullen, Dorset, England.
+Then, find the passage about Corfe Mullen.
+Corfe Mullen is a village in Dorset, England.
+Final answer: Dorset
+RESPOSTA: Dorset
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Corfe Mullen
+nova busca 2 : East Dorset
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find Julia's House.
+Then, find the district it is located in.
+Final answer: East Dorset
+RESPOSTA: East Dorset
+CERTA: ['East Dorset']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Corfe Mullen district
+nova busca 2 : East Dorset
+TOTAL DE CHUNKS: 21
+RACIOCINIO: The passage states that Julia's House is located in Corfe Mullen, Dorset, England.
+Final answer: Corfe Mullen
+RESPOSTA: Corfe Mullen
+CERTA: ['East Dorset']
+ACERTOU: False
+
+--- VETORIAL ---
+0.848 Julia's House
+0.814 United States Bankruptcy Court for the Southern District of New York
+0.802 Julia Irwin
+0.796 Phulrraa
+0.794 Buckingham Palace
+0.886 Corfe Mullen
+0.786 Culberson County-Allamoore Independent School District
+0.765 Plansee SE
+0.762 Bang Bon District
+0.789 John Deere World Headquarters
+0.779 Coloane Park
+
+--- BM25 ---
+26.232 Julia's House
+17.437 Julia Irwin
+16.961 Walter V. Davidson House
+16.602 Nyuksensky District
+16.535 Cherdynsky District
+19.722 Corfe Mullen
+5.392 Michurinsky District
+5.296 Tuymazinsky District
+4.084 Beryslav Raion
+4.022 Akshinsky District
+3.982 Chaunsky District
+
+--- GRAFO KG ---
+9 Julia's House
+2 Australia
+2 Australia
+2 Australia
+2 Australia
+14 Corfe Mullen
+
+--- HÍBRIDA ---
+0.848 Julia's House
+0.814 United States Bankruptcy Court for the Southern District of New York
+0.802 Julia Irwin
+0.796 Phulrraa
+0.794 Buckingham Palace
+16.961 Walter V. Davidson House
+16.602 Nyuksensky District
+16.535 Cherdynsky District
+2 Australia
+0.886 Corfe Mullen
+0.786 Culberson County-Allamoore Independent School District
+0.765 Plansee SE
+0.762 Bang Bon District
+5.392 Michurinsky District
+5.296 Tuymazinsky District
+0.804 Mosset Park
+0.78 N25 road (Ireland)
+0.769 Woolhampton
+4.552 Kynoch Park
+3.963 Milingimbi Airport
+3.958 Nigeria
+PERGUNTA: Who is the spouse of Young Man Luther's author?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Erikson spouse
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the author of Young Man Luther.
+The author of Young Man Luther is Erikson.
+Then, find the spouse of Erikson.
+The passages do not mention Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Erik Erikson spouse
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the author of Young Man Luther.
+The author of Young Man Luther is Erik Erikson.
+Then, find a fact about Erik Erikson.
+Erikson collaborated with Joan Erikson on Erikson's stages of psychosocial development.
+Final answer: Joan Erikson
+RESPOSTA: Joan Erikson
+CERTA: ['Joan Erikson']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Erikson spouse
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the author of Young Man Luther.
+The author of Young Man Luther is Erik Erikson.
+Then, find a fact about Erik Erikson's spouse.
+The passages do not mention Erik Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Erikson spouse
+nova busca 2 : Joan Erikson
+TOTAL DE CHUNKS: 19
+RACIOCINIO: The passage states that Young Man Luther was written by psychologist Erik Erikson. It does not mention Erik Erikson's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Joan Erikson']
+ACERTOU: False
+
+--- VETORIAL ---
+0.85 Young Man Luther
+0.832 Elisabeth Luther
+0.8 Susan Evans McCloud
+0.8 Margaret Blair Young
+0.787 Dexter King
+0.823 Erikson's stages of psychosocial development
+0.8 Marshall Eriksen
+0.793 Mok Kwai-lan
+
+--- BM25 ---
+27.189 Young Man Luther
+21.78 Young Man Lake
+21.342 Sonnet 110
+20.682 The Dream Life of Balso Snell
+17.906 Portrait of a Young Englishman
+18.453 Erikson's stages of psychosocial development
+6.295 Roxy Recordings
+5.566 Mok Kwai-lan
+
+--- GRAFO KG ---
+5 Young Man Luther
+4 Young Man Lake
+2 The Open Boat
+1 Klaus Mehnert
+1 Martine Blanc
+
+--- HÍBRIDA ---
+0.85 Young Man Luther
+0.832 Elisabeth Luther
+0.8 Susan Evans McCloud
+0.8 Margaret Blair Young
+0.787 Dexter King
+21.78 Young Man Lake
+21.342 Sonnet 110
+20.682 The Dream Life of Balso Snell
+17.906 Portrait of a Young Englishman
+2 The Open Boat
+1 Klaus Mehnert
+1 Martine Blanc
+0.823 Erikson's stages of psychosocial development
+0.8 Marshall Eriksen
+0.793 Mok Kwai-lan
+5.161 Countess Charlotte Brabantina of Nassau
+0.781 Roxy Recordings
+0.775 Jenny Benson
+8.186 Joan Llimona
+PERGUNTA: What record label did the performer of The Place and the Time belong to?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Sundazed Records
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage mentions "The Place and the Time" is released by Sundazed Records.
+The question asks for the record label of the performer.
+The passage does not mention who performed "The Place and the Time".
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Sundazed Records
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The Place and the Time was released by Sundazed Records.
+Final answer: Sundazed Records
+RESPOSTA: Sundazed Records
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Moby Grape record label
+nova busca 2 : Moby Grape record labels
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage states that The Place and the Time was released by Sundazed Records.
+The passage does not mention what record label Moby Grape belonged to.
+The passage mentions that Great Grape was released by Columbia Records.
+
+Final answer: Columbia Records
+RESPOSTA: Columbia Records
+CERTA: ['Columbia Records']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Sundazed Records
+busca repetida, para
+TOTAL DE CHUNKS: 15
+RACIOCINIO: The Place and the Time was released by Sundazed Records in 2009.
+Final answer: Sundazed Records
+RESPOSTA: Sundazed Records
+CERTA: ['Columbia Records']
+ACERTOU: False
+
+--- VETORIAL ---
+0.874 The Place and the Time
+0.809 Roxy Recordings
+0.804 Gregory and the Hawk
+0.796 Asian Man Records
+0.796 Equity Music Group
+0.795 Sleaszy Rider Records
+0.779 Unexploded
+0.778 Hints Allegations and Things Left Unsaid
+
+--- BM25 ---
+27.137 It's What's Happenin'
+27.137 It's What's Happenin'
+24.753 The Place and the Time
+23.513 Radar (song)
+23.104 Look What I Almost Stepped In...
+6.2 Sleaszy Rider Records
+6.067 Asian Man Records
+5.942 Kirtland Records
+5.861 DeSoto Records
+
+--- GRAFO KG ---
+9 The Place and the Time
+2 Asian Man Records
+2 IPod
+1 Three Gut Records
+1 Sleaszy Rider Records
+5 Great Grape
+1 Equity Music Group
+1 Tim DuBois
+
+--- HÍBRIDA ---
+0.874 The Place and the Time
+0.809 Roxy Recordings
+0.804 Gregory and the Hawk
+0.796 Asian Man Records
+0.796 Equity Music Group
+27.137 It's What's Happenin'
+23.513 Radar (song)
+23.104 Look What I Almost Stepped In...
+2 IPod
+1 Three Gut Records
+1 Sleaszy Rider Records
+0.779 Unexploded
+0.778 Hints Allegations and Things Left Unsaid
+5.942 Kirtland Records
+5.861 DeSoto Records
+PERGUNTA: Who is the child of the person who followed Tihomir of Serbia?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage does not mention Tihomir of Serbia.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Stracimir children
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, we need to find who followed Tihomir of Serbia.
+According to the passage, Stefan Nemanja overthrew Tihomir and became ruler of All Serbia.
+Then, we need to find who is the child of Stefan Nemanja.
+The passage does not mention any children of Stefan Nemanja.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Stefan Nemanja children
+nova busca 2 : Stracimir Serbia family
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find who followed Tihomir.
+According to the passage, Stefan Nemanja overthrew Tihomir.
+Then, find the child of Stefan Nemanja.
+The passage does not mention the child of Stefan Nemanja.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Stracimir Zavidović family
+nova busca 2 : Stefan Nemanja
+TOTAL DE CHUNKS: 22
+RACIOCINIO: The passage states that Stefan Nemanja overthrew Tihomir and his brothers, Stracimir and Miroslav, were expelled. It then says Stracimir continued to rule his lands. The passage does not mention any children of Stracimir.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Saint Sava']
+ACERTOU: False
+
+--- VETORIAL ---
+0.818 Nikola Radonja
+0.801 James III of Cyprus
+0.797 Pietro de' Medici
+0.796 Constance of Burgundy
+0.792 Milena Reljin
+
+--- BM25 ---
+23.785 Stracimir Zavidović
+23.643 Boris Tadić
+22.36 Andrićev Venac
+21.914 Music of the Old Serbia
+21.43 Donje Crniljevo
+6.451 International Children's Peace Prize
+6.071 Children's Act, 2005
+5.695 Child labour
+5.407 The Emperor's Children
+
+--- GRAFO KG ---
+5 The Miracle Child
+5 Music of the Old Serbia
+3 Stracimir Zavidović
+2 Andrićev Venac
+2 Jabukovac, Negotin
+1 Julia's House
+1 Birth certificate
+2 Roma Party
+2 Banja Monastery
+2 San Marino–Serbia relations
+
+--- HÍBRIDA ---
+0.818 Nikola Radonja
+0.801 James III of Cyprus
+0.797 Pietro de' Medici
+0.796 Constance of Burgundy
+0.792 Milena Reljin
+23.785 Stracimir Zavidović
+23.643 Boris Tadić
+22.36 Andrićev Venac
+21.914 Music of the Old Serbia
+21.43 Donje Crniljevo
+5 The Miracle Child
+2 Jabukovac, Negotin
+0.773 Kovilje
+0.766 Banjevac
+6.118 Han dynasty
+6.103 Meg Griffin
+6.062 Scariest Places on Earth
+4.74 A cappella
+0.767 Stan Tekiela
+0.767 Miquette Giraudy
+0.767 The Unwinding
+6.217 Landkjenning
+PERGUNTA: What team was Anna Benson's husband on?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Pittsburgh Pirates
+nova busca 2 : Kris Benson career
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find Anna Benson.
+Anna Benson is the ex-wife of former Major League Baseball pitcher Kris Benson.
+Then, find what teams Kris Benson was on.
+Kris Benson played for the Pittsburgh Pirates, the New York Mets, and the Baltimore Orioles.
+Final answer: Pittsburgh Pirates
+RESPOSTA: Pittsburgh Pirates
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find Anna Benson.
+Then, find the fact about her husband.
+Finally, identify the team her husband was on.
+
+Final answer: Major League Baseball
+RESPOSTA: Major League Baseball
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Kris Benson Major League Baseball team
+nova busca 2 : Kris Benson career
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Anna Benson's husband's name.
+Her husband's name is Kris Benson.
+Then find what teams Kris Benson was on.
+Kris Benson was on the Pittsburgh Pirates, the New York Mets, and the Baltimore Orioles.
+Final answer: Pittsburgh Pirates
+RESPOSTA: Pittsburgh Pirates
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Kris Benson Pittsburgh Pirates
+busca repetida, para
+TOTAL DE CHUNKS: 11
+RACIOCINIO: First, find Anna Benson. The passage states her husband is Kris Benson.
+Then, find Kris Benson. The passage states he played for the Pittsburgh Pirates, New York Mets, and Baltimore Orioles.
+Final answer: Pittsburgh Pirates
+RESPOSTA: Pittsburgh Pirates
+CERTA: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+ACERTOU: True
+
+--- VETORIAL ---
+0.867 Anna Benson
+0.823 Jenny Benson
+0.789 Robert Guillaume
+0.785 Gale Benson
+0.781 Kris Benson
+0.781 Pittsburgh Youth Symphony Orchestra
+0.775 Dustin Pedroia
+0.775 Pirate Party (Belgium)
+0.773 The Blackout All-Stars
+0.772 Benson Junction, Florida
+
+--- BM25 ---
+18.856 Anna Benson
+14.694 Jenny Benson
+11.846 History of the New Orleans Saints
+11.647 Arena Football League
+10.067 Benson Junction, Florida
+
+--- GRAFO KG ---
+4 Anna Benson
+2 Robert Guillaume
+1 The Miracle Child
+1 Arena Football League
+10 Arena Football League
+10 Kris Benson
+1 Ciudad Deportiva (Nuevo Laredo)
+
+--- HÍBRIDA ---
+0.867 Anna Benson
+0.823 Jenny Benson
+0.789 Robert Guillaume
+0.785 Gale Benson
+0.781 Kris Benson
+11.846 History of the New Orleans Saints
+11.647 Arena Football League
+10.067 Benson Junction, Florida
+1 The Miracle Child
+0.774 Dustin Pedroia
+10.749 Pittsburgh Youth Symphony Orchestra
+PERGUNTA: What place does the administrative territorial entity that Juba is located in share a border with?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Eritrea
+nova busca 2 : South Sudan bordering countries
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the place Juba is located in.
+Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+Then, find what Central Equatoria shares a border with.
+The Badigeru swamp lies in South Sudan, in the Central Equatoria and Eastern Equatoria states between Terekeka and Lafon.
+Final answer: Terekeka
+RESPOSTA: Terekeka
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Belarus
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the place Juba is located in.
+Juba is the national capital of South Sudan.
+South Sudan shares a border with Belarus and Ukraine.
+Final answer: Belarus and Ukraine
+RESPOSTA: Belarus and Ukraine
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Belarus border
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the place Juba is located.
+Juba is the national capital of South Sudan and the state capital of Central Equatoria.
+The passage does not mention what place shares a border with South Sudan.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : South Sudan bordering countries
+nova busca 2 : South Sudan
+TOTAL DE CHUNKS: 17
+RACIOCINIO: Juba is the national capital of South Sudan and the state capital of Central Equatoria. The Citizen is a newspaper based in Juba. The Badigeru swamp lies in South Sudan, in the Central Equatoria and Eastern Equatoria states. The Canada -- United States border (French: Frontière entre le Canada et les États - Unis), officially known as the International Boundary, is the longest international border in the world between two countries. It is shared between Canada and the United States.
+
+Final answer: United States
+RESPOSTA: United States
+CERTA: ['Eastern Equatoria']
+ACERTOU: False
+
+--- VETORIAL ---
+0.824 Adaba (woreda)
+0.824 Adaba (woreda)
+0.81 The Citizen (South Sudan)
+0.808 Berhale (woreda)
+0.808 Berhale (woreda)
+0.818 Eritrea
+0.81 Italian Eritrea
+0.814 Badigeru Swamp
+0.792 Canada–United States border
+
+--- BM25 ---
+19.336 The Citizen (South Sudan)
+18.394 Gmina Włodawa
+18.394 Gmina Włodawa
+18.394 Gmina Włodawa
+18.394 Gmina Włodawa
+6.485 Minsk Region
+
+--- GRAFO KG ---
+3 John "Hannibal" Smith
+3 The Citizen (South Sudan)
+1 Arena Football League
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.824 Adaba (woreda)
+0.81 The Citizen (South Sudan)
+0.808 Berhale (woreda)
+18.394 Gmina Włodawa
+3 John "Hannibal" Smith
+1 Arena Football League
+1 Minsk Region
+0.814 Badigeru Swamp
+0.792 Canada–United States border
+7.756 Alexandre de Lesseps
+5.8 Africa
+5.135 Cork (city)
+1 Elk Ridge (Maryland)
+1 Nigeria
+0.779 Blair Athol, New South Wales
+0.776 Southern California Edison
+0.774 United States Bankruptcy Court for the Southern District of New York
+PERGUNTA: Where was the spouse of Frances Tupper born?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Sir Charles Tupper birthplace
+nova busca 2 : Charles Tupper birthplace
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find Frances Tupper.
+Then, find the spouse of Frances Tupper.
+Finally, find the place of birth of Sir Charles Tupper.
+
+Final answer: March 14, 1826
+RESPOSTA: March 14, 1826
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Charles Tupper birthplace
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Frances Tupper.
+Then, find the spouse of Frances Tupper, which is Sir Charles Tupper.
+Finally, find where Sir Charles Tupper was born. The passage does not mention where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Sir Charles Tupper birthplace
+nova busca 2 : Charles Tupper birthplace
+TOTAL DE CHUNKS: 3
+RACIOCINIO: First, find Frances Tupper's spouse.
+Her spouse was Sir Charles Tupper.
+Then find where Sir Charles Tupper was born. The passage does not mention where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Sir Charles Tupper birthplace
+busca repetida, para
+TOTAL DE CHUNKS: 13
+RACIOCINIO: Sir Charles Tupper was the sixth Prime Minister of Canada, and Frances Tupper was his wife. The passage does not mention where Sir Charles Tupper was born.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Amherst']
+ACERTOU: False
+
+--- VETORIAL ---
+0.899 Frances Tupper
+0.793 Dupland
+0.789 François d'Orléans, Prince of Joinville
+0.784 Philippe I, Duke of Orléans
+0.783 Taputapuatea
+0.795 Anselm Tupper
+0.788 Arthur Rupert Dickey
+0.788 Buckingham Palace
+0.776 John Blair Smith Todd
+
+--- BM25 ---
+26.302 Frances Tupper
+16.383 Anselm Tupper
+14.267 Frances Ingram
+13.69 Arthur Rupert Dickey
+13.429 F. A. Forbes
+8.295 Wilber Morris
+5.912 Love's Long Journey
+
+--- GRAFO KG ---
+6 Frances Tupper
+1 Macbeth
+1 Arthur Rupert Dickey
+
+--- HÍBRIDA ---
+0.899 Frances Tupper
+0.793 Dupland
+0.789 François d'Orléans, Prince of Joinville
+0.784 Philippe I, Duke of Orléans
+0.783 Taputapuatea
+16.383 Anselm Tupper
+14.267 Frances Ingram
+13.69 Arthur Rupert Dickey
+13.429 F. A. Forbes
+1 Macbeth
+0.788 Buckingham Palace
+9.51 Godfrey Baring
+9.093 Sir William Maule
+PERGUNTA: Who founded the political party of Dimuthu Bandara Abayakoon?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Janatha Vimukthi Peramuna founders
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find Dimuthu Bandara Abayakoon.
+Then, find the political party he belongs to.
+Finally, find who founded that political party.
+
+Final answer: Janatha Vimukthi Peramuna
+RESPOSTA: Janatha Vimukthi Peramuna
+CERTA: ['Rohana Wijeweera']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Janatha Vimukthi Peramuna
+nova busca 2 : Janatha Vimukthi Peramuna founders
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find Dimuthu Bandara Abayakoon and his political affiliation.
+Dimuthu Bandara Abayakoon belongs to the Janatha Vimukthi Peramuna.
+Then, find who founded the Janatha Vimukthi Peramuna.
+Rohana Wijeweera was the founding leader of the Janatha Vimukthi Peramuna.
+Final answer: Rohana Wijeweera
+RESPOSTA: Rohana Wijeweera
+CERTA: ['Rohana Wijeweera']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Janatha Vimukthi Peramuna
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find Dimuthu Bandara Abayakoon.
+He belongs to the Janatha Vimukthi Peramuna.
+Therefore, the political party of Dimuthu Bandara Abayakoon is Janatha Vimukthi Peramuna.
+Final answer: Janatha Vimukthi Peramuna
+RESPOSTA: Janatha Vimukthi Peramuna
+CERTA: ['Rohana Wijeweera']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Janatha Vimukthi Peramuna founders
+busca repetida, para
+TOTAL DE CHUNKS: 15
+RACIOCINIO: Dimuthu Bandara Abayakoon belongs to the Janatha Vimukthi Peramuna. Rohana Wijeweera was the founding leader of the Janatha Vimukthi Peramuna.
+Final answer: Janatha Vimukthi Peramuna
+RESPOSTA: Janatha Vimukthi Peramuna
+CERTA: ['Rohana Wijeweera']
+ACERTOU: False
+
+--- VETORIAL ---
+0.897 Dimuthu Bandara Abayakoon
+0.812 Rohana Wijeweera
+0.802 Basotho National Party
+0.793 UNO-96 Alliance
+0.786 Independent Turkey Party
+0.779 Kirtland Records
+0.776 Shiranthi Rajapaksa
+0.768 Bharat Ratna
+
+--- BM25 ---
+36.72 Dimuthu Bandara Abayakoon
+21.808 Confederation of Regions Party of Canada
+21.188 Party for the Netherlands
+20.693 Basotho National Party
+19.018 Political party
+21.7 Rohana Wijeweera
+4.926 Great Wolf Resorts
+
+--- GRAFO KG ---
+7 Dimuthu Bandara Abayakoon
+2 Trevor Stamp, 3rd Baron Stamp
+2 Confederation of Regions Party of Canada
+1 Roma Party
+1 Shiromaniam Madhavan
+
+--- HÍBRIDA ---
+0.897 Dimuthu Bandara Abayakoon
+0.812 Rohana Wijeweera
+0.802 Basotho National Party
+0.793 UNO-96 Alliance
+0.786 Independent Turkey Party
+21.808 Confederation of Regions Party of Canada
+21.188 Party for the Netherlands
+19.018 Political party
+2 Trevor Stamp, 3rd Baron Stamp
+1 Roma Party
+1 Shiromaniam Madhavan
+0.779 Kirtland Records
+0.776 Shiranthi Rajapaksa
+0.768 Bharat Ratna
+4.926 Great Wolf Resorts
+PERGUNTA: Bancroft's county borders what county?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Hastings County bordering counties
+nova busca 2 : Hastings County
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+The passage does not mention what county borders Hastings County.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Hastings County
+nova busca 2 : Hastings County neighbors
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find North Hastings High School.
+Then, find the county it is located in.
+Finally, find the county that borders Hastings County.
+
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Hastings County
+nova busca 2 : Hastings County neighbors
+TOTAL DE CHUNKS: 4
+RACIOCINIO: The passage mentions North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+The passage also states that the York River is in Hastings County.
+Final answer: Hastings County
+RESPOSTA: Hastings County
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Hastings County
+nova busca 2 : Hastings County borders what county?
+TOTAL DE CHUNKS: 13
+RACIOCINIO: First, find North Hastings High School to determine the location of Bancroft.
+Then, find the county that North Hastings High School is located in.
+Finally, find the county that borders Hastings County.
+
+North Hastings High School is located in Bancroft, Ontario, Canada serving students in the northern portion of Hastings County.
+Hastings County is part of the Hastings and Prince Edward District School Board.
+The answer is Prince Edward.
+
+Final answer: Prince Edward
+RESPOSTA: Prince Edward
+CERTA: ['Haliburton County']
+ACERTOU: False
+
+--- VETORIAL ---
+0.799 Lancaster Crossing
+0.794 North Hastings High School
+0.792 Mount Bosworth
+0.792 Mount Bosworth
+0.78 Beckwith, Ontario
+0.786 Canada–United States border
+0.785 Canada–United States border
+0.783 York River (Ontario)
+0.776 Utah State Route 264
+0.773 Hughesville, Maryland
+0.771 Pegangsaan, Menteng
+
+--- BM25 ---
+14.765 Mountrail County Courthouse
+12.904 North Hastings High School
+11.592 Choptank River
+11.316 Culberson County-Allamoore Independent School District
+11.008 Norwegian County Road 13
+12.319 York River (Ontario)
+6.179 Edward Dannreuther
+
+--- GRAFO KG ---
+2 North Hastings High School
+1 Norwegian County Road 13
+1 Edward Dannreuther
+1 York River (Ontario)
+
+--- HÍBRIDA ---
+0.799 Lancaster Crossing
+0.794 North Hastings High School
+0.792 Mount Bosworth
+0.78 Beckwith, Ontario
+14.765 Mountrail County Courthouse
+11.592 Choptank River
+11.316 Culberson County-Allamoore Independent School District
+11.008 Norwegian County Road 13
+0.783 York River (Ontario)
+0.776 Utah State Route 264
+0.773 Hughesville, Maryland
+0.771 Pegangsaan, Menteng
+6.179 Edward Dannreuther
+PERGUNTA: In which county is Mark Dismore's birthplace located?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Greenfield Indiana county
+nova busca 2 : Hancock County
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The passage states Mark Dismore was born in Greenfield, Indiana.
+The passage also states Greenfield is in Hancock County, Indiana.
+Final answer: Hancock County
+RESPOSTA: Hancock County
+CERTA: ['Hancock County']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Greenfield county
+nova busca 2 : Hancock County
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states Mark Dismore was born in Greenfield, Indiana.
+Greenfield is in Hancock County, Indiana.
+Final answer: Hancock County
+RESPOSTA: Hancock County
+CERTA: ['Hancock County']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 3
+RACIOCINIO: The passage states Mark Dismore was born in Greenfield, Indiana.
+Greenfield is located in Indiana.
+Final answer: Indiana
+RESPOSTA: Indiana
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states Mark Dismore was born in Greenfield, Indiana.
+Greenfield is in Indiana.
+Final answer: Indiana
+RESPOSTA: Indiana
+CERTA: ['Hancock County']
+ACERTOU: False
+
+--- VETORIAL ---
+0.807 Mark Dismore
+0.8 Vermont, Wisconsin
+0.797 James W. Clise House
+0.797 McCormack, Minnesota
+0.795 Hughesville, Maryland
+0.903 Greenfield, Indiana
+0.784 Van Buren Township, Brown County, Indiana
+0.77 Green Party of the United States
+0.764 Ivanhoe, North Carolina
+0.764 WNDE
+0.787 Homewood, South Carolina
+0.773 Culberson County-Allamoore Independent School District
+0.772 Choptank River
+
+--- BM25 ---
+16.373 Mark Dismore
+13.423 Beckwith, Ontario
+13.038 Motru Coal Mine
+12.776 Pine Springs, Texas
+12.389 Mount Meigs Campus
+14.584 Greenfield, Indiana
+5.796 Choptank River
+5.658 Culberson County-Allamoore Independent School District
+5.504 Norwegian County Road 13
+5.196 Essex County Park Commission Administration Building
+5.57 First Light (Freddie Hubbard album)
+
+--- GRAFO KG ---
+11 Mark Dismore
+1 Norwegian County Road 13
+1 KFRU
+
+--- HÍBRIDA ---
+0.807 Mark Dismore
+0.8 Vermont, Wisconsin
+0.797 James W. Clise House
+0.797 McCormack, Minnesota
+0.795 Hughesville, Maryland
+13.423 Beckwith, Ontario
+13.038 Motru Coal Mine
+12.776 Pine Springs, Texas
+12.389 Mount Meigs Campus
+1 Norwegian County Road 13
+1 KFRU
+PERGUNTA: Who was the sibling of Nannina de' Medici?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Lorenzo de' Medici
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Therefore, Lorenzo de' Medici was the sibling of Nannina de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Lorenzo de' Medici
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Therefore, Lorenzo de' Medici was her sibling.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Lorenzo de' Medici
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: The passage states that Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Lorenzo de' Medici
+nova busca 2 : Lorenzo de' Medici birthplace
+TOTAL DE CHUNKS: 11
+RACIOCINIO: Nannina de' Medici's sibling was Lorenzo de' Medici.
+Final answer: Lorenzo de' Medici
+RESPOSTA: Lorenzo de' Medici
+CERTA: ["Giuliano de' Medici"]
+ACERTOU: False
+
+--- VETORIAL ---
+0.909 Nannina de' Medici
+0.86 Maria Maddalena de' Medici
+0.845 Pietro de' Medici
+0.842 Garzia de' Medici
+0.838 Giuliano de' Medici
+0.826 Portrait of Carlo de' Medici
+0.825 Leonora Dori
+
+--- BM25 ---
+29.634 Nannina de' Medici
+19.564 Portrait of Ippolito de' Medici
+18.79 Pietro de' Medici
+18.434 Giuliano de' Medici
+18.341 The Age of the Medici
+12.006 Portrait of Carlo de' Medici
+
+--- GRAFO KG ---
+10 Nannina de' Medici
+10 The Age of the Medici
+9 Giuliano de' Medici
+9 Margherita de' Medici
+8 Garzia de' Medici
+6 Giovanni di Bicci de' Medici
+
+--- HÍBRIDA ---
+0.909 Nannina de' Medici
+0.86 Maria Maddalena de' Medici
+0.845 Pietro de' Medici
+0.842 Garzia de' Medici
+0.838 Giuliano de' Medici
+19.564 Portrait of Ippolito de' Medici
+18.341 The Age of the Medici
+9 Margherita de' Medici
+0.826 Portrait of Carlo de' Medici
+0.825 Leonora Dori
+6 Giovanni di Bicci de' Medici
+PERGUNTA: What county is the NRHEG High School located in?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Waseca County
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the location of NRHEG High School.
+The passage states that NRHEG High School is located in New Richland, Minnesota.
+Then, find the county that New Richland is in.
+The passage states that New Richland is in Waseca County, Minnesota.
+Final answer: Waseca
+RESPOSTA: Waseca
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Waseca County
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that NRHEG High School is located in New Richland, Minnesota.
+The passage also states that New Richland is in Waseca County, Minnesota.
+Final answer: Waseca
+RESPOSTA: Waseca
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : New Richland county
+nova busca 2 : Waseca County
+TOTAL DE CHUNKS: 7
+RACIOCINIO: The passage states that NRHEG High School is located in New Richland, Minnesota.
+The passage also states that New Richland is a city in Waseca County, Minnesota.
+Therefore, the NRHEG High School is located in Waseca County.
+Final answer: Waseca County
+RESPOSTA: Waseca County
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Waseca County
+busca repetida, para
+TOTAL DE CHUNKS: 17
+RACIOCINIO: The passage states that NRHEG High School is located in New Richland, Minnesota.
+The passage also states that New Richland is a city in Waseca County, Minnesota.
+Final answer: Waseca County
+RESPOSTA: Waseca County
+CERTA: ['Waseca County', 'Waseca County, Minnesota']
+ACERTOU: True
+
+--- VETORIAL ---
+0.894 NRHEG High School
+0.833 North Hastings High School
+0.832 New Richland, Minnesota
+0.808 Essex County Park Commission Administration Building
+0.808 Essex County Park Commission Administration Building
+0.789 Dane (town), Wisconsin
+0.782 Vermont, Wisconsin
+0.781 WCCO-TV
+0.778 Avoca, Oklahoma
+
+--- BM25 ---
+34.377 NRHEG High School
+27.502 New Richland, Minnesota
+25.218 McFarland School District
+23.642 North Hastings High School
+22.046 Mount View High School (Maine)
+5.796 Choptank River
+5.658 Culberson County-Allamoore Independent School District
+5.504 Norwegian County Road 13
+5.196 Essex County Park Commission Administration Building
+
+--- GRAFO KG ---
+5 NRHEG High School
+2 Kimbrough Memorial Stadium
+1 1979–80 Coupe de France
+1 Comcast Sports Southwest
+1 Texas–Indian wars
+6 New Richland, Minnesota
+1 Norwegian County Road 13
+
+--- HÍBRIDA ---
+0.894 NRHEG High School
+0.833 North Hastings High School
+0.832 New Richland, Minnesota
+0.808 Essex County Park Commission Administration Building
+25.218 McFarland School District
+22.046 Mount View High School (Maine)
+2 Kimbrough Memorial Stadium
+1 1979–80 Coupe de France
+1 Comcast Sports Southwest
+1 Texas–Indian wars
+0.789 Dane (town), Wisconsin
+0.782 Vermont, Wisconsin
+0.781 WCCO-TV
+0.778 Avoca, Oklahoma
+5.796 Choptank River
+5.658 Culberson County-Allamoore Independent School District
+5.504 Norwegian County Road 13
+PERGUNTA: What league does the team that occupies the Rabat Ajax Football Ground belong to?
+
+--- RESPOSTA VETORIAL ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that the Rabat Ajax Football Ground is the training ground of Maltese football team Rabat Ajax F.C.
+The question asks about the league of the team that occupies the ground.
+Therefore, the team Rabat Ajax F.C. belongs to a Maltese football team.
+
+Final answer: Maltese
+RESPOSTA: Maltese
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that the Rabat Ajax Football Ground is the training ground of Maltese football team Rabat Ajax F.C.
+The passage does not mention what league Rabat Ajax F.C. belongs to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The provided passages do not mention the Rabat Ajax Football Ground or the team that occupies it.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 13
+RACIOCINIO: The Rabat Ajax Football Ground is the training ground of Maltese football team Rabat Ajax F.C.
+Final answer: Maltese
+RESPOSTA: Maltese
+CERTA: ['Maltese Premier League']
+ACERTOU: False
+
+--- VETORIAL ---
+0.872 Rabat Ajax Football Ground
+0.829 Silvio Vella
+0.816 Railways Ground
+0.813 Llanberis F.C.
+0.808 Melbourne Football Club
+
+--- BM25 ---
+45.724 Rabat Ajax Football Ground
+23.689 Dudley Road
+23.345 Whitefield Park
+23.074 Arena Football League
+23.059 Railways Ground
+
+--- GRAFO KG ---
+11 Arena Football League
+4 History of the New Orleans Saints
+3 John "Hannibal" Smith
+3 2015 AFL Grand Final
+2 Common nightingale
+
+--- HÍBRIDA ---
+0.872 Rabat Ajax Football Ground
+0.829 Silvio Vella
+0.816 Railways Ground
+0.813 Llanberis F.C.
+0.808 Melbourne Football Club
+23.689 Dudley Road
+23.345 Whitefield Park
+23.074 Arena Football League
+11 Arena Football League
+4 History of the New Orleans Saints
+3 John "Hannibal" Smith
+3 2015 AFL Grand Final
+2 Common nightingale
+PERGUNTA: Who was married to the star of No Escape?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Norman Lee spouse
+busca repetida, para
+TOTAL DE CHUNKS: 7
+RACIOCINIO: First, find the star of No Escape.
+The star of No Escape is Valerie Hobson.
+Then, find who was married to Valerie Hobson.
+The passage does not mention who Valerie Hobson was married to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Leslie Perrins spouse
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the star of No Escape.
+The star of No Escape is Valerie Hobson.
+Then, find who Valerie Hobson was married to.
+The passage does not mention who Valerie Hobson was married to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 1
+RACIOCINIO: The passage mentions Valerie Hobson as a star of No Escape.
+The passage does not mention who Valerie Hobson was married to.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Leslie Perrins spouse
+nova busca 2 : Valerie Hobson spouse
+TOTAL DE CHUNKS: 15
+RACIOCINIO: First, find the star of No Escape.
+Then, find who Valerie Hobson was married to.
+Final answer: David Profumo
+RESPOSTA: David Profumo
+CERTA: ['John Profumo']
+ACERTOU: False
+
+--- VETORIAL ---
+0.856 No Escape (1936 film)
+0.799 Escape from L.A.
+0.795 Anna Benson
+0.791 Unexploded
+0.789 Mok Kwai-lan
+0.792 You Can't Have Everything
+0.791 List of show business families
+
+--- BM25 ---
+21.01 No Escape (1936 film)
+14.592 Star Trek: Birth of the Federation
+14.036 Marie Anne de Bourbon
+13.798 Star Trek: Discovery
+13.745 Star Trek: Discovery
+7.847 Feist (singer)
+5.566 Mok Kwai-lan
+5.161 Countess Charlotte Brabantina of Nassau
+
+--- GRAFO KG ---
+7 No Escape (1936 film)
+
+--- HÍBRIDA ---
+0.856 No Escape (1936 film)
+0.799 Escape from L.A.
+0.795 Anna Benson
+0.791 Unexploded
+0.789 Mok Kwai-lan
+14.592 Star Trek: Birth of the Federation
+14.036 Marie Anne de Bourbon
+13.798 Star Trek: Discovery
+13.745 Star Trek: Discovery
+0.809 List of show business families
+0.789 The Crisis and a Crisis in the Life of an Actress
+7.847 Feist (singer)
+5.161 Countess Charlotte Brabantina of Nassau
+0.813 David Profumo
+0.792 The Haves and the Have Nots (TV series)
+PERGUNTA: What administrative territorial entity contains the place where KPRM is licensed to broadcast to?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Park Rapids Minnesota
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the location of KPRM.
+KPRM is located in Park Rapids, Minnesota.
+Then, find the administrative territorial entity that contains Park Rapids.
+Park Rapids is in Hubbard County, Minnesota.
+
+Final answer: Hubbard County, Minnesota
+RESPOSTA: Hubbard County, Minnesota
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage about KFGY states it broadcasts to the Santa Rosa, California area.
+The passage about Minsk Region does not mention Santa Rosa or California.
+The question asks about the administrative territorial entity containing Santa Rosa.
+
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Belarus
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the location of KPRM.
+KPRM is in Park Rapids, Minnesota.
+Then, find the administrative territorial entity that contains Park Rapids, Minnesota. The passages do not mention this.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Minsk Region location
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find where KPRM is licensed to broadcast to.
+KPRM is licensed to broadcast to Park Rapids, Minnesota.
+Then, find what administrative territorial entity contains Park Rapids, Minnesota.
+The passage about Minsk Region is not related to the question.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Hubbard County', 'Hubbard County, Minnesota']
+ACERTOU: False
+
+--- VETORIAL ---
+0.84 KPRM
+0.836 KPBD
+0.829 WKDM
+0.825 KFRU
+0.824 WKHK
+0.819 Emmaville, Minnesota
+0.799 New Richland, Minnesota
+0.786 Green Lake (Chisago City, Minnesota)
+0.777 McCormack, Minnesota
+
+--- BM25 ---
+17.158 WNDE
+16.637 KFGY
+16.507 Minsk Region
+16.507 Minsk Region
+16.507 Minsk Region
+
+--- GRAFO KG ---
+7 KPRM
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+1 Minsk Region
+
+--- HÍBRIDA ---
+0.84 KPRM
+0.836 KPBD
+0.829 WKDM
+0.825 KFRU
+0.824 WKHK
+17.158 WNDE
+16.637 KFGY
+16.507 Minsk Region
+PERGUNTA: Where are the headquarters for the publisher of In the Shadow of Greatness?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : United States Naval Institute location
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the publisher of "In the Shadow of Greatness."
+The publisher is the United States Naval Institute.
+Then, find the location of the United States Naval Institute.
+The United States Naval Institute is based in Annapolis, Maryland.
+Final answer: Annapolis, Maryland
+RESPOSTA: Annapolis, Maryland
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : United States Naval Institute location
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that "In the Shadow of Greatness" was published by the United States Naval Institute.
+The passage also states that the United States Naval Institute (USNI) is based in Annapolis, Maryland.
+Final answer: Annapolis, Maryland
+RESPOSTA: Annapolis, Maryland
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : United States Naval Institute location
+nova busca 2 : Scholastic Inc headquarters
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the publisher of "In the Shadow of Greatness".
+The publisher is the United States Naval Institute.
+Then, find the location of the United States Naval Institute.
+The United States Naval Institute is based in Annapolis, Maryland.
+Final answer: Annapolis, Maryland
+RESPOSTA: Annapolis, Maryland
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : United States Naval Institute location
+nova busca 2 : Scholastic Inc. location
+TOTAL DE CHUNKS: 24
+RACIOCINIO: The book In the Shadow of Greatness was published by the United States Naval Institute. The United States Naval Institute (USNI) is based in Annapolis, Maryland.
+Final answer: Annapolis, Maryland
+RESPOSTA: Annapolis, Maryland
+CERTA: ['Annapolis', 'Annapolis, Maryland']
+ACERTOU: True
+
+--- VETORIAL ---
+0.858 In the Shadow of Greatness
+0.805 Buckingham Palace
+0.802 The Revenge of the Shadow King
+0.796 The Shadow of Saganami
+0.793 Buckingham Palace
+0.89 United States Naval Institute
+0.787 NORC at the University of Chicago
+0.777 Ulrich Walser House
+0.776 Africa Partnership Station
+
+--- BM25 ---
+34.956 In the Shadow of Greatness
+26.208 Cork (city)
+25.507 Alamnagar
+25.507 Alamnagar
+25.507 Alamnagar
+23.715 United States Naval Institute
+9.59 Africa Partnership Station
+9.294 Occupational Safety and Health Act (United States)
+7.203 United States Bankruptcy Court for the Southern District of New York
+
+--- GRAFO KG ---
+6 The Revenge of the Shadow King
+6 The Shadow of Saganami
+5 Inju: The Beast in the Shadow
+3 In the Shadow of Greatness
+2 IPod
+8 Geography of the United States
+7 United States Naval Institute
+3 Marshall Islands
+
+--- HÍBRIDA ---
+0.858 In the Shadow of Greatness
+0.805 Buckingham Palace
+0.802 The Revenge of the Shadow King
+0.796 The Shadow of Saganami
+0.793 Buckingham Palace
+26.208 Cork (city)
+25.507 Alamnagar
+5 Inju: The Beast in the Shadow
+2 IPod
+0.89 United States Naval Institute
+0.787 NORC at the University of Chicago
+0.777 Ulrich Walser House
+0.776 Africa Partnership Station
+9.294 Occupational Safety and Health Act (United States)
+7.203 United States Bankruptcy Court for the Southern District of New York
+8 Geography of the United States
+3 Marshall Islands
+0.793 Salem County Vocational Technical Schools
+0.788 Piping Technology and Products
+0.788 Sant Martí d'Empúries
+6.694 Benson Junction, Florida
+6.347 WRGV
+6.174 Scariest Places on Earth
+6.121 WRLS-FM
+PERGUNTA: Who is part of the band that performed Full Cooperation?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Def Squad members
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+The passage also states that Def Squad is a rap supergroup consisting of Erick Sermon, Redman and Keith Murray.
+Final answer: Erick Sermon, Redman, Keith Murray
+RESPOSTA: Erick Sermon, Redman, Keith Murray
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Def Squad members
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The band that performed Full Cooperation is Def Squad.
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Def Squad members
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states that "Full Cooperation" is a song by the American hip hop group Def Squad.
+The passage also states that Def Squad is a rap supergroup consisting of Erick Sermon, Redman and Keith Murray.
+Final answer: Erick Sermon, Redman, Keith Murray
+RESPOSTA: Erick Sermon, Redman, Keith Murray
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Def Squad
+nova busca 2 : Def Squad members
+TOTAL DE CHUNKS: 21
+RACIOCINIO: The band that performed Full Cooperation is Def Squad, consisting of Erick Sermon, Redman and Keith Murray. Jamal is considered an honorary member.
+Final answer: Def Squad
+RESPOSTA: Def Squad
+CERTA: ['Erick Sermon']
+ACERTOU: False
+
+--- VETORIAL ---
+0.875 Full Cooperation
+0.814 The Philadelphia Brass
+0.802 Unexploded
+0.796 Take It All Back
+0.795 All Funked Up
+0.867 Def Squad
+0.787 Old Guard Fife and Drum Corps
+0.777 Bennigsen Beavers
+0.773 Debabrata Das
+
+--- BM25 ---
+21.017 Full Cooperation
+17.022 RCBC Plaza
+16.645 You Were There for Me
+16.064 Look What I Almost Stepped In...
+15.831 School for Secrets
+25.448 Def Squad
+6.593 Debabrata Das
+5.892 Cork (city)
+4.699 List of The Young and the Restless cast members
+
+--- GRAFO KG ---
+5 Full Cooperation
+4 DeSoto Records
+2 Halfway Tree
+2 Hints Allegations and Things Left Unsaid
+1 Pak Tam Chung
+6 Def Squad
+3 Cork (city)
+2 Old Guard Fife and Drum Corps
+1 Socialist Resistance of Kazakhstan
+
+--- HÍBRIDA ---
+0.875 Full Cooperation
+0.814 The Philadelphia Brass
+0.802 Unexploded
+0.796 Take It All Back
+0.795 All Funked Up
+17.022 RCBC Plaza
+16.645 You Were There for Me
+16.064 Look What I Almost Stepped In...
+15.831 School for Secrets
+4 DeSoto Records
+2 Halfway Tree
+2 Hints Allegations and Things Left Unsaid
+1 Pak Tam Chung
+0.864 Def Squad
+0.79 Old Guard Fife and Drum Corps
+0.789 Debabrata Das
+0.78 Melbourne Football Club
+0.777 Bennigsen Beavers
+5.892 Cork (city)
+4.699 List of The Young and the Restless cast members
+1 Socialist Resistance of Kazakhstan
+PERGUNTA: The territory containing Bansaan Island is located at which island?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Bohol Island location
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find Bansaan Island.
+Bansaan Island is located off the mid-northern coast of Bohol Island.
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Bohol Island
+busca repetida, para
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the island containing Bansaan.
+The passage states Bansaan is located off the mid-northern coast of Bohol Island.
+Therefore, the territory containing Bansaan Island is located at Bohol Island.
+
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Bohol Island
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the island containing Bansaan.
+The passage states Bansaan is located off the mid-northern coast of Bohol Island.
+Final answer: Bohol Island
+RESPOSTA: Bohol Island
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Bohol Island location
+busca repetida, para
+TOTAL DE CHUNKS: 10
+RACIOCINIO: First, find the island that contains Bansaan.
+Bansaan is located off the mid-northern coast of Bohol Island.
+Then, find the location of Bohol Island.
+The passage does not specify the location of Bohol Island.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Panglao Island']
+ACERTOU: False
+
+--- VETORIAL ---
+0.913 Bansaan
+0.814 Port Blair
+0.814 Port Blair
+0.814 Port Blair
+0.814 Port Blair
+0.807 Khong Island
+
+--- BM25 ---
+30.369 Bansaan
+18.957 Steinshamn
+18.583 Geography of Hong Kong
+18.374 Khong Island
+18.374 Khong Island
+11.696 Hinagdanan Cave
+
+--- GRAFO KG ---
+4 Bansaan
+1 States of Nigeria
+1 States of Nigeria
+1 States of Nigeria
+1 States of Nigeria
+
+--- HÍBRIDA ---
+0.913 Bansaan
+0.814 Port Blair
+18.957 Steinshamn
+18.583 Geography of Hong Kong
+18.374 Khong Island
+1 States of Nigeria
+11.696 Hinagdanan Cave
+7.596 Ex on the Beach (British TV series)
+6.694 Benson Junction, Florida
+6.174 Scariest Places on Earth
+PERGUNTA: In which county did Snappy Tomato Pizza form?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Fort Mitchell, Kentucky county
+nova busca 2 : Kenton County, Kentucky
+TOTAL DE CHUNKS: 12
+RACIOCINIO: The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+The passage also states that Fort Mitchell is in Kenton County, Kentucky.
+Final answer: Kenton County
+RESPOSTA: Kenton County
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+sem nova busca
+TOTAL DE CHUNKS: 5
+RACIOCINIO: The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+The passage does not mention the county of Fort Mitchell.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+sem nova busca
+TOTAL DE CHUNKS: 4
+RACIOCINIO: The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+The passage also states that its headquarters are in Burlington, Kentucky.
+Therefore, Snappy Tomato Pizza formed in Kentucky.
+Final answer: Kentucky
+RESPOSTA: Kentucky
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+sem nova busca
+TOTAL DE CHUNKS: 8
+RACIOCINIO: The passage states that Snappy Tomato Pizza started in Fort Mitchell, Kentucky.
+The passage also states that its headquarters are in Burlington, Kentucky.
+Therefore, Snappy Tomato Pizza formed in Kentucky.
+Final answer: Kentucky
+RESPOSTA: Kentucky
+CERTA: ['Kenton County', 'Kenton County, Kentucky']
+ACERTOU: False
+
+--- VETORIAL ---
+0.894 Snappy Tomato Pizza
+0.793 Pizza Hut
+0.786 2010 United States tomato shortage
+0.785 Timothy Township, Crow Wing County, Minnesota
+0.776 Pine Springs, Texas
+0.908 Fort Mitchell, Kentucky
+0.811 Pine Mountain State Resort Park
+0.786 McCormack, Minnesota
+0.769 Beckwith, Ontario
+0.767 Kynoch Park
+0.764 Eldon, Missouri
+0.76 Indian Heights, Dane County, Wisconsin
+
+--- BM25 ---
+34.232 Snappy Tomato Pizza
+17.689 Sicilian pizza
+14.535 New Haven, Connecticut
+14.026 2010 United States tomato shortage
+11.925 Pizza Hut
+
+--- GRAFO KG ---
+13 Snappy Tomato Pizza
+3 New Haven, Connecticut
+1 Norwegian County Road 13
+1 Pizza Hut
+
+--- HÍBRIDA ---
+0.894 Snappy Tomato Pizza
+0.793 Pizza Hut
+0.786 2010 United States tomato shortage
+0.785 Timothy Township, Crow Wing County, Minnesota
+0.776 Pine Springs, Texas
+17.689 Sicilian pizza
+14.535 New Haven, Connecticut
+1 Norwegian County Road 13
+PERGUNTA: What's the place of birth of the former member of The Sunnyboys?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Jeremy Oxley birthplace
+nova busca 2 : Kingscliff, New South Wales
+TOTAL DE CHUNKS: 10
+RACIOCINIO: Jeremy Oxley was born in Kingscliff, New South Wales.
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Jeremy Oxley birthplace
+nova busca 2 : Kingscliff, New South Wales
+TOTAL DE CHUNKS: 10
+RACIOCINIO: Jeremy Saxon Oxley was born in Kingscliff, New South Wales.
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Kingscliff, New South Wales
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the person who is a former member of The Sunnyboys.
+Then, find the place of birth of Jeremy Oxley.
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Kingscliff, New South Wales
+busca repetida, para
+TOTAL DE CHUNKS: 16
+RACIOCINIO: Jeremy Saxon Oxley was born in Kingscliff, New South Wales.
+Final answer: Kingscliff, New South Wales
+RESPOSTA: Kingscliff, New South Wales
+CERTA: ['Kingscliff', 'Kingscliff, New South Wales']
+ACERTOU: True
+
+--- VETORIAL ---
+0.835 Sunnyboys
+0.83 Jeremy Oxley
+0.793 Wilson Phillips
+0.792 Couzin Ed
+0.791 Roxy Recordings
+0.781 Ex on the Beach (British TV series)
+0.776 Halfway Tree
+0.774 Tyrion Lannister
+0.766 Blair Athol, New South Wales
+0.766 Australia
+
+--- BM25 ---
+28.472 Sunnyboys
+26.665 A Prisoner of Birth
+26.665 A Prisoner of Birth
+26.578 Birth certificate
+26.578 Birth certificate
+21.562 Jeremy Oxley
+5.987 Penelope Tree
+13.792 Blair Athol, New South Wales
+9.259 Julia Irwin
+7.534 Australia
+
+--- GRAFO KG ---
+6 Sunnyboys
+3 Streams of Expression
+3 Jeremy Oxley
+2 List of Bombardier CRJ operators
+2 Hughesville, Maryland
+3 Blair Athol, New South Wales
+1 Italy national rugby union team
+1 History of the Rugby World Cup
+1 Can't Pay? We'll Take It Away!
+
+--- HÍBRIDA ---
+0.835 Sunnyboys
+0.83 Jeremy Oxley
+0.793 Wilson Phillips
+0.792 Couzin Ed
+0.791 Roxy Recordings
+26.665 A Prisoner of Birth
+26.578 Birth certificate
+3 Streams of Expression
+2 List of Bombardier CRJ operators
+2 Hughesville, Maryland
+0.766 Blair Athol, New South Wales
+0.766 Australia
+9.259 Julia Irwin
+1 Italy national rugby union team
+1 History of the Rugby World Cup
+1 Can't Pay? We'll Take It Away!
+PERGUNTA: In which district was Ernie Watts born?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Woolhampton
+nova busca 2 : Woolhampton district
+TOTAL DE CHUNKS: 11
+RACIOCINIO: The passage states Ernie Watts was born in Woolhampton in Berkshire.
+Final answer: Woolhampton
+RESPOSTA: Woolhampton
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Woolhampton location
+nova busca 2 : Woolhampton
+TOTAL DE CHUNKS: 9
+RACIOCINIO: The passage states Ernie Watts was born in Woolhampton in Berkshire.
+Final answer: Berkshire
+RESPOSTA: Berkshire
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Berkshire
+busca repetida, para
+TOTAL DE CHUNKS: 2
+RACIOCINIO: First, find Ernie Watts.
+Then, find the district where he was born.
+The passage states he was born in Woolhampton in Berkshire.
+Final answer: Woolhampton
+RESPOSTA: Woolhampton
+CERTA: ['West Berkshire']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Woolhampton district
+nova busca 2 : Woolhampton
+TOTAL DE CHUNKS: 16
+RACIOCINIO: The passage states Ernie Watts was born in Woolhampton, which is a village and civil parish in West Berkshire, England.
+Final answer: West Berkshire
+RESPOSTA: West Berkshire
+CERTA: ['West Berkshire']
+ACERTOU: True
+
+--- VETORIAL ---
+0.86 Ernie Watts (footballer, born 1872)
+0.782 Dnovsky District
+0.779 Gentle Thoughts
+0.774 Marin County Civic Center
+0.773 Salem County Vocational Technical Schools
+0.87 Woolhampton
+0.77 Whiston, Merseyside
+0.764 WZEI
+0.763 Blair Athol, New South Wales
+0.784 Bang Bon District
+0.768 Gmina Włodawa
+
+--- BM25 ---
+16.004 Ernie Watts (footballer, born 1872)
+15.222 Gentle Thoughts
+10.153 Shmidtovsky District
+10.149 Tuymazinsky District
+10.107 Michurinsky District
+9.225 Woolhampton
+6.694 Benson Junction, Florida
+6.174 Scariest Places on Earth
+6.032 Great Wolf Resorts
+
+--- GRAFO KG ---
+11 Ernie Watts (footballer, born 1872)
+1 Gentle Thoughts
+
+--- HÍBRIDA ---
+0.86 Ernie Watts (footballer, born 1872)
+0.782 Dnovsky District
+0.779 Gentle Thoughts
+0.774 Marin County Civic Center
+0.773 Salem County Vocational Technical Schools
+10.153 Shmidtovsky District
+10.149 Tuymazinsky District
+10.107 Michurinsky District
+0.85 Woolhampton
+0.784 Bang Bon District
+0.78 Blair Athol, New South Wales
+0.768 Gmina Włodawa
+5.405 Nyuksensky District
+5.296 Cherdynsky District
+0.77 Whiston, Merseyside
+0.764 WZEI
+PERGUNTA: Which county does Lloyd Dane's birthplace belong to?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Eldon Missouri county
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: Lloyd Dane was from Eldon, Missouri.
+Eldon is in Miller County, Missouri.
+Final answer: Miller
+RESPOSTA: Miller
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Eldon Missouri county
+nova busca 2 : Miller County, Missouri
+TOTAL DE CHUNKS: 10
+RACIOCINIO: Lloyd Dane was from Eldon, Missouri.
+Eldon is in Miller County, Missouri.
+Final answer: Miller County
+RESPOSTA: Miller County
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: True
+
+--- RESPOSTA KG ---
+nova busca 1 : Eldon, Missouri county
+nova busca 2 : Miller County, Missouri
+TOTAL DE CHUNKS: 9
+RACIOCINIO: Lloyd Dane was from Eldon, Missouri.
+Eldon is a city in Miller County, Missouri.
+Final answer: Miller County
+RESPOSTA: Miller County
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: True
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Eldon Missouri county
+nova busca 2 : Eldon, Missouri county
+TOTAL DE CHUNKS: 13
+RACIOCINIO: Lloyd Dane was from Eldon, Missouri.
+Eldon is in Miller County, Missouri.
+Final answer: Miller County
+RESPOSTA: Miller County
+CERTA: ['Miller County', 'Miller County, Missouri']
+ACERTOU: True
+
+--- VETORIAL ---
+0.867 Dane (town), Wisconsin
+0.866 Lloyd Dane
+0.819 Vermont, Wisconsin
+0.806 McFarland School District
+0.801 Indian Heights, Dane County, Wisconsin
+0.907 Eldon, Missouri
+0.788 Southwest City, Missouri
+0.784 Culberson County-Allamoore Independent School District
+0.775 McCormack, Minnesota
+
+--- BM25 ---
+18.401 Lloyd Dane
+13.917 Indian Heights, Dane County, Wisconsin
+13.809 Dane (town), Wisconsin
+11.407 Door Creek, Wisconsin
+11.118 McFarland School District
+23.954 Eldon, Missouri
+12.356 Southwest City, Missouri
+8.459 KAPE
+6.65 KFRU
+5.997 The Handmaid's Tale (TV series)
+
+--- GRAFO KG ---
+11 Lloyd Dane
+2 Door Creek, Wisconsin
+2 Indian Heights, Dane County, Wisconsin
+2 Dane (town), Wisconsin
+1 Norwegian County Road 13
+6 Eldon, Missouri
+2 Southwest City, Missouri
+1 KFRU
+1 KAPE
+
+--- HÍBRIDA ---
+0.867 Dane (town), Wisconsin
+0.866 Lloyd Dane
+0.819 Vermont, Wisconsin
+0.806 McFarland School District
+0.801 Indian Heights, Dane County, Wisconsin
+11.407 Door Creek, Wisconsin
+1 Norwegian County Road 13
+0.907 Eldon, Missouri
+0.788 Southwest City, Missouri
+0.784 Culberson County-Allamoore Independent School District
+0.775 McCormack, Minnesota
+8.459 KAPE
+6.65 KFRU
+PERGUNTA: Who is the spouse of the screenwriter of The Actress?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : George Cukor spouse
+busca repetida, para
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the screenwriter of The Actress.
+The passage states that Ruth Gordon wrote the screenplay.
+Then, find a fact about Ruth Gordon.
+The passage does not mention Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Bayard Veiller spouse
+nova busca 2 : Upi Avianto spouse
+TOTAL DE CHUNKS: 9
+RACIOCINIO: First, find the screenwriter of The Actress, which is Upi Avianto.
+Then, find the spouse of Upi Avianto, which is not mentioned in the passage.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Jacques Companéez spouse
+busca repetida, para
+TOTAL DE CHUNKS: 5
+RACIOCINIO: First, find the screenwriter of The Actress.
+The passage states that Ruth Gordon wrote the screenplay.
+The passage does not mention anything about Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : George Cukor spouse
+sem nova busca
+TOTAL DE CHUNKS: 17
+RACIOCINIO: The screenplay of The Actress was written by Ruth Gordon. The passage does not mention Ruth Gordon's spouse.
+Final answer: not found
+RESPOSTA: not found
+CERTA: ['Garson Kanin']
+ACERTOU: False
+
+--- VETORIAL ---
+0.849 The Actress
+0.791 Nina Companeez
+0.789 James Dearden
+0.787 Angelica Page
+0.786 Eva Ionesco
+0.795 George II of Great Britain
+0.789 List of show business families
+0.788 Adam's Rib
+0.78 Mok Kwai-lan
+
+--- BM25 ---
+28.632 List of show business families
+28.632 List of show business families
+26.692 Upi Avianto
+24.115 Nina Companeez
+23.786 Anthony Veiller
+5.566 Mok Kwai-lan
+5.54 Caroline LeRoy
+5.161 Countess Charlotte Brabantina of Nassau
+4.704 Christel Khalil
+
+--- GRAFO KG ---
+7 The Actress
+3 Nina Companeez
+2 Nathalie Boutefeu
+2 Jennifer Saunders
+2 Djenar Maesa Ayu
+
+--- HÍBRIDA ---
+0.849 The Actress
+0.791 Nina Companeez
+0.789 James Dearden
+0.787 Angelica Page
+0.786 Eva Ionesco
+28.632 List of show business families
+26.692 Upi Avianto
+23.786 Anthony Veiller
+2 Nathalie Boutefeu
+2 Jennifer Saunders
+2 Djenar Maesa Ayu
+0.795 George II of Great Britain
+0.788 Adam's Rib
+0.78 Mok Kwai-lan
+7.266 Margaret H. George
+5.645 Tyrion Lannister
+2 UHF (film)
+PERGUNTA: What award was received by the person who authored Missing Person?
+
+--- RESPOSTA VETORIAL ---
+nova busca 1 : Prix Goncourt
+busca repetida, para
+TOTAL DE CHUNKS: 8
+RACIOCINIO: First, find the book "Missing Person".
+Then, find the author of "Missing Person".
+Then, find the award received by Patrick Modiano.
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- RESPOSTA BM25 ---
+nova busca 1 : Patrick Modiano awards
+nova busca 2 : Prix Goncourt
+TOTAL DE CHUNKS: 10
+RACIOCINIO: The person who authored Missing Person is Patrick Modiano. He received the 1978 Prix Goncourt for "Rue des boutiques obscures".
+Final answer: 1978 Prix Goncourt
+RESPOSTA: 1978 Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: False
+
+--- RESPOSTA KG ---
+nova busca 1 : Patrick Modiano awards
+nova busca 2 : Patrick Modiano Prix Goncourt
+TOTAL DE CHUNKS: 6
+RACIOCINIO: First, find the author of Missing Person.
+The author of Missing Person is Patrick Modiano.
+Then, find the awards received by Patrick Modiano.
+Patrick Modiano won the 1978 Prix Goncourt for "Rue des boutiques obscures".
+Final answer: 1978 Prix Goncourt
+RESPOSTA: 1978 Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: False
+
+--- RESPOSTA HÍBRIDA ---
+nova busca 1 : Prix Goncourt
+busca repetida, para
+TOTAL DE CHUNKS: 14
+RACIOCINIO: The passage states that Patrick Modiano won the 1978 Prix Goncourt for "Rue des boutiques obscures," which is the French title of the novel "Missing Person."
+Final answer: Prix Goncourt
+RESPOSTA: Prix Goncourt
+CERTA: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+ACERTOU: True
+
+--- VETORIAL ---
+0.856 Missing Person (novel)
+0.792 Theresa Schwegel
+0.792 Theresa Schwegel
+0.791 Haig Bosmajian
+0.784 Nobel Prize in Literature
+0.784 Patrick Modiano
+0.78 International Children's Peace Prize
+0.772 François Ponsard
+
+--- BM25 ---
+25.785 Missing Person (novel)
+18.931 Yogendra Singh Yadav
+18.314 List of Nobel laureates
+18.314 List of Nobel laureates
+17.544 List of awards and nominations received by Jennifer Lawrence
+16.978 Patrick Modiano
+6.293 62nd Academy Awards
+6.04 List of awards and honours received by Audrey Hepburn
+5.992 Rabbit Ears Productions
+8.975 1969 Mexican Grand Prix
+
+--- GRAFO KG ---
+5 Missing Person (novel)
+1 Taktin Oey
+1 Bùi Bích Phương
+1 62nd Academy Awards
+9 Patrick Modiano
+2 List of awards and honours received by Audrey Hepburn
+
+--- HÍBRIDA ---
+0.856 Missing Person (novel)
+0.792 Theresa Schwegel
+0.791 Haig Bosmajian
+0.784 Nobel Prize in Literature
+18.931 Yogendra Singh Yadav
+18.314 List of Nobel laureates
+17.544 List of awards and nominations received by Jennifer Lawrence
+1 Taktin Oey
+1 Bùi Bích Phương
+1 62nd Academy Awards
+0.784 Patrick Modiano
+0.78 International Children's Peace Prize
+0.772 François Ponsard
+8.975 1969 Mexican Grand Prix
+
+RESULTADO FINAL 
+VETORIAL: 22 de 60
+BM25: 25 de 60
+KG: 22 de 60
+HÍBRIDA: 25 de 60
