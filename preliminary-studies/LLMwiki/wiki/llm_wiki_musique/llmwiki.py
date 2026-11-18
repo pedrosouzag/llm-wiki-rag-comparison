@@ -6,11 +6,12 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from slugify import slugify as slugify
 import json
 import unicodedata
-# verificar se precisa por slugify nos requirements, acredito que sim
+
 
 # FEITO = PRE PROCESSAMENTO PARA CNSTRUCAO DA WIKI, FLUXO DE COSTRUIR ESTA CORRETO. PARTE DE PERGUNTAR, VERIFICAR RESPOSTA TUDO OK
 # AJUSTAR = PESQUISAR AUTOVERIFICACAO DA CONSTRUCAO DA WIKI, CONEXAO ENTRE WIKIS, AJUSTAR PARTE DE BUSCA PRA TRAZER
 #   COLOCAR/AJUSTAR A FUNCAO DE ATUALIZAR WIKI APPOS RESPOSTAS INCORRETAS
+#   AJUSTAR PROMPTS PARA INGLES
 
 
 
