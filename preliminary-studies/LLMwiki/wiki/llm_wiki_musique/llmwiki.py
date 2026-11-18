@@ -5,7 +5,12 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from slugify import slugify as slugify
 import json
+import unicodedata
 # verificar se precisa por slugify nos requirements, acredito que sim
+
+# FEITO = PRE PROCESSAMENTO PARA CNSTRUCAO DA WIKI, FLUXO DE COSTRUIR ESTA CORRETO. PARTE DE PERGUNTAR, VERIFICAR RESPOSTA TUDO OK
+# AJUSTAR = PESQUISAR AUTOVERIFICACAO DA CONSTRUCAO DA WIKI, CONEXAO ENTRE WIKIS, AJUSTAR PARTE DE BUSCA PRA TRAZER
+#   COLOCAR/AJUSTAR A FUNCAO DE ATUALIZAR WIKI APPOS RESPOSTAS INCORRETAS
 
 
 
@@ -38,6 +43,11 @@ def slugify_function(titulo):
   return slugify(titulo)
 
 # print (slugify_function("Neymar - carreira de 25"))
+"""Funcao auxiliar para tokenizar trechos"""
+def tokenizar(texto):
+    texto = texto.lower()  # maiuscula vira minuscula
+    texto = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode()  # tira acento
+    return re.findall(r"\w+", texto)  # quebra em palavras e descarta pontuacao
 
 """"Funcao do gemma para retornar texto"""
 def gerar_gemma_12b(prompt, max_tokens=350):
@@ -296,7 +306,33 @@ Contexto: {contexto} Pergunta: {pergunta} Resposta:"""
 
     return resposta,relacionadas
 
+def verificar_resposta(resposta_modelo, resposta_certa):
+    # cria uma lista para tirar os artigos da resposta
+    resposta_sem_artigo = []
 
+    # tokeniza a resposta com a funcao do bm25
+    resposta_tokenizada = tokenizar(resposta_modelo)
+    # remove os artigos
+    for  palavra in resposta_tokenizada:
+      if palavra not in ["a", "the" , "an"]:
+        resposta_sem_artigo.append(palavra)
+
+    # acertou fica true se a resposta for igual a alguma resposta certa
+    acertou = False
+
+    # em cada variacao da resposta certa, tokeniza, tira o artigo e compara com a resposta do modelo
+    for certa in resposta_certa:
+       certa_sem_artigo = []
+       certa_tokenizada = tokenizar(certa)
+       for palavra in certa_tokenizada:
+             if palavra not in ["a", "the" , "an"]:
+               certa_sem_artigo.append(palavra)
+
+       # se as palavras forem iguais acertou
+       if resposta_sem_artigo == certa_sem_artigo:
+          acertou = True
+
+    return acertou
 def processar_perguntas_e_respostas(PASTA_BASE):
     perguntas = []
     respostas = []
@@ -308,18 +344,29 @@ def processar_perguntas_e_respostas(PASTA_BASE):
             respostas.append(["answer"] + ["answer_aliases"])
     return perguntas, respostas
 
-def rodar_perguntas():
-    perguntas, respostas = processar_perguntas_e_respostas(PASTA_BASE)
 
+"""Funcao que roda as perguntaas, pega as perguntas e respostas das listas, roda a pergunta e confere a resposta"""
+def rodar_perguntas():
+    numPerguntas = 0
+    numAcertos = 0
+    perguntas, respostas = processar_perguntas_e_respostas(PASTA_BASE)
     for pergunta, resposta in perguntas, respostas:
         resposta_modelo, relacionadas = perguntar_wiki(pergunta)
         print(f"\n Pergunta: {pergunta}")
-        # resultado = verificar_resposta(resposta_modelo, resposta)
+        resultado = verificar_resposta(resposta_modelo, resposta)
+        print(f"\nResposta Gerada: {resposta_modelo}")
         print(f"\n Resposta: {resposta}")
-        #print (f"\nAcertou: {resultado}")
+        print (f"\nAcertou: {resultado}")
 
         print(f"Quantidade de paginas relacionadas: {len(relacionadas)}\n\nPaginas relacionadas: {relacionadas}")
+        numPerguntas += 1
+        if (resultado):
+            numAcertos +=1
 
+    print ("\n===== RELATORIO FINAL=====")
+    print(f"\nNumero de acertos = {numAcertos} / {numPerguntas}")
+    acuracia = round((numAcertos / numPerguntas), 3)
+    print (f"\nAcuracia: {acuracia} % ")
 
 
 # processar_base(PASTA_BASE)

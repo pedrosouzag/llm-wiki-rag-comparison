@@ -6,3 +6,4 @@ sentence-transformers
 rank-bm25
 numpy
 networkx
+python-slugify
