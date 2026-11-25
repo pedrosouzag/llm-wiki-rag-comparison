@@ -450,7 +450,8 @@ def atualizar_pagina(caminho, trecho_novo):
         linha = linha.strip()
         if not linha.startswith("-"):
             continue
-        if linha not in conteudo_atual:
+        # compara sem o traco, porque na pagina o fato pode estar escrito sem ele
+        if linha.lstrip("- ").strip() not in conteudo_atual:
             linhas_novas.append(linha)
 
     if linhas_novas:
@@ -473,7 +474,8 @@ def atualizar_pagina(caminho, trecho_novo):
             linha = linha.strip()
             if not linha.startswith("-"):
                 continue
-            if linha not in conteudo_atual:
+            # compara sem o traco, porque na pagina o fato pode estar escrito sem ele
+            if linha.lstrip("- ").strip() not in conteudo_atual:
                 linhas_novas.append(linha)
 
         # so escreve e refaz o resumo se sobrou fato novo depois da correcao
