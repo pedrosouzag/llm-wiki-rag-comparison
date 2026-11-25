@@ -143,7 +143,7 @@ def buscar_pagina_relacionada(trecho, pasta=PASTA_WIKI):
 def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
     paginas = listar_paginas(pasta)
     if not paginas:
-        return None
+        return []
 
     temp = []
     for titulo, caminho in paginas:
@@ -169,7 +169,7 @@ def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
     if relacionadas:
         # print(len(relacionadas))
         return relacionadas
-    return None
+    return []
 
 """# Gerar Título e Gerar conteúdos da Wiki"""
 
@@ -245,10 +245,14 @@ def processar_trecho(trecho, pasta=PASTA_WIKI):
 def processar_base(base):
     with open(base, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
-        for linha in texto.splitlines()[60:]:
+        for linha in texto.splitlines()[:60]:
             linha_dicionario = json.loads(linha)
             for paragrafo in linha_dicionario["paragraphs"]:
-                processar_trecho(paragrafo)
+                # passa o o titulo e o paragrafo para construir a wiki
+                titulo = paragrafo["title"]
+                conteudo = paragrafo["paragraph_text"]
+                trecho = titulo + "\n" + conteudo
+                processar_trecho(trecho)
 
 
 """# Funções de Pergunta e Resposta"""
@@ -337,12 +341,12 @@ def verificar_resposta(resposta_modelo, resposta_certa):
 def processar_perguntas_e_respostas(PASTA_BASE):
     perguntas = []
     respostas = []
-    with open(PASTA_BASE, "r", encode= "utf-8") as arquivo:
+    with open(PASTA_BASE, "r", encoding= "utf-8") as arquivo:
         trecho = arquivo.read()
         for linha in trecho.splitlines()[:60]:
-            linha_dicionario = json.load(linha)
+            linha_dicionario = json.loads(linha)
             perguntas.append(linha_dicionario["question"])
-            respostas.append(["answer"] + ["answer_aliases"])
+            respostas.append([linha_dicionario["answer"]] + linha_dicionario["answer_aliases"])
     return perguntas, respostas
 
 
@@ -351,7 +355,7 @@ def rodar_perguntas():
     numPerguntas = 0
     numAcertos = 0
     perguntas, respostas = processar_perguntas_e_respostas(PASTA_BASE)
-    for pergunta, resposta in perguntas, respostas:
+    for pergunta, resposta in zip (perguntas, respostas):
         resposta_modelo, relacionadas = perguntar_wiki(pergunta)
         print(f"\n Pergunta: {pergunta}")
         resultado = verificar_resposta(resposta_modelo, resposta)
@@ -366,7 +370,7 @@ def rodar_perguntas():
 
     print ("\n===== RELATORIO FINAL=====")
     print(f"\nNumero de acertos = {numAcertos} / {numPerguntas}")
-    acuracia = round((numAcertos / numPerguntas), 3)
+    acuracia = round((numAcertos / numPerguntas) * 100, 1)
     print (f"\nAcuracia: {acuracia} % ")
 
 
