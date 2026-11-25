@@ -598,7 +598,7 @@ def busca_profundidade(pergunta):
     return contexto, relacionadas
 
 """Funcao que responde a pergunta com o contexto, pensando em passos, e pega so a resposta final"""
-def perguntar_wiki(pergunta, contexto,  max_tokens=50):
+def perguntar_wiki(pergunta, contexto,  max_tokens=150):
 
     prompt_final = f"""
         Answer the question using only the wiki pages below. Do not make anything up.
@@ -665,7 +665,7 @@ def processar_perguntas_e_respostas(PASTA_BASE):
     respostas = []
     with open(PASTA_BASE, "r", encoding= "utf-8") as arquivo:
         trecho = arquivo.read()
-        for linha in trecho.splitlines()[:60]:
+        for linha in trecho.splitlines()[:2]:
             linha_dicionario = json.loads(linha)
             perguntas.append(linha_dicionario["question"])
             respostas.append([linha_dicionario["answer"]] + linha_dicionario["answer_aliases"])
@@ -710,8 +710,9 @@ def rodar_perguntas():
         # verifica o resultado
         resultado = verificar_resposta(resposta_modelo, resposta)
 
-        if resultado:
-            atualizar_wiki_com_resposta(pergunta, resposta_modelo, relacionadas)
+        # guarda na wiki so quando acertou, desligado no teste pra wiki ficar limpa
+        # if resultado:
+        # atualizar_wiki_com_resposta(pergunta, resposta_modelo, relacionadas)
         print(f"\nResposta Gerada: {resposta_modelo}")
         print(f"\n Resposta: {resposta}")
         print (f"\nAcertou: {resultado}")
@@ -730,7 +731,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-processar_base(PASTA_BASE)
+# processar_base(PASTA_BASE)
 # print(listar_paginas())
-carregar_wiki_completa()
-# rodar_perguntas()
+# carregar_wiki_completa()
+rodar_perguntas()
