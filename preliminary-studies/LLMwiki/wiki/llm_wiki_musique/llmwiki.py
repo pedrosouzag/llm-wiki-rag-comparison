@@ -104,13 +104,13 @@ def carregar_wiki_completa(pasta=PASTA_WIKI):
     with open(caminho_saida, "w", encoding="utf-8") as saida:
         saida.write(conteudo_completo)
 
-SCHEMA_WIKI = """Regras da wiki:
-- Cada pagina tem um titulo curto (2 a 5 palavras) representando um unico topico
-- O conteudo e uma lista de fatos em bullets, um fato por linha, sem repeticao
-- Nao invente informacoes que nao estejam no texto fornecido
-- Escreva sempre em portugues do Brasil
-- Se o trecho so menciona um nome/topico de passagem, sem fatos substanciais sobre ele,
-  NAO crie uma pagina nova para isso - ignore a mencao.
+SCHEMA_WIKI = """Wiki rules:
+- Each page has a short title (2 to 5 words) about a single topic
+- The content is a list of facts in bullets, one fact per line, with no repetition
+- Do not make up information that is not in the given text
+- Always write in English and keep names exactly as they appear in the text
+- If the text only mentions a name/topic in passing, without real facts about it,
+  do NOT create a new page for it - ignore the mention.
 """
 
 def buscar_pagina_relacionada(trecho, pasta=PASTA_WIKI):
@@ -123,15 +123,16 @@ def buscar_pagina_relacionada(trecho, pasta=PASTA_WIKI):
         temp.append(titulo)
     lista_titulos = "\n".join(temp)
 
-    prompt = f"""Você recebe uma lista de tópicos existentes e um trecho novo de texto.
-      Responda APENAS com o nome exato de um tópico da lista se o trecho for sobre o mesmo
-      assunto dele, ou responda "NENHUM" se não houver relação clara.
+    prompt = f"""
+        You receive a list of existing topics and a new piece of text.
+        Answer ONLY with the exact name of one topic from the list if the text is about the same
+        subject, or answer "NONE" if there is no clear relation.
 
-      Tópicos existentes: {lista_titulos}
+        Existing topics: {lista_titulos}
 
-      Trecho novo: {trecho}
+        New text: {trecho}
 
-      Tópico relacionado:"""
+        Related topic:"""
 
     resposta = gerar_gemma_12b(prompt, max_tokens=20)
 
@@ -150,15 +151,16 @@ def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
         temp.append(titulo)
     lista_titulos = "\n".join(temp)
 
-    prompt = f"""Você recebe uma lista de tópicos existentes e uma pergunta.
-      Responda APENAS com o nome exato de TODOS tópicos da lista se a pergunta for sobre o mesmo
-      assunto de algum trecho, ou responda "NENHUM" se não houver relação clara.
+    prompt = f"""
+        You receive a list of existing topics and a question.
+        Answer ONLY with the exact names of ALL topics from the list that are related to the question,
+        or answer "NONE" if there is no clear relation.
 
-      Tópicos existentes: {lista_titulos}
+        Existing topics: {lista_titulos}
 
-      Pergunta: {trecho}
+        Question: {trecho}
 
-      Tópico relacionado:"""
+        Related topics:"""
 
     resposta = gerar_gemma_12b(prompt, max_tokens=100)
     relacionadas = []
@@ -174,18 +176,26 @@ def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
 """# Gerar Título e Gerar conteúdos da Wiki"""
 
 def buscar_titulo(trecho):
-    prompt = f"""{SCHEMA_WIKI}
-Leia o trecho abaixo e responda apenas com um titulo curto (2 a 5 palavras) e ESPECIFICO
-para uma pagina de wiki sobre ele.
+    prompt = f"""
+        {SCHEMA_WIKI}
+        Read the text below and answer only with a short (2 to 5 words) and SPECIFIC title
+        for a wiki page about it.
 
-Trecho: {trecho}
+        Text: {trecho}
 
-Titulo:"""
+        Title:"""
 
     return gerar_gemma_12b(prompt, max_tokens=15).strip()
 
 def buscar_conteudo(trecho):
-    prompt = f"{SCHEMA_WIKI}\nLeia o trecho abaixo e liste os fatos dele em bullets, um fato por linha. Trecho: {trecho} Conteudo:"
+    prompt = f"""
+        {SCHEMA_WIKI}
+        Read the text below and list its facts in bullets, one fact per line.
+
+        Text: {trecho}
+
+        Content:"""
+
     return gerar_gemma_12b(prompt, max_tokens=200).strip()
 
 """# Criação da Wiki"""
@@ -212,11 +222,14 @@ def atualizar_pagina(caminho, trecho_novo):
     with open(caminho, "r", encoding="utf-8") as f:
         conteudo_atual = f.read()
 
-    prompt = f"""{SCHEMA_WIKI}
-Pagina atual: {conteudo_atual}
-Informacao nova: {trecho_novo}
-Liste APENAS os fatos da informacao nova que AINDA NAO estao na pagina atual, em bullets.
-Se nao houver fato novo, responda apenas: NENHUM."""
+    prompt = f"""
+        {SCHEMA_WIKI}
+        Current page: {conteudo_atual}
+
+        New information: {trecho_novo}
+
+        List ONLY the facts from the new information that are NOT YET in the current page, in bullets.
+        If there is no new fact, answer only: NONE."""
 
     resposta = gerar_gemma_12b(prompt, max_tokens=150).strip()
 
