@@ -113,22 +113,42 @@ SCHEMA_WIKI = """Wiki rules:
   do NOT create a new page for it - ignore the mention.
 """
 
-def buscar_pagina_relacionada(trecho, pasta=PASTA_WIKI):
-    paginas = listar_paginas(pasta)
-    if not paginas:
+def buscar_pagina_relacionada(trecho):
+    caminho = PASTA_CACHE + "/" + "index.md"
+    # verifica se o index existe, geralmente ocorre na criacao da primeira wiki
+    if not os.path.exists(caminho):
         return None
 
-    temp = []
-    for titulo, caminho in paginas:
-        temp.append(titulo)
-    lista_titulos = "\n".join(temp)
+    with open(caminho, "r", encoding="utf-8") as arquivo:
+        paginas = arquivo.read()
+
+    lista_titulos = ""
+    lista_paginas = []
+
+    for linha in paginas.splitlines():
+        # separa pela barra
+        partes = linha.split("|")
+        # pula linha fora do formato, que precisa ter exatamente 3 partes
+        if len(partes) != 3:
+            continue
+        titulo_pagina, caminho_pagina, resumo_pagina = partes
+
+        # tira os espacos que sobram em volta da barra
+        titulo_pagina = titulo_pagina.strip()
+        caminho_pagina = caminho_pagina.strip()
+        resumo_pagina = resumo_pagina.strip()
+
+        # texto pro prompt, titulo e resumo, uma pagina por linha
+        lista_titulos += titulo_pagina + " - " + resumo_pagina + "\n"
+        # lista pra achar a pagina depois, titulo e caminho
+        lista_paginas.append((titulo_pagina, caminho_pagina))
 
     prompt = f"""
         You receive a list of existing topics and a new piece of text.
         Answer ONLY with the exact name of one topic from the list if the text is about the same
         subject, or answer "NONE" if there is no clear relation.
 
-        Existing topics: {lista_titulos}
+        Existing topics (title - summary): {lista_titulos}
 
         New text: {trecho}
 
@@ -136,27 +156,51 @@ def buscar_pagina_relacionada(trecho, pasta=PASTA_WIKI):
 
     resposta = gerar_gemma_12b(prompt, max_tokens=20)
 
-    for titulo, caminho in paginas:
+    for titulo, caminho in lista_paginas:
         if titulo.lower() in resposta.lower():
             return (titulo, caminho)
     return None
 
-def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
-    paginas = listar_paginas(pasta)
-    if not paginas:
+def buscar_paginas_pergunta(trecho):
+    caminho = PASTA_CACHE + "/" + "index.md"
+    # verifica se o index existe, se nao existe a wiki ainda nao tem pagina
+    if not os.path.exists(caminho):
         return []
 
-    temp = []
-    for titulo, caminho in paginas:
-        temp.append(titulo)
-    lista_titulos = "\n".join(temp)
+    with open(caminho, "r", encoding="utf-8") as arquivo:
+        paginas = arquivo.read()
+
+    lista_titulos = ""
+    lista_paginas = []
+
+    # esse tratamento aqui viraria uma funcao e depois fariamos uma outra funcao de BM25  utilizando essas 2 listas tratadas
+    # ai retornando umas 20 paginas com maiores notas e pediariamos pro modelo selecionar 5 por exemplo como contexto pra pergunta e 1 para escrever nela e  nao criar pagina
+    # bm25(trecho, lista_titulos(vai ser comparado com trecho), lista_paginas(para retorno = titulo + caminho), quantidade)
+    for linha in paginas.splitlines():
+        # separa pela barra
+        partes = linha.split("|")
+        # pula linha fora do formato, que precisa ter exatamente 3 partes
+        if len(partes) != 3:
+            continue
+        titulo_pagina, caminho_pagina, resumo_pagina = partes
+
+        # tira os espacos que sobram em volta da barra
+        titulo_pagina = titulo_pagina.strip()
+        caminho_pagina = caminho_pagina.strip()
+        resumo_pagina = resumo_pagina.strip()
+
+        # texto pro prompt, titulo e resumo, uma pagina por linha
+        lista_titulos += titulo_pagina + " - " + resumo_pagina + "\n"
+        # lista pra achar a pagina depois, titulo e caminho
+        lista_paginas.append((titulo_pagina, caminho_pagina))
 
     prompt = f"""
         You receive a list of existing topics and a question.
         Answer ONLY with the exact names of ALL topics from the list that are related to the question,
         or answer "NONE" if there is no clear relation.
 
-        Existing topics: {lista_titulos}
+        Existing topics (title - summary):
+        {lista_titulos}
 
         Question: {trecho}
 
@@ -165,7 +209,8 @@ def buscar_paginas_pergunta(trecho, pasta=PASTA_WIKI):
     resposta = gerar_gemma_12b(prompt, max_tokens=100)
     relacionadas = []
 
-    for titulo, caminho in paginas:
+    # junta todas as paginas que o gemma citou, nao so a primeira como na relacionada
+    for titulo, caminho in lista_paginas:
         if titulo.lower() in resposta.lower():
             relacionadas.append((titulo, caminho))
     if relacionadas:
@@ -212,10 +257,32 @@ def resumir_pagina(conteudo):
     resumo = gerar_gemma_12b(prompt, max_tokens=40).strip()
     return resumo
 
-def escrever_index(titulo, caminho_arquivo, resumo): 
+"""Funcao que escreve no index, flag 1 coloca pagina nova no final, flag 2 troca o resumo de uma pagina que ja existe"""
+def escrever_index(titulo, caminho_arquivo, resumo, flag):
     caminho = PASTA_CACHE  + "/" + "index.md"
-    with open(caminho, "a", encoding="utf-8") as arquivo:
-        arquivo.write(f"{titulo} | {caminho_arquivo} | {resumo}\n")
+
+    # flag 1 =  pagina nova, so coloca uma linha no final
+    if flag == 1:
+        with open(caminho, "a", encoding="utf-8") as arquivo:
+            arquivo.write(f"{titulo} | {caminho_arquivo} | {resumo}\n")
+
+    # flag 2: pagina atualizada, troca a linha dela pelo resumo novo
+    if flag == 2:
+        with open(caminho, "r", encoding="utf-8") as arquivo:
+            linhas_index = arquivo.read().splitlines()
+
+        novo_index = ""
+        for linha in linhas_index:
+            partes = linha.split("|")
+            # acha a linha dessa pagina pelo caminho, que e unico
+            if len(partes) == 3 and partes[1].strip() == caminho_arquivo:
+                novo_index += f"{titulo} | {caminho_arquivo} | {resumo}\n"
+            else:
+                novo_index += linha + "\n"
+
+        # escreve o index inteiro de novo com w, sobrescreve o arquivo ja com o resumo novo
+        with open(caminho, "w", encoding="utf-8") as arquivo:
+            arquivo.write(novo_index)
 
 def criar_pagina(trecho, pasta=PASTA_WIKI):
     if not os.path.isdir(pasta):
@@ -233,7 +300,8 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
         arquivo.write(conteudo)
 
     resumo = resumir_pagina(conteudo);
-    escrever_index(titulo, caminho_arquivo, resumo)
+    # pagina nova, flag 1 coloca no final do index
+    escrever_index(titulo, caminho_arquivo, resumo, 1)
 
     return (titulo, caminho_arquivo)
 
@@ -262,9 +330,20 @@ def atualizar_pagina(caminho, trecho_novo):
         if linha not in conteudo_atual:
             linhas_novas.append(linha)
 
-    if linhas_novas:
-        with open(caminho, "a", encoding="utf-8") as f:
-            f.write("\n" + "\n".join(linhas_novas))
+        if linhas_novas:
+            with open(caminho, "a", encoding="utf-8") as f:
+                # escreve cada fato novo numa linha nova no final da pagina
+                for linha in linhas_novas:
+                    f.write("\n" + linha)
+
+        # le a pagina de novo, ja com os fatos novos, e refaz o resumo para o index
+        with open(caminho, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+        resumo = resumir_pagina(conteudo)
+        # o titulo e a primeira linha da pagina, tira o # da frente
+        titulo = conteudo.split("\n")[0].replace("#", "").strip()
+        # pagina atualizada, flag 2 troca o resumo dela no index
+        escrever_index(titulo, caminho, resumo, 2)
 
     return caminho
 
