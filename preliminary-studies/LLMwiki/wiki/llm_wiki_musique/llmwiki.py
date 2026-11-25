@@ -199,6 +199,23 @@ def buscar_conteudo(trecho):
     return gerar_gemma_12b(prompt, max_tokens=200).strip()
 
 """# Criação da Wiki"""
+def resumir_pagina(conteudo):
+    prompt = f"""
+        Read the wiki page below and write a summary of it in one short line.
+        Write only the summary.
+
+        Page: {conteudo}
+
+        Summary:"""
+
+    # resposta curta, so uma linha
+    resumo = gerar_gemma_12b(prompt, max_tokens=40).strip()
+    return resumo
+
+def escrever_index(titulo, caminho_arquivo, resumo): 
+    caminho = PASTA_CACHE  + "/" + "index.md"
+    with open(caminho, "a", encoding="utf-8") as arquivo:
+        arquivo.write(f"{titulo} | {caminho_arquivo} | {resumo}\n")
 
 def criar_pagina(trecho, pasta=PASTA_WIKI):
     if not os.path.isdir(pasta):
@@ -214,6 +231,9 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
     with open(caminho_arquivo, "w", encoding="utf-8") as arquivo:
         arquivo.write(f"# {titulo}\n\n")
         arquivo.write(conteudo)
+
+    resumo = resumir_pagina(conteudo);
+    escrever_index(titulo, caminho_arquivo, resumo)
 
     return (titulo, caminho_arquivo)
 
