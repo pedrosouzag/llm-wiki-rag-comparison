@@ -201,10 +201,10 @@ def filter_BM25(trecho, lista_titulos):
     doc_scores = bm25.get_scores(tokenized_query)
 
     # retorna o titulo - resumo das 20 paginas com maiores notas
-    maiores = bm25.get_top_n(tokenized_query, linhas_pagina , n=20)
+    maiores = bm25.get_top_n(tokenized_query, linhas_pagina , n=30)
 
     # ordena as 20 maiores notas, na mesma ordem dos maiores
-    notas = sorted(doc_scores, reverse=True)[:20]
+    notas = sorted(doc_scores, reverse=True)[:30]
 
     # junta as 20 maiores paginas com a nota, mas so as que tem nota maior que 0
     # nota 0 quer dizer que a pagina nao tem nenhuma palavra da busca
@@ -221,7 +221,7 @@ def buscar_pagina_relacionada(trecho):
     if not lista_paginas:
         return None
 
-    # bm25 pega so as 20 paginas mais parecidas com o trecho
+    # bm25 pega so as 30 paginas mais parecidas com o trecho
     candidatas = filter_BM25(trecho, lista_titulos)
     # nenhuma pagina tem palavra em comum com o trecho, nem chama o gemma
     if not candidatas:
@@ -258,7 +258,7 @@ def buscar_paginas_pergunta(trecho):
     if not lista_paginas:
         return []
 
-    # bm25 pega so as 20 paginas mais parecidas com a pergunta
+    # bm25 pega so as 30 paginas mais parecidas com a pergunta
     candidatas = filter_BM25(trecho, lista_titulos)
     # nenhuma pagina tem palavra em comum com a pergunta, nem chama o gemma
     if not candidatas:
@@ -271,8 +271,8 @@ def buscar_paginas_pergunta(trecho):
 
     prompt = f"""
         You receive a list of existing topics and a question.
-        Answer ONLY with the exact names of ALL topics from the list that are related to the question,
-        or answer "NONE" if there is no clear relation.
+        Answer ONLY with the exact names of the topics from the list that are related to the question,
+        at most 10, one per line, or answer "NONE" if there is no clear relation.
 
         Existing topics (title - summary):
         {lista_candidatas}
@@ -288,10 +288,20 @@ def buscar_paginas_pergunta(trecho):
     for titulo, caminho in lista_paginas:
         if titulo.lower() in resposta.lower():
             relacionadas.append((titulo, caminho))
-    if relacionadas:
-        # print(len(relacionadas))
-        return relacionadas
-    return []
+
+    # se o gemma escolheu menos de 5, completa com as melhores do bm25, na ordem da nota
+    for linha in candidatas:
+        if len(relacionadas) >= 5:
+            break
+        # acha o caminho da candidata pelo titulo, a linha e "titulo - resumo"
+        for titulo, caminho in lista_paginas:
+            if linha.startswith(titulo + " - "):
+                # so coloca se ainda nao esta na lista
+                if (titulo, caminho) not in relacionadas:
+                    relacionadas.append((titulo, caminho))
+                break
+
+    return relacionadas
 
 
 
@@ -534,7 +544,8 @@ def o_que_falta(pergunta, contexto):
         Passages:
         {contexto}
 
-        Question: {pergunta}"""
+        Question: {pergunta}
+        Next search:"""
 
     # resposta curta, so uma busca ou DONE
     texto = gerar_gemma_12b(prompt, max_tokens=30)
@@ -743,7 +754,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-processar_base(PASTA_BASE)
+#processar_base(PASTA_BASE)
 # print(listar_paginas())
-carregar_wiki_completa()
+#carregar_wiki_completa()
 rodar_perguntas()
