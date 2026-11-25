@@ -45,6 +45,8 @@ SCHEMA_WIKI = """Wiki rules:
 - Always write in English and keep names exactly as they appear in the text
 - If the text only mentions a name/topic in passing, without real facts about it,
   do NOT create a new page for it - ignore the mention.
+- Each fact must always use the full name of what it is about, never a pronoun or a reference
+  like "it", "he", "she", "they", "the film" or "the company", so every fact can be found by name.
 """
 
 
@@ -754,7 +756,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-#processar_base(PASTA_BASE)
+processar_base(PASTA_BASE)
 # print(listar_paginas())
-#carregar_wiki_completa()
+carregar_wiki_completa()
 rodar_perguntas()
