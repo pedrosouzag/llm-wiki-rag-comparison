@@ -308,7 +308,9 @@ def buscar_titulo(trecho):
 
         Title:"""
 
-    return gerar_gemma_12b(prompt, max_tokens=15).strip()
+    titulo = gerar_gemma_12b(prompt, max_tokens=15).strip()
+    # puxa so a primeira linha
+    return titulo.split("\n")[0].strip()
 
 """Funcao que gera os fatos da pagina, flag 1 escreve do zero, flag 2 corrige uma escrita que nao passou na verificacao"""
 def buscar_conteudo(trecho, flag, conteudo_anterior=""):
@@ -352,6 +354,14 @@ def resumir_pagina(conteudo):
 
     # resposta curta, so uma linha
     resumo = gerar_gemma_12b(prompt, max_tokens=40).strip()
+
+    # quebra o resumo em linhas e pega so a primeira
+    linhas = resumo.split("\n")
+    primeira_linha = linhas[0]
+
+    # tira os espacos do comeco e do fim
+    resumo = primeira_linha.strip()
+
     return resumo
 
 """Funcao que confere se os fatos que o gemma escreveu estao no trecho original"""
@@ -496,7 +506,7 @@ def processar_base(base):
     with open(base, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
         # pega cada linha na forma de dicionario, depois pega os paragrafos
-        for linha in texto.splitlines()[:2]:
+        for linha in texto.splitlines()[:1]:
             linha_dicionario = json.loads(linha)
             for paragrafo in linha_dicionario["paragraphs"]:
                 # passa o titulo e o paragrafo para construir a wiki
@@ -665,7 +675,7 @@ def processar_perguntas_e_respostas(PASTA_BASE):
     respostas = []
     with open(PASTA_BASE, "r", encoding= "utf-8") as arquivo:
         trecho = arquivo.read()
-        for linha in trecho.splitlines()[:2]:
+        for linha in trecho.splitlines()[:1]:
             linha_dicionario = json.loads(linha)
             perguntas.append(linha_dicionario["question"])
             respostas.append([linha_dicionario["answer"]] + linha_dicionario["answer_aliases"])
@@ -731,7 +741,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-# processar_base(PASTA_BASE)
+processar_base(PASTA_BASE)
 # print(listar_paginas())
-# carregar_wiki_completa()
+carregar_wiki_completa()
 rodar_perguntas()
