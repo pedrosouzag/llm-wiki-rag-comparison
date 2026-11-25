@@ -8,14 +8,16 @@ import json
 import unicodedata
 
 
-# FEITO = PRE PROCESSAMENTO PARA CNSTRUCAO DA WIKI, FLUXO DE COSTRUIR ESTA CORRETO. PARTE DE PERGUNTAR, VERIFICAR RESPOSTA TUDO OK
-# AJUSTAR = PESQUISAR AUTOVERIFICACAO DA CONSTRUCAO DA WIKI, CONEXAO ENTRE WIKIS, AJUSTAR PARTE DE BUSCA PRA TRAZER
-#   COLOCAR/AJUSTAR A FUNCAO DE ATUALIZAR WIKI APPOS RESPOSTAS INCORRETAS
-#   AJUSTAR PROMPTS PARA INGLES
+# FEITO = CONSTRUCAO DA WIKI, INDEX COM RESUMO, AUTOVERIFICACAO NA CRIACAO E ATUALIZACAO DAS PAGINAS,
+#   PROMPTS EM INGLES, BUSCA EM PROFUNDIDADE, PERGUNTAR E VERIFICAR RESPOSTA
+# FALTA = BM25 NAS BUSCAS DO INDEX (ler_index e filtrar_bm25), LIGACAO ENTRE PAGINAS (Related),
+#   FONTE DE CADA PAGINA (Sources)
 
 
 
-""""Carregando o GEMMA12B"""
+"""# Configuracao"""
+
+"""Carregando o GEMMA12B"""
 # define como os pesos vao ser comprimidos na memoria
 config_4bit = BitsAndBytesConfig(
     load_in_4bit=True,            # guarda os pesos em 4 bits em vez de 16/32
@@ -29,43 +31,61 @@ tokenizer2 = AutoTokenizer.from_pretrained(model2)
 model2 = AutoModelForCausalLM.from_pretrained( model2, device_map="auto",quantization_config=config_4bit, torch_dtype=torch.bfloat16)
 
 
-"""Notícias e Caminho da Pasta da Wiki"""
+"""Caminho da base e das pastas da wiki"""
 
 PASTA_BASE = "data/musique_ans_v1.0_dev.jsonl"
 
-
 PASTA_WIKI = "data/wiki"
-
 os.makedirs(PASTA_WIKI, exist_ok=True)
 
-""""Funcao auxiliar para formatar titulo do arquivo de cada wiki"""
-# transforma um titulo em nome sem espaco ou acento p 
+PASTA_CACHE = "data/llm_wiki_cache"  # salva a wiki completa e o index, para passar como contexto caso necessario
+os.makedirs(PASTA_CACHE, exist_ok=True)
+
+
+"""Regras da wiki, vao em todos os prompts de escrita"""
+SCHEMA_WIKI = """Wiki rules:
+- Each page has a short title (2 to 5 words) about a single topic
+- The content is a list of facts in bullets, one fact per line, with no repetition
+- Do not make up information that is not in the given text
+- Always write in English and keep names exactly as they appear in the text
+- If the text only mentions a name/topic in passing, without real facts about it,
+  do NOT create a new page for it - ignore the mention.
+"""
+
+
+
+"""# Funcoes auxiliares"""
+
+"""Funcao auxiliar para formatar titulo do arquivo de cada wiki"""
+# transforma um titulo em nome sem espaco ou acento
 def slugify_function(titulo):
   return slugify(titulo)
 
-# print (slugify_function("Neymar - carreira de 25"))
 """Funcao auxiliar para tokenizar trechos"""
 def tokenizar(texto):
     texto = texto.lower()  # maiuscula vira minuscula
     texto = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode()  # tira acento
     return re.findall(r"\w+", texto)  # quebra em palavras e descarta pontuacao
 
-""""Funcao do gemma para retornar texto"""
+"""Funcao do gemma para retornar texto"""
 def gerar_gemma_12b(prompt, max_tokens=350):
 
     inputs = tokenizer2(prompt, return_tensors="pt").to(model2.device)  # tokeniza o prompt e manda pro device do modelo pesado
 
-    outputs = model2.generate(**inputs, max_new_tokens=max_tokens, do_sample=False, pad_token_id=tokenizer2.eos_token_id)  # gera a resposta de forma determinística
+    outputs = model2.generate(**inputs, max_new_tokens=max_tokens, do_sample=False, pad_token_id=tokenizer2.eos_token_id)  # gera a resposta de forma deterministica
 
     tamanho_entrada = inputs["input_ids"].shape[1]
-    resposta_ids = outputs[0][tamanho_entrada:]  # pega só os tokens novos, sem repetir o prompt
+    resposta_ids = outputs[0][tamanho_entrada:]  # pega so os tokens novos, sem repetir o prompt
 
     resposta = tokenizer2.decode(resposta_ids, skip_special_tokens=True).strip()
 
     return resposta
 
-"""# Funções Ingest"""
-# le todos os arquivos da wiki e pega o titulo
+
+
+"""# Index e wiki completa"""
+
+"""Funcao que le todos os arquivos da wiki e pega o titulo de cada pagina"""
 def listar_paginas(pasta = PASTA_WIKI):
     if not os.path.isdir(pasta):
         return []
@@ -78,7 +98,7 @@ def listar_paginas(pasta = PASTA_WIKI):
           continue
         caminho_arquivo = os.path.join(pasta, nome_arquivo)
 
-        # le a primeira linha (que é o titulo e adciona na lista de paginas)
+        # le a primeira linha, que e o titulo, e adiciona na lista de paginas
         with open(caminho_arquivo, "r", encoding="utf-8") as arquivo:
             linha = arquivo.readline().strip()
 
@@ -87,9 +107,7 @@ def listar_paginas(pasta = PASTA_WIKI):
 
     return paginas
 
-PASTA_CACHE = "data/llm_wiki_cache"  # salva a wiki completa em apenas um arquivo .md, para passar como contexto caso necessario
-os.makedirs(PASTA_CACHE, exist_ok=True)
-
+"""Funcao que junta todas as paginas num arquivo so, a wiki completa"""
 def carregar_wiki_completa(pasta=PASTA_WIKI):
     # pega todas as paginas, le, lista e salva na pasta
     textos = []
@@ -104,15 +122,38 @@ def carregar_wiki_completa(pasta=PASTA_WIKI):
     with open(caminho_saida, "w", encoding="utf-8") as saida:
         saida.write(conteudo_completo)
 
-SCHEMA_WIKI = """Wiki rules:
-- Each page has a short title (2 to 5 words) about a single topic
-- The content is a list of facts in bullets, one fact per line, with no repetition
-- Do not make up information that is not in the given text
-- Always write in English and keep names exactly as they appear in the text
-- If the text only mentions a name/topic in passing, without real facts about it,
-  do NOT create a new page for it - ignore the mention.
-"""
+"""Funcao que escreve no index, flag 1 coloca pagina nova no final, flag 2 troca o resumo de uma pagina que ja existe"""
+def escrever_index(titulo, caminho_arquivo, resumo, flag):
+    caminho = PASTA_CACHE  + "/" + "index.md"
 
+    # flag 1 =  pagina nova, so coloca uma linha no final
+    if flag == 1:
+        with open(caminho, "a", encoding="utf-8") as arquivo:
+            arquivo.write(f"{titulo} | {caminho_arquivo} | {resumo}\n")
+
+    # flag 2: pagina atualizada, troca a linha dela pelo resumo novo
+    if flag == 2:
+        with open(caminho, "r", encoding="utf-8") as arquivo:
+            linhas_index = arquivo.read().splitlines()
+
+        novo_index = ""
+        for linha in linhas_index:
+            partes = linha.split("|")
+            # acha a linha dessa pagina pelo caminho, que e unico
+            if len(partes) == 3 and partes[1].strip() == caminho_arquivo:
+                novo_index += f"{titulo} | {caminho_arquivo} | {resumo}\n"
+            else:
+                novo_index += linha + "\n"
+
+        # escreve o index inteiro de novo com w, sobrescreve o arquivo ja com o resumo novo
+        with open(caminho, "w", encoding="utf-8") as arquivo:
+            arquivo.write(novo_index)
+
+
+
+"""# Busca de paginas no index"""
+
+"""Funcao que acha uma pagina relacionada ao trecho novo, usada na construcao da wiki"""
 def buscar_pagina_relacionada(trecho):
     caminho = PASTA_CACHE + "/" + "index.md"
     # verifica se o index existe, geralmente ocorre na criacao da primeira wiki
@@ -161,6 +202,7 @@ def buscar_pagina_relacionada(trecho):
             return (titulo, caminho)
     return None
 
+"""Funcao que acha as paginas relacionadas a pergunta, usada na hora de responder"""
 def buscar_paginas_pergunta(trecho):
     caminho = PASTA_CACHE + "/" + "index.md"
     # verifica se o index existe, se nao existe a wiki ainda nao tem pagina
@@ -173,8 +215,8 @@ def buscar_paginas_pergunta(trecho):
     lista_titulos = ""
     lista_paginas = []
 
-    # esse tratamento aqui viraria uma funcao e depois fariamos uma outra funcao de BM25  utilizando essas 2 listas tratadas
-    # ai retornando umas 20 paginas com maiores notas e pediariamos pro modelo selecionar 5 por exemplo como contexto pra pergunta e 1 para escrever nela e  nao criar pagina
+    # esse tratamento aqui viraria uma funcao e depois fariamos uma outra funcao de BM25 utilizando essas 2 listas tratadas
+    # ai retornando umas 20 paginas com maiores notas e pediriamos pro modelo selecionar 5 por exemplo como contexto pra pergunta e 1 para escrever nela e nao criar pagina
     # bm25(trecho, lista_titulos(vai ser comparado com trecho), lista_paginas(para retorno = titulo + caminho), quantidade)
     for linha in paginas.splitlines():
         # separa pela barra
@@ -218,8 +260,11 @@ def buscar_paginas_pergunta(trecho):
         return relacionadas
     return []
 
-"""# Gerar Título e Gerar conteúdos da Wiki"""
 
+
+"""# Escrita das paginas"""
+
+"""Funcao que gera o titulo da pagina"""
 def buscar_titulo(trecho):
     prompt = f"""
         {SCHEMA_WIKI}
@@ -262,7 +307,7 @@ def buscar_conteudo(trecho, flag, conteudo_anterior=""):
 
     return gerar_gemma_12b(prompt, max_tokens=200).strip()
 
-"""# Criação da Wiki"""
+"""Funcao que resume a pagina em uma linha, pro index"""
 def resumir_pagina(conteudo):
     prompt = f"""
         Read the wiki page below and write a summary of it in one short line.
@@ -275,33 +320,6 @@ def resumir_pagina(conteudo):
     # resposta curta, so uma linha
     resumo = gerar_gemma_12b(prompt, max_tokens=40).strip()
     return resumo
-
-"""Funcao que escreve no index, flag 1 coloca pagina nova no final, flag 2 troca o resumo de uma pagina que ja existe"""
-def escrever_index(titulo, caminho_arquivo, resumo, flag):
-    caminho = PASTA_CACHE  + "/" + "index.md"
-
-    # flag 1 =  pagina nova, so coloca uma linha no final
-    if flag == 1:
-        with open(caminho, "a", encoding="utf-8") as arquivo:
-            arquivo.write(f"{titulo} | {caminho_arquivo} | {resumo}\n")
-
-    # flag 2: pagina atualizada, troca a linha dela pelo resumo novo
-    if flag == 2:
-        with open(caminho, "r", encoding="utf-8") as arquivo:
-            linhas_index = arquivo.read().splitlines()
-
-        novo_index = ""
-        for linha in linhas_index:
-            partes = linha.split("|")
-            # acha a linha dessa pagina pelo caminho, que e unico
-            if len(partes) == 3 and partes[1].strip() == caminho_arquivo:
-                novo_index += f"{titulo} | {caminho_arquivo} | {resumo}\n"
-            else:
-                novo_index += linha + "\n"
-
-        # escreve o index inteiro de novo com w, sobrescreve o arquivo ja com o resumo novo
-        with open(caminho, "w", encoding="utf-8") as arquivo:
-            arquivo.write(novo_index)
 
 """Funcao que confere se os fatos que o gemma escreveu estao no trecho original"""
 def verificar_escrita(trecho, conteudo):
@@ -327,6 +345,10 @@ def verificar_escrita(trecho, conteudo):
     return False
 
 
+
+"""# Construcao da wiki"""
+
+"""Funcao que cria uma pagina nova, verifica os fatos e coloca no index"""
 def criar_pagina(trecho, pasta=PASTA_WIKI):
     if not os.path.isdir(pasta):
         os.makedirs(pasta)
@@ -362,8 +384,9 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
 
     return (titulo, caminho_arquivo)
 
+"""Funcao que coloca os fatos novos numa pagina que ja existe, verifica e atualiza o resumo no index"""
 def atualizar_pagina(caminho, trecho_novo):
-    # pega a pagina a ser atualziada, e pede pro gemma listar fatos novos que nao estao na pagina e estao no trecho passado
+    # pega a pagina a ser atualizada, e pede pro gemma listar fatos novos que nao estao na pagina e estao no trecho passado
     with open(caminho, "r", encoding="utf-8") as f:
         conteudo_atual = f.read()
 
@@ -401,11 +424,13 @@ def atualizar_pagina(caminho, trecho_novo):
             fatos_novos = buscar_conteudo(trecho_novo, 2, fatos_novos)
             veredito = verificar_escrita(trecho_novo, fatos_novos)
 
-        # pega de novo os bullets 
+        # pega de novo os bullets
         linhas_novas = []
         for linha in fatos_novos.split("\n"):
             linha = linha.strip()
-            if linha.startswith("-"):
+            if not linha.startswith("-"):
+                continue
+            if linha not in conteudo_atual:
                 linhas_novas.append(linha)
 
         # so escreve e refaz o resumo se sobrou fato novo depois da correcao
@@ -424,8 +449,8 @@ def atualizar_pagina(caminho, trecho_novo):
         # pagina atualizada, flag 2 troca o resumo dela no index
         escrever_index(titulo, caminho, resumo, 2)
 
-    return (titulo, caminho)
 
+"""Funcao que decide se o trecho atualiza uma pagina que ja existe ou cria uma nova"""
 def processar_trecho(trecho, pasta=PASTA_WIKI):
     relacionada = buscar_pagina_relacionada(trecho)
     if relacionada:
@@ -433,45 +458,25 @@ def processar_trecho(trecho, pasta=PASTA_WIKI):
     else:
         return criar_pagina(trecho, pasta)
 
+"""Funcao que le a base e passa cada paragrafo pra construir a wiki"""
 def processar_base(base):
     with open(base, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
+        # pega cada linha na forma de dicionario, depois pega os paragrafos
         for linha in texto.splitlines()[:60]:
             linha_dicionario = json.loads(linha)
             for paragrafo in linha_dicionario["paragraphs"]:
-                # passa o o titulo e o paragrafo para construir a wiki
+                # passa o titulo e o paragrafo para construir a wiki
                 titulo = paragrafo["title"]
                 conteudo = paragrafo["paragraph_text"]
                 trecho = titulo + "\n" + conteudo
                 processar_trecho(trecho)
 
 
-"""# Funções de Pergunta e Resposta"""
 
+"""# Pergunta"""
 
-"""Funcao que guarda a resposta na wiki, usando as paginas que a pergunta usou"""
-def atualizar_wiki_com_resposta(pergunta, resposta, relacionadas):
-    # nao guarda nada quando o modelo nao achou a resposta
-    if "not found" in resposta.lower():
-        #print("resposta nao encontrada, nada a guardar")
-        return
-
-    # monta o trecho com a pergunta e a resposta
-    trecho = f"Question: {pergunta} Answer: {resposta}"
-
-    if relacionadas:
-        # passa nas paginas que a wiki usou pra responder
-        # pegamos apenas o caminho da tupla
-        for titulo, caminho in relacionadas:
-            atualizar_pagina(caminho, trecho)
-    else:
-        # nenhuma pagina foi usada na pergunta
-        # o processar_trecho procura pagina pro trecho com a resposta, se achar atualiza, se nao cria uma nova
-        processar_trecho(trecho)
-
-    # refaz a wiki completa pra ela ficar igual as paginas
-    carregar_wiki_completa()
-
+"""Funcao que pergunta pro gemma se o contexto ja basta ou qual a proxima busca"""
 def o_que_falta(pergunta, contexto):
     # pergunta pro gemma se os trechos ja bastam ou o que ainda falta buscar
     prompt = f"""You are helping to answer a question that may need more than one step.
@@ -501,10 +506,11 @@ def o_que_falta(pergunta, contexto):
     sem_espaco = primeira_linha.strip()
 
     # tira as aspas do comeco e do fim
-    proxima_busca = sem_espaco.strip('"') # as veze ele devolve respostas com aspas
+    proxima_busca = sem_espaco.strip('"') # as vezes ele devolve respostas com aspas
 
     return proxima_busca
 
+"""Funcao que busca as paginas da pergunta e vai descendo nas buscas novas, devolve o contexto e as paginas usadas"""
 def busca_profundidade(pergunta):
     caminho_cache = PASTA_CACHE + "/" + "wiki_completa.md"
     limite_contexto=3000
@@ -558,6 +564,7 @@ def busca_profundidade(pergunta):
     print("TOTAL DE PAGINAS:", len(relacionadas))
     return contexto, relacionadas
 
+"""Funcao que responde a pergunta com o contexto, pensando em passos, e pega so a resposta final"""
 def perguntar_wiki(pergunta, contexto,  max_tokens=50):
 
     prompt_final = f"""
@@ -586,6 +593,11 @@ def perguntar_wiki(pergunta, contexto,  max_tokens=50):
 
     return resposta
 
+
+
+"""# Avaliacao"""
+
+"""Funcao que confere se a resposta do modelo e igual a alguma resposta certa"""
 def verificar_resposta(resposta_modelo, resposta_certa):
     # cria uma lista para tirar os artigos da resposta
     resposta_sem_artigo = []
@@ -614,8 +626,7 @@ def verificar_resposta(resposta_modelo, resposta_certa):
 
     return acertou
 
-
-
+"""Funcao que le a base e devolve a lista de perguntas e a lista de respostas certas"""
 def processar_perguntas_e_respostas(PASTA_BASE):
     perguntas = []
     respostas = []
@@ -627,8 +638,30 @@ def processar_perguntas_e_respostas(PASTA_BASE):
             respostas.append([linha_dicionario["answer"]] + linha_dicionario["answer_aliases"])
     return perguntas, respostas
 
+"""Funcao que guarda a resposta na wiki, usando as paginas que a pergunta usou"""
+def atualizar_wiki_com_resposta(pergunta, resposta, relacionadas):
+    # nao guarda nada quando o modelo nao achou a resposta
+    if "not found" in resposta.lower():
+        #print("resposta nao encontrada, nada a guardar")
+        return
 
-"""Funcao que roda as perguntaas, pega as perguntas e respostas das listas, roda a pergunta e confere a resposta"""
+    # monta o trecho com a pergunta e a resposta
+    trecho = f"Question: {pergunta} Answer: {resposta}"
+
+    if relacionadas:
+        # passa nas paginas que a wiki usou pra responder
+        # pegamos apenas o caminho da tupla
+        for titulo, caminho in relacionadas:
+            atualizar_pagina(caminho, trecho)
+    else:
+        # nenhuma pagina foi usada na pergunta
+        # o processar_trecho procura pagina pro trecho com a resposta, se achar atualiza, se nao cria uma nova
+        processar_trecho(trecho)
+
+    # refaz a wiki completa pra ela ficar igual as paginas
+    carregar_wiki_completa()
+
+"""Funcao que roda as perguntas, pega as perguntas e respostas das listas, roda a pergunta e confere a resposta"""
 def rodar_perguntas():
     numPerguntas = 0
     numAcertos = 0
@@ -661,6 +694,10 @@ def rodar_perguntas():
     print (f"\nAcuracia: {acuracia} % ")
 
 
+
+"""# Execucao, roda nessa ordem"""
+
 # processar_base(PASTA_BASE)
 # print(listar_paginas())
 #carregar_wiki_completa()
+# rodar_perguntas()
