@@ -327,13 +327,28 @@ def o_que_falta(pergunta, contexto):
 
     return proxima_busca
 
-def busca_profundidade(pergunta, flag):
-   # pega o primeiro contexto
-   contexto, achados = montar_contexto(pergunta, flag)
-   # guarda as buscas ja feitas pra nao repetir
-   buscas_feitas = []
-   # roda a profundidade
-   for i in range(2):
+def busca_profundidade(pergunta):
+    caminho_cache = PASTA_CACHE + "/" + "wiki_completa.md"
+    limite_contexto=3000
+    contexto = ""
+    # busca as paginas relacionadas
+    relacionadas = buscar_paginas_pergunta(pergunta)
+
+    if relacionadas:
+        # le cada pagina e junta no contexto
+        for titulo, caminho in relacionadas:
+            with open(caminho, "r", encoding="utf-8") as f:
+                contexto += f.read() + "\n\n"
+    else:
+        # nenhuma pagina achada, usa o comeco da wiki completa
+        with open(caminho_cache, "r", encoding="utf-8") as f:
+            contexto = f.read()
+        contexto = contexto[:limite_contexto]  # corta o contexto pra nao estourar memoria
+
+    # guarda as buscas ja feitas pra nao repetir
+    buscas_feitas = []
+    # roda a profundidade
+    for i in range(2):
       falta = o_que_falta(pergunta, contexto)
       # se o gemma disse que ja tem tudo para de buscar
       if falta == "":
@@ -346,49 +361,52 @@ def busca_profundidade(pergunta, flag):
       buscas_feitas.append(falta.lower())
       # mostra o que o gemma pediu pra buscar
       print("nova busca", i + 1, ":", falta)
-      # pega o novo contexto
-      novo_contexto, novos_achados = montar_contexto(falta, flag)
-      # verifica se tem chunks repetidos
-      for chunk, nota in novos_achados:
+      # busca as paginas da busca nova
+      novas_paginas = buscar_paginas_pergunta(falta)
+      # verifica se a pagina ja esta nas relacionadas, compara pelo caminho que e unico
+      for titulo, caminho in novas_paginas:
          repetido = False
-         for chunk_existente, nota_existente in achados:
-            if chunk["texto"] == chunk_existente["texto"]:
+         for titulo_existente, caminho_existente in relacionadas:
+            if caminho == caminho_existente:
                repetido = True
                break
+         # se a pagina e nova adiciona na lista e le ela pro contexto
          if not repetido:
-            achados.append((chunk, nota))
-            contexto += chunk["texto"] + "\n\n"
-   # mostra quantos chunks juntou no total
-   print("TOTAL DE CHUNKS:", len(achados))
-   return contexto, achados
-
-def perguntar_wiki(pergunta, max_tokens=50):
-    caminho_cache = PASTA_CACHE + "/" + "wiki_completa.md"
-    limite_contexto=3000
-
-    relacionadas = buscar_paginas_pergunta(pergunta)
-
-    if relacionadas:
-        contexto = ""
-        for titulo, caminho in relacionadas:
+            relacionadas.append((titulo, caminho))
             with open(caminho, "r", encoding="utf-8") as f:
-                contexto += f.read()
-    else:
-        with open(caminho_cache, "r", encoding="utf-8") as f:
-            contexto = f.read()
-        contexto = contexto[:limite_contexto]  # corta o contexto pra nao estourar memoria
+               contexto += f.read() + "\n\n"
 
-    prompt_final = f"""Voce e um assistente que responde perguntas usando apenas o contexto abaixo.
-Nao invente informacoes que nao estejam no contexto.
-Contexto: {contexto} Pergunta: {pergunta} Resposta:"""
+    # mostra quantas paginas juntou no total
+    print("TOTAL DE PAGINAS:", len(relacionadas))
+    return contexto, relacionadas
 
-    if relacionadas:
-        resposta = gerar_gemma_12b(prompt_final, max_tokens=max_tokens)
-    else:
-        print("Quantidade de paginas relacionadas: 0")
-        resposta = gerar_gemma_12b(prompt_final, max_tokens=max_tokens)
+def perguntar_wiki(pergunta, contexto,  max_tokens=50):
 
-    return resposta,relacionadas
+    prompt_final = f"""
+        Answer the question using only the wiki pages below. Do not make anything up.
+        The question may need more than one step: first find the first fact, then use it to find the answer.
+        Write at most 3 short lines of reasoning, then the last line like this:
+        Final answer: <only the name or the value>
+        If the pages do not have the answer, write: Final answer: not found
+
+        Wiki pages:
+        {contexto}
+
+        Question: {pergunta}"""
+
+    texto = gerar_gemma_12b(prompt_final, max_tokens=max_tokens)
+
+    # mostra o raciocinio pra ver o erro
+    print("RACIOCINIO:", texto)
+
+    # pega so o que vem depois de final answer:
+    resposta = texto
+    for linha in texto.split("\n"):
+      if "final answer:" in linha.lower():
+        posicao = linha.lower().find("final answer:")
+        resposta = linha[posicao + len("final answer:"):].strip()
+
+    return resposta
 
 def verificar_resposta(resposta_modelo, resposta_certa):
     # cria uma lista para tirar os artigos da resposta
@@ -438,9 +456,18 @@ def rodar_perguntas():
     numAcertos = 0
     perguntas, respostas = processar_perguntas_e_respostas(PASTA_BASE)
     for pergunta, resposta in zip (perguntas, respostas):
-        resposta_modelo, relacionadas = perguntar_wiki(pergunta)
         print(f"\n Pergunta: {pergunta}")
+        # busca as paginas da pergunta e vai descendo nas buscas novas, devolve o contexto e as paginas usadas
+        contexto, relacionadas = busca_profundidade(pergunta)
+
+        # responde a pergunta com o contexto montado
+        resposta_modelo = perguntar_wiki(pergunta, contexto)
+
+        # verifica o resultado
         resultado = verificar_resposta(resposta_modelo, resposta)
+
+        if resultado:
+            atualizar_wiki_com_resposta(pergunta, resposta_modelo, relacionadas)
         print(f"\nResposta Gerada: {resposta_modelo}")
         print(f"\n Resposta: {resposta}")
         print (f"\nAcertou: {resultado}")
