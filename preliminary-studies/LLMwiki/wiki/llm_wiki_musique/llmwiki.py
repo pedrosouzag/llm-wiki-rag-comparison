@@ -506,7 +506,7 @@ def processar_base(base):
     with open(base, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
         # pega cada linha na forma de dicionario, depois pega os paragrafos
-        for linha in texto.splitlines()[:1]:
+        for linha in texto.splitlines()[:60]:
             linha_dicionario = json.loads(linha)
             for paragrafo in linha_dicionario["paragraphs"]:
                 # passa o titulo e o paragrafo para construir a wiki
@@ -675,7 +675,7 @@ def processar_perguntas_e_respostas(PASTA_BASE):
     respostas = []
     with open(PASTA_BASE, "r", encoding= "utf-8") as arquivo:
         trecho = arquivo.read()
-        for linha in trecho.splitlines()[:1]:
+        for linha in trecho.splitlines()[:60]:
             linha_dicionario = json.loads(linha)
             perguntas.append(linha_dicionario["question"])
             respostas.append([linha_dicionario["answer"]] + linha_dicionario["answer_aliases"])
