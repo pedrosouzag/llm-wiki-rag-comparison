@@ -232,14 +232,33 @@ def buscar_titulo(trecho):
 
     return gerar_gemma_12b(prompt, max_tokens=15).strip()
 
-def buscar_conteudo(trecho):
-    prompt = f"""
-        {SCHEMA_WIKI}
-        Read the text below and list its facts in bullets, one fact per line.
+"""Funcao que gera os fatos da pagina, flag 1 escreve do zero, flag 2 corrige uma escrita que nao passou na verificacao"""
+def buscar_conteudo(trecho, flag, conteudo_anterior=""):
+    # flag 1: escreve os fatos do zero
+    if flag == 1:
+        prompt = f"""
+            {SCHEMA_WIKI}
+            Read the text below and list its facts in bullets, one fact per line.
 
-        Text: {trecho}
+            Text: {trecho}
 
-        Content:"""
+            Content:"""
+
+    # flag 2: corrige, mantem so os fatos que estao no texto original
+    if flag == 2:
+        prompt = f"""
+            {SCHEMA_WIKI}
+            Read the original text and the facts below.
+            Some facts are not supported by the original text.
+            Rewrite the list keeping ONLY the facts that are in the original text, one per line, in bullets.
+            Do not add anything new.
+
+            Original text: {trecho}
+
+            Facts:
+            {conteudo_anterior}
+
+            Content:"""
 
     return gerar_gemma_12b(prompt, max_tokens=200).strip()
 
@@ -284,13 +303,51 @@ def escrever_index(titulo, caminho_arquivo, resumo, flag):
         with open(caminho, "w", encoding="utf-8") as arquivo:
             arquivo.write(novo_index)
 
+"""Funcao que confere se os fatos que o gemma escreveu estao no trecho original"""
+def verificar_escrita(trecho, conteudo):
+    prompt = f"""
+        Read the original text and the facts below.
+        Check if every fact is supported by the original text.
+        If all facts are in the original text, write only: YES
+        If any fact is not in the original text or was made up, write only: NO
+
+        Original text: {trecho}
+
+        Facts:
+        {conteudo}
+
+        Answer:"""
+
+    # resposta curta, so YES ou NO
+    texto = gerar_gemma_12b(prompt, max_tokens=5)
+
+    # se o gemma disse yes os fatos estao no trecho
+    if "yes" in texto.lower():
+        return True
+    return False
+
+
 def criar_pagina(trecho, pasta=PASTA_WIKI):
     if not os.path.isdir(pasta):
         os.makedirs(pasta)
 
     # gera o titulo e os bullets points da noticia com a gemma baseado no texto
     titulo = buscar_titulo(trecho)
-    conteudo = buscar_conteudo(trecho)
+
+    # escreve os fatos e verifica se estao no trecho original
+    conteudo = buscar_conteudo(trecho, 1)
+    veredito = verificar_escrita(trecho, conteudo)
+
+    # se nao passou, corrige no maximo 2 vezes
+    for tentativa in range(2):
+        if veredito:
+            break
+        conteudo = buscar_conteudo(trecho, 2, conteudo)
+        veredito = verificar_escrita(trecho, conteudo)
+
+    # se nem corrigindo passou, escreve com a ultima correcao e avisa
+    if not veredito:
+        print("verificacao nao passou, escrevendo com a ultima correcao:", titulo)
 
     nome_arquivo = slugify_function(titulo) + ".md"
     caminho_arquivo = pasta + "/" + nome_arquivo
@@ -299,7 +356,7 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
         arquivo.write(f"# {titulo}\n\n")
         arquivo.write(conteudo)
 
-    resumo = resumir_pagina(conteudo);
+    resumo = resumir_pagina(conteudo)
     # pagina nova, flag 1 coloca no final do index
     escrever_index(titulo, caminho_arquivo, resumo, 1)
 
@@ -330,22 +387,44 @@ def atualizar_pagina(caminho, trecho_novo):
         if linha not in conteudo_atual:
             linhas_novas.append(linha)
 
-        if linhas_novas:
-            with open(caminho, "a", encoding="utf-8") as f:
-                # escreve cada fato novo numa linha nova no final da pagina
-                for linha in linhas_novas:
-                    f.write("\n" + linha)
+    if linhas_novas:
+        # junta os fatos novos num texto so, pra verificar
+        fatos_novos = ""
+        for linha in linhas_novas:
+            fatos_novos += linha + "\n"
+
+        # verifica, e se nao passar corrige no maximo 2 vezes
+        veredito = verificar_escrita(trecho_novo, fatos_novos)
+        for tentativa in range(2):
+            if veredito:
+                break
+            fatos_novos = buscar_conteudo(trecho_novo, 2, fatos_novos)
+            veredito = verificar_escrita(trecho_novo, fatos_novos)
+
+        # pega de novo os bullets 
+        linhas_novas = []
+        for linha in fatos_novos.split("\n"):
+            linha = linha.strip()
+            if linha.startswith("-"):
+                linhas_novas.append(linha)
+
+        # so escreve e refaz o resumo se sobrou fato novo depois da correcao
+        with open(caminho, "a", encoding="utf-8") as f:
+            # escreve cada fato novo numa linha nova no final da pagina
+            for linha in linhas_novas:
+                f.write("\n" + linha)
 
         # le a pagina de novo, ja com os fatos novos, e refaz o resumo para o index
         with open(caminho, "r", encoding="utf-8") as f:
             conteudo = f.read()
+
         resumo = resumir_pagina(conteudo)
         # o titulo e a primeira linha da pagina, tira o # da frente
         titulo = conteudo.split("\n")[0].replace("#", "").strip()
         # pagina atualizada, flag 2 troca o resumo dela no index
         escrever_index(titulo, caminho, resumo, 2)
 
-    return caminho
+    return (titulo, caminho)
 
 def processar_trecho(trecho, pasta=PASTA_WIKI):
     relacionada = buscar_pagina_relacionada(trecho)
