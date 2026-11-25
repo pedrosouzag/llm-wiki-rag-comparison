@@ -271,29 +271,28 @@ def processar_base(base):
 """# Funções de Pergunta e Resposta"""
 
 
-def resposta_tem_fato_novo(pergunta, resposta):
-    caminho_cache = PASTA_CACHE + "/" + "wiki_completa.md"
+"""Funcao que guarda a resposta na wiki, usando as paginas que a pergunta usou"""
+def atualizar_wiki_com_resposta(pergunta, resposta, relacionadas):
+    # nao guarda nada quando o modelo nao achou a resposta
+    if "not found" in resposta.lower():
+        #print("resposta nao encontrada, nada a guardar")
+        return
 
-    with open(caminho_cache, "r", encoding="utf-8") as f:
-      wiki = f.read()
+    # monta o trecho com a pergunta e a resposta
+    trecho = f"Question: {pergunta} Answer: {resposta}"
 
-
-    # verificar se a resposta ou parte dele aparece na wiki
-    if resposta.strip() in wiki:
-        return False
-
-    return True
-
-def atualizar_wiki_com_resposta(pergunta, resposta):
-    # checa se essa resposta ja esta registrada em alguma pagina
-    if resposta_tem_fato_novo(pergunta, resposta):
-
-        # se for fato novo, monta o trecho e manda pro processar_trecho arquivar
-        trecho_para_arquivar = f"Pergunta: {pergunta} Resposta: {resposta}"
-        print("não esta na wiki, sera arquivada")
-        processar_trecho(trecho_para_arquivar)
+    if relacionadas:
+        # passa nas paginas que a wiki usou pra responder
+        # pegamos apenas o caminho da tupla
+        for titulo, caminho in relacionadas:
+            atualizar_pagina(caminho, trecho)
     else:
-        print("essa informacao ja esta na wiki, nada a fazer")
+        # nenhuma pagina foi usada na pergunta
+        # o processar_trecho procura pagina pro trecho com a resposta, se achar atualiza, se nao cria uma nova
+        processar_trecho(trecho)
+
+    # refaz a wiki completa pra ela ficar igual as paginas
+    carregar_wiki_completa()
 
 
 def perguntar_wiki(pergunta, max_tokens=50):
