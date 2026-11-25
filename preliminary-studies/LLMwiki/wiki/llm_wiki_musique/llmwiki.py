@@ -4,14 +4,9 @@ import re
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from slugify import slugify as slugify
+from rank_bm25 import BM25Okapi
 import json
 import unicodedata
-
-
-# FEITO = CONSTRUCAO DA WIKI, INDEX COM RESUMO, AUTOVERIFICACAO NA CRIACAO E ATUALIZACAO DAS PAGINAS,
-#   PROMPTS EM INGLES, BUSCA EM PROFUNDIDADE, PERGUNTAR E VERIFICAR RESPOSTA
-# FALTA = BM25 NAS BUSCAS DO INDEX (ler_index e filtrar_bm25), LIGACAO ENTRE PAGINAS (Related),
-#   FONTE DE CADA PAGINA (Sources)
 
 
 
@@ -149,22 +144,18 @@ def escrever_index(titulo, caminho_arquivo, resumo, flag):
         with open(caminho, "w", encoding="utf-8") as arquivo:
             arquivo.write(novo_index)
 
-
-
-"""# Busca de paginas no index"""
-
-"""Funcao que acha uma pagina relacionada ao trecho novo, usada na construcao da wiki"""
-def buscar_pagina_relacionada(trecho):
+"""Funcao que le o index e devolve o texto com titulo - resumo de cada pagina e a lista de titulo e caminho"""
+def ler_index():
     caminho = PASTA_CACHE + "/" + "index.md"
-    # verifica se o index existe, geralmente ocorre na criacao da primeira wiki
+    lista_titulos = ""
+    lista_paginas = []
+
+    # verifica se o index existe, geralmente nao existe so na criacao da primeira pagina
     if not os.path.exists(caminho):
-        return None
+        return lista_titulos, lista_paginas
 
     with open(caminho, "r", encoding="utf-8") as arquivo:
         paginas = arquivo.read()
-
-    lista_titulos = ""
-    lista_paginas = []
 
     for linha in paginas.splitlines():
         # separa pela barra
@@ -179,17 +170,74 @@ def buscar_pagina_relacionada(trecho):
         caminho_pagina = caminho_pagina.strip()
         resumo_pagina = resumo_pagina.strip()
 
-        # texto pro prompt, titulo e resumo, uma pagina por linha
+        # texto pro bm25 e pro prompt, titulo e resumo, uma pagina por linha
         lista_titulos += titulo_pagina + " - " + resumo_pagina + "\n"
         # lista pra achar a pagina depois, titulo e caminho
         lista_paginas.append((titulo_pagina, caminho_pagina))
+
+    return lista_titulos, lista_paginas
+
+
+
+"""# Busca de paginas no index"""
+
+"""Funcao que usa o bm25 pra pegar as 20 paginas do index mais parecidas com o trecho, so as com nota maior que 0"""
+def filter_BM25(trecho, lista_titulos):
+    linhas_pagina = []
+    tokenized_corpus = []
+    for linha in lista_titulos.split("\n"):
+        # a ultima linha so tem \n
+        if linha.strip() == "":
+            continue
+        # a linha sem tokenizar e o que volta, a tokenizada e pro bm25 calcular a nota
+        linhas_pagina.append(linha)
+        tokenized_corpus.append(tokenizar(linha))
+
+    bm25 = BM25Okapi(tokenized_corpus)
+
+    tokenized_query = tokenizar(trecho)
+
+    # nota de cada pagina pra esse trecho na ordem da lista de paginas
+    doc_scores = bm25.get_scores(tokenized_query)
+
+    # retorna o titulo - resumo das 20 paginas com maiores notas
+    maiores = bm25.get_top_n(tokenized_query, linhas_pagina , n=20)
+
+    # ordena as 20 maiores notas, na mesma ordem dos maiores
+    notas = sorted(doc_scores, reverse=True)[:20]
+
+    # junta as 20 maiores paginas com a nota, mas so as que tem nota maior que 0
+    # nota 0 quer dizer que a pagina nao tem nenhuma palavra da busca
+    resultado = []
+    for linha_pagina, nota in zip(maiores, notas):
+        if nota > 0:
+            resultado.append(linha_pagina)
+    return resultado
+
+"""Funcao que acha uma pagina relacionada ao trecho novo, usada na construcao da wiki"""
+def buscar_pagina_relacionada(trecho):
+    lista_titulos, lista_paginas = ler_index()
+    # index vazio, a wiki ainda nao tem pagina
+    if not lista_paginas:
+        return None
+
+    # bm25 pega so as 20 paginas mais parecidas com o trecho
+    candidatas = filter_BM25(trecho, lista_titulos)
+    # nenhuma pagina tem palavra em comum com o trecho, nem chama o gemma
+    if not candidatas:
+        return None
+
+    # texto pro prompt so com as candidatas, uma pagina por linha
+    lista_candidatas = ""
+    for linha in candidatas:
+        lista_candidatas += linha + "\n"
 
     prompt = f"""
         You receive a list of existing topics and a new piece of text.
         Answer ONLY with the exact name of one topic from the list if the text is about the same
         subject, or answer "NONE" if there is no clear relation.
 
-        Existing topics (title - summary): {lista_titulos}
+        Existing topics (title - summary): {lista_candidatas}
 
         New text: {trecho}
 
@@ -197,6 +245,7 @@ def buscar_pagina_relacionada(trecho):
 
     resposta = gerar_gemma_12b(prompt, max_tokens=20)
 
+    # acha o caminho da pagina que o gemma escolheu, procurando o titulo no index inteiro
     for titulo, caminho in lista_paginas:
         if titulo.lower() in resposta.lower():
             return (titulo, caminho)
@@ -204,37 +253,21 @@ def buscar_pagina_relacionada(trecho):
 
 """Funcao que acha as paginas relacionadas a pergunta, usada na hora de responder"""
 def buscar_paginas_pergunta(trecho):
-    caminho = PASTA_CACHE + "/" + "index.md"
-    # verifica se o index existe, se nao existe a wiki ainda nao tem pagina
-    if not os.path.exists(caminho):
+    lista_titulos, lista_paginas = ler_index()
+    # index vazio, a wiki ainda nao tem pagina
+    if not lista_paginas:
         return []
 
-    with open(caminho, "r", encoding="utf-8") as arquivo:
-        paginas = arquivo.read()
+    # bm25 pega so as 20 paginas mais parecidas com a pergunta
+    candidatas = filter_BM25(trecho, lista_titulos)
+    # nenhuma pagina tem palavra em comum com a pergunta, nem chama o gemma
+    if not candidatas:
+        return []
 
-    lista_titulos = ""
-    lista_paginas = []
-
-    # esse tratamento aqui viraria uma funcao e depois fariamos uma outra funcao de BM25 utilizando essas 2 listas tratadas
-    # ai retornando umas 20 paginas com maiores notas e pediriamos pro modelo selecionar 5 por exemplo como contexto pra pergunta e 1 para escrever nela e nao criar pagina
-    # bm25(trecho, lista_titulos(vai ser comparado com trecho), lista_paginas(para retorno = titulo + caminho), quantidade)
-    for linha in paginas.splitlines():
-        # separa pela barra
-        partes = linha.split("|")
-        # pula linha fora do formato, que precisa ter exatamente 3 partes
-        if len(partes) != 3:
-            continue
-        titulo_pagina, caminho_pagina, resumo_pagina = partes
-
-        # tira os espacos que sobram em volta da barra
-        titulo_pagina = titulo_pagina.strip()
-        caminho_pagina = caminho_pagina.strip()
-        resumo_pagina = resumo_pagina.strip()
-
-        # texto pro prompt, titulo e resumo, uma pagina por linha
-        lista_titulos += titulo_pagina + " - " + resumo_pagina + "\n"
-        # lista pra achar a pagina depois, titulo e caminho
-        lista_paginas.append((titulo_pagina, caminho_pagina))
+    # texto pro prompt so com as candidatas, uma pagina por linha
+    lista_candidatas = ""
+    for linha in candidatas:
+        lista_candidatas += linha + "\n"
 
     prompt = f"""
         You receive a list of existing topics and a question.
@@ -242,7 +275,7 @@ def buscar_paginas_pergunta(trecho):
         or answer "NONE" if there is no clear relation.
 
         Existing topics (title - summary):
-        {lista_titulos}
+        {lista_candidatas}
 
         Question: {trecho}
 
@@ -463,7 +496,7 @@ def processar_base(base):
     with open(base, "r", encoding="utf-8") as arquivo:
         texto = arquivo.read()
         # pega cada linha na forma de dicionario, depois pega os paragrafos
-        for linha in texto.splitlines()[:60]:
+        for linha in texto.splitlines()[:2]:
             linha_dicionario = json.loads(linha)
             for paragrafo in linha_dicionario["paragraphs"]:
                 # passa o titulo e o paragrafo para construir a wiki
@@ -697,7 +730,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-# processar_base(PASTA_BASE)
+processar_base(PASTA_BASE)
 # print(listar_paginas())
-#carregar_wiki_completa()
+carregar_wiki_completa()
 # rodar_perguntas()
