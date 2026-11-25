@@ -1,0 +1,1351 @@
+/usr/local/lib/python3.11/dist-packages/transformers/quantizers/auto.py:222: UserWarning: You passed `quantization_config` or equivalent parameters to `from_pretrained` but the model you're loading already has a `quantization_config` attribute. The `quantization_config` from the model will be used.
+  warnings.warn(warning_msg)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.64s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.80s/it]
+
+ Pergunta: Who is the spouse of the Green performer?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Grant Green spouse
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find the name of the Green performer. The wiki page "Grant Green - The Main Attraction" states that Grant Green is an American jazz guitarist.
+        Then, we need to find who is the spouse of Grant Green. The wiki page "Mok Kwai-lan, Wong Fei-hung's Spouse" states that Mok Kwai-lan was the fourth spouse of Wong Fei-hung.
+        However, the question asks for the spouse of the Green performer, Grant Green. The wiki pages do not mention Grant Green's spouse.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Miquette Giraudy']
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ('Erin Pitt Biography', 'data/wiki/erin-pitt-biography.md'), ('Grant Green - The Main Attraction', 'data/wiki/grant-green-the-main-attraction.md'), ('Grant Green - The Latin Bit', 'data/wiki/grant-green-the-latin-bit.md'), ("Grant Green - Grant's First Stand", 'data/wiki/grant-green-grant-s-first-stand.md'), ("Grant Green's Gooden's Corner", 'data/wiki/grant-green-s-gooden-s-corner.md'), ('Green Lake, Chisago City', 'data/wiki/green-lake-chisago-city.md')]
+
+ Pergunta: Who founded the company that distributed the film UHF?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Amblin Entertainment distribution
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Amblin Entertainment founders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 15
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The company that distributed the film UHF is Fox Star Studios.
+        Fox Star Studios collaborated with Fox International Productions on the film's distribution and marketing.
+        Final answer: Fox Star Studios
+
+Resposta Gerada: Fox Star Studios
+
+ Resposta: ['Mike Medavoy']
+
+Acertou: False
+Quantidade de paginas relacionadas: 15
+
+Paginas relacionadas: [('KVLY - TV Mast', 'data/wiki/kvly-tv-mast.md'), ('Amblin Entertainment', 'data/wiki/amblin-entertainment.md'), ('The FBI Story', 'data/wiki/the-fbi-story.md'), ('Love and War in the Apennines', 'data/wiki/love-and-war-in-the-apennines.md'), ('Billy Goat Tavern History', 'data/wiki/billy-goat-tavern-history.md'), ('The Learning Company', 'data/wiki/the-learning-company.md'), ('Heartbeat in the Brain Film', 'data/wiki/heartbeat-in-the-brain-film.md'), ('The White Rabbit', 'data/wiki/the-white-rabbit.md'), ('Bang Bang! Film Details', 'data/wiki/bang-bang-film-details.md'), ('Hotel Berlin Film', 'data/wiki/hotel-berlin-film.md'), ('Life at the Top (Novel)', 'data/wiki/life-at-the-top-novel.md'), ('Confederation of Regions Party', 'data/wiki/confederation-of-regions-party.md'), ('Party for the Netherlands', 'data/wiki/party-for-the-netherlands.md'), ('The Great Lakes Group', 'data/wiki/the-great-lakes-group.md'), ('```', 'data/wiki/.md')]
+
+ Pergunta: What administrative territorial entity is the owner of Ciudad Deportiva located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, the Ciudad Deportiva is located in Nuevo Laredo, Mexico.
+        The Ciudad Deportiva is a sports complex in Nuevo Laredo, Mexico.
+        The Ciudad Deportiva is home to the Tecolotes de Nuevo Laredo Mexican Baseball League team.
+        Final answer: Mexico
+
+Resposta Gerada: Mexico
+
+ Resposta: ['Tamaulipas']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Ciudad Deportiva Nuevo Laredo', 'data/wiki/ciudad-deportiva-nuevo-laredo.md'), ('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Cyprus Popular Bank', 'data/wiki/cyprus-popular-bank.md'), ('Billy Goat Tavern History', 'data/wiki/billy-goat-tavern-history.md')]
+
+ Pergunta: Where is Ulrich Walter's employer headquartered?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : DLR Lander Control Center location
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : DLR's Lander Control Center location
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 15
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The lander is named after the Philae obelisk. Ulrich Walter completed basic training at the German Aerospace Center from 1988 to 1990. Ulrich Walter was monitored from DLR's Lander Control Center in Cologne, Germany.
+        Final answer: Cologne, Germany
+
+Resposta Gerada: Cologne, Germany
+
+ Resposta: ['Cologne']
+
+Acertou: False
+Quantidade de paginas relacionadas: 15
+
+Paginas relacionadas: [('Philae Lander Mission', 'data/wiki/philae-lander-mission.md'), ("The Handmaid's Tale (series)", 'data/wiki/the-handmaid-s-tale-series.md'), ("Casey's Shadow (1978 film)", 'data/wiki/casey-s-shadow-1978-film.md'), ('Prince Kinsky of Wchinitz and Tettau', 'data/wiki/prince-kinsky-of-wchinitz-and-tettau.md'), ("The Painter's Honeymoon", 'data/wiki/the-painter-s-honeymoon.md'), ('Algeria as French Territory', 'data/wiki/algeria-as-french-territory.md'), ('General Electric Headquarters', 'data/wiki/general-electric-headquarters.md'), ('Nyuksensky District, Vologda Oblast', 'data/wiki/nyuksensky-district-vologda-oblast.md'), ('Gallaratese, Milan District', 'data/wiki/gallaratese-milan-district.md'), ("Sant Martí d'Empúries", 'data/wiki/sant-marti-d-empuries.md'), ('Chelyabinsk, Russia', 'data/wiki/chelyabinsk-russia.md'), ('Pak Tam Chung Area', 'data/wiki/pak-tam-chung-area.md'), ('Berhale Woreda, Afar Region', 'data/wiki/berhale-woreda-afar-region.md'), ("Italian Eritrea's Industrial Center", 'data/wiki/italian-eritrea-s-industrial-center.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: Which company owns the manufacturer of Learjet 60?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Bombardier Inc. ownership
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Bombardier Aerospace ownership
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The Learjet 60 is manufactured by Bombardier Aerospace.
+        Bombardier Aerospace is a division of Bombardier Inc.
+        Final answer: Bombardier Inc.
+
+Resposta Gerada: Bombardier Inc.
+
+ Resposta: ['Bombardier Inc.', 'Bombardier']
+
+Acertou: True
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('CRJ Series Operators', 'data/wiki/crj-series-operators.md'), ('The Great Lakes Group', 'data/wiki/the-great-lakes-group.md'), ('Wagner Manufacturing Company', 'data/wiki/wagner-manufacturing-company.md'), ('The Learning Company', 'data/wiki/the-learning-company.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('```', 'data/wiki/.md')]
+
+ Pergunta: Who is the child of Caroline LeRoy's spouse?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Daniel Webster children
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 11
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we find that Caroline LeRoy Webster was the second wife of Daniel Webster.
+        Then, we find that Daniel Marsin is a member of the Senate of France.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Fletcher Webster']
+
+Acertou: False
+Quantidade de paginas relacionadas: 11
+
+Paginas relacionadas: [('Steve Hillage - Green Album', 'data/wiki/steve-hillage-green-album.md'), ('Caroline LeRoy Webster', 'data/wiki/caroline-leroy-webster.md'), ("David's difficult decision", 'data/wiki/david-s-difficult-decision.md'), ('Southeast Asian Child Labour', 'data/wiki/southeast-asian-child-labour.md'), ("China's One-Child Policy", 'data/wiki/china-s-one-child-policy.md'), ('Blood Stain Child', 'data/wiki/blood-stain-child.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('Susan Aglukark - This Child', 'data/wiki/susan-aglukark-this-child.md'), ('Rashad Family Members', 'data/wiki/rashad-family-members.md'), ('The Learning Company', 'data/wiki/the-learning-company.md'), ('Teletubbies setting', 'data/wiki/teletubbies-setting.md')]
+
+ Pergunta: Who is the grandmother of Philippe, Duke of Orléans?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Louis XIV mistress Madame de Montespan
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we find that Philippe, Duke of Orléans's father was Philippe II, Duke of Orléans.
+        Then, we find that Louise Élisabeth d'Orléans was the daughter of Philippe II, Duke of Orléans.
+        Finally, we find that Louise Élisabeth d'Orléans's mother was a legitimised daughter of Louis XIV of France and his mistress, Madame de Montespan.
+        Final answer: Louis XIV of France
+
+Resposta Gerada: Louis XIV of France
+
+ Resposta: ["Marie de' Medici"]
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [('Louis Philippe I', 'data/wiki/louis-philippe-i.md'), ('Infante Henrique, Duke of Coimbra', 'data/wiki/infante-henrique-duke-of-coimbra.md'), ('AS Monaco Coupe de France Win', 'data/wiki/as-monaco-coupe-de-france-win.md'), ('Marilou Berry Family', 'data/wiki/marilou-berry-family.md'), ('Tom Benson Buys Saints', 'data/wiki/tom-benson-buys-saints.md'), ('Alexandre de Lesseps Biography', 'data/wiki/alexandre-de-lesseps-biography.md'), ('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md'), ("Ippolito de' Medici Portrait", 'data/wiki/ippolito-de-medici-portrait.md')]
+
+ Pergunta: What is the goal of the group that European Movement Germany is a member of?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, Bernd Hüttemann is Secretary General of the European Movement Germany.
+        Second, Bernd Hüttemann is Vice President of the European Movement International.
+        Third, the European Movement International promotes European integration.
+        Final answer: European integration
+
+Resposta Gerada: European integration
+
+ Resposta: ['European integration']
+
+Acertou: True
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Bernd Hüttemann', 'data/wiki/bernd-huttemann.md'), ('The Great Lakes Group', 'data/wiki/the-great-lakes-group.md'), ('Karl Moor (Swiss banker)', 'data/wiki/karl-moor-swiss-banker.md'), ("Mart Stam's New Objectivity", 'data/wiki/mart-stam-s-new-objectivity.md'), ('Def Squad rap group', 'data/wiki/def-squad-rap-group.md')]
+
+ Pergunta: What company succeeded the owner of Empire Sports Network?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Adelphia Communications Corporation successor
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Adelphia Communications Corporation Time Warner Cable
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 15
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning: First, we need to find out who owned the Empire Sports Network. The wiki page "Ottoman Empire History" states that the Empire Sports Network was owned by the Adelphia Communications Corporation. Then, we need to find out what happened to Adelphia Communications Corporation. The wiki page "Windjammer Cable Company" states that Adelphia was bankrupt.
+        Final answer: Adelphia Communications Corporation
+
+Resposta Gerada: Adelphia Communications Corporation
+
+ Resposta: ['Time Warner Cable', 'Time Warner']
+
+Acertou: False
+Quantidade de paginas relacionadas: 15
+
+Paginas relacionadas: [('Comcast Sports Southwest', 'data/wiki/comcast-sports-southwest.md'), ('Ottoman Empire History', 'data/wiki/ottoman-empire-history.md'), ('The Learning Company', 'data/wiki/the-learning-company.md'), ('Charlotte 49ers Sports Teams', 'data/wiki/charlotte-49ers-sports-teams.md'), ('EA Sports Games', 'data/wiki/ea-sports-games.md'), ('SICRAL 1B Satellite', 'data/wiki/sicral-1b-satellite.md'), ('Mathura Refinery', 'data/wiki/mathura-refinery.md'), ('Plansee SE Corporation', 'data/wiki/plansee-se-corporation.md'), ('Windjammer Cable Company', 'data/wiki/windjammer-cable-company.md'), ('Full-Time Employment', 'data/wiki/full-time-employment.md'), ('Infante Henrique, Duke of Coimbra', 'data/wiki/infante-henrique-duke-of-coimbra.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('File Time Stamps and Time Zones', 'data/wiki/file-time-stamps-and-time-zones.md'), ('Circus Time (TV Program)', 'data/wiki/circus-time-tv-program.md'), ('Sicilian Pizza Characteristics', 'data/wiki/sicilian-pizza-characteristics.md')]
+
+ Pergunta: What province shares a border with the province where Lago District is located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Niassa Province borders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Lago District is in Niassa Province. Niassa Reserve is in Cabo Delgado Province and Niassa Province. Niassa Reserve links to the Tanzanian Lukwika-Lumesule Game Reserve.
+        Therefore, Tanzania shares a border with the province where Lago District is located.
+        Final answer: Tanzania
+
+Resposta Gerada: Tanzania
+
+ Resposta: ['Cabo Delgado Province']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Lago District, Mozambique', 'data/wiki/lago-district-mozambique.md'), ('US Borders and Geography', 'data/wiki/us-borders-and-geography.md'), ('Campora, Salerno Province', 'data/wiki/campora-salerno-province.md'), ('Lago Verde (Queyras)', 'data/wiki/lago-verde-queyras.md'), ('Gallaratese, Milan District', 'data/wiki/gallaratese-milan-district.md'), ('Niassa Reserve, Mozambique', 'data/wiki/niassa-reserve-mozambique.md')]
+
+ Pergunta: What league does the team that plays in Stadio Ciro Vigorito play for?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Benevento Calcio league
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning: First, find the stadium's location. The wiki page says it is in Benevento, Italy. Then, find the team that plays in that stadium. The wiki page says Football Club Crotone plays home games at Stadio Ezio Scida. The next line says Football Club Crotone plays in Serie A.
+        Final answer: Serie A
+
+Resposta Gerada: Serie A
+
+ Resposta: ['Lega Pro Prima Divisione']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Premier League Broadcasts', 'data/wiki/premier-league-broadcasts.md'), ('Italy Rugby Union Team', 'data/wiki/italy-rugby-union-team.md'), ('Vermont Lady Voltage Soccer', 'data/wiki/vermont-lady-voltage-soccer.md'), ('Stadio Leonardo Garilli', 'data/wiki/stadio-leonardo-garilli.md'), ('Arena Football League Model', 'data/wiki/arena-football-league-model.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md')]
+
+ Pergunta: What is a notable work written by the author of The Timothy files?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Lawrence Sanders books
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        The Timothy Files is a best selling work of fiction by Lawrence Sanders.
+        The Timothy Files consists of linked stories.
+        The stories feature Timothy Cone.
+        Final answer: The Timothy Files
+
+Resposta Gerada: The Timothy Files
+
+ Resposta: ['Anderson Tapes', 'The Anderson Tapes']
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('The Odd Life of Timothy Green', 'data/wiki/the-odd-life-of-timothy-green.md'), ('Timothy P. Williams', 'data/wiki/timothy-p-williams.md'), ("Alfred Nobel's Literature Prize", 'data/wiki/alfred-nobel-s-literature-prize.md'), ('Chicago - All the Years Song', 'data/wiki/chicago-all-the-years-song.md'), ('Michel Guerry, French Senator', 'data/wiki/michel-guerry-french-senator.md'), ('```', 'data/wiki/.md'), ('Bruce Hunter (Actor)', 'data/wiki/bruce-hunter-actor.md')]
+
+ Pergunta: In which borough was Callum McManaman born?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Callum McManaman birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Callum Kane is from the British Channel 4 soap opera "Hollyoaks".
+        Steven Gerrard was born in Whiston, England.
+        Whiston is within the Metropolitan Borough of Knowsley.
+        Final answer: Knowsley
+
+Resposta Gerada: Knowsley
+
+ Resposta: ['Knowsley', 'Metropolitan Borough of Knowsley']
+
+Acertou: True
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('Callum Kane', 'data/wiki/callum-kane.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Edward Dannreuther: Life', 'data/wiki/edward-dannreuther-life.md'), ('Sołtan argument', 'data/wiki/soltan-argument.md'), ('Jean-Michel Oughourlian Biography', 'data/wiki/jean-michel-oughourlian-biography.md'), ('```', 'data/wiki/.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md')]
+
+ Pergunta: What other county does the county where Imperial is located share a border with?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Imperial county borders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Culberson County borders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 13
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        The page "Southwest City, Missouri" states that Imperial is in Pecos County, Texas.
+        The page "Southwest City, Missouri" states that Imperial shares a border with Culberson County.
+        The page "Southwest City, Missouri" states that Imperial shares a border with Hudspeth County.
+        Final answer: Culberson County
+
+Resposta Gerada: Culberson County
+
+ Resposta: ['Crockett County']
+
+Acertou: False
+Quantidade de paginas relacionadas: 13
+
+Paginas relacionadas: [('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Gallaratese, Milan District', 'data/wiki/gallaratese-milan-district.md'), ('Tumaraa Commune, Raiatea', 'data/wiki/tumaraa-commune-raiatea.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Tumaraa Commune, Raiatea', 'data/wiki/tumaraa-commune-raiatea.md'), ('Southwest City, Missouri', 'data/wiki/southwest-city-missouri.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Oak Lawn, Illinois', 'data/wiki/oak-lawn-illinois.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('Door Creek, Wisconsin', 'data/wiki/door-creek-wisconsin.md'), ('US Borders and Geography', 'data/wiki/us-borders-and-geography.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md')]
+
+ Pergunta: In what county is William W. Blair's birthplace located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Margaret Blair Young birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : William W. Blair birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 21
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, Margaret Blair Young was born in 1955.
+        Second, Margaret Blair Young's mother's name was Elizabeth Frances Ingram, who was of English birth.
+        Third, Margaret Blair Young's father's name was William W. Blair.
+        Fourth, William W. Blair was born in Greenfield, Indiana.
+        Fifth, Greenfield is in Hancock County, Indiana.
+        Final answer: Hancock County, Indiana
+
+Resposta Gerada: Hancock County, Indiana
+
+ Resposta: ['Orleans County', 'Orleans County, New York']
+
+Acertou: False
+Quantidade de paginas relacionadas: 21
+
+Paginas relacionadas: [('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Ceres Nunataks', 'data/wiki/ceres-nunataks.md'), ('Southwest City, Missouri', 'data/wiki/southwest-city-missouri.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Margaret Blair Young', 'data/wiki/margaret-blair-young.md'), ('Vermont Lady Voltage Soccer', 'data/wiki/vermont-lady-voltage-soccer.md'), ('Oak Lawn, Illinois', 'data/wiki/oak-lawn-illinois.md'), ('North Hastings High School', 'data/wiki/north-hastings-high-school.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Glénan Islands Archipelago', 'data/wiki/glenan-islands-archipelago.md'), ('Coloane Park', 'data/wiki/coloane-park.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Echo Falls Mystery Series', 'data/wiki/echo-falls-mystery-series.md'), ('Teletubbies setting', 'data/wiki/teletubbies-setting.md'), ("The Painter's Honeymoon", 'data/wiki/the-painter-s-honeymoon.md'), ('The Dream Life of Balso Snell', 'data/wiki/the-dream-life-of-balso-snell.md'), ('Life at the Top (Novel)', 'data/wiki/life-at-the-top-novel.md')]
+
+ Pergunta: What award did the author of The Red Tree receive?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : The Red Tree author awards
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The wiki pages do not have the answer.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Academy Award for Best Animated Short Film']
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [("Alfred Nobel's Literature Prize", 'data/wiki/alfred-nobel-s-literature-prize.md'), ('Kylian Mbappé Facts', 'data/wiki/kylian-mbappe-facts.md'), ('Amamoor Forest Reserve', 'data/wiki/amamoor-forest-reserve.md'), ('Michel Guerry, French Senator', 'data/wiki/michel-guerry-french-senator.md'), ('Penelope Tree Family', 'data/wiki/penelope-tree-family.md'), ('Margaret Blair Young', 'data/wiki/margaret-blair-young.md'), ('Jennifer Saunders Awards', 'data/wiki/jennifer-saunders-awards.md'), ('Iditarod Awards and Prizes', 'data/wiki/iditarod-awards-and-prizes.md')]
+
+ Pergunta: Where was Tyler MacDuff's child educated?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Macduff education
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 10
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        The wiki page "Macbeth and Macduff" states that Macduff's children were murdered by Macbeth's death squads.
+        The wiki page "Macbeth and Macduff" does not mention where Macduff's child was educated.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Blair High School']
+
+Acertou: False
+Quantidade de paginas relacionadas: 10
+
+Paginas relacionadas: [('The Haves and Have Nots', 'data/wiki/the-haves-and-have-nots.md'), ('Southeast Asian Child Labour', 'data/wiki/southeast-asian-child-labour.md'), ('Albert Tyler, Biologist', 'data/wiki/albert-tyler-biologist.md'), ('Macbeth and Macduff', 'data/wiki/macbeth-and-macduff.md'), ("China's One-Child Policy", 'data/wiki/china-s-one-child-policy.md'), ('Blood Stain Child', 'data/wiki/blood-stain-child.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ('Stan Tekiela Naturalist', 'data/wiki/stan-tekiela-naturalist.md'), ('Taktin Oey Biography', 'data/wiki/taktin-oey-biography.md'), ('International Day of the Girl', 'data/wiki/international-day-of-the-girl.md')]
+
+ Pergunta: Who is the spouse of the Rabbit Hole's producer?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Amanda Feilding spouse
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The White Rabbit is in "Alice's Adventures in Wonderland". The Heartbeat in the Brain film was produced by Amanda Feilding. Amanda Feilding drilled a hole in her forehead with a dentist's drill. Mok Kwai-lan was the fourth spouse of Wong Fei-hung.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Keith Urban']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('The White Rabbit', 'data/wiki/the-white-rabbit.md'), ('Baby Buggy Bunny Short', 'data/wiki/baby-buggy-bunny-short.md'), ("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('Heartbeat in the Brain Film', 'data/wiki/heartbeat-in-the-brain-film.md')]
+
+ Pergunta: Who is the child of Sigrid Eskilsdotter's child?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Sigrid Eskilsdotter child
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find out who Sigrid Eskilsdotter is. This information is not available in the provided texts.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Svante Stensson Sture']
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [("David's difficult decision", 'data/wiki/david-s-difficult-decision.md'), ('Southeast Asian Child Labour', 'data/wiki/southeast-asian-child-labour.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ("Mary's Boy Child Song", 'data/wiki/mary-s-boy-child-song.md'), ('Blood Stain Child', 'data/wiki/blood-stain-child.md'), ('Susan Aglukark - This Child', 'data/wiki/susan-aglukark-this-child.md')]
+
+ Pergunta: In which county is Kimbrough Memorial Stadium located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Canyon county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Kimbrough Memorial Stadium is in Canyon, Texas.
+        Canyon is the county seat of Randall County, Texas.
+        Therefore, Kimbrough Memorial Stadium is located in Randall County.
+        Final answer: Randall County
+
+Resposta Gerada: Randall County
+
+ Resposta: ['Randall County', 'Randall County, Texas']
+
+Acertou: True
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('Kimbrough Memorial Stadium', 'data/wiki/kimbrough-memorial-stadium.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Ciudad Deportiva Nuevo Laredo', 'data/wiki/ciudad-deportiva-nuevo-laredo.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: What record label is the performer of Almost Made Ya signed to?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Ali & Gipp record label
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The performer of Almost Made Ya is Ali & Gipp.
+        Ali & Gipp released "Almost Made Ya" through Derrty Entertainment and Universal Records.
+        Final answer: Universal Records
+
+Resposta Gerada: Universal Records
+
+ Resposta: ['Derrty Entertainment']
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('DeSoto Records Label', 'data/wiki/desoto-records-label.md'), ('Almost Made Ya Song', 'data/wiki/almost-made-ya-song.md'), ('The Stranglers\' "Strange Little Girl"', 'data/wiki/the-stranglers-strange-little-girl.md'), ('Crystal Kay', 'data/wiki/crystal-kay.md'), ('Fizeau–Foucault apparatus', 'data/wiki/fizeau-foucault-apparatus.md'), ('Equity Music Group', 'data/wiki/equity-music-group.md'), ('Star Trek: Discovery Premiere', 'data/wiki/star-trek-discovery-premiere.md')]
+
+ Pergunta: Where was the author of Hannibal and Scipio educated at?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Ross Leckie education
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, the wiki page "Hannibal's Invasion of Rome" states that Hannibal is a novel by Ross Leckie.
+        Then, the wiki page "Taktin Oey Biography" states that Taktin Oey graduated from West Windsor-Plainsboro High School North in 2004 and Harvard University in 2008.
+        The wiki pages do not mention Ross Leckie's education.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Exeter College']
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [("Hannibal's Invasion of Rome", 'data/wiki/hannibal-s-invasion-of-rome.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Infante Henrique, Duke of Coimbra', 'data/wiki/infante-henrique-duke-of-coimbra.md'), ('Michel Guerry, French Senator', 'data/wiki/michel-guerry-french-senator.md'), ('Life at the Top (Novel)', 'data/wiki/life-at-the-top-novel.md'), ('Stan Tekiela Naturalist', 'data/wiki/stan-tekiela-naturalist.md'), ('Taktin Oey Biography', 'data/wiki/taktin-oey-biography.md'), ('International Day of the Girl', 'data/wiki/international-day-of-the-girl.md')]
+
+ Pergunta: In which county is Southern Maryland Electric Cooperative headquartered?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Southern Maryland Electric Cooperative headquarters county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Southern Maryland Electric Cooperative county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 12
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, the wiki page "SMECO Electric Cooperative" states that the Southern Maryland Electric Cooperative is headquartered in Hughesville, Maryland.
+        Then, the wiki page "Hughesville, Maryland" states that Hughesville is in Charles County, Maryland.
+        Final answer: Charles County
+
+Resposta Gerada: Charles County
+
+ Resposta: ['Charles County', 'Charles County, Maryland']
+
+Acertou: True
+Quantidade de paginas relacionadas: 12
+
+Paginas relacionadas: [('SMECO Electric Cooperative', 'data/wiki/smeco-electric-cooperative.md'), ('Elk Ridge, Maryland', 'data/wiki/elk-ridge-maryland.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('General Electric Headquarters', 'data/wiki/general-electric-headquarters.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('John Deere World Headquarters', 'data/wiki/john-deere-world-headquarters.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Don Khong Island', 'data/wiki/don-khong-island.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Coloane Park', 'data/wiki/coloane-park.md'), ('Door Creek, Wisconsin', 'data/wiki/door-creek-wisconsin.md')]
+
+ Pergunta: Who is the child of the Victim of Romance performer?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reason:
+        The Victim of Romance performer is Michelle Phillips.
+        Michelle Phillips was previously with The Mamas & the Papas.
+        The wiki pages do not mention Michelle Phillips' children.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Chynna Phillips']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Michael Feinstein - Romance on Film', 'data/wiki/michael-feinstein-romance-on-film.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ('Erin Pitt Biography', 'data/wiki/erin-pitt-biography.md'), ('Catalan and Romance Languages', 'data/wiki/catalan-and-romance-languages.md'), ('Susan Aglukark - This Child', 'data/wiki/susan-aglukark-this-child.md')]
+
+ Pergunta: What county was Tim Dubois born in?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Tim DuBois Missouri
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Tim DuBois Southwest City Missouri
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 10
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we find that Tim DuBois was born in Southwest City, Missouri.
+        Then, we find that Southwest City is in McDonald County, Missouri.
+        Final answer: McDonald County, Missouri
+
+Resposta Gerada: McDonald County, Missouri
+
+ Resposta: ['McDonald County', 'McDonald County, Missouri']
+
+Acertou: True
+Quantidade de paginas relacionadas: 10
+
+Paginas relacionadas: [('Equity Music Group', 'data/wiki/equity-music-group.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('Southwest City, Missouri', 'data/wiki/southwest-city-missouri.md'), ('Jason Sampson (MMA)', 'data/wiki/jason-sampson-mma.md'), ('Oak Lawn, Illinois', 'data/wiki/oak-lawn-illinois.md'), ('Comcast Sports Southwest', 'data/wiki/comcast-sports-southwest.md'), ('Cork City Industry', 'data/wiki/cork-city-industry.md')]
+
+ Pergunta: What record label did the person who is part of The Bruce Lee Band start?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Mike Park record label
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we know that The Bruce Lee Band includes Mike Park and his backing band.
+        The backing band has included Less Than Jake and the Rx Bandits.
+        We need to find what record label Mike Park started.
+        The wiki pages do not mention what record label Mike Park started.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Asian Man Records']
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('DeSoto Records Label', 'data/wiki/desoto-records-label.md'), ('The Bruce Lee Band', 'data/wiki/the-bruce-lee-band.md'), ('Bruce Lee and Wong Jack Man', 'data/wiki/bruce-lee-and-wong-jack-man.md'), ('The Stranglers\' "Strange Little Girl"', 'data/wiki/the-stranglers-strange-little-girl.md'), ('Bruce Lee, My Brother (film)', 'data/wiki/bruce-lee-my-brother-film.md'), ('Coloane Park', 'data/wiki/coloane-park.md'), ('Martha Creek Provincial Park', 'data/wiki/martha-creek-provincial-park.md')]
+
+ Pergunta: What is another notable work made by the author of Miss Sara Sampson?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Lessing other works
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Final answer: Emilia Galotti
+
+Resposta Gerada: Emilia Galotti
+
+ Resposta: ['Emilia Galotti']
+
+Acertou: True
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [('Miss Sara Sampson', 'data/wiki/miss-sara-sampson.md'), ("Alfred Nobel's Literature Prize", 'data/wiki/alfred-nobel-s-literature-prize.md'), ('Michel Guerry, French Senator', 'data/wiki/michel-guerry-french-senator.md'), ('Margaret Blair Young', 'data/wiki/margaret-blair-young.md'), ('Mary Ann Sampson, Artist', 'data/wiki/mary-ann-sampson-artist.md'), ('James Redfield', 'data/wiki/james-redfield.md'), ('Bang Bang! Film Details', 'data/wiki/bang-bang-film-details.md'), ('Sufi Interpretations of Quran', 'data/wiki/sufi-interpretations-of-quran.md')]
+
+ Pergunta: What instrument is played by the person from The Blackout All-Stars?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Bruce Gaitsch instrument
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Blackout All-Stars instrument
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 12
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The Early Recording Instrument Placement page states that drums could be effectively used and heard on early jazz and military band recordings if placed properly. The Blackout All-Stars are a band.
+        Final answer: drums
+
+Resposta Gerada: drums
+
+ Resposta: ['conga', 'Conga']
+
+Acertou: False
+Quantidade de paginas relacionadas: 12
+
+Paginas relacionadas: [('Early Recording Instrument Placement', 'data/wiki/early-recording-instrument-placement.md'), ('Chicago - All the Years Song', 'data/wiki/chicago-all-the-years-song.md'), ('Blackout and Scorponok', 'data/wiki/blackout-and-scorponok.md'), ('Vermont Lady Voltage Soccer', 'data/wiki/vermont-lady-voltage-soccer.md'), ('The Key to the Golden Firebird', 'data/wiki/the-key-to-the-golden-firebird.md'), ('Bruce Hunter (Actor)', 'data/wiki/bruce-hunter-actor.md'), ('Big Swing Face (album)', 'data/wiki/big-swing-face-album.md'), ('Bruce Lee, My Brother (film)', 'data/wiki/bruce-lee-my-brother-film.md'), ('The Bruce Lee Band', 'data/wiki/the-bruce-lee-band.md'), ('Bruce Lee and Wong Jack Man', 'data/wiki/bruce-lee-and-wong-jack-man.md'), ('Britney Spears - Radar Song', 'data/wiki/britney-spears-radar-song.md'), ('Angelīna Kučvaļska Biography', 'data/wiki/angelina-kucvalska-biography.md')]
+
+ Pergunta: What is the seat of the county where Van Hook Township is located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Van Buren Township Brown County
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 13
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find where Van Buren Township is located.
+        Van Buren Township is one of four townships in Brown County, Indiana.
+        Therefore, Van Hook Township is in Brown County.
+        The Greenfield, Indiana City page states that Greenfield is the county seat of Hancock County.
+        Final answer: Hancock County
+
+Resposta Gerada: Hancock County
+
+ Resposta: ['Stanley']
+
+Acertou: False
+Quantidade de paginas relacionadas: 13
+
+Paginas relacionadas: [('Tumaraa Commune, Raiatea', 'data/wiki/tumaraa-commune-raiatea.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Tumaraa Commune, Raiatea', 'data/wiki/tumaraa-commune-raiatea.md'), ('Southwest City, Missouri', 'data/wiki/southwest-city-missouri.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Martha Creek Provincial Park', 'data/wiki/martha-creek-provincial-park.md'), ('Oak Lawn, Illinois', 'data/wiki/oak-lawn-illinois.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Marshall Islands - US Occupation', 'data/wiki/marshall-islands-us-occupation.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md'), ('Jan Hendrik van den Berg', 'data/wiki/jan-hendrik-van-den-berg.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: Who is the father of Edward Baring, 1st Baron Revelstoke's father?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Edward Baring father
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: 1. Edward Baring, 1st Baron Revelstoke was born on 22 July 1829.
+        2. Edward Baring, 1st Baron Revelstoke died on 11 February 1929.
+        3. Edward Baring, 1st Baron Revelstoke's father was William Baring.
+        4. William Baring was born on 16 August 1778.
+        5. William Baring died on 27 August 1861.
+        6. William Baring was a merchant and banker.
+
+        Final answer: William Baring
+
+Resposta Gerada: William Baring
+
+ Resposta: ['Sir Francis Baring, 1st Baronet']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Edward Dannreuther: Life', 'data/wiki/edward-dannreuther-life.md'), ('Father of the Nation Title', 'data/wiki/father-of-the-nation-title.md'), ('Martha Creek Provincial Park', 'data/wiki/martha-creek-provincial-park.md'), ('Viscount Exmouth (1811-1876', 'data/wiki/viscount-exmouth-1811-1876.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Edmund, Earl of Kent', 'data/wiki/edmund-earl-of-kent.md')]
+
+ Pergunta: What group was the performer of Be the One a member of?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The wiki page about Jackie Jackson's album "Be the One" does not mention any group membership.
+        The Def Squad rap group consists of Erick Sermon, Redman and Keith Murray.
+        The wiki pages do not have the answer.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Jackson 5']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Def Squad rap group', 'data/wiki/def-squad-rap-group.md'), ('Jackie Jackson - Be the One', 'data/wiki/jackie-jackson-be-the-one.md'), ('Infante Henrique, Duke of Coimbra', 'data/wiki/infante-henrique-duke-of-coimbra.md'), ('The Great Lakes Group', 'data/wiki/the-great-lakes-group.md'), ('The Grey Griffins Series', 'data/wiki/the-grey-griffins-series.md')]
+
+ Pergunta: Who is the lead singer of the band performing Bang Bang Rock & Roll?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, find the band that performs Bang Bang Rock & Roll. The wiki page "Bang Bang Rock & Roll" states that it is performed by the British rock band Art Brut.
+        Then, find the lead singer of Art Brut. The wiki page "Eddie Argos" states that Eddie Argos is the lead singer of Art Brut.
+        Final answer: Eddie Argos
+
+Resposta Gerada: Eddie Argos
+
+ Resposta: ['Eddie Argos']
+
+Acertou: True
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Bang Bang! Film Details', 'data/wiki/bang-bang-film-details.md'), ('Eddie Argos', 'data/wiki/eddie-argos.md'), ('Bang Bon District', 'data/wiki/bang-bon-district.md'), ('Dust on the Bottle (single)', 'data/wiki/dust-on-the-bottle-single.md'), ('Take It to the Limit', 'data/wiki/take-it-to-the-limit.md')]
+
+ Pergunta: What is the network which National Cycle Route 57 is part of an example of?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : National Cycle Network purpose
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : National Cycle Network examples
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 14
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        First, we find that National Cycle Route 57 is part of the National Cycle Network.
+        Then, we find that the National Cycle Network is the national cycling route network of the United Kingdom.
+        Final answer: National Cycle Network
+
+Resposta Gerada: National Cycle Network
+
+ Resposta: ['national cycling route network', 'National cycling route network']
+
+Acertou: False
+Quantidade de paginas relacionadas: 14
+
+Paginas relacionadas: [('National Cycle Route 57', 'data/wiki/national-cycle-route-57.md'), ('Utah State Route 264', 'data/wiki/utah-state-route-264.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md'), ("Men's Greco-Roman 57 kg", 'data/wiki/men-s-greco-roman-57-kg.md'), ('Great Value Brand', 'data/wiki/great-value-brand.md'), ('Ring Road (Afghanistan)', 'data/wiki/ring-road-afghanistan.md'), ('Comcast Sports Southwest', 'data/wiki/comcast-sports-southwest.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Shiromaniam Madhavan', 'data/wiki/shiromaniam-madhavan.md'), ('Commission for Scheduled Castes', 'data/wiki/commission-for-scheduled-castes.md'), ('United States Naval Institute', 'data/wiki/united-states-naval-institute.md'), ('Breaking Benjamin - "I Will Not Bow"', 'data/wiki/breaking-benjamin-i-will-not-bow.md'), ('Supervisory Board Meetings', 'data/wiki/supervisory-board-meetings.md')]
+
+ Pergunta: Who is the spouse of the child of Peter Andreas Heiberg?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Peter Andreas Heiberg children
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Johan Ludvig Heiberg spouse
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, find the person who is the child of Peter Andreas Heiberg. This is Johan Ludvig Heiberg.
+        Then, find the spouse of Johan Ludvig Heiberg. The pages do not mention the spouse of Johan Ludvig Heiberg.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Johanne Luise Heiberg']
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [('Peter Blum, Afrikaans Poet', 'data/wiki/peter-blum-afrikaans-poet.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ('A Little Bit of Love (song)', 'data/wiki/a-little-bit-of-love-song.md'), ('Peter Ostrum, Charlie Bucket', 'data/wiki/peter-ostrum-charlie-bucket.md'), ("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('Heidelberger RK Rugby Club', 'data/wiki/heidelberger-rk-rugby-club.md')]
+
+ Pergunta: The Unwinding author volunteered for which organisation?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Margaret Blair Young organisation
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Damon Galgut organisation
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 20
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning: The wiki page "The Unwinding" states that the author volunteered for the International Committee of the Red Cross.
+        Final answer: International Committee of the Red Cross
+
+Resposta Gerada: International Committee of the Red Cross
+
+ Resposta: ['Peace Corps']
+
+Acertou: False
+Quantidade de paginas relacionadas: 20
+
+Paginas relacionadas: [('SICRAL 1B Satellite', 'data/wiki/sicral-1b-satellite.md'), ('KVLY - TV Mast', 'data/wiki/kvly-tv-mast.md'), ('Mount Meigs Campus', 'data/wiki/mount-meigs-campus.md'), ('The Open Boat', 'data/wiki/the-open-boat.md'), ('Dunbar Hospital, Detroit', 'data/wiki/dunbar-hospital-detroit.md'), ("Alfred Nobel's Literature Prize", 'data/wiki/alfred-nobel-s-literature-prize.md'), ('The Learning Company', 'data/wiki/the-learning-company.md'), ('The White Rabbit', 'data/wiki/the-white-rabbit.md'), ('Jesse Bennett, Physician', 'data/wiki/jesse-bennett-physician.md'), ('Dunbar Hospital, Detroit', 'data/wiki/dunbar-hospital-detroit.md'), ('Bang Bon District', 'data/wiki/bang-bon-district.md'), ('Margaret Blair Young', 'data/wiki/margaret-blair-young.md'), ('Mick Taylor Biography', 'data/wiki/mick-taylor-biography.md'), ('Pirate Party Belgium', 'data/wiki/pirate-party-belgium.md'), ('Party for the Netherlands', 'data/wiki/party-for-the-netherlands.md'), ('Stan Tekiela Naturalist', 'data/wiki/stan-tekiela-naturalist.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Kylian Mbappé Facts', 'data/wiki/kylian-mbappe-facts.md'), ("The Handmaid's Tale (series)", 'data/wiki/the-handmaid-s-tale-series.md'), ('A Sinless Season', 'data/wiki/a-sinless-season.md')]
+
+ Pergunta: What is the capital of the county that Pine Springs is located in?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Pine Springs location
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Pine Springs county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 11
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find the location of Pine Creek. According to the first wiki page, MacDonald Airfield is north of Pine Creek.
+        Next, we need to find the location of MacDonald Airfield. According to the first wiki page, MacDonald Airfield is in the Northern Territory, Australia.
+        Therefore, Pine Creek is in the Northern Territory, Australia.
+        The question asks for the capital of the county that Pine Creek is located in. However, the wiki pages do not mention the county that Pine Creek is located in.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Van Horn']
+
+Acertou: False
+Quantidade de paginas relacionadas: 11
+
+Paginas relacionadas: [('MacDonald Airfield, WWII', 'data/wiki/macdonald-airfield-wwii.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Bann Na Mohra, Pakistan', 'data/wiki/bann-na-mohra-pakistan.md'), ('Southwest City, Missouri', 'data/wiki/southwest-city-missouri.md'), ('Schlage Locks', 'data/wiki/schlage-locks.md'), ('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md'), ("Sant Martí d'Empúries", 'data/wiki/sant-marti-d-empuries.md'), ('Pak Tam Chung Area', 'data/wiki/pak-tam-chung-area.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: What district is the headquarter of Julia's House located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find the location of Julia's House. The pages do not mention Julia's House.
+        Therefore, the answer cannot be found.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['East Dorset']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Gallaratese, Milan District', 'data/wiki/gallaratese-milan-district.md'), ('Pettai Village, Karaikal', 'data/wiki/pettai-village-karaikal.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Marshall Islands - US Occupation', 'data/wiki/marshall-islands-us-occupation.md'), ('Bang Bon District', 'data/wiki/bang-bon-district.md')]
+
+ Pergunta: Who is the spouse of Young Man Luther's author?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Erikson spouse
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find the author of Young Man Luther. The wiki page "Elisabeth Luther" states that Young Man Luther is a 1958 book by psychologist Erik Erikson.
+        Next, we need to find Erikson's spouse. The wiki page "Erikson's stages of psychosocial development" states that Erikson articulated it in collaboration with Joan Erikson.
+        Final answer: Joan Erikson
+
+Resposta Gerada: Joan Erikson
+
+ Resposta: ['Joan Erikson']
+
+Acertou: True
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Elisabeth Luther', 'data/wiki/elisabeth-luther.md'), ("The Painter's Honeymoon", 'data/wiki/the-painter-s-honeymoon.md'), ('The Dream Life of Balso Snell', 'data/wiki/the-dream-life-of-balso-snell.md'), ('Margaret Blair Young', 'data/wiki/margaret-blair-young.md'), ('Kylian Mbappé Facts', 'data/wiki/kylian-mbappe-facts.md'), ("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md')]
+
+ Pergunta: What record label did the performer of The Place and the Time belong to?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : The Place and the Time record label
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 16
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Answer: not found
+
+Resposta Gerada: Answer: not found
+
+ Resposta: ['Columbia Records']
+
+Acertou: False
+Quantidade de paginas relacionadas: 16
+
+Paginas relacionadas: [('DeSoto Records Label', 'data/wiki/desoto-records-label.md'), ('Philae Lander Mission', 'data/wiki/philae-lander-mission.md'), ('File Time Stamps and Time Zones', 'data/wiki/file-time-stamps-and-time-zones.md'), ('The Haves and Have Nots', 'data/wiki/the-haves-and-have-nots.md'), ('Father of the Nation Title', 'data/wiki/father-of-the-nation-title.md'), ('The Harry Quebert Affair', 'data/wiki/the-harry-quebert-affair.md'), ('Alvin and the Chipettes', 'data/wiki/alvin-and-the-chipettes.md'), ("Ippolito de' Medici Portrait", 'data/wiki/ippolito-de-medici-portrait.md'), ('The Grey Griffins Series', 'data/wiki/the-grey-griffins-series.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md'), ('Sicilian Pizza Characteristics', 'data/wiki/sicilian-pizza-characteristics.md'), ('Vagina and Birth Canal', 'data/wiki/vagina-and-birth-canal.md'), ('Theotokos and Orthodox Tradition', 'data/wiki/theotokos-and-orthodox-tradition.md'), ('The Stranglers\' "Strange Little Girl"', 'data/wiki/the-stranglers-strange-little-girl.md'), ('Infante Henrique, Duke of Coimbra', 'data/wiki/infante-henrique-duke-of-coimbra.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md')]
+
+ Pergunta: Who is the child of the person who followed Tihomir of Serbia?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sem nova busca
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First finding: Stracimir was a brother of Tihomir.
+        Second finding: Stracimir continued to rule his lands.
+        Third finding: Stracimir attacked the forces of Doclean ruler Mihailo.
+        Final answer: Tihomir
+
+Resposta Gerada: Tihomir
+
+ Resposta: ['Saint Sava']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Stracimir and His Brothers', 'data/wiki/stracimir-and-his-brothers.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ('Music of Old Serbia', 'data/wiki/music-of-old-serbia.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('Bhanwar Singh Dangawas', 'data/wiki/bhanwar-singh-dangawas.md')]
+
+ Pergunta: What team was Anna Benson's husband on?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Anna Benson husband teams
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Kris Benson teams
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 16
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Anna Benson's husband is Kris Benson.
+        Kris Benson played for the Pittsburgh Pirates, the New York Mets, and the Baltimore Orioles.
+        Final answer: Pittsburgh Pirates, New York Mets, and the Baltimore Orioles
+
+Resposta Gerada: Pittsburgh Pirates, New York Mets, and the Baltimore Orioles
+
+ Resposta: ['Pittsburgh Pirates', 'Orioles', 'Pirates', 'Baltimore Orioles', 'New York Mets', 'Mets']
+
+Acertou: False
+Quantidade de paginas relacionadas: 16
+
+Paginas relacionadas: [("Grant Green - Grant's First Stand", 'data/wiki/grant-green-grant-s-first-stand.md'), ('Arena Football League Model', 'data/wiki/arena-football-league-model.md'), ('Comcast Sports Southwest', 'data/wiki/comcast-sports-southwest.md'), ('Tennis on CBS Branding', 'data/wiki/tennis-on-cbs-branding.md'), ('Italy Rugby Union Team', 'data/wiki/italy-rugby-union-team.md'), ('Philadelphia Eagles History', 'data/wiki/philadelphia-eagles-history.md'), ("2006 Men's Basketball Tournament", 'data/wiki/2006-men-s-basketball-tournament.md'), ("Men's Greco-Roman 57 kg", 'data/wiki/men-s-greco-roman-57-kg.md'), ('Charlotte 49ers Sports Teams', 'data/wiki/charlotte-49ers-sports-teams.md'), ('Vermont Lady Voltage Soccer', 'data/wiki/vermont-lady-voltage-soccer.md'), ('Kris Benson Career', 'data/wiki/kris-benson-career.md'), ("Casey's Shadow (1978 film)", 'data/wiki/casey-s-shadow-1978-film.md'), ('Watercolor, Florida Community', 'data/wiki/watercolor-florida-community.md'), ('Tom Benson Buys Saints', 'data/wiki/tom-benson-buys-saints.md'), ('Alvin and the Chipettes', 'data/wiki/alvin-and-the-chipettes.md'), ('Lionel Medeiros, Footballer', 'data/wiki/lionel-medeiros-footballer.md')]
+
+ Pergunta: What place does the administrative territorial entity that Juba is located in share a border with?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Juba borders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        First, we need to find out what administrative territorial entity Juba is located in. The wiki page "US Borders and Geography" states that the Badigeru swamp lies in South Sudan, and the Badigeru swamp is also known as Bedigeru or Badingilu. The wiki page "US Borders and Geography" also states that Virginia is located in Lempira Honduras.
+        Second, we need to find out what administrative territorial entity Juba is located in. The wiki page "US Borders and Geography" states that Utqiaġvik, Alaska is the northernmost incorporated place in all U.S. territory.
+        Third, we need to find out what administrative territorial entity Juba
+
+Resposta Gerada: Reasoning:
+        First, we need to find out what administrative territorial entity Juba is located in. The wiki page "US Borders and Geography" states that the Badigeru swamp lies in South Sudan, and the Badigeru swamp is also known as Bedigeru or Badingilu. The wiki page "US Borders and Geography" also states that Virginia is located in Lempira Honduras.
+        Second, we need to find out what administrative territorial entity Juba is located in. The wiki page "US Borders and Geography" states that Utqiaġvik, Alaska is the northernmost incorporated place in all U.S. territory.
+        Third, we need to find out what administrative territorial entity Juba
+
+ Resposta: ['Eastern Equatoria']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Pangi Territory', 'data/wiki/pangi-territory.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Cyprus Popular Bank', 'data/wiki/cyprus-popular-bank.md'), ('Lago Verde (Queyras)', 'data/wiki/lago-verde-queyras.md'), ('US Borders and Geography', 'data/wiki/us-borders-and-geography.md')]
+
+ Pergunta: Where was the spouse of Frances Tupper born?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Benjamin Tupper birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Frances Tupper birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 9
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The spouse of Frances Tupper is Mok Kwai-lan.
+        Mok Kwai-lan was born on October 15, 1892.
+        The wiki page states Mok Kwai-lan’s date of birth was October 15, 1892.
+        The wiki pages do not mention where Mok Kwai-lan was born.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Amherst']
+
+Acertou: False
+Quantidade de paginas relacionadas: 9
+
+Paginas relacionadas: [("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ("The Handmaid's Tale (series)", 'data/wiki/the-handmaid-s-tale-series.md'), ('Edward Dannreuther: Life', 'data/wiki/edward-dannreuther-life.md'), ('Jean-Michel Oughourlian Biography', 'data/wiki/jean-michel-oughourlian-biography.md'), ('Breaking Benjamin - "I Will Not Bow"', 'data/wiki/breaking-benjamin-i-will-not-bow.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md')]
+
+ Pergunta: Who founded the political party of Dimuthu Bandara Abayakoon?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Dimuthu Bandara Abayakoon political party
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 10
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find out who Dimuthu Bandara Abayakoon is. This information is not available in the provided texts.
+        Therefore, we cannot answer the question.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Rohana Wijeweera']
+
+Acertou: False
+Quantidade de paginas relacionadas: 10
+
+Paginas relacionadas: [('Party for the Netherlands', 'data/wiki/party-for-the-netherlands.md'), ('Confederation of Regions Party', 'data/wiki/confederation-of-regions-party.md'), ('UNO-96 Alliance', 'data/wiki/uno-96-alliance.md'), ('Pirate Party Belgium', 'data/wiki/pirate-party-belgium.md'), ("Ivo Visković's Political Career", 'data/wiki/ivo-viskovic-s-political-career.md'), ('Green in Ancient Egypt', 'data/wiki/green-in-ancient-egypt.md'), ('Algeria as French Territory', 'data/wiki/algeria-as-french-territory.md'), ('Michel Guerry, French Senator', 'data/wiki/michel-guerry-french-senator.md'), ('Father of the Nation Title', 'data/wiki/father-of-the-nation-title.md'), ('The Village of Waiting', 'data/wiki/the-village-of-waiting.md')]
+
+ Pergunta: Bancroft's county borders what county?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Bancroft county borders
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 15
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Haliburton County']
+
+Acertou: False
+Quantidade de paginas relacionadas: 15
+
+Paginas relacionadas: [('Confederation of Finnish Industries', 'data/wiki/confederation-of-finnish-industries.md'), ('Dunbar Hospital, Detroit', 'data/wiki/dunbar-hospital-detroit.md'), ("Sant Martí d'Empúries", 'data/wiki/sant-marti-d-empuries.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('US Borders and Geography', 'data/wiki/us-borders-and-geography.md'), ("Alfred Nobel's Literature Prize", 'data/wiki/alfred-nobel-s-literature-prize.md'), ('Dunbar Hospital, Detroit', 'data/wiki/dunbar-hospital-detroit.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ("Casey's Shadow (1978 film)", 'data/wiki/casey-s-shadow-1978-film.md'), ('Marshall Islands - US Occupation', 'data/wiki/marshall-islands-us-occupation.md'), ("Adam's Rib (1949 film)", 'data/wiki/adam-s-rib-1949-film.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('Door Creek, Wisconsin', 'data/wiki/door-creek-wisconsin.md')]
+
+ Pergunta: In which county is Mark Dismore's birthplace located?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Mark Dismore county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we find that Mark Dismore was born in Greenfield, Indiana.
+        Then, we find that Greenfield is a city in Hancock County, Indiana.
+        Final answer: Hancock County, Indiana
+
+Resposta Gerada: Hancock County, Indiana
+
+ Resposta: ['Hancock County']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md')]
+
+ Pergunta: Who was the sibling of Nannina de' Medici?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Nannina de' Medici siblings
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 7
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: 1. Nannina de' Medici's father was Piero di Cosimo de' Medici.
+        2. Nannina de' Medici was the elder sister of Lorenzo de' Medici.
+        Final answer: Lorenzo de' Medici
+
+Resposta Gerada: Lorenzo de' Medici
+
+ Resposta: ["Giuliano de' Medici"]
+
+Acertou: False
+Quantidade de paginas relacionadas: 7
+
+Paginas relacionadas: [("Ippolito de' Medici Portrait", 'data/wiki/ippolito-de-medici-portrait.md'), ('Alexandre de Lesseps Biography', 'data/wiki/alexandre-de-lesseps-biography.md'), ('AS Monaco Coupe de France Win', 'data/wiki/as-monaco-coupe-de-france-win.md'), ('Bhanwar Singh Dangawas', 'data/wiki/bhanwar-singh-dangawas.md'), ("The Painter's Honeymoon", 'data/wiki/the-painter-s-honeymoon.md'), ('Rashad Family Members', 'data/wiki/rashad-family-members.md'), ('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md')]
+
+ Pergunta: What county is the NRHEG High School located in?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : NRHEG Minnesota county
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 18
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reason: The wiki page "NRHEG, Minnesota" states that the school is located in New Richland, Minnesota. The wiki page "New Richland, Minnesota" states that New Richland is located in Waseca County, Minnesota.
+        Final answer: Waseca County, Minnesota
+
+Resposta Gerada: Waseca County, Minnesota
+
+ Resposta: ['Waseca County', 'Waseca County, Minnesota']
+
+Acertou: True
+Quantidade de paginas relacionadas: 18
+
+Paginas relacionadas: [('John Deere World Headquarters', 'data/wiki/john-deere-world-headquarters.md'), ('Gallaratese, Milan District', 'data/wiki/gallaratese-milan-district.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Pangasinan School of Arts Trades', 'data/wiki/pangasinan-school-of-arts-trades.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('Martha Creek Provincial Park', 'data/wiki/martha-creek-provincial-park.md'), ('Bann Na Mohra, Pakistan', 'data/wiki/bann-na-mohra-pakistan.md'), ('Oak Lawn, Illinois', 'data/wiki/oak-lawn-illinois.md'), ('North Hastings High School', 'data/wiki/north-hastings-high-school.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Marshall Islands - US Occupation', 'data/wiki/marshall-islands-us-occupation.md'), ('Homewood, South Carolina', 'data/wiki/homewood-south-carolina.md'), ('Door Creek, Wisconsin', 'data/wiki/door-creek-wisconsin.md'), ('Green Lake, Chisago City', 'data/wiki/green-lake-chisago-city.md'), ("Sant Martí d'Empúries", 'data/wiki/sant-marti-d-empuries.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('New Richland, Minnesota', 'data/wiki/new-richland-minnesota.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: What league does the team that occupies the Rabat Ajax Football Ground belong to?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Rabat Ajax Football Ground league
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 6
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The Rabat Ajax Football Ground is the training ground of Rabat Ajax F.C.
+        Rabat Ajax F.C. is a Maltese football team.
+        The wiki page does not mention what league they belong to.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Maltese Premier League']
+
+Acertou: False
+Quantidade de paginas relacionadas: 6
+
+Paginas relacionadas: [('Buenos Aires Argentina Temple', 'data/wiki/buenos-aires-argentina-temple.md'), ('Premier League Broadcasts', 'data/wiki/premier-league-broadcasts.md'), ('Arena Football League Model', 'data/wiki/arena-football-league-model.md'), ('Vermont Lady Voltage Soccer', 'data/wiki/vermont-lady-voltage-soccer.md'), ('Italy Rugby Union Team', 'data/wiki/italy-rugby-union-team.md'), ('Stadio Leonardo Garilli', 'data/wiki/stadio-leonardo-garilli.md')]
+
+ Pergunta: Who was married to the star of No Escape?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Valerie Hobson husband
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reason: The wiki page for No Escape states that Valerie Hobson starred in the film. The wiki page for Margareta von Ascheberg states that she married colonel count Kjell Christopher Barnekow. The wiki page for Margareta von Ascheberg also states that she kept her name after marriage and style herself »Grevinnan Ascheberg» (Countess Ascheberg).
+        Final answer: Kjell Christopher Barnekow
+
+Resposta Gerada: Kjell Christopher Barnekow
+
+ Resposta: ['John Profumo']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Margareta von Ascheberg', 'data/wiki/margareta-von-ascheberg.md'), ('No Escape (1936 film)', 'data/wiki/no-escape-1936-film.md'), ('Star Trek: Discovery Premiere', 'data/wiki/star-trek-discovery-premiere.md'), ('Tanzania', 'data/wiki/tanzania.md'), ('The Harry Quebert Affair', 'data/wiki/the-harry-quebert-affair.md')]
+
+ Pergunta: What administrative territorial entity contains the place where KPRM is licensed to broadcast to?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : KPRM location
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 11
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Hubbard County', 'Hubbard County, Minnesota']
+
+Acertou: False
+Quantidade de paginas relacionadas: 11
+
+Paginas relacionadas: [('Pangi Territory', 'data/wiki/pangi-territory.md'), ('Minsk Region, Belarus', 'data/wiki/minsk-region-belarus.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Minsk Region, Belarus', 'data/wiki/minsk-region-belarus.md'), ('Chelyabinsk, Russia', 'data/wiki/chelyabinsk-russia.md'), ('Oblasts of the Soviet Union', 'data/wiki/oblasts-of-the-soviet-union.md'), ('NORC at the University of Chicago', 'data/wiki/norc-at-the-university-of-chicago.md'), ('Chelyabinsk, Russia', 'data/wiki/chelyabinsk-russia.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md'), ('Hipermercado Géant Location', 'data/wiki/hipermercado-geant-location.md'), ('```', 'data/wiki/.md')]
+
+ Pergunta: Where are the headquarters for the publisher of In the Shadow of Greatness?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : David Weber publisher
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First the book In the Shadow of Greatness is by David Weber.
+        David Weber is an American writer.
+        The pages do not mention the publisher of In the Shadow of Greatness.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Annapolis', 'Annapolis, Maryland']
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [("The Handmaid's Tale (series)", 'data/wiki/the-handmaid-s-tale-series.md'), ('Pangi Territory', 'data/wiki/pangi-territory.md'), ('Dunbar Hospital, Detroit', 'data/wiki/dunbar-hospital-detroit.md'), ('The Key to the Golden Firebird', 'data/wiki/the-key-to-the-golden-firebird.md'), ('Alvin and the Chipettes', 'data/wiki/alvin-and-the-chipettes.md'), ("David's difficult decision", 'data/wiki/david-s-difficult-decision.md'), ('David Profumo Family History', 'data/wiki/david-profumo-family-history.md'), ('Dust on the Bottle (single)', 'data/wiki/dust-on-the-bottle-single.md')]
+
+ Pergunta: Who is part of the band that performed Full Cooperation?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Def Squad members
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 9
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The song "Full Cooperation" is by Def Squad.
+        Def Squad is a rap supergroup consisting of Erick Sermon, Redman and Keith Murray.
+        Jamal is an honorary member of the Def Squad.
+        Final answer: Erick Sermon, Redman, Keith Murray, Jamal
+
+Resposta Gerada: Erick Sermon, Redman, Keith Murray, Jamal
+
+ Resposta: ['Erick Sermon']
+
+Acertou: False
+Quantidade de paginas relacionadas: 9
+
+Paginas relacionadas: [('Full Cooperation (song)', 'data/wiki/full-cooperation-song.md'), ('Full-Time Employment', 'data/wiki/full-time-employment.md'), ('Erin Pitt Biography', 'data/wiki/erin-pitt-biography.md'), ('Utah State Route 264', 'data/wiki/utah-state-route-264.md'), ('Sunnyboys Band History', 'data/wiki/sunnyboys-band-history.md'), ('Def Squad rap group', 'data/wiki/def-squad-rap-group.md'), ('Rashad Family Members', 'data/wiki/rashad-family-members.md'), ('The Bruce Lee Band', 'data/wiki/the-bruce-lee-band.md'), ('Ex on the Beach (Series 7)', 'data/wiki/ex-on-the-beach-series-7.md')]
+
+ Pergunta: The territory containing Bansaan Island is located at which island?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Bansaan Island island
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 5
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we find that Bansaan is located off the mid-northern coast of Bohol Island.
+        Then, we find that Bansaan is part of the province of Bohol.
+        Therefore, the territory containing Bansaan Island is located at Bohol Island.
+        Final answer: Bohol Island
+
+Resposta Gerada: Bohol Island
+
+ Resposta: ['Panglao Island']
+
+Acertou: False
+Quantidade de paginas relacionadas: 5
+
+Paginas relacionadas: [('Nughu Island, Solomon Islands', 'data/wiki/nughu-island-solomon-islands.md'), ('Tumaraa Commune, Raiatea', 'data/wiki/tumaraa-commune-raiatea.md'), ('Coloane Park', 'data/wiki/coloane-park.md'), ('Don Khong Island', 'data/wiki/don-khong-island.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md')]
+
+ Pergunta: In which county did Snappy Tomato Pizza form?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Fort Mitchell Kenton County
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 9
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Final answer: Kenton County, Kentucky
+
+Resposta Gerada: Kenton County, Kentucky
+
+ Resposta: ['Kenton County', 'Kenton County, Kentucky']
+
+Acertou: True
+Quantidade de paginas relacionadas: 9
+
+Paginas relacionadas: [('DeSoto Records Label', 'data/wiki/desoto-records-label.md'), ('Sicilian Pizza Characteristics', 'data/wiki/sicilian-pizza-characteristics.md'), ('Chumak Food Processing Company', 'data/wiki/chumak-food-processing-company.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('2010 Tomato Shortage', 'data/wiki/2010-tomato-shortage.md'), ('Joni Mitchell - Little Green', 'data/wiki/joni-mitchell-little-green.md'), ('Ivanhoe, Sampson County', 'data/wiki/ivanhoe-sampson-county.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md')]
+
+ Pergunta: What's the place of birth of the former member of The Sunnyboys?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Jeremy Oxley birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Jeremy Saxon Oxley birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 14
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        First, we find that Jeremy Saxon Oxley fronted the band Sunnyboys.
+        Then, we find that Jeremy Saxon Oxley was born in Kingscliff, New South Wales.
+        Final answer: Kingscliff, New South Wales
+
+Resposta Gerada: Kingscliff, New South Wales
+
+ Resposta: ['Kingscliff', 'Kingscliff, New South Wales']
+
+Acertou: True
+Quantidade de paginas relacionadas: 14
+
+Paginas relacionadas: [('Prince Kinsky of Wchinitz and Tettau', 'data/wiki/prince-kinsky-of-wchinitz-and-tettau.md'), ("David's difficult decision", 'data/wiki/david-s-difficult-decision.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Bruce Lee and Wong Jack Man', 'data/wiki/bruce-lee-and-wong-jack-man.md'), ('The Dream Life of Balso Snell', 'data/wiki/the-dream-life-of-balso-snell.md'), ('The Key to the Golden Firebird', 'data/wiki/the-key-to-the-golden-firebird.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('The Grey Griffins Series', 'data/wiki/the-grey-griffins-series.md'), ('Marshall Islands - US Occupation', 'data/wiki/marshall-islands-us-occupation.md'), ('Sunnyboys Band History', 'data/wiki/sunnyboys-band-history.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md')]
+
+ Pergunta: In which district was Ernie Watts born?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Ernie Watts birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 8
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: First, we need to find out who Ernie Watts is. The Kenny Dorham and Ernie Henry wiki page mentions Ernie Henry's last recording session was with Kenny Dorham.
+        The wiki page for Whiston, Merseyside states that Steven Gerrard was born in Whiston, England.
+        The wiki page for Greenfield, Indiana City states that Mark Dismore was born in Greenfield, Indiana.
+        The wiki page for Nyuksensky District, Vologda Oblast states that the population of the district is 11,714.
+        The wiki pages do not mention Ernie Watts.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['West Berkshire']
+
+Acertou: False
+Quantidade de paginas relacionadas: 8
+
+Paginas relacionadas: [('Kenny Dorham and Ernie Henry', 'data/wiki/kenny-dorham-and-ernie-henry.md'), ('Gmina Włodawa', 'data/wiki/gmina-wlodawa.md'), ('Edward VIII Birth Details', 'data/wiki/edward-viii-birth-details.md'), ('Nyuksensky District, Vologda Oblast', 'data/wiki/nyuksensky-district-vologda-oblast.md'), ('Nizampatnam Mandal, Guntur District', 'data/wiki/nizampatnam-mandal-guntur-district.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md')]
+
+ Pergunta: Which county does Lloyd Dane's birthplace belong to?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Lloyd Dane birthplace
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 18
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Reasoning:
+        First, we need to find the birthplace of Lloyd Dane. The wiki page "Port Blair, Andaman Islands" mentions that Port Blair is a union territory of India.
+        Second, we need to find the county of Port Blair. The wiki page "Greenfield, Indiana City" mentions that Greenfield is in Hancock County, Indiana.
+        Final answer: not found
+
+Resposta Gerada: not found
+
+ Resposta: ['Miller County', 'Miller County, Missouri']
+
+Acertou: False
+Quantidade de paginas relacionadas: 18
+
+Paginas relacionadas: [('Star Trek: Discovery Premiere', 'data/wiki/star-trek-discovery-premiere.md'), ("David's difficult decision", 'data/wiki/david-s-difficult-decision.md'), ("Rock Climbing's Origins", 'data/wiki/rock-climbing-s-origins.md'), ('Essex County Park Building', 'data/wiki/essex-county-park-building.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ("Hannibal's Invasion of Rome", 'data/wiki/hannibal-s-invasion-of-rome.md'), ('Port Blair, Andaman Islands', 'data/wiki/port-blair-andaman-islands.md'), ('Collective Soul Debut Album', 'data/wiki/collective-soul-debut-album.md'), ('Miss Sara Sampson', 'data/wiki/miss-sara-sampson.md'), ('Van Buren Township, Brown County', 'data/wiki/van-buren-township-brown-county.md'), ('National Cycle Route 57', 'data/wiki/national-cycle-route-57.md'), ("Hansen's Planar Surveying Problem", 'data/wiki/hansen-s-planar-surveying-problem.md'), ('Greenfield, Indiana City', 'data/wiki/greenfield-indiana-city.md'), ('Weird Shadows Over Innsmouth (anthology)', 'data/wiki/weird-shadows-over-innsmouth-anthology.md'), ('Marin County Civic Center', 'data/wiki/marin-county-civic-center.md'), ('Door Creek, Wisconsin', 'data/wiki/door-creek-wisconsin.md'), ('Fort Mitchell, Kentucky', 'data/wiki/fort-mitchell-kentucky.md'), ('Whiston, Merseyside', 'data/wiki/whiston-merseyside.md')]
+
+ Pergunta: Who is the spouse of the screenwriter of The Actress?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Jacques Companéez spouse
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+busca repetida, para
+TOTAL DE PAGINAS: 14
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: Mok Kwai-lan was the fourth spouse of Wong Fei-hung, who was a Lingnan martial arts grandmaster.
+        Jacques Companéez was a Russian Jewish émigré screenwriter.
+        Mok Kwai-lan was the spouse of Jacques Companéez.
+        Final answer: Wong Fei-hung
+
+Resposta Gerada: Wong Fei-hung
+
+ Resposta: ['Garson Kanin']
+
+Acertou: False
+Quantidade de paginas relacionadas: 14
+
+Paginas relacionadas: [("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ('Marilou Berry Family', 'data/wiki/marilou-berry-family.md'), ('Battle of Bunker Hill', 'data/wiki/battle-of-bunker-hill.md'), ('International Day of the Girl', 'data/wiki/international-day-of-the-girl.md'), ('The White Rabbit', 'data/wiki/the-white-rabbit.md'), ('Child Reference Number & NI Number', 'data/wiki/child-reference-number-ni-number.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('The Dream Life of Balso Snell', 'data/wiki/the-dream-life-of-balso-snell.md'), ('The Harry Quebert Affair', 'data/wiki/the-harry-quebert-affair.md'), ('Alvin and the Chipettes', 'data/wiki/alvin-and-the-chipettes.md'), ("Mok Kwai-lan, Wong Fei-hung's Spouse", 'data/wiki/mok-kwai-lan-wong-fei-hung-s-spouse.md'), ('The Grey Griffins Series', 'data/wiki/the-grey-griffins-series.md'), ('Cape Fourcroy Light', 'data/wiki/cape-fourcroy-light.md'), ('Jennifer Saunders Awards', 'data/wiki/jennifer-saunders-awards.md')]
+
+ Pergunta: What award was received by the person who authored Missing Person?
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 1 : Andreas Johnson awards
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+nova busca 2 : Maureen Johnson awards
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+TOTAL DE PAGINAS: 10
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+RACIOCINIO: The Key to the Golden Firebird was authored by Maureen Johnson.
+        The American Library Association listed it as a Best Books for Young Adults in 2005.
+        Final answer: Best Books for Young Adults
+
+Resposta Gerada: Best Books for Young Adults
+
+ Resposta: ['Nobel Prize in Literature', 'Austrian State Prize for European Literature', 'Prix mondial Cino Del Duca', "Grand Prix du roman de l'Académie française", 'Prix Goncourt']
+
+Acertou: False
+Quantidade de paginas relacionadas: 10
+
+Paginas relacionadas: [('Steve Hillage - Green Album', 'data/wiki/steve-hillage-green-album.md'), ("International Children's Prize", 'data/wiki/international-children-s-prize.md'), ('Jack Wilson - Something Personal', 'data/wiki/jack-wilson-something-personal.md'), ("Benny Golson - Groovin' with Golson", 'data/wiki/benny-golson-groovin-with-golson.md'), ('Chicago - All the Years Song', 'data/wiki/chicago-all-the-years-song.md'), ('A Little Bit of Love (song)', 'data/wiki/a-little-bit-of-love-song.md'), ('Jack Wilson - Something Personal', 'data/wiki/jack-wilson-something-personal.md'), ('Iditarod Awards and Prizes', 'data/wiki/iditarod-awards-and-prizes.md'), ('Jennifer Saunders Awards', 'data/wiki/jennifer-saunders-awards.md'), ('The Key to the Golden Firebird', 'data/wiki/the-key-to-the-golden-firebird.md')]
+
+===== RELATORIO FINAL=====
+
+Numero de acertos = 12 / 60
+
+Acuracia: 20.0 % 
