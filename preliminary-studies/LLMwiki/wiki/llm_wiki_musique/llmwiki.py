@@ -294,6 +294,73 @@ def atualizar_wiki_com_resposta(pergunta, resposta, relacionadas):
     # refaz a wiki completa pra ela ficar igual as paginas
     carregar_wiki_completa()
 
+def o_que_falta(pergunta, contexto):
+    # pergunta pro gemma se os trechos ja bastam ou o que ainda falta buscar
+    prompt = f"""You are helping to answer a question that may need more than one step.
+        Read the question and the passages below.
+        If the passages already have all the information needed to answer the question, write only: DONE
+        If something is missing, write only the next search to find it.
+        The search must be short and use the names you already found in the passages.
+        Example: if you found that the film Blue River was directed by John Carter but nothing about where he was born, write: John Carter birthplace
+
+        Passages:
+        {contexto}
+
+        Question: {pergunta}"""
+
+    # resposta curta, so uma busca ou DONE
+    texto = gerar_gemma_12b(prompt, max_tokens=30)
+
+    # se o gemma disse que ja tem tudo devolve vazio
+    if "done" in texto.lower():
+        return ""
+
+    # quebra o texto em linhas e pega so a primeira
+    linhas = texto.split("\n")
+    primeira_linha = linhas[0]
+
+    # tira os espacos do comeco e do fim
+    sem_espaco = primeira_linha.strip()
+
+    # tira as aspas do comeco e do fim
+    proxima_busca = sem_espaco.strip('"') # as veze ele devolve respostas com aspas
+
+    return proxima_busca
+
+def busca_profundidade(pergunta, flag):
+   # pega o primeiro contexto
+   contexto, achados = montar_contexto(pergunta, flag)
+   # guarda as buscas ja feitas pra nao repetir
+   buscas_feitas = []
+   # roda a profundidade
+   for i in range(2):
+      falta = o_que_falta(pergunta, contexto)
+      # se o gemma disse que ja tem tudo para de buscar
+      if falta == "":
+        print("sem nova busca")
+        break
+      # se pediu uma busca que ja foi feita para de buscar
+      if falta.lower() in buscas_feitas:
+        print("busca repetida, para")
+        break
+      buscas_feitas.append(falta.lower())
+      # mostra o que o gemma pediu pra buscar
+      print("nova busca", i + 1, ":", falta)
+      # pega o novo contexto
+      novo_contexto, novos_achados = montar_contexto(falta, flag)
+      # verifica se tem chunks repetidos
+      for chunk, nota in novos_achados:
+         repetido = False
+         for chunk_existente, nota_existente in achados:
+            if chunk["texto"] == chunk_existente["texto"]:
+               repetido = True
+               break
+         if not repetido:
+            achados.append((chunk, nota))
+            contexto += chunk["texto"] + "\n\n"
+   # mostra quantos chunks juntou no total
+   print("TOTAL DE CHUNKS:", len(achados))
+   return contexto, achados
 
 def perguntar_wiki(pergunta, max_tokens=50):
     caminho_cache = PASTA_CACHE + "/" + "wiki_completa.md"
@@ -350,6 +417,9 @@ def verificar_resposta(resposta_modelo, resposta_certa):
           acertou = True
 
     return acertou
+
+
+
 def processar_perguntas_e_respostas(PASTA_BASE):
     perguntas = []
     respostas = []
