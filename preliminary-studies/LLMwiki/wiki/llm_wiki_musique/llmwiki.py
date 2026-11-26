@@ -769,7 +769,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-# processar_base(PASTA_BASE)
+processar_base(PASTA_BASE)
 # print(listar_paginas())
 carregar_wiki_completa()
 rodar_perguntas()
