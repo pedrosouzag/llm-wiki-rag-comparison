@@ -321,8 +321,16 @@ def buscar_titulo(trecho):
         Title:"""
 
     titulo = gerar_gemma_12b(prompt, max_tokens=15).strip()
+    # tira a crase de bloco de codigo que o gemma as vezes coloca
+    titulo = titulo.replace("```", "").strip()
     # puxa so a primeira linha
-    return titulo.split("\n")[0].strip()
+    titulo = titulo.split("\n")[0].strip()
+
+    # se ficou vazio, usa o titulo original do paragrafo
+    if slugify_function(titulo) == "":
+        titulo = trecho.split("\n")[0].strip()
+
+    return titulo
 
 """Funcao que gera os fatos da pagina, flag 1 escreve do zero, flag 2 corrige uma escrita que nao passou na verificacao"""
 def buscar_conteudo(trecho, flag, conteudo_anterior=""):
@@ -411,6 +419,14 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
     # gera o titulo e os bullets points da noticia com a gemma baseado no texto
     titulo = buscar_titulo(trecho)
 
+    nome_arquivo = slugify_function(titulo) + ".md"
+    caminho_arquivo = pasta + "/" + nome_arquivo
+
+    # se ja existe pagina com esse nome, atualiza ela em vez de apagar com o w
+    if os.path.exists(caminho_arquivo):
+        atualizar_pagina(caminho_arquivo, trecho)
+        return
+
     # escreve os fatos e verifica se estao no trecho original
     conteudo = buscar_conteudo(trecho, 1)
     veredito = verificar_escrita(trecho, conteudo)
@@ -425,9 +441,6 @@ def criar_pagina(trecho, pasta=PASTA_WIKI):
     # se nem corrigindo passou, escreve com a ultima correcao e avisa
     if not veredito:
         print("verificacao nao passou, escrevendo com a ultima correcao:", titulo)
-
-    nome_arquivo = slugify_function(titulo) + ".md"
-    caminho_arquivo = pasta + "/" + nome_arquivo
 
     with open(caminho_arquivo, "w", encoding="utf-8") as arquivo:
         arquivo.write(f"# {titulo}\n\n")
@@ -756,7 +769,7 @@ def rodar_perguntas():
 
 """# Execucao, roda nessa ordem"""
 
-processar_base(PASTA_BASE)
+# processar_base(PASTA_BASE)
 # print(listar_paginas())
 carregar_wiki_completa()
 rodar_perguntas()
